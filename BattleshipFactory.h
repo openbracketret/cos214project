@@ -3,10 +3,11 @@
 
 #include <string>
 #include <vector>
+#include "SpaceshipFactory.h"
 
 using namespace std;
 
-class BattleshipFactory
+class BattleshipFactory : public SpaceshipFactory
 {
 private:
 

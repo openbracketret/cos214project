@@ -6,6 +6,9 @@ class Spaceship {
 
     public:
         Spaceship();
+
+        virtual void addComponent(Spaceship*) = 0;
+
         int getDisplacement() {return displacement;};
         void setDisplacement(int d) {displacement = d;};
         int getPower() {return power;};

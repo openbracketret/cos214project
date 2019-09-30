@@ -4,7 +4,8 @@
 #include "Spaceship.h"
 
 class FighterTransporter : public Spaceship {
-
+    public:
+        FighterTransporter();
 };
 
 

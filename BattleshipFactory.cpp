@@ -8,7 +8,7 @@ BattleshipFactory::BattleshipFactory() : SpaceshipFactory() {
 BattleshipFactory::~BattleshipFactory(){
 
 }
-Spaceship* spaceShipFactoryMethod(){
+Spaceship* BattleShipFactory::spaceShipFactoryMethod(){
 	Spaceship* s = new SickBay();
 	s->add(new Armory());
 	s->add(new SleepingQuarters());

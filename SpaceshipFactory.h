@@ -10,13 +10,6 @@ class SpaceshipFactory
 {
 private:
 	
-double displacement;
-double power;
-double thrust;
-double maxSpeed;
-double stallSpeed;
-int crew;
-int passengerCapacities;
 
 
 public:

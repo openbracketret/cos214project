@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include "SpaceshipFactory.h"
+#include "ExplorationVessel.h"
 
 using namespace std;
 

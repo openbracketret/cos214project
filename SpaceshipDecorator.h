@@ -8,6 +8,7 @@ class SpaceshipDecorator : public Spaceship {
     public:
         SpaceshipDecorator();
         /**Add a component to the spaceship
+         * @param comp - comp The component to be added
             */
         virtual void addComponent(Spaceship* comp);
 

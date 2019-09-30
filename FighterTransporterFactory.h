@@ -16,7 +16,9 @@ public:
 
 	FighterTransporterFactory();
 	~FighterTransporterFactory();
-	Spaceship* spaceShipFactoryMethod();/**<Factory method*/
+	/**Method to create FighterTransporter's
+	 */
+	Spaceship* spaceShipFactoryMethod();
 	
 };
 

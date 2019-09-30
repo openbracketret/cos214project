@@ -16,6 +16,7 @@ public:
 
 	FrigateFactory();
 	~FrigateFactory();
+	Spaceship* spaceShipFactoryMethod();/**<Factory method*/
 	
 };
 

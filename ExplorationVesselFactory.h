@@ -17,6 +17,7 @@ public:
 
 	ExplorationVesselFactory();
 	~ExplorationVesselFactory();
+	Spaceship* spaceShipFactoryMethod();/**<Factory method*/
 	
 };
 

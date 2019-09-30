@@ -16,6 +16,7 @@ public:
 
 	BattleshipFactory();
 	~BattleshipFactory();
+	Spaceship* spaceShipFactoryMethod();/**<Factory method*/
 	
 };
 

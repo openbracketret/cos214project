@@ -16,6 +16,7 @@ public:
 
 	FighterTransporterFactory();
 	~FighterTransporterFactory();
+	Spaceship* spaceShipFactoryMethod();/**<Factory method*/
 	
 };
 

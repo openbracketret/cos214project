@@ -1,4 +1,5 @@
 #include "FrigateFactory.h"
+#include "Frigate.h"
 using namespace std; 
 
 FrigateFactory::FrigateFactory() : SpaceshipFactory(){
@@ -7,12 +8,12 @@ FrigateFactory::FrigateFactory() : SpaceshipFactory(){
 FrigateFactory::~FrigateFactory(){
 
 }
-Spaceship* s FrigateFactory::spaceShipFactoryMethod(){
+Spaceship* FrigateFactory::spaceShipFactoryMethod(){
 
 	Spaceship* s = new SickBay();
-	s->add(new Armory());
-	s->add(new SleepingQuarters());
-	s->add(new Bridge());
-	s->add(new Frigate()); 
+	s->addComponent(new Armory());
+	s->addComponent(new SleepingQuarters());
+	s->addComponent(new Bridge());
+	s->addComponent(new Frigate()); 
 	return s;
 }

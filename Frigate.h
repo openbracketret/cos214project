@@ -7,6 +7,7 @@ class Frigate : public Spaceship {
 
     public:
         Frigate();
+        virtual void addComponent(Spaceship*);
 };
 
 #endif

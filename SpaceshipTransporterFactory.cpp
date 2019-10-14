@@ -1,4 +1,5 @@
 #include "SpaceshipTransporterFactory.h"
+#include "SpaceshipTransporter.h"
 using namespace std;
 SpaceshipTransporterFactory::SpaceshipTransporterFactory() : SpaceshipFactory(){
 
@@ -9,9 +10,9 @@ SpaceshipTransporterFactory::~SpaceshipTransporterFactory(){
 Spaceship* SpaceshipTransporterFactory::spaceShipFactoryMethod(){
 
 	Spaceship* s = new SickBay();
-	s->add(new Armory());
-	s->add(new SleepingQuarters());
-	s->add(new Bridge());
-	s->add(new SpaceshipTransporter()); 
+	s->addComponent(new Armory());
+	s->addComponent(new SleepingQuarters());
+	s->addComponent(new Bridge());
+	s->addComponent(new SpaceshipTransporter()); 
 	return s;
 }

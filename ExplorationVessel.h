@@ -7,6 +7,7 @@ class ExplorationVessel : public Spaceship {
 
     public:
         ExplorationVessel();
+        virtual void addComponent(Spaceship*);
 
 };
 

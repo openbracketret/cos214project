@@ -1,11 +1,13 @@
 #ifndef SPACESHIP_H
 #define SPACESHIP_H
 
+#include <string>
 
 class Spaceship {
 
     public:
         Spaceship();
+        Spaceship(string n) {name = n;};
 
         virtual void addComponent(Spaceship*) = 0;
 
@@ -40,6 +42,7 @@ class Spaceship {
         int passengerCapacity; /**<Maximum passengers*/
         int fuel; /**<Fuel level*/
         int energy; /**<Energy Level*/
+        string name; /**<Spaceships name*/
 
 };
 

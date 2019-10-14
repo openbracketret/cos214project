@@ -4,6 +4,12 @@
 #include <string>
 #include <vector>
 #include "Spaceship.h"
+#include "SpaceshipDecorator.h"
+#include "Armory.h"
+#include "Bridge.h"
+#include "SickBay.h"
+#include "SleepingQuarters.h"
+#include "TransportBay.h"
 
 using namespace std;
 

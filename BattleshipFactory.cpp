@@ -1,4 +1,5 @@
-#include "BattleshipFactory.cpp"
+#include "BattleshipFactory.h"
+#include "Battleship.h"
 using namespace std; 
 
 BattleshipFactory::BattleshipFactory() : SpaceshipFactory() {
@@ -8,11 +9,11 @@ BattleshipFactory::BattleshipFactory() : SpaceshipFactory() {
 BattleshipFactory::~BattleshipFactory(){
 
 }
-Spaceship* BattleShipFactory::spaceShipFactoryMethod(){
+Spaceship* BattleshipFactory::spaceShipFactoryMethod(){
 	Spaceship* s = new SickBay();
-	s->add(new Armory());
-	s->add(new SleepingQuarters());
-	s->add(new Bridge());
-	s->add(new BattleShip()); 
+	s->addComponent(new Armory());
+	s->addComponent(new SleepingQuarters());
+	s->addComponent(new Bridge());
+	s->addComponent(new Battleship()); 
 	return s;
 }

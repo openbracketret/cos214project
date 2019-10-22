@@ -7,6 +7,8 @@
 
 using namespace std;
 
+//TODO: Make this class a singleton
+
 class CommanderOfTheFleet : public People
 {
 private:

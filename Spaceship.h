@@ -2,13 +2,18 @@
 #define SPACESHIP_H
 
 #include <string>
+#include <vector>
+#include "People.h"
+
+using namespace std;
 
 class Spaceship {
 
     public:
         Spaceship();
         Spaceship(string n) {name = n;};
-
+        /** Pure virtual method for decorator to add components to the spaceship
+         */
         virtual void addComponent(Spaceship*) = 0;
 
         int getDisplacement() {return displacement;};
@@ -21,8 +26,8 @@ class Spaceship {
         void setMaxSpeed(int v) {maxSpeed = v;};
         int getStallSpeed() {return stallSpeed;};
         void setStallSpeed(int v) {stallSpeed = v;};
-        int getCrewCapacity() {return crewCapacity;};
-        void setCrewCapacity(int p) {crewCapacity = p;};
+        int getCurrentCapacity() {return currentCapacity;};
+        void setCurrentCapacity(int p) {currentCapacity = p;};
         int getPassengerCapacity() {return passengerCapacity;};
         void setPassengerCapacity(int p) {passengerCapacity = p;};
         void addFuel(int a) {fuel += a;};
@@ -32,17 +37,23 @@ class Spaceship {
         int getFuel() {return fuel;};
         int getEnergy() {return energy;};
 
+        virtual void addPassenger(People*);
+        virtual void removePassenger(People*);
+
+
     private:
         int displacement;/**<displacement of spaceship*/
         int power;/**<power of spaceship */
         int thrust;/**<thrust*/
         int maxSpeed;/**<Maxiumum Speed*/
         int stallSpeed; /**<Stalling speed*/
-        int crewCapacity; /**<Maximum crew members*/
+        int currentCapacity; /**<Current amount of crew members*/
         int passengerCapacity; /**<Maximum passengers*/
         int fuel; /**<Fuel level*/
         int energy; /**<Energy Level*/
         string name; /**<Spaceships name*/
+
+        vector<People*> passengers; /**<Vector of passengers currently aboard the ship */
 
 };
 

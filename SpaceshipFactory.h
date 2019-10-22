@@ -10,6 +10,7 @@
 #include "SickBay.h"
 #include "SleepingQuarters.h"
 #include "TransportBay.h"
+#include "FighterBay.h"
 
 using namespace std;
 

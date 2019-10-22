@@ -10,7 +10,7 @@ SpaceshipTransporterFactory::~SpaceshipTransporterFactory(){
 Spaceship* SpaceshipTransporterFactory::spaceShipFactoryMethod(){
 
 	Spaceship* s = new SickBay();
-	s->addComponent(new Armory());
+	s->addComponent(new TransportBay());
 	s->addComponent(new SleepingQuarters());
 	s->addComponent(new Bridge());
 	s->addComponent(new SpaceshipTransporter()); 

@@ -13,7 +13,7 @@ Spaceship* SpaceshipTransporterFactory::spaceShipFactoryMethod(){
 	s->addComponent(new TransportBay());
 	s->addComponent(new SleepingQuarters());
 	s->addComponent(new Bridge());
-	s->addComponent(new SpaceshipTransporter()); 
 	s->addComponent(new RefuelStation());
+	s->addComponent(new SpaceshipTransporter()); 
 	return s;
 }

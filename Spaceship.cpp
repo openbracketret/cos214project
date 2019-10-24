@@ -1,5 +1,6 @@
 #include "Spaceship.h"
 #include <iostream>
+#include <algorithm>
 
 
 void Spaceship::addPassenger(People* p){
@@ -12,5 +13,9 @@ void Spaceship::addPassenger(People* p){
 }
 
 void Spaceship::removePassenger(People* p){
-    //TODO: Algorithm to remove passenger from ship. Also currentCapacity--
+    vector<People*>::iterator it = find(passengers.begin(), passengers.end(), 8);
+    if (it != passengers.end())
+        passengers.erase(it);
+
+    currentCapacity--;
 }

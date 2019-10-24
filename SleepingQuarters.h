@@ -1,3 +1,6 @@
+/**
+ * @file SleepingQuarters.h
+*/
 #ifndef SLEEPINGQUARTERS_H
 #define SLEEPINGQUARTERS_H
 

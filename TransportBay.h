@@ -7,9 +7,16 @@
 using namespace std;
 
 class TransportBay : public SpaceshipDecorator {
+    private:
+        int maxCapacity;
+        int currentCapacity;
     public:
         TransportBay();
         ~TransportBay();
+        int getCurrentCapacity();
+        int setCurrentCapacity(int i){currentCapacity = i;};
+        int getMaxCapacity();
+        int setMaxCapacity(int i){maxCapacity = i;};
         /** Method to add spaceships into the transport bay
          */
         void addShip(Spaceship*);

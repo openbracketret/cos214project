@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include "People.h"
+#include "Memento.h"
 
 using namespace std;
 
@@ -16,6 +17,7 @@ public:
 
 	Fighter();
 	~Fighter();
+	
 	
 };
 

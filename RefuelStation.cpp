@@ -9,5 +9,6 @@ RefuelStation::~RefuelStation(){
 }
 
 void RefuelStation::refuelSpaceship(Spaceship* s){
-    s->set
+    int fill = s->getMaxFuel() - s->getFuel();
+    s->addFuel(fill);
 }

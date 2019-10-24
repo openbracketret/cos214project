@@ -11,6 +11,7 @@
 #include "SleepingQuarters.h"
 #include "TransportBay.h"
 #include "FighterBay.h"
+#include "RefuelStation.h"
 
 using namespace std;
 

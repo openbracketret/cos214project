@@ -1,2 +1,19 @@
 #include "SpaceStationFactory.h"
+#include "Spacestation.h"
 
+SpaceStationFactory::SpaceStationFactory(){
+
+}
+
+SpaceStationFactory::~SpaceStationFactory(){
+
+}
+
+Spaceship* SpaceStationFactory::spaceStationFactoryMethod(){
+    Spaceship* s = new SickBay();
+	s->addComponent(new TransportBay());
+	s->addComponent(new SleepingQuarters());
+	s->addComponent(new Bridge());
+    s->addComponent(new RefuelStation());
+	s->addComponent(new SpaceStation::instance())
+}

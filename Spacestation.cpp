@@ -1,9 +1,10 @@
 #include "Spacestation.h"
+#include "LevelOne.h"
 
 using namespace std;
 
 SpaceStation::SpaceStation() {
-    //TODO: WHAT MUST GET SET IN HERE?
+    threat = new LevelOneThreat();
 }
 
 SpaceStation::SpaceStation(const SpaceStation& s){}
@@ -19,4 +20,16 @@ SpaceStation* SpaceStation::instance() {
         spaceStation = new SpaceStation();
     }
     return spaceStation;
+}
+
+void SpaceStation::increaseThreatLevel() {
+    threat = threat->increaseThreatLevel();
+}
+
+void SpaceStation::decreaseThreatLevel() {
+    threat = threat->decreaseThreatLevel();
+}
+
+void SpaceStation::printThreatLevel() {
+    threat->print();
 }

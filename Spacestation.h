@@ -2,6 +2,7 @@
 #define SPACESTATION_H
 
 #include "Spaceship.h"
+#include "ThreatLevel.h"
 
 #include <iostream>
 
@@ -12,6 +13,10 @@ class SpaceStation : public Spaceship {
         void updateSpaceStation(SpaceStation*);
         void addComponent(Spaceship*);
 
+        void increaseThreatLevel();
+        void decreaseThreatLevel();
+        void printThreatLevel();
+
     protected:
         SpaceStation(const SpaceStation&);
         SpaceStation();
@@ -21,6 +26,7 @@ class SpaceStation : public Spaceship {
 
     private:
         static SpaceStation* spaceStation;
+        ThreatLevel* threat;
 };
 
 #endif

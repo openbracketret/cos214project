@@ -1,8 +1,9 @@
+/**
+ * @file SleepingQuarters.h
+*/
 #ifndef REFUEL_STATION_H
 #define REFUEL_STATION_H
 
-#include <string>
-#include <vector>
 #include "SpaceshipDecorator.h"
 
 using namespace std;

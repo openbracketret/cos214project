@@ -1,5 +1,6 @@
 #include "TransportBay.h"
 #include <algorithm>
+#include <iostream>
 
 TransportBay::TransportBay() : SpaceshipDecorator() {
 
@@ -10,8 +11,12 @@ TransportBay::~TransportBay() {
 }
 
 void TransportBay::addShip(Spaceship* s){
-    ships.push_back(s);
-    currentCapacity++;
+    if (currentCapacity < maxCapacity){
+        ships.push_back(s);
+        currentCapacity++;
+    } else {
+        cout<<"Transporter bay at full capacity"<<endl;
+    }
 }
 
 void TransportBay::removeShip(Spaceship* s){

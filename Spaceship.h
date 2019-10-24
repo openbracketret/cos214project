@@ -30,6 +30,8 @@ class Spaceship {
         void setCurrentCapacity(int p) {currentCapacity = p;};
         int getPassengerCapacity() {return passengerCapacity;};
         void setPassengerCapacity(int p) {passengerCapacity = p;};
+        int getMaxFuel(){return maxFuel;};
+        void setMaxFuel(int i){maxFuel=i;};
         void addFuel(int a) {fuel += a;};
         void addEnergy(int e){energy += e;};
         void decreaseFuel(int a){fuel -= a;};
@@ -50,6 +52,7 @@ class Spaceship {
         int currentCapacity; /**<Current amount of crew members*/
         int passengerCapacity; /**<Maximum passengers*/
         int fuel; /**<Fuel level*/
+        int maxFuel; /**Max fuel level*/
         int energy; /**<Energy Level*/
         string name; /**<Spaceships name*/
 

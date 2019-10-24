@@ -13,8 +13,8 @@ private:
 
 public:
 
-	People();
-	~People();
+	People() {};
+	~People() {};
 	
 };
 

@@ -9,7 +9,7 @@ class SpaceStationFactory : public SpaceshipFactory {
         ~SpaceStationFactory();
         /**Method to create SpaceStation
 	    */
-        Spaceship* spaceStationFactoryMethod();
+        Spaceship* spaceshipFactoryMethod();
 };
 
 #endif

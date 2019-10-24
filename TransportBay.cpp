@@ -20,7 +20,7 @@ void TransportBay::addShip(Spaceship* s){
 }
 
 void TransportBay::removeShip(Spaceship* s){
-        vector<Spaceship*>::iterator it = find(ships.begin(), ships.end(), 8);
+        vector<Spaceship*>::iterator it = find(ships.begin(), ships.end(), s);
         if (it != ships.end())
             ships.erase(it);
 

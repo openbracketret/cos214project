@@ -1,7 +1,7 @@
 #include "SpaceStationFactory.h"
 #include "Spacestation.h"
 
-SpaceStationFactory::SpaceStationFactory(){
+SpaceStationFactory::SpaceStationFactory() : SpaceshipFactory(){
 
 }
 
@@ -9,7 +9,7 @@ SpaceStationFactory::~SpaceStationFactory(){
 
 }
 
-Spaceship* SpaceStationFactory::spaceStationFactoryMethod(){
+Spaceship* SpaceStationFactory::spaceshipFactoryMethod(){
     Spaceship* s = new SickBay();
 	s->addComponent(new TransportBay());
 	s->addComponent(new SleepingQuarters());

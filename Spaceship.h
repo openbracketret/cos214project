@@ -10,7 +10,7 @@ using namespace std;
 class Spaceship {
 
     public:
-        Spaceship();
+        Spaceship() {};
         Spaceship(string n) {name = n;};
         /** Pure virtual method for decorator to add components to the spaceship
          */

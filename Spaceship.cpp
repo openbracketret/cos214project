@@ -13,7 +13,7 @@ void Spaceship::addPassenger(People* p){
 }
 
 void Spaceship::removePassenger(People* p){
-    vector<People*>::iterator it = find(passengers.begin(), passengers.end(), 8);
+    vector<People*>::iterator it = find(passengers.begin(), passengers.end(), p);
     if (it != passengers.end())
         passengers.erase(it);
 

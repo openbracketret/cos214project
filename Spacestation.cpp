@@ -3,11 +3,13 @@
 
 using namespace std;
 
-SpaceStation::SpaceStation() {
+SpaceStation* SpaceStation::spaceStation;
+
+SpaceStation::SpaceStation() : Spaceship() {
     threat = new LevelOneThreat();
 }
 
-SpaceStation::SpaceStation(const SpaceStation& s){}
+SpaceStation::SpaceStation(const SpaceStation& s) : Spaceship(){}
 
 SpaceStation::~SpaceStation(){
     delete spaceStation;

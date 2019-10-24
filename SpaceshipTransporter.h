@@ -5,9 +5,9 @@
 
 class SpaceshipTransporter : public Spaceship {
     public:
-        SpaceshipTransporter();
-        ~SpaceshipTransporter();
-        virtual void addComponent(Spaceship*);
+        SpaceshipTransporter() {};
+        ~SpaceshipTransporter() {};
+        virtual void addComponent(Spaceship*) {};
 };
 
 #endif

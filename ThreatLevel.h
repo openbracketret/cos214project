@@ -4,11 +4,11 @@
 class ThreatLevel {
 
     public:
-        ThreatLevel();
-        ~ThreatLevel();
-        virtual ThreatLevel* increaseThreatLevel();
-        virtual ThreatLevel* decreaseThreatLevel();
-        virtual void print();
+        ThreatLevel() {};
+        ~ThreatLevel() {};
+        virtual ThreatLevel* increaseThreatLevel() {};
+        virtual ThreatLevel* decreaseThreatLevel() {};
+        virtual void print() {};
 
 };
 

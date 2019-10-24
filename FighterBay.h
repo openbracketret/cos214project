@@ -10,8 +10,8 @@ using namespace std;
 class FighterBay : public SpaceshipDecorator {
 
     public:
-        FighterBay();
-        ~FighterBay();
+        FighterBay() {};
+        ~FighterBay() {};
 
         /** Method to add fighters into the fighter bay
          */

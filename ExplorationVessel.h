@@ -6,8 +6,9 @@
 class ExplorationVessel : public Spaceship {
 
     public:
-        ExplorationVessel();
-        virtual void addComponent(Spaceship*);
+        ExplorationVessel() {};
+        ~ExplorationVessel() {};
+        virtual void addComponent(Spaceship*) {};
 
 };
 

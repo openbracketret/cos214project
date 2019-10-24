@@ -5,8 +5,9 @@
 
 class FighterTransporter : public Spaceship {
     public:
-        FighterTransporter();
-        virtual void addComponent(Spaceship*);
+        FighterTransporter() {};
+        ~FighterTransporter() {};
+        virtual void addComponent(Spaceship*) {};
 };
 
 

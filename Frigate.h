@@ -6,8 +6,9 @@
 class Frigate : public Spaceship {
 
     public:
-        Frigate();
-        virtual void addComponent(Spaceship*);
+        Frigate() {};
+        ~Frigate() {};
+        virtual void addComponent(Spaceship*) {};
 };
 
 #endif

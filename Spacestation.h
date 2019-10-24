@@ -11,11 +11,12 @@ class SpaceStation : public Spaceship {
         static SpaceStation* instance();
         Spaceship* getSpaceStation();
         void updateSpaceStation(SpaceStation*);
-        void addComponent(Spaceship*);
+        void addComponent(Spaceship*) {};
 
         void increaseThreatLevel();
         void decreaseThreatLevel();
         void printThreatLevel();
+        
 
     protected:
         SpaceStation(const SpaceStation&);

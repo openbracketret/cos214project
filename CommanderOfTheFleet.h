@@ -7,17 +7,21 @@
 
 using namespace std;
 
-//TODO: Make this class a singleton
-
 class CommanderOfTheFleet : public People
 {
 private:
+	static CommanderOfTheFleet* commander;
+
+protected:
+	CommanderOfTheFleet();
+	virtual ~CommanderOfTheFleet();
+	CommanderOfTheFleet(const CommanderOfTheFleet&);
+	CommanderOfTheFleet& operator=(const CommanderOfTheFleet&);
 
 
 public:
 
-	CommanderOfTheFleet();
-	~CommanderOfTheFleet();
+	static CommanderOfTheFleet* instance();
 	
 };
 

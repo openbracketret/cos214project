@@ -17,7 +17,7 @@ public:
 	RefuelStation();
     ~RefuelStation();
     /**Refuel spaceships that have used all their resources
-        @param s spaceship to be refueled
+        *@param s spaceship to be refueled
     */
     void refuelSpaceship(Spaceship* s);
 };

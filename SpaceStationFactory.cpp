@@ -15,5 +15,5 @@ Spaceship* SpaceStationFactory::spaceStationFactoryMethod(){
 	s->addComponent(new SleepingQuarters());
 	s->addComponent(new Bridge());
     s->addComponent(new RefuelStation());
-	s->addComponent(new SpaceStation::instance())
+	s->addComponent(SpaceStation::instance());
 }

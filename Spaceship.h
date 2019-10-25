@@ -7,11 +7,16 @@
 #include "CaptainsLog.h"
 
 using namespace std;
-
+/** @brief Spaceship class
+ */
 class Spaceship {
 
     public:
+    /** default constructor
+     */
         Spaceship() {};
+    /** Paramaterised constructor
+     */
         Spaceship(string n) {name = n;};
         /** Pure virtual method for decorator to add components to the spaceship
          */
@@ -39,18 +44,39 @@ class Spaceship {
         void decreaseEnergy(int e){energy -= e;};
         int getFuel() {return fuel;};
         int getEnergy() {return energy;};
-
+        /** Add passenger to spaceship
+         * @param p - Person to be added
+         */
         virtual void addPassenger(People*);
+        /** Remove passenger from spaceship
+         * @param p - person to be removed
+         */
         virtual void removePassenger(People*);
+        /** Register passenger for messages
+         * @param p - person being added
+         * @return id for
+         */
         virtual int enterShip(People*);
+        /** Deregister for messages
+         * @param id - id of person
+         */
         virtual void exitShip(int);
+        /** Broadcast message to passenger
+         * @param message - message to be broadcast
+         */
         void broadcast(string);
+        /** Print the captains log
+         */
         void printCaptainsLog();
+        /** Add message to the log
+         * @param message - message to added to log
+         */
         void addLog(string);
         
 
 
     private:
+        double resources;/**<Number of resources on the ship*/
         int displacement;/**<displacement of spaceship*/
         int power;/**<power of spaceship */
         int thrust;/**<thrust*/

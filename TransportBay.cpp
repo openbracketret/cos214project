@@ -24,11 +24,11 @@ void TransportBay::addShip(Spaceship* s){
 }
 
 void TransportBay::removeShip(Spaceship* s){
-        vector<Spaceship*>::iterator it = find(ships.begin(), ships.end(), s);
-        if (it != ships.end()){
-            ships.erase(it);
-            currentCapacity--;
-        }
+    vector<Spaceship*>::iterator it = find(ships.begin(), ships.end(), s);
+    if (it != ships.end()){
+        ships.erase(it);
+        currentCapacity--;
+    }
 }
 
 Memento* TransportBay::createMemento(vector<Spaceship*> s){

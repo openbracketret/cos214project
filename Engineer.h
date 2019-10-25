@@ -14,9 +14,10 @@ private:
 
 public:
 
-	Engineer();
-	~Engineer();
-	
+	Engineer() : People() {};
+	~Engineer() {};
+	void recieveSpaceshipError(string);
+	void sendErrorMessage(string);	
 };
 
 #endif

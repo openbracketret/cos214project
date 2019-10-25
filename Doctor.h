@@ -14,8 +14,10 @@ private:
 
 public:
 
-	Doctor();
-	~Doctor();
+	Doctor() : People() {};
+	~Doctor() {};
+	void recieveSpaceshipError(string);
+	void sendErrorMessage(string);
 	
 };
 

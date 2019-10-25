@@ -41,6 +41,10 @@ class Spaceship {
 
         virtual void addPassenger(People*);
         virtual void removePassenger(People*);
+        virtual int enterShip(People*);
+        virtual void exitShip(int);
+        void broadcast(string);
+        
 
 
     private:
@@ -55,6 +59,7 @@ class Spaceship {
         int maxFuel; /**Max fuel level*/
         int energy; /**<Energy Level*/
         string name; /**<Spaceships name*/
+        int nextID; /**<ID to apply to passenger*/
 
         vector<People*> passengers; /**<Vector of passengers currently aboard the ship */
 

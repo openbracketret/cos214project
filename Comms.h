@@ -14,8 +14,10 @@ private:
 
 public:
 
-	Comms();
-	~Comms();
+	Comms() : People() {};
+	~Comms() {};
+	void recieveSpaceshipError(string);
+	void sendErrorMessage(string);
 	
 };
 

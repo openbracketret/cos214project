@@ -14,8 +14,10 @@ private:
 
 public:
 
-	Captain();
-	~Captain();
+	Captain() : People() {};
+	~Captain() {};
+	void recieveSpaceshipError(string);
+	void sendErrorMessage(string);
 	
 };
 

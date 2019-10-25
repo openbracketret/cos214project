@@ -22,6 +22,8 @@ protected:
 public:
 
 	static CommanderOfTheFleet* instance();
+	void recieveSpaceshipError(string);
+	void sendErrorMessage(string);
 	
 };
 

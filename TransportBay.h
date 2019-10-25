@@ -30,9 +30,11 @@ class TransportBay : public SpaceshipDecorator {
          * @param spaceship Spaceship to be removed from the transport bay
          */
         void removeShip(Spaceship*);
-
+        Memento* createMemento(vector<Spaceship*> s);
+        void reinstateMemento(Memento* mem);
 
     private:
+        friend class Memento;
         vector<Spaceship*> ships;/**<Vector of spaceships that the transport bay is currently holding*/
         int maxCapacity;/**<Max capacity that the transport bay can hold*/
         int currentCapacity;/**<Current amount of ships aboard the transport bay*/

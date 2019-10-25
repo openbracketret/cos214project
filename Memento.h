@@ -10,8 +10,9 @@ class Memento {
     public:
         virtual ~Memento();
     private:
-        Memento()
-        vector<State*> _states;
+        friend class TransportBay;
+        Memento(vector<Spaceship*> s);
+        State* _state;
 };
 
 #endif

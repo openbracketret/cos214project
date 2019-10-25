@@ -2,18 +2,17 @@
 #define STATE_H
 #include "Memento.h"
 #include "SpaceshipTransporter.h"
+#include <vector>
 
 using namespace std;
 
 class State {
     public:
-        State();
+        State(vector<Spaceship*> s);
+        vector<Spaceship*> getSpaceships(){return ships;};
+        ~State();
     private:
-       vector<People*> passengers;
-       int currentCapacity;
-       int fuel;
-       int energy;
-       int resources; 
+       vector<Spaceship*> ships;
 };
 
 #endif

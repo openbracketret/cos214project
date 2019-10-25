@@ -30,3 +30,16 @@ void TransportBay::removeShip(Spaceship* s){
             currentCapacity--;
         }
 }
+
+Memento* TransportBay::createMemento(vector<Spaceship*> s){
+    return new Memento(s);
+}
+
+void TransportBay::reinstateMemento(Memento* mem){
+    State* state = mem->_state;
+    vector<Spaceship*> s = state->getSpaceships();
+
+    for (int i=0;i<s.size();i++){
+        ships[i] = s[i];
+    }
+}

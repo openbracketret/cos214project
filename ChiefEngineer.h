@@ -13,8 +13,10 @@ class ChiefEngineer : public People
 
 public:
 
-	ChiefEngineer();
-	~ChiefEngineer();
+	ChiefEngineer() : People() {};
+	~ChiefEngineer() {};
+	void recieveSpaceshipError(string);
+	void sendErrorMessage(string);
 	
 };
 

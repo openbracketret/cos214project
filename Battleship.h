@@ -6,9 +6,10 @@
 class Battleship : public Spaceship{
 
     public:
-        Battleship();
+        Battleship() : Spaceship() {};
+        ~Battleship() {};
 
-        virtual void addComponent(Spaceship*);
+        virtual void addComponent(Spaceship*) {};
 };
 
 #endif

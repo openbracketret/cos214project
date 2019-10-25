@@ -11,6 +11,7 @@
 #include "SleepingQuarters.h"
 #include "TransportBay.h"
 #include "FighterBay.h"
+#include "RefuelStation.h"
 
 using namespace std;
 
@@ -26,7 +27,7 @@ public:
 	~SpaceshipFactory();
 	/**Virtual method for creation of spaceships
 	 */
-	virtual Spaceship* spaceShipFactoryMethod(); 
+	virtual Spaceship* spaceShipFactoryMethod() {}; 
 	
 };
 

@@ -4,13 +4,14 @@
 #include <string>
 #include <vector>
 #include "People.h"
+#include "CaptainsLog.h"
 
 using namespace std;
 
 class Spaceship {
 
     public:
-        Spaceship();
+        Spaceship() {};
         Spaceship(string n) {name = n;};
         /** Pure virtual method for decorator to add components to the spaceship
          */
@@ -30,6 +31,8 @@ class Spaceship {
         void setCurrentCapacity(int p) {currentCapacity = p;};
         int getPassengerCapacity() {return passengerCapacity;};
         void setPassengerCapacity(int p) {passengerCapacity = p;};
+        int getMaxFuel(){return maxFuel;};
+        void setMaxFuel(int i){maxFuel=i;};
         void addFuel(int a) {fuel += a;};
         void addEnergy(int e){energy += e;};
         void decreaseFuel(int a){fuel -= a;};
@@ -39,6 +42,12 @@ class Spaceship {
 
         virtual void addPassenger(People*);
         virtual void removePassenger(People*);
+        virtual int enterShip(People*);
+        virtual void exitShip(int);
+        void broadcast(string);
+        void printCaptainsLog();
+        void addLog(string);
+        
 
 
     private:
@@ -50,10 +59,14 @@ class Spaceship {
         int currentCapacity; /**<Current amount of crew members*/
         int passengerCapacity; /**<Maximum passengers*/
         int fuel; /**<Fuel level*/
+        int maxFuel; /**Max fuel level*/
         int energy; /**<Energy Level*/
         string name; /**<Spaceships name*/
+        int nextID; /**<ID to apply to passenger*/
 
         vector<People*> passengers; /**<Vector of passengers currently aboard the ship */
+        CaptainsLog* log; /**<Captains log of the ship*/
+
 
 };
 

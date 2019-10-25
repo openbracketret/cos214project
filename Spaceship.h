@@ -48,6 +48,7 @@ class Spaceship {
 
 
     private:
+        int resources;/**<Number of resources on the ship*/
         int displacement;/**<displacement of spaceship*/
         int power;/**<power of spaceship */
         int thrust;/**<thrust*/

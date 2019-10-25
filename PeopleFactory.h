@@ -9,7 +9,6 @@ using namespace std;
  */
 class PeopleFactory
 {
-private:
 
 
 public:
@@ -19,6 +18,14 @@ public:
 /** Default desctructor
  */
 	~PeopleFactory();
+	Doctor* createDoctor();
+	Fighter* createFighter();
+	Navigator* createNavigator();
+	CommanderOfTheFleet* creatCommanderOfTheFleet();
+	ChiefEngineer* createChiefEngineer();
+	Comms* createComms();
+	Captain* createCaptain();
+	
 	
 };
 

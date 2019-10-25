@@ -1,3 +1,6 @@
+/**
+ * @file FighterFactory
+*/
 #ifndef FighterFactory_H
 #define FighterFactory_H
 

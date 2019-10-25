@@ -34,6 +34,9 @@
 #include "SpaceStationFactory.h"
 #include "ThreatLevel.h"
 #include "TransportBay.h"
+#include "State.h"
+#include "CaptainsLog.h"
+#include "Memento.h"
 
 int main () {
     return 0;

@@ -3,7 +3,6 @@
 #include "Fighter.h"
 #include "SpaceshipTransporter.h"
 #include "State.h"
-
 using namespace std;
 
 class Memento {

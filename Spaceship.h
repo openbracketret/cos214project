@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include "People.h"
+#include "CaptainsLog.h"
 
 using namespace std;
 
@@ -44,6 +45,8 @@ class Spaceship {
         virtual int enterShip(People*);
         virtual void exitShip(int);
         void broadcast(string);
+        void printCaptainsLog();
+        void addLog(string);
         
 
 
@@ -62,6 +65,8 @@ class Spaceship {
         int nextID; /**<ID to apply to passenger*/
 
         vector<People*> passengers; /**<Vector of passengers currently aboard the ship */
+        CaptainsLog* log; /**<Captains log of the ship*/
+
 
 };
 

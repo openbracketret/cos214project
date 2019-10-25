@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include "Doctor.h"
 
 using namespace std;
 /** @brief People Factory class
@@ -18,13 +19,7 @@ public:
 /** Default desctructor
  */
 	~PeopleFactory();
-	Doctor* createDoctor();
-	Fighter* createFighter();
-	Navigator* createNavigator();
-	CommanderOfTheFleet* creatCommanderOfTheFleet();
-	ChiefEngineer* createChiefEngineer();
-	Comms* createComms();
-	Captain* createCaptain();
+	virtual People* create()=0;
 	
 	
 };

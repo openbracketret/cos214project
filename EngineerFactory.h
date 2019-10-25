@@ -20,6 +20,11 @@ public:
 /** Default desctructor
  */
 	~EngineerFactory();
+
+/**
+ * virtual Engineer
+*/
+virtual People* createPeople()=0;
 	
 };
 

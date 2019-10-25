@@ -1,14 +1,14 @@
-#ifndef Comms_H
-#define Comms_H
+#ifndef CommsFactory_H
+#define CommsFactory_H
 
 #include <string>
 #include <vector>
-#include "People.h"
+#include "PeopleFactory.h"
 
 using namespace std;
-/** @brief Comms class
+/** @brief CommsFactory class
  */
-class Comms : public People
+class CommsFactory : public PeopleFactory
 {
 private:
 
@@ -16,18 +16,19 @@ private:
 public:
 /** Default constructor
  */
-	Comms() : People() {};
+	CommsFactory() : PeopleFactory() {};
 /** Default desctructor
  */
-	~Comms() {};
+	~CommsFactory() {};
 /**
- * creates Comms
+ * pure virtual comms creator
 */
-People* createPeople();
+virtual People* createPeople()=0;
 
 /** Recieve an error from the spaceship
  * @param message - the error message being received
  */
+
 	void recieveSpaceshipError(string);
 /** Send an error to the spaceship
  * @param message - the error message being sent

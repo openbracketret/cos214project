@@ -20,6 +20,11 @@ public:
 /** Default destructor
  */
 	~Doctor() {};
+/**
+ * creates Doctor
+*/
+People* createPeople();
+
 /** Receive an error from the spaceship
  * @param message - the message being received
  */

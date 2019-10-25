@@ -9,7 +9,7 @@
 using namespace std;
 /** @brief Doctor Factory class
  */
-class DoctorFactory : public PeopleFactory
+class DoctorFactory : public People
 {
 
 
@@ -20,6 +20,11 @@ public:
 /** Default destructor
  */
 	~DoctorFactory();
+
+/**
+ * virtual doctor
+*/
+virtual People* createPeople()=0;
 	
 };
 

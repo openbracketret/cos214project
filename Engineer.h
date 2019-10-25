@@ -19,6 +19,12 @@ public:
 	Engineer() : People() {};
 /** Default desctructor
  */
+
+/**
+ * creates Engineer
+*/
+People* createPeople();
+
 	~Engineer() {};
 /** Recieve an error from the spaceship
  * @param message - the message being recieved

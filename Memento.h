@@ -2,6 +2,7 @@
 #define MEMENTO_H
 #include "Fighter.h"
 #include "SpaceshipTransporter.h"
+#include "State.h"
 
 using namespace std;
 
@@ -9,9 +10,8 @@ class Memento {
     public:
         virtual ~Memento();
     private:
-        friend class Fighter;
-        Memento();
-        State* _state;
+        Memento()
+        vector<State*> _states;
 };
 
 #endif

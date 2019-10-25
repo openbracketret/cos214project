@@ -2,6 +2,7 @@
 #define TRANSPORTBAY_H
 
 #include "SpaceshipDecorator.h"
+#include "Memento.h"
 #include <vector>
 
 using namespace std;

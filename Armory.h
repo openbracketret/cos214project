@@ -3,9 +3,15 @@
 
 #include "SpaceshipDecorator.h"
 
+/** @brief Armory class
+ */
 class Armory : public SpaceshipDecorator {
     public:
+    /** Default constructor
+     */
         Armory();
+    /** Default destructor
+     */
         ~Armory();
 };
 

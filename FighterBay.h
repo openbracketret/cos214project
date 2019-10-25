@@ -6,17 +6,24 @@
 #include <vector>
 
 using namespace std;
-
+/** @brief Fighterbay class
+ */
 class FighterBay : public SpaceshipDecorator {
 
     public:
+    /** Default constructor
+     */
         FighterBay() {};
+    /** Default desctructor
+     */
         ~FighterBay() {};
 
         /** Method to add fighters into the fighter bay
+         * @param f - Fighter being added
          */
         void addFighter(Fighter*);
         /** Method to remove a specific fighter from the fighter bay
+         * @param f - Fighter being removed
          */
         void removeFighter(Fighter*);
 

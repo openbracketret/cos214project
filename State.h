@@ -1,6 +1,5 @@
 #ifndef STATE_H
 #define STATE_H
-#include "Memento.h"
 #include "SpaceshipTransporter.h"
 #include <vector>
 

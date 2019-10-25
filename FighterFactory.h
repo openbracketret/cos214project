@@ -1,0 +1,28 @@
+/**
+ * @file FighterFactory
+*/
+#ifndef FighterFactory_H
+#define FighterFactory_H
+
+#include <string>
+#include <vector>
+#include "PeopleFactory.h"
+
+using namespace std;
+/** @brief Fighter Factory class
+ */
+class FighterFactory : public PeopleFactory
+{
+
+
+public:
+/** Default constructor
+ */
+	FighterFactory();
+/** Default desctructor
+ */
+	~FighterFactory();
+	
+};
+
+#endif

@@ -7,15 +7,31 @@
 using namespace std;
 
 class Spaceship;
+/** @brief People class
+ */
 class People
 {
 	public:
-
+/** Default constructor
+ */
 		People() {};
+	/** Virtual default desctructor
+	 */
 		virtual ~People() {};
+	/** Pure virtual recieve error method
+	 * @param message - message being recieved
+	 */
 		virtual void recieveSpaceshipError(string) = 0;
+	/** Pure virtual send error message
+	 * @param message - message being sent
+	 */
 		virtual void sendErrorMessage(string) = 0;
+	/** Board ship. Register with spaceship
+	 * @param spaceship - spaceship being registered
+	 */
 		void boardShip(Spaceship*);
+	/** Leave ship. Deregister with spaceship
+	 */
 		void leaveShip();
 
 	protected:

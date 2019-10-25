@@ -9,7 +9,6 @@ using namespace std;
 
 class BattleshipFactory : public SpaceshipFactory
 {
-private:
 
 
 public:

@@ -9,7 +9,6 @@ using namespace std;
 
 class ChiefEngineer : public People
 {
-private:
 
 
 public:

@@ -15,8 +15,10 @@ private:
 
 public:
 
-	Fighter();
-	~Fighter();
+	Fighter() : People() {};
+	~Fighter() {};
+	void recieveSpaceshipError(string);
+	void sendErrorMessage(string);
 	
 	
 };

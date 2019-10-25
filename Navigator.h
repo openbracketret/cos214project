@@ -14,8 +14,10 @@ private:
 
 public:
 
-	Navigator();
-	~Navigator();
+	Navigator() : People() {};
+	~Navigator() {};
+	void recieveSpaceshipError(string);
+	void sendErrorMessage(string);
 	
 };
 

@@ -4,14 +4,22 @@
 #include <vector>
 
 using namespace std;
-
+/** @brief State class
+ */
 class State {
     public:
+    /** Paramaterised constructor
+     */
         State(vector<Spaceship*> s);
+    /** Get Spaceships from state
+     * @return vector<Spaceship*>
+     */
         vector<Spaceship*> getSpaceships(){return ships;};
+    /** Default desctructor
+     */
         ~State();
     private:
-       vector<Spaceship*> ships;
+       vector<Spaceship*> ships;/**<ships saved*/
 };
 
 #endif

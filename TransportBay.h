@@ -6,7 +6,8 @@
 #include <vector>
 
 using namespace std;
-
+/** @brief Transport bay class
+ */
 class TransportBay : public SpaceshipDecorator {
     public:
         /**
@@ -17,6 +18,8 @@ class TransportBay : public SpaceshipDecorator {
          * @param maxCapacity 
          */
         TransportBay(int);
+        /** default destructor
+         */
         ~TransportBay();
         int getCurrentCapacity();
         int setCurrentCapacity(int i){currentCapacity = i;};
@@ -30,7 +33,14 @@ class TransportBay : public SpaceshipDecorator {
          * @param spaceship Spaceship to be removed from the transport bay
          */
         void removeShip(Spaceship*);
+        /** Create memento
+         * @param s - vector of spaceships to save
+         * @return Memento*
+         */
         Memento* createMemento(vector<Spaceship*> s);
+        /** Reinstate memento
+         * @param mem - Memento to be recalled
+         */
         void reinstateMemento(Memento* mem);
 
     private:

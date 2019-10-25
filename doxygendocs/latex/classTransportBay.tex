@@ -1,0 +1,140 @@
+\hypertarget{classTransportBay}{}\section{Transport\+Bay Class Reference}
+\label{classTransportBay}\index{Transport\+Bay@{Transport\+Bay}}
+
+
+Transport bay class.  
+
+
+
+
+{\ttfamily \#include $<$Transport\+Bay.\+h$>$}
+
+
+
+Inheritance diagram for Transport\+Bay\+:
+% FIG 0
+
+
+Collaboration diagram for Transport\+Bay\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTransportBay_a878d1695b58a12ccd698a85f9e01ffb6}{Transport\+Bay} ()
+\item 
+\hyperlink{classTransportBay_a731f9665c1fb62d3c533f1323a8742de}{Transport\+Bay} (int)
+\item 
+\hyperlink{classTransportBay_a14dad2eb1e9cb83bb85de4574c2bcbb2}{$\sim$\+Transport\+Bay} ()
+\item 
+\mbox{\Hypertarget{classTransportBay_a3e28498ac79aaf21921c1d03917ef390}\label{classTransportBay_a3e28498ac79aaf21921c1d03917ef390}} 
+int {\bfseries get\+Current\+Capacity} ()
+\item 
+\mbox{\Hypertarget{classTransportBay_adc883bc6b55736576e3a400ba8de4b8b}\label{classTransportBay_adc883bc6b55736576e3a400ba8de4b8b}} 
+int {\bfseries set\+Current\+Capacity} (int i)
+\item 
+\mbox{\Hypertarget{classTransportBay_a4d19bec72afdf29f7bb693610e62759c}\label{classTransportBay_a4d19bec72afdf29f7bb693610e62759c}} 
+int {\bfseries get\+Max\+Capacity} ()
+\item 
+\mbox{\Hypertarget{classTransportBay_a504e2ae52391c29e633e79fc5a46de22}\label{classTransportBay_a504e2ae52391c29e633e79fc5a46de22}} 
+int {\bfseries set\+Max\+Capacity} (int i)
+\item 
+void \hyperlink{classTransportBay_acd6b5b09e81bd28c6dcbe23d561fd99c}{add\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
+\item 
+void \hyperlink{classTransportBay_a053ab5bbf5b6cafe1f5b3782176bd214}{remove\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
+\item 
+\hyperlink{classMemento}{Memento} $\ast$ \hyperlink{classTransportBay_aff9390fd8b7434bfa03b408028caf920}{create\+Memento} (vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$ s)
+\item 
+void \hyperlink{classTransportBay_a501256401b6845a16ced9ea65c294f70}{reinstate\+Memento} (\hyperlink{classMemento}{Memento} $\ast$mem)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTransportBay_a15ea7cda491e1c5873aeba1aad9d457a}\label{classTransportBay_a15ea7cda491e1c5873aeba1aad9d457a}} 
+class {\bfseries Memento}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Transport bay class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTransportBay_a878d1695b58a12ccd698a85f9e01ffb6}\label{classTransportBay_a878d1695b58a12ccd698a85f9e01ffb6}} 
+\index{Transport\+Bay@{Transport\+Bay}!Transport\+Bay@{Transport\+Bay}}
+\index{Transport\+Bay@{Transport\+Bay}!Transport\+Bay@{Transport\+Bay}}
+\subsubsection{\texorpdfstring{Transport\+Bay()}{TransportBay()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Transport\+Bay\+::\+Transport\+Bay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor for the transport bay \mbox{\Hypertarget{classTransportBay_a731f9665c1fb62d3c533f1323a8742de}\label{classTransportBay_a731f9665c1fb62d3c533f1323a8742de}} 
+\index{Transport\+Bay@{Transport\+Bay}!Transport\+Bay@{Transport\+Bay}}
+\index{Transport\+Bay@{Transport\+Bay}!Transport\+Bay@{Transport\+Bay}}
+\subsubsection{\texorpdfstring{Transport\+Bay()}{TransportBay()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Transport\+Bay\+::\+Transport\+Bay (\begin{DoxyParamCaption}\item[{int}]{max\+Capacity }\end{DoxyParamCaption})}
+
+Parameterised constructor to set transport bay max capacity 
+\begin{DoxyParams}{Parameters}
+{\em max\+Capacity} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTransportBay_a14dad2eb1e9cb83bb85de4574c2bcbb2}\label{classTransportBay_a14dad2eb1e9cb83bb85de4574c2bcbb2}} 
+\index{Transport\+Bay@{Transport\+Bay}!````~Transport\+Bay@{$\sim$\+Transport\+Bay}}
+\index{````~Transport\+Bay@{$\sim$\+Transport\+Bay}!Transport\+Bay@{Transport\+Bay}}
+\subsubsection{\texorpdfstring{$\sim$\+Transport\+Bay()}{~TransportBay()}}
+{\footnotesize\ttfamily Transport\+Bay\+::$\sim$\+Transport\+Bay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTransportBay_acd6b5b09e81bd28c6dcbe23d561fd99c}\label{classTransportBay_acd6b5b09e81bd28c6dcbe23d561fd99c}} 
+\index{Transport\+Bay@{Transport\+Bay}!add\+Ship@{add\+Ship}}
+\index{add\+Ship@{add\+Ship}!Transport\+Bay@{Transport\+Bay}}
+\subsubsection{\texorpdfstring{add\+Ship()}{addShip()}}
+{\footnotesize\ttfamily void Transport\+Bay\+::add\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{s }\end{DoxyParamCaption})}
+
+Method to add spaceships into the transport bay 
+\begin{DoxyParams}{Parameters}
+{\em spaceship} & \hyperlink{classSpaceship}{Spaceship} to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTransportBay_aff9390fd8b7434bfa03b408028caf920}\label{classTransportBay_aff9390fd8b7434bfa03b408028caf920}} 
+\index{Transport\+Bay@{Transport\+Bay}!create\+Memento@{create\+Memento}}
+\index{create\+Memento@{create\+Memento}!Transport\+Bay@{Transport\+Bay}}
+\subsubsection{\texorpdfstring{create\+Memento()}{createMemento()}}
+{\footnotesize\ttfamily \hyperlink{classMemento}{Memento} $\ast$ Transport\+Bay\+::create\+Memento (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$}]{s }\end{DoxyParamCaption})}
+
+Create memento 
+\begin{DoxyParams}{Parameters}
+{\em s} & -\/ vector of spaceships to save \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Memento$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTransportBay_a501256401b6845a16ced9ea65c294f70}\label{classTransportBay_a501256401b6845a16ced9ea65c294f70}} 
+\index{Transport\+Bay@{Transport\+Bay}!reinstate\+Memento@{reinstate\+Memento}}
+\index{reinstate\+Memento@{reinstate\+Memento}!Transport\+Bay@{Transport\+Bay}}
+\subsubsection{\texorpdfstring{reinstate\+Memento()}{reinstateMemento()}}
+{\footnotesize\ttfamily void Transport\+Bay\+::reinstate\+Memento (\begin{DoxyParamCaption}\item[{\hyperlink{classMemento}{Memento} $\ast$}]{mem }\end{DoxyParamCaption})}
+
+Reinstate memento 
+\begin{DoxyParams}{Parameters}
+{\em mem} & -\/ \hyperlink{classMemento}{Memento} to be recalled \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTransportBay_a053ab5bbf5b6cafe1f5b3782176bd214}\label{classTransportBay_a053ab5bbf5b6cafe1f5b3782176bd214}} 
+\index{Transport\+Bay@{Transport\+Bay}!remove\+Ship@{remove\+Ship}}
+\index{remove\+Ship@{remove\+Ship}!Transport\+Bay@{Transport\+Bay}}
+\subsubsection{\texorpdfstring{remove\+Ship()}{removeShip()}}
+{\footnotesize\ttfamily void Transport\+Bay\+::remove\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{s }\end{DoxyParamCaption})}
+
+Method to remove a specific spaceship from the transport bay 
+\begin{DoxyParams}{Parameters}
+{\em spaceship} & \hyperlink{classSpaceship}{Spaceship} to be removed from the transport bay \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Transport\+Bay.\+h\item 
+Transport\+Bay.\+cpp\end{DoxyCompactItemize}

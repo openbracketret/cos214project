@@ -1,0 +1,130 @@
+\hypertarget{classPeople}{}\section{People Class Reference}
+\label{classPeople}\index{People@{People}}
+
+
+\hyperlink{classPeople}{People} class.  
+
+
+
+
+{\ttfamily \#include $<$People.\+h$>$}
+
+
+
+Inheritance diagram for People\+:
+% FIG 0
+
+
+Collaboration diagram for People\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPeople_aae1408eddfd15a5007003ecdf1507941}{People} ()
+\item 
+virtual \hyperlink{classPeople_a26b0c041fafa38a1f84e0d51742e886a}{$\sim$\+People} ()
+\item 
+virtual void \hyperlink{classPeople_a0685df78be631783138865e03cc7c85d}{recieve\+Spaceship\+Error} (string)=0
+\item 
+virtual void \hyperlink{classPeople_a572a35170f61d1848eb04b65baafb057}{send\+Error\+Message} (string)=0
+\item 
+void \hyperlink{classPeople_a66c99da939fe89614360953a3619a271}{board\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
+\item 
+void \hyperlink{classPeople_a5e87ed1cfd4d4d90b95e3b2196c7687e}{leave\+Ship} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classPeople_ab8216a756c93da727d2626dfb063f82a}{id}
+\item 
+\hyperlink{classSpaceship}{Spaceship} $\ast$ \hyperlink{classPeople_a103de9b80f0b47e01dc24ac48ec301b2}{onboard}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classPeople}{People} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPeople_aae1408eddfd15a5007003ecdf1507941}\label{classPeople_aae1408eddfd15a5007003ecdf1507941}} 
+\index{People@{People}!People@{People}}
+\index{People@{People}!People@{People}}
+\subsubsection{\texorpdfstring{People()}{People()}}
+{\footnotesize\ttfamily People\+::\+People (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default constructor \mbox{\Hypertarget{classPeople_a26b0c041fafa38a1f84e0d51742e886a}\label{classPeople_a26b0c041fafa38a1f84e0d51742e886a}} 
+\index{People@{People}!````~People@{$\sim$\+People}}
+\index{````~People@{$\sim$\+People}!People@{People}}
+\subsubsection{\texorpdfstring{$\sim$\+People()}{~People()}}
+{\footnotesize\ttfamily virtual People\+::$\sim$\+People (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual default desctructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPeople_a66c99da939fe89614360953a3619a271}\label{classPeople_a66c99da939fe89614360953a3619a271}} 
+\index{People@{People}!board\+Ship@{board\+Ship}}
+\index{board\+Ship@{board\+Ship}!People@{People}}
+\subsubsection{\texorpdfstring{board\+Ship()}{boardShip()}}
+{\footnotesize\ttfamily void People\+::board\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{s }\end{DoxyParamCaption})}
+
+Board ship. Register with spaceship 
+\begin{DoxyParams}{Parameters}
+{\em spaceship} & -\/ spaceship being registered \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPeople_a5e87ed1cfd4d4d90b95e3b2196c7687e}\label{classPeople_a5e87ed1cfd4d4d90b95e3b2196c7687e}} 
+\index{People@{People}!leave\+Ship@{leave\+Ship}}
+\index{leave\+Ship@{leave\+Ship}!People@{People}}
+\subsubsection{\texorpdfstring{leave\+Ship()}{leaveShip()}}
+{\footnotesize\ttfamily void People\+::leave\+Ship (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Leave ship. Deregister with spaceship \mbox{\Hypertarget{classPeople_a0685df78be631783138865e03cc7c85d}\label{classPeople_a0685df78be631783138865e03cc7c85d}} 
+\index{People@{People}!recieve\+Spaceship\+Error@{recieve\+Spaceship\+Error}}
+\index{recieve\+Spaceship\+Error@{recieve\+Spaceship\+Error}!People@{People}}
+\subsubsection{\texorpdfstring{recieve\+Spaceship\+Error()}{recieveSpaceshipError()}}
+{\footnotesize\ttfamily virtual void People\+::recieve\+Spaceship\+Error (\begin{DoxyParamCaption}\item[{string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Pure virtual recieve error method 
+\begin{DoxyParams}{Parameters}
+{\em message} & -\/ message being recieved \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classCommanderOfTheFleet_a13e91b9342df067b375f7ef2b929c0d5}{Commander\+Of\+The\+Fleet}, \hyperlink{classFighter_aecd2761c68aed8499e210fd0ca11c447}{Fighter}, \hyperlink{classCaptain_a39ebd40ec094b410f295188bb6262009}{Captain}, \hyperlink{classComms_a1aed1c01a813afd55309fdc59d2871bf}{Comms}, \hyperlink{classDoctor_a820dca3b9f05d3f69c47bd7318923b88}{Doctor}, \hyperlink{classEngineer_acc86ce6b4b1388be8ebacc685f9e6233}{Engineer}, \hyperlink{classNavigator_a7dc06965001f658cff3c5f0dcac39def}{Navigator}, and \hyperlink{classChiefEngineer_a7170ae93d7eadc1a68bc86c25a9be0db}{Chief\+Engineer}.
+
+\mbox{\Hypertarget{classPeople_a572a35170f61d1848eb04b65baafb057}\label{classPeople_a572a35170f61d1848eb04b65baafb057}} 
+\index{People@{People}!send\+Error\+Message@{send\+Error\+Message}}
+\index{send\+Error\+Message@{send\+Error\+Message}!People@{People}}
+\subsubsection{\texorpdfstring{send\+Error\+Message()}{sendErrorMessage()}}
+{\footnotesize\ttfamily virtual void People\+::send\+Error\+Message (\begin{DoxyParamCaption}\item[{string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Pure virtual send error message 
+\begin{DoxyParams}{Parameters}
+{\em message} & -\/ message being sent \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classCommanderOfTheFleet_a39cfd5c0016355543515e919791d7984}{Commander\+Of\+The\+Fleet}, \hyperlink{classFighter_a42b60e52427e5c69daf141351655805c}{Fighter}, \hyperlink{classCaptain_a88abc1940bcdef8a655efc20ebd68d50}{Captain}, \hyperlink{classComms_a23c37f6d10f06c7cfe25c4dc7d62fa12}{Comms}, \hyperlink{classDoctor_a5a524981ce52102f975cf9c569137ce5}{Doctor}, \hyperlink{classEngineer_ae60806f33b7f226891dbb7ad9b8a0c0b}{Engineer}, \hyperlink{classNavigator_a72ce12655f579879aae63b118c906b91}{Navigator}, and \hyperlink{classChiefEngineer_afe5a4677f7651fff2926c0583875a666}{Chief\+Engineer}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classPeople_ab8216a756c93da727d2626dfb063f82a}\label{classPeople_ab8216a756c93da727d2626dfb063f82a}} 
+\index{People@{People}!id@{id}}
+\index{id@{id}!People@{People}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int People\+::id\hspace{0.3cm}{\ttfamily [protected]}}
+
+ID variable used for uniquely identifying which person is being registered with the Mediator(\+Spaceship) \mbox{\Hypertarget{classPeople_a103de9b80f0b47e01dc24ac48ec301b2}\label{classPeople_a103de9b80f0b47e01dc24ac48ec301b2}} 
+\index{People@{People}!onboard@{onboard}}
+\index{onboard@{onboard}!People@{People}}
+\subsubsection{\texorpdfstring{onboard}{onboard}}
+{\footnotesize\ttfamily \hyperlink{classSpaceship}{Spaceship}$\ast$ People\+::onboard\hspace{0.3cm}{\ttfamily [protected]}}
+
+Which spaceship this person is onboard 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+People.\+h\item 
+People.\+cpp\end{DoxyCompactItemize}

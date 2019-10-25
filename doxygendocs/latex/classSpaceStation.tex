@@ -1,0 +1,151 @@
+\hypertarget{classSpaceStation}{}\section{Space\+Station Class Reference}
+\label{classSpaceStation}\index{Space\+Station@{Space\+Station}}
+
+
+Spacestation class. A singleton.  
+
+
+
+
+{\ttfamily \#include $<$Spacestation.\+h$>$}
+
+
+
+Inheritance diagram for Space\+Station\+:
+% FIG 0
+
+
+Collaboration diagram for Space\+Station\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpaceship}{Spaceship} $\ast$ \hyperlink{classSpaceStation_acffc1d332b904f06b55288819e69f3c8}{get\+Space\+Station} ()
+\item 
+void \hyperlink{classSpaceStation_acebba61d05be13cd336785ba5ee0ece5}{update\+Space\+Station} (\hyperlink{classSpaceStation}{Space\+Station} $\ast$)
+\item 
+void \hyperlink{classSpaceStation_af78aa518f63655701ff763461522ac7d}{add\+Component} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
+\item 
+void \hyperlink{classSpaceStation_aa9390e8af0d69fc176c190f8f6891736}{increase\+Threat\+Level} ()
+\item 
+void \hyperlink{classSpaceStation_a0cb67593dc02495793635adb66f595e9}{decrease\+Threat\+Level} ()
+\item 
+void \hyperlink{classSpaceStation_a430ee680ac20af8245640e9271095688}{print\+Threat\+Level} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classSpaceStation}{Space\+Station} $\ast$ \hyperlink{classSpaceStation_aaf446a294ee415c89b91f7755ae50519}{instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpaceStation_a59648a8a9b9e5dd1f732dbe8de071dff}{Space\+Station} (const \hyperlink{classSpaceStation}{Space\+Station} \&)
+\item 
+\hyperlink{classSpaceStation_ab8582f38baf13f990b87cf42d7c2293c}{Space\+Station} ()
+\item 
+virtual \hyperlink{classSpaceStation_ab14cf2bd79032be8342f6475911bd64b}{$\sim$\+Space\+Station} ()
+\item 
+\hyperlink{classSpaceStation}{Space\+Station} \& \hyperlink{classSpaceStation_a1164b774315ebf10ff148ca0a658da5d}{operator=} (const \hyperlink{classSpaceStation}{Space\+Station} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Spacestation class. A singleton. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSpaceStation_a59648a8a9b9e5dd1f732dbe8de071dff}\label{classSpaceStation_a59648a8a9b9e5dd1f732dbe8de071dff}} 
+\index{Space\+Station@{Space\+Station}!Space\+Station@{Space\+Station}}
+\index{Space\+Station@{Space\+Station}!Space\+Station@{Space\+Station}}
+\subsubsection{\texorpdfstring{Space\+Station()}{SpaceStation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Space\+Station\+::\+Space\+Station (\begin{DoxyParamCaption}\item[{const \hyperlink{classSpaceStation}{Space\+Station} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Paramaterised constructor \mbox{\Hypertarget{classSpaceStation_ab8582f38baf13f990b87cf42d7c2293c}\label{classSpaceStation_ab8582f38baf13f990b87cf42d7c2293c}} 
+\index{Space\+Station@{Space\+Station}!Space\+Station@{Space\+Station}}
+\index{Space\+Station@{Space\+Station}!Space\+Station@{Space\+Station}}
+\subsubsection{\texorpdfstring{Space\+Station()}{SpaceStation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Space\+Station\+::\+Space\+Station (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Default constructor \mbox{\Hypertarget{classSpaceStation_ab14cf2bd79032be8342f6475911bd64b}\label{classSpaceStation_ab14cf2bd79032be8342f6475911bd64b}} 
+\index{Space\+Station@{Space\+Station}!````~Space\+Station@{$\sim$\+Space\+Station}}
+\index{````~Space\+Station@{$\sim$\+Space\+Station}!Space\+Station@{Space\+Station}}
+\subsubsection{\texorpdfstring{$\sim$\+Space\+Station()}{~SpaceStation()}}
+{\footnotesize\ttfamily Space\+Station\+::$\sim$\+Space\+Station (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Virtual default desctructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSpaceStation_af78aa518f63655701ff763461522ac7d}\label{classSpaceStation_af78aa518f63655701ff763461522ac7d}} 
+\index{Space\+Station@{Space\+Station}!add\+Component@{add\+Component}}
+\index{add\+Component@{add\+Component}!Space\+Station@{Space\+Station}}
+\subsubsection{\texorpdfstring{add\+Component()}{addComponent()}}
+{\footnotesize\ttfamily void Space\+Station\+::add\+Component (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Add component to spaceship 
+\begin{DoxyParams}{Parameters}
+{\em s} & -\/ component to be added \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classSpaceship_ac1b4673a691cd100708ddea08cd9f192}{Spaceship}.
+
+\mbox{\Hypertarget{classSpaceStation_a0cb67593dc02495793635adb66f595e9}\label{classSpaceStation_a0cb67593dc02495793635adb66f595e9}} 
+\index{Space\+Station@{Space\+Station}!decrease\+Threat\+Level@{decrease\+Threat\+Level}}
+\index{decrease\+Threat\+Level@{decrease\+Threat\+Level}!Space\+Station@{Space\+Station}}
+\subsubsection{\texorpdfstring{decrease\+Threat\+Level()}{decreaseThreatLevel()}}
+{\footnotesize\ttfamily void Space\+Station\+::decrease\+Threat\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Decrease threat level of spacespation \mbox{\Hypertarget{classSpaceStation_acffc1d332b904f06b55288819e69f3c8}\label{classSpaceStation_acffc1d332b904f06b55288819e69f3c8}} 
+\index{Space\+Station@{Space\+Station}!get\+Space\+Station@{get\+Space\+Station}}
+\index{get\+Space\+Station@{get\+Space\+Station}!Space\+Station@{Space\+Station}}
+\subsubsection{\texorpdfstring{get\+Space\+Station()}{getSpaceStation()}}
+{\footnotesize\ttfamily \hyperlink{classSpaceship}{Spaceship}$\ast$ Space\+Station\+::get\+Space\+Station (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get spacestation instance \begin{DoxyReturn}{Returns}
+Spaceship$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSpaceStation_aa9390e8af0d69fc176c190f8f6891736}\label{classSpaceStation_aa9390e8af0d69fc176c190f8f6891736}} 
+\index{Space\+Station@{Space\+Station}!increase\+Threat\+Level@{increase\+Threat\+Level}}
+\index{increase\+Threat\+Level@{increase\+Threat\+Level}!Space\+Station@{Space\+Station}}
+\subsubsection{\texorpdfstring{increase\+Threat\+Level()}{increaseThreatLevel()}}
+{\footnotesize\ttfamily void Space\+Station\+::increase\+Threat\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Increase threat level of spacestation \mbox{\Hypertarget{classSpaceStation_aaf446a294ee415c89b91f7755ae50519}\label{classSpaceStation_aaf446a294ee415c89b91f7755ae50519}} 
+\index{Space\+Station@{Space\+Station}!instance@{instance}}
+\index{instance@{instance}!Space\+Station@{Space\+Station}}
+\subsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \hyperlink{classSpaceStation}{Space\+Station} $\ast$ Space\+Station\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create or get instance of spacestation \begin{DoxyReturn}{Returns}
+\hyperlink{classSpaceStation}{Space\+Station} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSpaceStation_a1164b774315ebf10ff148ca0a658da5d}\label{classSpaceStation_a1164b774315ebf10ff148ca0a658da5d}} 
+\index{Space\+Station@{Space\+Station}!operator=@{operator=}}
+\index{operator=@{operator=}!Space\+Station@{Space\+Station}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classSpaceStation}{Space\+Station} \& Space\+Station\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classSpaceStation}{Space\+Station} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Overridden = operator \mbox{\Hypertarget{classSpaceStation_a430ee680ac20af8245640e9271095688}\label{classSpaceStation_a430ee680ac20af8245640e9271095688}} 
+\index{Space\+Station@{Space\+Station}!print\+Threat\+Level@{print\+Threat\+Level}}
+\index{print\+Threat\+Level@{print\+Threat\+Level}!Space\+Station@{Space\+Station}}
+\subsubsection{\texorpdfstring{print\+Threat\+Level()}{printThreatLevel()}}
+{\footnotesize\ttfamily void Space\+Station\+::print\+Threat\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Print the current threat level of the space station \mbox{\Hypertarget{classSpaceStation_acebba61d05be13cd336785ba5ee0ece5}\label{classSpaceStation_acebba61d05be13cd336785ba5ee0ece5}} 
+\index{Space\+Station@{Space\+Station}!update\+Space\+Station@{update\+Space\+Station}}
+\index{update\+Space\+Station@{update\+Space\+Station}!Space\+Station@{Space\+Station}}
+\subsubsection{\texorpdfstring{update\+Space\+Station()}{updateSpaceStation()}}
+{\footnotesize\ttfamily void Space\+Station\+::update\+Space\+Station (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceStation}{Space\+Station} $\ast$}]{ }\end{DoxyParamCaption})}
+
+Update the spacestation 
+\begin{DoxyParams}{Parameters}
+{\em s} & -\/ updated spacestation \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Spacestation.\+h\item 
+Spacestation.\+cpp\end{DoxyCompactItemize}

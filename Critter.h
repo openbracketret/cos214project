@@ -2,7 +2,8 @@
 #define CRITTER_H
 
 #include <string>
-
+/** @brief Critter class
+ */
 class Critter {
 
     public:
@@ -10,10 +11,11 @@ class Critter {
          */
         Critter();
         /** isAngry() returns true if the critter is hostile
+         * @return bool
          */
         bool isAngry();
         /** stealResources() If the critter is captured you will be able to take all the resources that the critter holds
-         * This function returns -1 if the critter is not captured and instantly makes the critter hostile
+         * @return int - '-1' on making the critter angry
          */
         int stealResources();
 

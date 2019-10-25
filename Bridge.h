@@ -2,11 +2,16 @@
 #define BRIDGE_H
 
 #include "SpaceshipDecorator.h"
-
+/** @brief Bridge class
+ */
 class Bridge : public SpaceshipDecorator {
 
     public:
+    /** Default constructor
+     */
         Bridge();
+    /** Default destructor
+     */
         ~Bridge();
 
 

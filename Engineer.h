@@ -6,17 +6,27 @@
 #include "People.h"
 
 using namespace std;
-
+/** @brief Engineer class
+ */
 class Engineer : public People
 {
 private:
 
 
 public:
-
+/** Default constructor
+ */
 	Engineer() : People() {};
+/** Default desctructor
+ */
 	~Engineer() {};
+/** Recieve an error from the spaceship
+ * @param message - the message being recieved
+ */
 	void recieveSpaceshipError(string);
+/** Send an error to the spaceship
+ * @param message - the message being sent
+ */
 	void sendErrorMessage(string);	
 };
 

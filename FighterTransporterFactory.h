@@ -6,17 +6,22 @@
 #include "SpaceshipFactory.h"
 
 using namespace std;
-
+/** @brief Fighter Transporter Factory class
+ */
 class FighterTransporterFactory : SpaceshipFactory
 {
 private:
 
 
 public:
-
+	/** Defualt constructor
+	 */
 	FighterTransporterFactory();
+	/** Default desctructor
+	 */
 	~FighterTransporterFactory();
-	/**Method to create FighterTransporter's
+	/** Method to create FighterTransporter's
+	 * @return newly created spaceship
 	 */
 	Spaceship* spaceShipFactoryMethod();
 	

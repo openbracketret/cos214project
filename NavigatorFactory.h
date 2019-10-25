@@ -6,14 +6,18 @@
 #include "PeopleFactory.h"
 
 using namespace std;
-
+/** @brief Navigator factory class
+ */
 class NavigatorFactory : public PeopleFactory
 {
 
 
 public:
-
+/** Default constructor
+ */
 	NavigatorFactory();
+/** Default desctructor
+ */
 	~NavigatorFactory();
 	
 };

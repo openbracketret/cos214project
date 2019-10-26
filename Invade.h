@@ -1,13 +1,14 @@
 #ifndef INVADE_H
 #define INVADE_H
 #include "Command.h"
+#include "ExplorationVessel.h"
 #include <string>
 #include <vector>
 
 using namespace std;
 /** @brief Planet class
  */
-class Inavde : public Command{
+class Invade : public Command{
 
     public:
     /** default constructor

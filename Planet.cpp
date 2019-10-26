@@ -16,7 +16,6 @@ Planet::~Planet(){
 
 }
 
-
 double Planet::getResourceRate(){
 	return resourceRate;
 }

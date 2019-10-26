@@ -1,6 +1,7 @@
 #ifndef Retreat_H
 #define Retreat_H
 #include "Command.h"
+#include "ExplorationVessel.h"
 #include <string>
 #include <vector>
 

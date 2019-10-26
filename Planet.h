@@ -27,3 +27,4 @@ class Planet {
     	double resourceRate; /**<Rate At Which Resources Can Be Mined on The Planet*/
     	double threatLevel; /**<Level of Threat The Planet Possesses  */
 };
+#endif

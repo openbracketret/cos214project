@@ -2,6 +2,7 @@
 #define PLANET_H
 #include <string>
 #include <vector>
+#include "Spaceship.h"
 using namespace std;
 /** @brief Planet class
  */
@@ -22,7 +23,7 @@ class Planet {
        double getThreatLevel(); 
        void setResourceRate(double);
        void setThreatLevel(double);
-
+       void accept(Spaceship* s);
      
 
     private:

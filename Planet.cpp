@@ -29,3 +29,7 @@ void Planet::setResourceRate(double rR){
 void Planet::setThreatLevel(double tL){
 	threatLevel = tL ;
 }
+
+void Planet::accept(Spaceship* s){
+	s->visit(this);
+}

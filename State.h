@@ -1,6 +1,6 @@
 #ifndef STATE_H
 #define STATE_H
-#include "SpaceshipTransporter.h"
+#include "Spaceship.h"
 #include <vector>
 
 using namespace std;
@@ -18,6 +18,8 @@ class State {
     /** Default desctructor
      */
         ~State();
+
+
     private:
        vector<Spaceship*> ships;/**<ships saved*/
 };

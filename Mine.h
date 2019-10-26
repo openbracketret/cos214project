@@ -1,6 +1,7 @@
 #ifndef MINE_H
 #define MINE_H
 #include "Command.h"
+#include "ExplorationVessel.h"
 #include <string>
 #include <vector>
 

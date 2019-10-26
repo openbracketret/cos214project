@@ -5,7 +5,8 @@
 #include <vector>
 #include "People.h"
 #include "CaptainsLog.h"
-#include "Planet.h"
+
+class Planet;
 
 using namespace std;
 /** @brief Spaceship class
@@ -46,7 +47,7 @@ class Spaceship {
         int getFuel() {return fuel;};
         int getEnergy() {return energy;};
         string getName(){return name;};
-        virtual double visit(Planet* p);
+        virtual void visit(Planet* p);
         /** Add passenger to spaceship
          * @param p - Person to be added
          */

@@ -1,6 +1,8 @@
 #ifndef PLANETITERATOR_H
 #define PLANETITERATOR_H
 
+#include "Planet.h"
+
 class Node;
 
 class PlanetQueue;

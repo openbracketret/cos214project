@@ -2,7 +2,7 @@
 #define EXPLORATIONVESSEL_H
 
 #include "Spaceship.h"
-#include "Planet.h"
+
 /** @brief Exploration Vessel class
  */
 class ExplorationVessel : public Spaceship {

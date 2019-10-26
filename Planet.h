@@ -2,8 +2,10 @@
 #define PLANET_H
 #include <string>
 #include <vector>
-#include "ExplorationVessel.h"
+#include "Spaceship.h"
+
 using namespace std;
+
 /** @brief Planet class
  */
 class Planet {

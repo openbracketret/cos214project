@@ -14,6 +14,7 @@ class Planet {
     /** Paramaterised constructor
      */
        Planet(string n, double rR , double tL);
+      
       /**Default Destructor 
       */
        ~Planet();
@@ -22,9 +23,12 @@ class Planet {
        void setResourceRate(double);
        void setThreatLevel(double);
 
+     
+
     private:
     	string name;/**<Name Of The Planet*/
     	double resourceRate; /**<Rate At Which Resources Can Be Mined on The Planet*/
     	double threatLevel; /**<Level of Threat The Planet Possesses  */
+      
 };
 #endif

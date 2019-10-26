@@ -3,17 +3,20 @@
 using namespace std;
 
 Planet::Planet(){
-
+	
 }
 Planet::Planet(string n, double rR, double tL){
 	name = n;
 	resourceRate = rR;
 	threatLevel = tL;
-
 }
+
+
 Planet::~Planet(){
 
 }
+
+
 double Planet::getResourceRate(){
 	return resourceRate;
 }

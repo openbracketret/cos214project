@@ -28,7 +28,7 @@ public:
 	/** Virtual method for creation of spaceships
 	 * @return newly created spaceship
 	 */
-	virtual Spaceship* spaceShipFactoryMethod() {}; 
+	virtual Spaceship* spaceShipFactoryMethod(); 
 	
 };
 

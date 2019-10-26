@@ -5,6 +5,7 @@
 #include <vector>
 #include "People.h"
 #include "CaptainsLog.h"
+#include "Planet.h"
 
 using namespace std;
 /** @brief Spaceship class

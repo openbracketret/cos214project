@@ -2,7 +2,7 @@
 #define PLANET_H
 #include <string>
 #include <vector>
-#include <ExplorationVessel.h>
+#include "ExplorationVessel.h"
 using namespace std;
 /** @brief Planet class
  */
@@ -23,17 +23,12 @@ class Planet {
       double getThreatLevel(); 
       void setResourceRate(double);
       void setThreatLevel(double);
-      bool attach(ExplorationVessel* e);
-      bool detach(ExplorationVessel* e);
-      void notify();
-      
+      virtual void accept(ExplorationVessel* visitor);
 
     private:
     	string name;/**<Name Of The Planet*/
-      vector<ExplorationVessel*> observers;/**list of observers to planet*/
     	double resourceRate; /**<Rate At Which Resources Can Be Mined on The Planet*/
     	double threatLevel; /**<Level of Threat The Planet Possesses */
-      vector<Spaceship*> stationed; /**Spaceships stationed on planet */
       
 };
 #endif

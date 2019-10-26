@@ -25,6 +25,7 @@ public:
 */
 virtual People* createPeople()=0;
 
+
 /** Recieve an error from the spaceship
  * @param message - the error message being received
  */

@@ -6,7 +6,7 @@
 using namespace std;
 /** @brief Planet class
  */
-class Commmand{
+class Command{
 
     public:
     /** default constructor

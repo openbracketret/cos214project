@@ -20,10 +20,7 @@ public:
 /** Default desctructor
  */
 	~Comms() {};
-/**
- * creates Comms
-*/
-People* createPeople();
+
 
 /** Recieve an error from the spaceship
  * @param message - the error message being received

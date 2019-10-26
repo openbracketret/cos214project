@@ -20,6 +20,11 @@ public:
 	/** Default destructor
 	 */
 	~CheifEngineerFactory();
+
+	/**
+ * creates ChiefEngineer
+*/
+People* createPeople();
 	
 };
 

@@ -20,6 +20,11 @@ public:
 	/** Default desctructor
 	 */
 	~CommanderOfTheFleetFactory();
+
+/**
+ * creates CommanderOfTheFleet
+*/
+People* createPeople();
 	
 };
 

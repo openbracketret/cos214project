@@ -24,7 +24,7 @@ public:
 /**
  * virtual Engineer
 */
-virtual People* createPeople()=0;
+People* createPeople();
 	
 };
 

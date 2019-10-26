@@ -22,9 +22,9 @@ public:
 	~DoctorFactory();
 
 /**
- * virtual doctor
+ * creates doctor
 */
-virtual People* createPeople()=0;
+People* createPeople();
 	
 };
 

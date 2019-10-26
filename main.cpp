@@ -37,6 +37,19 @@
 #include "State.h"
 #include "CaptainsLog.h"
 #include "Memento.h"
+#include "Planet.h"
+#include "PeopleFactory.h"
+#include "CaptainFactory.h"
+#include "ChiefEngineerFactory.h"
+#include "DoctorFactory.h"
+#include "EngineerFactory.h"
+#include "FighterFactory.h"
+#include "RefuelStation.h"
+#include "MiningStrategy.h"
+#include "TradingStrategy.h"
+#include "NavigatorFactory.h"
+
+
 
 int main () {
     return 0;

@@ -3,5 +3,17 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="State",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classState.html",tooltip="State class. "];
+  Node0 [label="SpaceshipFactory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSpaceshipFactory.html"];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="BattleshipFactory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBattleshipFactory.html",tooltip="Battleship Factory class. "];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ExplorationVesselFactory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classExplorationVesselFactory.html",tooltip="Exploration Vessel Factory class. "];
+  Node0 -> Node3 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="FighterTransporterFactory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFighterTransporterFactory.html",tooltip="Fighter Transporter Factory class. "];
+  Node0 -> Node4 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="FrigateFactory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFrigateFactory.html",tooltip="Frigate Factory class. "];
+  Node0 -> Node5 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SpaceshipTransporterFactory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSpaceshipTransporterFactory.html",tooltip="Spaceship Transporter Factory class. "];
+  Node0 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="SpaceStationFactory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSpaceStationFactory.html",tooltip="Spacestation Factory class. "];
 }

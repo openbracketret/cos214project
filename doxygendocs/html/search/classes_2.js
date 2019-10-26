@@ -9,6 +9,7 @@ var searchData=
   ['commanderofthefleet',['CommanderOfTheFleet',['../classCommanderOfTheFleet.html',1,'']]],
   ['commanderofthefleetfactory',['CommanderOfTheFleetFactory',['../classCommanderOfTheFleetFactory.html',1,'']]],
   ['comms',['Comms',['../classComms.html',1,'']]],
+  ['commsfactory',['CommsFactory',['../classCommsFactory.html',1,'']]],
   ['concretepeoplemediatior',['ConcretePeopleMediatior',['../classConcretePeopleMediatior.html',1,'']]],
   ['critter',['Critter',['../classCritter.html',1,'']]]
 ];

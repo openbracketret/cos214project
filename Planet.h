@@ -16,14 +16,15 @@ class Planet {
        Planet(string n, double rR , double tL);
       /**Default Destructor 
       */
-       ~Planet(){};
+       ~Planet();
        double getResourceRate();
        double getThreatLevel(); 
-       void setResourceRate();
-       void setThreatLevel();
+       void setResourceRate(double);
+       void setThreatLevel(double);
 
     private:
     	string name;/**<Name Of The Planet*/
     	double resourceRate; /**<Rate At Which Resources Can Be Mined on The Planet*/
     	double threatLevel; /**<Level of Threat The Planet Possesses  */
 };
+#endif

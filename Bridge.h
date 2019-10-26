@@ -10,6 +10,9 @@ class Bridge : public SpaceshipDecorator {
     public:
     /** Default constructor
      */
+        Bridge();
+    /** Paramaterised constructor
+     */
         Bridge(Strategy* s);
     /** Default destructor
      */

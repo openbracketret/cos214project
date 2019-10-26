@@ -100,7 +100,7 @@ $(function() {
 : <a class="el" href="classPeople.html#a66c99da939fe89614360953a3619a271">People</a>
 </li>
 <li>Bridge()
-: <a class="el" href="classBridge.html#a31994152fc209370604140c3591339c9">Bridge</a>
+: <a class="el" href="classBridge.html#a275f54dafc95c9b5bbaba5e904c4fa9a">Bridge</a>
 </li>
 <li>broadcast()
 : <a class="el" href="classSpaceship.html#a6539b155cc0dc525c506eee788fe9449">Spaceship</a>
@@ -125,7 +125,7 @@ $(function() {
 : <a class="el" href="classChiefEngineer.html#a4bd0e5f9075ad0ac1a15047c152fe2cb">ChiefEngineer</a>
 </li>
 <li>CommanderOfTheFleet()
-: <a class="el" href="classCommanderOfTheFleet.html#a83cb8584c7f588f533bc33ed0168188b">CommanderOfTheFleet</a>
+: <a class="el" href="classCommanderOfTheFleet.html#a8b61f0fbb16d5e8cbeda75d931b271c6">CommanderOfTheFleet</a>
 </li>
 <li>CommanderOfTheFleetFactory()
 : <a class="el" href="classCommanderOfTheFleetFactory.html#a8a5df50232cc48a885ba2a05928a8301">CommanderOfTheFleetFactory</a>
@@ -133,8 +133,19 @@ $(function() {
 <li>Comms()
 : <a class="el" href="classComms.html#aa3878221ed907d6d6841ee77741c1f49">Comms</a>
 </li>
+<li>CommsFactory()
+: <a class="el" href="classCommsFactory.html#aa07ffd7bffb6002195c8a2c18fa344be">CommsFactory</a>
+</li>
 <li>createMemento()
 : <a class="el" href="classTransportBay.html#aff9390fd8b7434bfa03b408028caf920">TransportBay</a>
+</li>
+<li>createPeople()
+: <a class="el" href="classComms.html#a137be676b73cbc1071145bf0afc37b0b">Comms</a>
+, <a class="el" href="classCommsFactory.html#a91017f5bf12f0e8166c4be9efe9efa11">CommsFactory</a>
+, <a class="el" href="classDoctor.html#a684a580014991a9193d0021796041ff5">Doctor</a>
+, <a class="el" href="classDoctorFactory.html#a2fead4ec5680093ba93fde6b1b734c59">DoctorFactory</a>
+, <a class="el" href="classEngineer.html#aaa9d760e22cab80ec283b2a085782feb">Engineer</a>
+, <a class="el" href="classEngineerFactory.html#ad2ceb4fb6155ca3ad46934208195a8f3">EngineerFactory</a>
 </li>
 <li>Critter()
 : <a class="el" href="classCritter.html#a05aa21e3b570d7380f3ead47c99442ef">Critter</a>
@@ -292,6 +303,9 @@ $(function() {
 <li>PeopleFactory()
 : <a class="el" href="classPeopleFactory.html#a937ce020364a355d6689c365ba70f0d6">PeopleFactory</a>
 </li>
+<li>Planet()
+: <a class="el" href="classPlanet.html#afd66d974488511c495e6e5aa2e886085">Planet</a>
+</li>
 <li>print()
 : <a class="el" href="classLevelOneThreat.html#a902492d8341a398b0209fb89e2aca68e">LevelOneThreat</a>
 , <a class="el" href="classLevelThreeThreat.html#a3bdd7e61f3938123ce9c705623e0d98a">LevelThreeThreat</a>
@@ -316,6 +330,7 @@ $(function() {
 , <a class="el" href="classChiefEngineer.html#a7170ae93d7eadc1a68bc86c25a9be0db">ChiefEngineer</a>
 , <a class="el" href="classCommanderOfTheFleet.html#a13e91b9342df067b375f7ef2b929c0d5">CommanderOfTheFleet</a>
 , <a class="el" href="classComms.html#a1aed1c01a813afd55309fdc59d2871bf">Comms</a>
+, <a class="el" href="classCommsFactory.html#ae0c2cf49336ef7346944970f0a1661d2">CommsFactory</a>
 , <a class="el" href="classDoctor.html#a820dca3b9f05d3f69c47bd7318923b88">Doctor</a>
 , <a class="el" href="classEngineer.html#acc86ce6b4b1388be8ebacc685f9e6233">Engineer</a>
 , <a class="el" href="classFighter.html#aecd2761c68aed8499e210fd0ca11c447">Fighter</a>
@@ -352,6 +367,7 @@ $(function() {
 , <a class="el" href="classChiefEngineer.html#afe5a4677f7651fff2926c0583875a666">ChiefEngineer</a>
 , <a class="el" href="classCommanderOfTheFleet.html#a39cfd5c0016355543515e919791d7984">CommanderOfTheFleet</a>
 , <a class="el" href="classComms.html#a23c37f6d10f06c7cfe25c4dc7d62fa12">Comms</a>
+, <a class="el" href="classCommsFactory.html#a5f565ce3e7a75ab2f40dece51adda485">CommsFactory</a>
 , <a class="el" href="classDoctor.html#a5a524981ce52102f975cf9c569137ce5">Doctor</a>
 , <a class="el" href="classEngineer.html#ae60806f33b7f226891dbb7ad9b8a0c0b">Engineer</a>
 , <a class="el" href="classFighter.html#a42b60e52427e5c69daf141351655805c">Fighter</a>
@@ -462,14 +478,14 @@ $(function() {
 <li>~Comms()
 : <a class="el" href="classComms.html#ad18d3a80a82d18d27b0de3b551e4f5fc">Comms</a>
 </li>
+<li>~CommsFactory()
+: <a class="el" href="classCommsFactory.html#ac5f4f8909ae9fd5d86ac41812227bdef">CommsFactory</a>
+</li>
 <li>~Doctor()
 : <a class="el" href="classDoctor.html#a1481ccfafebc7a2424d3659a0223ebfe">Doctor</a>
 </li>
 <li>~DoctorFactory()
 : <a class="el" href="classDoctorFactory.html#a3f2ed2a1a4378d3490c0412645f70767">DoctorFactory</a>
-</li>
-<li>~Engineer()
-: <a class="el" href="classEngineer.html#a953bdbf091d5bd435d0c9a276f05cb3b">Engineer</a>
 </li>
 <li>~EngineerFactory()
 : <a class="el" href="classEngineerFactory.html#af892e0d4b047414dbcefee0bbe943208">EngineerFactory</a>
@@ -527,6 +543,9 @@ $(function() {
 </li>
 <li>~PeopleFactory()
 : <a class="el" href="classPeopleFactory.html#a18d1aec526ba93ca84cde1c25cfb8944">PeopleFactory</a>
+</li>
+<li>~Planet()
+: <a class="el" href="classPlanet.html#aaa1aaed9d4ef90b4836531edb7b18e0a">Planet</a>
 </li>
 <li>~RefuelStation()
 : <a class="el" href="classRefuelStation.html#afc0ebc020ef08d8a6a2096bdb2f3e314">RefuelStation</a>

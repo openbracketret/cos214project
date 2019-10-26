@@ -4,6 +4,10 @@ Bridge::Bridge(Strategy* s) : SpaceshipDecorator() {
     strategy = s;
 }
 
+Bridge::Bridge(){
+    
+}
+
 Bridge::~Bridge() {
     
 }

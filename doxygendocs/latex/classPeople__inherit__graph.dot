@@ -2,6 +2,7 @@ digraph "People"
 {
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
   Node0 [label="People",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
   Node1 [label="Captain",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCaptain.html",tooltip="Captain class. "];
@@ -14,9 +15,11 @@ digraph "People"
   Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
   Node5 [label="Doctor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDoctor.html",tooltip="Doctor class. "];
   Node0 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
-  Node6 [label="Engineer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classEngineer.html",tooltip="Engineer class. "];
+  Node6 [label="DoctorFactory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDoctorFactory.html",tooltip="Doctor Factory class. "];
   Node0 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
-  Node7 [label="Fighter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFighter.html",tooltip="Fighter class. "];
+  Node7 [label="Engineer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classEngineer.html",tooltip="Engineer class. "];
   Node0 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
-  Node8 [label="Navigator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNavigator.html",tooltip="Navigator class. "];
+  Node8 [label="Fighter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFighter.html",tooltip="Fighter class. "];
+  Node0 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Navigator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNavigator.html",tooltip="Navigator class. "];
 }

@@ -3,10 +3,7 @@
 
 #include <string>
 #include <vector>
-<<<<<<< Updated upstream
 #include "People.h"
-=======
->>>>>>> Stashed changes
 #include "PeopleFactory.h"
 
 using namespace std;

@@ -3,7 +3,7 @@
 Invade::Invade(){
 
 }
-void Inavde::execute(){
+void Invade::execute(){
 	//receiver->action();
 }
 Invade::~Invade(){

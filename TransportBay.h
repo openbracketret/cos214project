@@ -22,9 +22,9 @@ class TransportBay : public SpaceshipDecorator {
          */
         ~TransportBay();
         int getCurrentCapacity();
-        int setCurrentCapacity(int i){currentCapacity = i;};
+        void setCurrentCapacity(int i){currentCapacity = i;};
         int getMaxCapacity();
-        int setMaxCapacity(int i){maxCapacity = i;};
+        void setMaxCapacity(int i){maxCapacity = i;};
         /** Method to add spaceships into the transport bay
          * @param spaceship Spaceship to be added 
          */

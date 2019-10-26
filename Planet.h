@@ -27,6 +27,7 @@ class Planet {
      
 
     private:
+      bool visited = false;
     	string name;/**<Name Of The Planet*/
     	double resourceRate; /**<Rate At Which Resources Can Be Mined on The Planet*/
     	double threatLevel; /**<Level of Threat The Planet Possesses  */

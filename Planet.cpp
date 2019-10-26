@@ -31,5 +31,6 @@ void Planet::setThreatLevel(double tL){
 }
 
 void Planet::accept(Spaceship* s){
+	visited = true;
 	s->visit(this);
 }

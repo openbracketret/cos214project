@@ -21,7 +21,7 @@ class ExplorationVessel : public Spaceship {
     /** Add a visitor to the vessel and planet
      * @param p - planet to be visited
      */
-        double visit(Planet* p);
+        void visit(Planet* p);
 
 };
 

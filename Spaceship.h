@@ -84,6 +84,10 @@ class Spaceship {
          * @return int - the type of spaceship
          */
         virtual int getType() {return 0;};
+        /** Get the people aboard the ship
+         * @return vector<People*>
+         */
+        vector<People*> getPeople() {return passengers;};
 
 
     private:

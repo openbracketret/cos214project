@@ -24,6 +24,10 @@ class Spaceship {
          */
         virtual void addComponent(Spaceship*) = 0;
 
+    /** Default desctructor
+     */
+        virtual ~Spaceship() {};
+
         int getDisplacement() {return displacement;};
         void setDisplacement(int d) {displacement = d;};
         int getPower() {return power;};
@@ -79,7 +83,7 @@ class Spaceship {
         /** Get the type of the spaceship
          * @return int - the type of spaceship
          */
-        virtual int getType();
+        virtual int getType() {};
 
 
     private:

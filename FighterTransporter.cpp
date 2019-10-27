@@ -11,7 +11,7 @@ FighterTransporter::~FighterTransporter(){
 
 }
 
-FighterTransporter::FighterTransporter(string n){
+FighterTransporter::FighterTransporter(string n) : Spaceship(n){
     maxCapacity = 50;
     currentCapacity = 0;
 }

@@ -9,16 +9,16 @@ class FighterTransporter : public Spaceship {
     public:
     /** Default constructor
      */
-        FighterTransporter() : Spaceship() {};
+        FighterTransporter();
 
     /** Parameterised constructor
      * @name holds name of the ship
      */
-        FighterTransporter(string name) : Spaceship(name){};
+        FighterTransporter(string name);
 
     /** Default desctructor
      */
-        ~FighterTransporter() {};
+        ~FighterTransporter();
     /** Add a component to the spaceship
      * @param s - the component being added
      */

@@ -6,6 +6,7 @@
 #include "People.h"
 #include "CommanderOfTheFleet.h"
 #include "PlanetQueue.h"
+#include "Spacestation.h"
 
 using namespace std;
 
@@ -115,6 +116,23 @@ class Facade {
      * @param spaceship - the spaceship to remove the person from
      */
         void removeTypeFromShip(string type, Spaceship* spaceship);
+
+    /** Increase the threat level of the fleet
+     */
+        void increaseThreat();
+
+    /** Decrase the threat level the fleet
+     */
+        void decreaseThreat();
+
+    /** Print out the current threat level of the fleet
+     */
+        void printThreat();
+
+    /** Print captains log of specified ship
+     * @param spaceship - the spaceship specified
+     */
+        void printCaptainsLog(Spaceship*);
 
 
 

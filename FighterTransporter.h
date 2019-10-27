@@ -2,6 +2,7 @@
 #define FIGHTERTRANSPORTER_H
 
 #include "Spaceship.h"
+#include "People.h"
 /** @brief Fighter Transporter class
  */
 class FighterTransporter : public Spaceship {
@@ -11,8 +12,10 @@ class FighterTransporter : public Spaceship {
         FighterTransporter() : Spaceship() {};
 
     /** Parameterised constructor
+     * @name holds name of the ship
      */
         FighterTransporter(string name) : Spaceship(name){};
+
     /** Default desctructor
      */
         ~FighterTransporter() {};
@@ -25,6 +28,19 @@ class FighterTransporter : public Spaceship {
      * @return int - 3
      */
         int getType(){return 3;};
+    /** add fighters to added to persons vector 
+     * @param p person to be added
+    */
+        void addPerson(People* p);
+    /** add fighters to be removed persons vector 
+     * @param p person to be removed
+    */
+        void removePerson(People* p);
+
+    private:
+        vector<People*> persons;/**<Vector of people that the transporter is currently holding*/
+        int maxCapacity;/**<Max capacity that the transporter can hold*/
+        int currentCapacity;/**<Current amount of people aboard the transport bay*/
 };
 
 

@@ -28,8 +28,10 @@ void TransportBay::removeShip(Spaceship* s){
     if (it != ships.end()){
         ships.erase(it);
         currentCapacity--;
+    } else {
+        cout<<"The ships is not aboard the ship"<<endl;
     }
-}
+} 
 
 Memento* TransportBay::createMemento(vector<Spaceship*> s){
     return new Memento(s);

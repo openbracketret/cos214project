@@ -140,6 +140,11 @@ class Facade {
      */
         void selectStrategy(Spaceship*, Strategy*);
 
+    /** Execute the selected strategy of the selected ship
+     * @param spaceship - the spaceship that will execute the strategy
+     */
+        void executeStrategy(Spaceship*);
+
 
 
     private:

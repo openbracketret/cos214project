@@ -375,3 +375,7 @@ void Facade::printCaptainsLog(Spaceship* spaceship){
 void Facade::selectStrategy(Spaceship* spaceship, Strategy* strat){
     spaceship->selectStrategy(strat);
 }
+
+void Facade::executeStrategy(Spaceship* spaceship){
+    spaceship->executeStrategy();
+}

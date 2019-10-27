@@ -56,6 +56,7 @@ class Spaceship {
         virtual void printThreatLevel();
         virtual void visit(Planet* p) {};
         virtual void selectStrategy(Strategy*);
+        virtual void executeStrategy();
         /** Add passenger to spaceship
          * @param p - Person to be added
          */

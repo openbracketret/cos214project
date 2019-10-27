@@ -23,6 +23,8 @@ class Bridge : public SpaceshipDecorator {
     private:
         Strategy* strategy;
 
+    //TODO: Actually implement the selectStrategy and executeStrategy methods here
+
 };
 
 #endif

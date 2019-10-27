@@ -83,7 +83,7 @@ class Spaceship {
         /** Get the type of the spaceship
          * @return int - the type of spaceship
          */
-        virtual int getType() {};
+        virtual int getType() {return 0;};
 
 
     private:

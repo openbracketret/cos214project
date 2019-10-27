@@ -5,6 +5,7 @@
 #include <vector>
 #include "People.h"
 #include "PeopleFactory.h"
+#include "CommanderOfTheFleet.h"
 
 using namespace std;
 /** @brief Commander of the fleet factory class
@@ -24,7 +25,7 @@ public:
 /**
  * creates CommanderOfTheFleet
 */
-People* createPeople();
+People* create() {return CommanderOfTheFleet::instance();};
 	
 };
 

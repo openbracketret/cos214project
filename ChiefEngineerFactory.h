@@ -25,7 +25,7 @@ public:
 	/**
  * creates ChiefEngineer
 */
-People* createPeople(){return new ChiefEngineer();};
+People* create(){return new ChiefEngineer();};
 	
 };
 

@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include "PeopleFactory.h"
+#include "Navigator.h"
 
 using namespace std;
 /** @brief Navigator factory class
@@ -19,7 +20,7 @@ public:
 /** Default desctructor
  */
 	~NavigatorFactory();
-	
+	People* create(){return new Navigator();};
 };
 
 #endif

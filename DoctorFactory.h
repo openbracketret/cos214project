@@ -10,7 +10,7 @@
 using namespace std;
 /** @brief Doctor Factory class
  */
-class DoctorFactory : public People
+class DoctorFactory : public PeopleFactory
 {
 
 

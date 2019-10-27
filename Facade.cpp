@@ -353,7 +353,21 @@ void Facade::removeTypeFromShip(string type, Spaceship* spaceship){
             return;
         }
     }
-
     cout << "That type of person is not aboard the specified ship" << endl;
+}
 
+void Facade::increaseThreat() {
+    spacestation->increaseThreatLevel();
+}
+
+void Facade::decreaseThreat() {
+    spacestation->decreaseThreatLevel();
+}
+
+void Facade::printThreat() {
+    spacestation->printThreatLevel();
+}
+
+void Facade::printCaptainsLog(Spaceship* spaceship){
+    spaceship->printCaptainsLog();
 }

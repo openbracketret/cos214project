@@ -15,10 +15,10 @@ class PeopleFactory
 public:
 /** Default constructor
  */
-	PeopleFactory();
+	PeopleFactory() {};
 /** Default desctructor
  */
-	~PeopleFactory();
+	~PeopleFactory() {};
 	virtual People* create()=0;
 	
 	

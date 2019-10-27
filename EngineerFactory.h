@@ -17,10 +17,10 @@ class EngineerFactory : public PeopleFactory
 public:
 /** Default constructor
  */
-	EngineerFactory();
+	EngineerFactory() {};
 /** Default desctructor
  */
-	~EngineerFactory();
+	~EngineerFactory() {};
 
 /**
  * virtual Engineer

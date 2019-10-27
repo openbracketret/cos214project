@@ -92,6 +92,30 @@ class Facade {
      */
         People* getCaptainOnShip(Spaceship*);
 
+    /** Log a message to the captains log of specified ship
+     * @param spaceship - The spaceship to log the message to
+     * @param message - the message to me logged
+     */
+        void logMessage(Spaceship*, string);
+
+    /** Load a person onto the given ship
+     * @param person - the person to board to the ship
+     * @param spaceship - the spaceship to load the passenger to
+     */
+        void boardPersonToShip(People*, Spaceship*);
+
+    /** Start loading a ship with people
+     * @param number - the number of people to load
+     * @param spaceship - the spaceship to load people into
+     */
+        void beginBoarding(int, Spaceship*);
+
+    /** Remove a type of person from a ship
+     * @param type - the type of person
+     * @param spaceship - the spaceship to remove the person from
+     */
+        void removeTypeFromShip(string type, Spaceship* spaceship);
+
 
 
     private:
@@ -100,6 +124,8 @@ class Facade {
         People* commanderOfFleet;
         PlanetQueue* planets;
         vector<People*> people;
+        vector<People*> peopleTracker;
+        
 
 
 

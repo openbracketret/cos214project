@@ -17,10 +17,10 @@ class CommanderOfTheFleetFactory : public PeopleFactory
 public:
 /** Default constructor
  */
-	CommanderOfTheFleetFactory();
+	CommanderOfTheFleetFactory() {};
 	/** Default desctructor
 	 */
-	~CommanderOfTheFleetFactory();
+	~CommanderOfTheFleetFactory() {};
 
 /**
  * creates CommanderOfTheFleet

@@ -17,10 +17,10 @@ class CaptainFactory : public PeopleFactory
 public:
 /** Default constructor
  */
-	CaptainFactory();
+	CaptainFactory() {};
 /** Default desctructor
  */
-	~CaptainFactory();
+	~CaptainFactory() {};
 	People* create() {return new Captain();};
 };
 

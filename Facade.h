@@ -134,6 +134,17 @@ class Facade {
      */
         void printCaptainsLog(Spaceship*);
 
+    /** Change strategy of selected ship
+     * @param spaceship - the spaceship to change strategy
+     * @param strat - the selected strategy
+     */
+        void selectStrategy(Spaceship*, Strategy*);
+
+    /** Execute the selected strategy of the selected ship
+     * @param spaceship - the spaceship that will execute the strategy
+     */
+        void executeStrategy(Spaceship*);
+
 
 
     private:

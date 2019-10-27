@@ -5,6 +5,7 @@
 #include <vector>
 #include "People.h"
 #include "PeopleFactory.h"
+#include "ChiefEngineer.h"
 
 using namespace std;
 /** @brief Chief Engineer Factory
@@ -24,7 +25,7 @@ public:
 	/**
  * creates ChiefEngineer
 */
-People* createPeople();
+People* createPeople(){return new ChiefEngineer();};
 	
 };
 

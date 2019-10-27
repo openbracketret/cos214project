@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include "PeopleFactory.h"
+#include "Comms.h"
 
 using namespace std;
 /** @brief CommsFactory class
@@ -23,7 +24,7 @@ public:
 /**
  * pure virtual comms creator
 */
-People* createPeople();
+People* create(){ return new Comms();};
 
 	
 };

@@ -5,6 +5,7 @@
 #include <vector>
 #include "People.h"
 #include "PeopleFactory.h"
+#include "Captain.h"
 
 using namespace std;
 /** @brief Captain Factory class
@@ -20,7 +21,7 @@ public:
 /** Default desctructor
  */
 	~CaptainFactory();
-	
+	People* create() {return new Captain();};
 };
 
 #endif

@@ -5,6 +5,7 @@
 #include <vector>
 #include "People.h"
 #include "PeopleFactory.h"
+#include "Doctor.h"
 
 using namespace std;
 /** @brief Doctor Factory class
@@ -24,7 +25,7 @@ public:
 /**
  * creates doctor
 */
-People* createPeople();
+People* create() {return new Doctor();};
 	
 };
 

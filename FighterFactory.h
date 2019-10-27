@@ -22,7 +22,7 @@ public:
 /** Default desctructor
  */
 	~FighterFactory();
-	
+	People* create(){return new Fighter();};
 };
 
 #endif

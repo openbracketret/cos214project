@@ -8,7 +8,7 @@
 using namespace std;
 /** @brief Fighter Transporter Factory class
  */
-class FighterTransporterFactory : SpaceshipFactory
+class FighterTransporterFactory : public SpaceshipFactory
 {
 private:
 

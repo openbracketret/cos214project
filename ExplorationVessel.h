@@ -31,6 +31,16 @@ class ExplorationVessel : public Spaceship {
      * @return int - 2
      */
         int getType(){return 2;};
+    /** stub for increaseThreatLevel */
+        void increaseThreatLevel() {};
+    /** stub for decreaseThreatLevel */
+        void decreaseThreatLevel() {};
+    /** stub for printThreatLevel */
+        void printThreatLevel() {};
+    /** stub for selectStrategy */
+        void selectStrategy() {};
+    /** stub for executeStrategy */
+        void executeStrategy() {};
 
 };
 

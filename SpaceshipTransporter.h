@@ -15,7 +15,18 @@ class SpaceshipTransporter : public Spaceship {
     /** default desctructor
      */
         ~SpaceshipTransporter() {};
+    /** stub for visit */
         void visit(Planet* p){};
+    /** stub for increaseThreatLevel */
+        void increaseThreatLevel() {};
+    /** stub for decreaseThreatLevel */
+        void decreaseThreatLevel() {};
+    /** stub for printThreatLevel */
+        void printThreatLevel() {};
+    /** stub for selectStrategy */
+        void selectStrategy() {};
+    /** stub for executeStrategy */
+        void executeStrategy() {};
     /** add component to spaceship
      * @param s - component to be added
      */

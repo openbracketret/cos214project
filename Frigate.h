@@ -26,7 +26,18 @@ class Frigate : public Spaceship {
      * @return int - 4
      */
         int getType(){return 4;};
+    /** stub for visit */
         void visit(Planet* p){};
+    /** stub for increaseThreatLevel */
+        void increaseThreatLevel() {};
+    /** stub for decreaseThreatLevel */
+        void decreaseThreatLevel() {};
+    /** stub for printThreatLevel */
+        void printThreatLevel() {};
+    /** stub for selectStrategy */
+        void selectStrategy() {};
+    /** stub for executeStrategy */
+        void executeStrategy() {};
 };
 
 #endif

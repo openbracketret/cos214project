@@ -16,10 +16,10 @@ class NavigatorFactory : public PeopleFactory
 public:
 /** Default constructor
  */
-	NavigatorFactory();
+	NavigatorFactory() {};
 /** Default desctructor
  */
-	~NavigatorFactory();
+	~NavigatorFactory() {};
 	People* create(){return new Navigator();};
 };
 

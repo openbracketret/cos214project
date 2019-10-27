@@ -7,6 +7,7 @@
 #include <string>
 #include <vector>
 #include "PeopleFactory.h"
+#include "Fighter.h"
 
 using namespace std;
 /** @brief Fighter Factory class
@@ -18,10 +19,10 @@ class FighterFactory : public PeopleFactory
 public:
 /** Default constructor
  */
-	FighterFactory();
+	FighterFactory() {};
 /** Default desctructor
  */
-	~FighterFactory();
+	~FighterFactory() {};
 	People* create(){return new Fighter();};
 };
 

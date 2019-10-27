@@ -17,10 +17,10 @@ class CheifEngineerFactory : public PeopleFactory
 public:
 /** Default constructor
  */
-	CheifEngineerFactory();
+	CheifEngineerFactory() {};
 	/** Default destructor
 	 */
-	~CheifEngineerFactory();
+	~CheifEngineerFactory() {};
 
 	/**
  * creates ChiefEngineer

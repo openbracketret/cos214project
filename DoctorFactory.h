@@ -17,10 +17,10 @@ class DoctorFactory : public PeopleFactory
 public:
 /** Default constructor
  */
-	DoctorFactory();
+	DoctorFactory() {};
 /** Default destructor
  */
-	~DoctorFactory();
+	~DoctorFactory() {};
 
 /**
  * creates doctor

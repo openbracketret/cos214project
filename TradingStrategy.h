@@ -5,7 +5,7 @@
 
 using namespace std;
 
-/** @brief MiningStrategy class
+/** @brief Trading strategy class
  */
 class TradingStrategy {
     public:

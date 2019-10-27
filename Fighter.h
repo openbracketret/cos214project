@@ -30,7 +30,6 @@ public:
  * @param message - the message being sent
  */
 	void sendErrorMessage(string);
-	void visit(Planet* p){};
 	
 	
 };

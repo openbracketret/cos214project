@@ -22,7 +22,7 @@ public:
 	/** Method to create Battleships
 	 * @return new spaceship
 	 */
-	Spaceship* spaceShipFactoryMethod();
+	Spaceship* spaceShipFactoryMethod(string n);
 	
 };
 

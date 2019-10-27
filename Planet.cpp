@@ -1,10 +1,17 @@
 #include "Planet.h"
 #include <iostream>
+#include <ctime>
+
 using namespace std;
 
-Planet::Planet(){
-	
+Planet::Planet(string n){
+	name = n;
+	srand(time(NULL));
+	resourceRate = rand() % 9050 + 50;
+	srand(time(NULL));
+	threatLevel = rand() % 101;
 }
+
 Planet::Planet(string n, double rR, double tL){
 	name = n;
 	resourceRate = rR;

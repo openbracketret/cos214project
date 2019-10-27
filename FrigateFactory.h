@@ -23,7 +23,7 @@ public:
 	/** Method to create Frigate's
 	 * @return newly created ship
 	 */
-	Spaceship* spaceShipFactoryMethod();
+	Spaceship* spaceShipFactoryMethod(string n);
 	
 };
 

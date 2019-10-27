@@ -13,7 +13,7 @@ class Planet {
     public:
     /** default constructor
      */
-       Planet();
+       Planet(string n);
     /** Paramaterised constructor
      */
        Planet(string n, double rR , double tL);

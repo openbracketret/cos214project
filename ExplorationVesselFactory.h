@@ -24,7 +24,7 @@ public:
 	/** Method to create exploration vessels
 	 * @return new spaceship
 	 */
-	Spaceship* spaceShipFactoryMethod();
+	Spaceship* spaceShipFactoryMethod(string n);
 	
 };
 

@@ -7,13 +7,13 @@ SpaceshipTransporterFactory::SpaceshipTransporterFactory() : SpaceshipFactory(){
 SpaceshipTransporterFactory::~SpaceshipTransporterFactory(){
 
 }
-Spaceship* SpaceshipTransporterFactory::spaceShipFactoryMethod(){
+Spaceship* SpaceshipTransporterFactory::spaceShipFactoryMethod(string n){
 
 	Spaceship* s = new SickBay();
 	s->addComponent(new TransportBay());
 	s->addComponent(new SleepingQuarters());
 	s->addComponent(new Bridge());
 	s->addComponent(new RefuelStation());
-	s->addComponent(new SpaceshipTransporter()); 
+	s->addComponent(new SpaceshipTransporter(n)); 
 	return s;
 }

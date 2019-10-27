@@ -13,6 +13,7 @@ class SickBay : public SpaceshipDecorator{
     /** Default desctructor
      */
         ~SickBay();
+        void visit(Planet* p){};
 };
 
 #endif

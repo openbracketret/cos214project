@@ -13,6 +13,7 @@ class SleepingQuarters : public SpaceshipDecorator {
     /** default desctructor
      */
         ~SleepingQuarters();
+        void visit(Planet* p){};
 
 };
 

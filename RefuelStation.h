@@ -21,6 +21,7 @@ public:
         *@param s - spaceship to be refueled
     */
     void refuelSpaceship(Spaceship* s);
+    void visit(Planet* p){};
 };
 
 #endif

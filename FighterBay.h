@@ -26,6 +26,7 @@ class FighterBay : public SpaceshipDecorator {
          * @param f - Fighter being removed
          */
         void removeFighter(Fighter*);
+        void visit(Planet* p){};
 
 
     private:

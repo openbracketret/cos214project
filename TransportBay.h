@@ -42,6 +42,7 @@ class TransportBay : public SpaceshipDecorator {
          * @param mem - Memento to be recalled
          */
         void reinstateMemento(Memento* mem);
+        void visit(Planet* p){};
 
     private:
         friend class Memento;

@@ -22,6 +22,7 @@ class SpaceshipDecorator : public Spaceship {
 
     private:
         Spaceship* space;/**<The added decorator component*/
+        virtual void visit(Planet* p){};
 
 };
 

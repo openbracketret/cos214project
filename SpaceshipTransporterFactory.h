@@ -23,7 +23,7 @@ public:
 	/** Method to create Spaceships Transports
 	 * @return newly created spaceship
 	 */
-	Spaceship* spaceShipFactoryMethod();
+	Spaceship* spaceShipFactoryMethod(string n);
 	
 };
 

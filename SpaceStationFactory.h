@@ -15,7 +15,7 @@ class SpaceStationFactory : public SpaceshipFactory {
         /** Method to create SpaceStation
          * @return new spaceship
 	    */
-        Spaceship* spaceshipFactoryMethod();
+        Spaceship* spaceshipFactoryMethod(string n);
 };
 
 #endif

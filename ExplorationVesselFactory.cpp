@@ -8,12 +8,12 @@ ExplorationVesselFactory::ExplorationVesselFactory() : SpaceshipFactory(){
 ExplorationVesselFactory::~ExplorationVesselFactory(){
 
 }
-Spaceship* ExplorationVesselFactory::spaceShipFactoryMethod(){
+Spaceship* ExplorationVesselFactory::spaceShipFactoryMethod(string n){
 
 	Spaceship* s = new SickBay();
 	s->addComponent(new Armory());
 	s->addComponent(new SleepingQuarters());
 	s->addComponent(new Bridge());
-	s->addComponent(new ExplorationVessel()); 
+	s->addComponent(new ExplorationVessel(n)); 
 	return s;
 }

@@ -30,7 +30,8 @@ public:
  * @param message - the message being sent
  */
 	void sendErrorMessage(string);
-	
+/**get type of person*/
+	string getType() {return "doctor";};
 };
 
 #endif

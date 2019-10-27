@@ -27,7 +27,7 @@ public:
 	 * @param message - the message to transmit
 	 */
 	void sendErrorMessage(string);
-	
+	string getType() {return "chiefengineer";};
 };
 
 #endif

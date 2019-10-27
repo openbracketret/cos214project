@@ -33,6 +33,8 @@ class People
 	/** Leave ship. Deregister with spaceship
 	 */
 		void leaveShip();
+	/** Getting type of the person */
+		virtual string getType() = 0;
 
 	protected:
 		int id; /**<ID variable used for uniquely identifying which person is being registered with the Mediator(Spaceship)*/

@@ -30,7 +30,8 @@ public:
  * @param message - the error message being sent
  */
 	void sendErrorMessage(string);
-	
+/** get the type of class */
+	string getType() {return "comms";};
 };
 
 #endif

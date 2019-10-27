@@ -28,6 +28,8 @@ public:
 	 * @param message - The message to be sent
 	 */
 	void sendErrorMessage(string);
+	/** get type of person*/
+	string getType() {return "captain";};
 	
 };
 

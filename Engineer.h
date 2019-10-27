@@ -34,6 +34,8 @@ People* createPeople();
  * @param message - the message being sent
  */
 	void sendErrorMessage(string);	
+/** get type of the person */
+	string getType() {return "engineer";};
 };
 
 #endif

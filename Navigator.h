@@ -28,7 +28,8 @@ public:
  * @param message - the error being sent
  */
 	void sendErrorMessage(string);
-	
+/** get type of person */
+	string getType() {return "navigator";};	
 };
 
 #endif

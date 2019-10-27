@@ -12,10 +12,20 @@ class Battleship : public Spaceship{
         Battleship() : Spaceship() {};
     /** Default desctructor
      */
+
+    /** Paramaterised constructor
+     */
+    Battleship(string name) : Spaceship(name){};  
+
         ~Battleship() {};
     /** Add a component
      */
         virtual void addComponent(Spaceship*) {};
+
+    /** Get the type of spaceship Battleship = 1
+     * @return int - 1
+     */
+        int getType(){return 1;};
 };
 
 #endif

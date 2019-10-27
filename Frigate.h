@@ -9,7 +9,11 @@ class Frigate : public Spaceship {
     public:
 /** Default constructor
  */
-        Frigate() {};
+        Frigate() : Spaceship() {};
+
+    /** Paramaterised constructor
+     */
+        Frigate(string name): Spaceship(name){};
     /** Default desctructor
      */
         ~Frigate() {};
@@ -17,6 +21,11 @@ class Frigate : public Spaceship {
      * @param s - component being added
      */
         virtual void addComponent(Spaceship*) {};
+
+    /** Get the type of spaceship - Frigate = 4
+     * @return int - 4
+     */
+        int getType(){return 4;};
 };
 
 #endif

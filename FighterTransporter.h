@@ -8,7 +8,11 @@ class FighterTransporter : public Spaceship {
     public:
     /** Default constructor
      */
-        FighterTransporter() {};
+        FighterTransporter() : Spaceship() {};
+
+    /** Parameterised constructor
+     */
+        FighterTransporter(string name) : Spaceship(name){};
     /** Default desctructor
      */
         ~FighterTransporter() {};
@@ -16,6 +20,11 @@ class FighterTransporter : public Spaceship {
      * @param s - the component being added
      */
         virtual void addComponent(Spaceship*) {};
+
+    /** Get the type of spaceship - FighterTransporter = 3
+     * @return int - 3
+     */
+        int getType(){return 3;};
 };
 
 

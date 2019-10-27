@@ -14,6 +14,10 @@ class ExplorationVessel : public Spaceship {
     /** Default desctructor
      */
         ~ExplorationVessel() {};
+
+    /** Paramaterised constructor
+     */
+        ExplorationVessel(string name) : Spaceship(name){};
     /** Add a component to the vessel
      * @param s - spaceship component to be added
      */
@@ -22,6 +26,11 @@ class ExplorationVessel : public Spaceship {
      * @param p - planet to be visited
      */
         void visit(Planet* p);
+
+    /** Get type of spaceship - ExplorationVessel = 2
+     * @return int - 2
+     */
+        int getType(){return 2;};
 
 };
 

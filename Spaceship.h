@@ -76,7 +76,10 @@ class Spaceship {
          * @param message - message to added to log
          */
         void addLog(string);
-        
+        /** Get the type of the spaceship
+         * @return int - the type of spaceship
+         */
+        virtual int getType();
 
 
     private:

@@ -5,11 +5,16 @@
 
 using namespace std;
 
-/** @brief MiningStrategy class
+/** @brief TradingStrategy class
  */
 class TradingStrategy {
     public:
-        /**overloaded execute for trading for resources*/
+        /** default constructor */
+        TradingStrategy();
+        /** overloaded execute for trading for resources
+         * @param a is credits for resources.
+         * @param b is exchange rate for the  resources
+        */
         virtual double execute(double a, double b);
         /**default destructor*/
         ~TradingStrategy();

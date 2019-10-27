@@ -9,9 +9,12 @@ using namespace std;
  */
 class MiningStrategy {
     public:
-        /**overloaded execute for mining resources*/
+        /** overloaded execute for mining resources 
+         * @param a mining rate of the planet
+         * @param b tiem spent on mining
+        */
         virtual double execute(double a, double b);
-        /**default destructor*/
+        /** default destructor */
         ~MiningStrategy();
 };
 

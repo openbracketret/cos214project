@@ -26,6 +26,7 @@ class Frigate : public Spaceship {
      * @return int - 4
      */
         int getType(){return 4;};
+        void visit(Planet* p){};
 };
 
 #endif

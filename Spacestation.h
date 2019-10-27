@@ -34,6 +34,7 @@ class SpaceStation : public Spaceship {
     /** Print the current threat level of the space station
      */
         void printThreatLevel();
+        void visit(Planet* p){};
         
 
     protected:

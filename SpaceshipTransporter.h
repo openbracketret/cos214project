@@ -12,6 +12,7 @@ class SpaceshipTransporter : public Spaceship {
     /** default desctructor
      */
         ~SpaceshipTransporter() {};
+        void visit(Planet* p){};
     /** add component to spaceship
      * @param s - component to be added
      */

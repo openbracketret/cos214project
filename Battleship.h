@@ -26,6 +26,7 @@ class Battleship : public Spaceship{
      * @return int - 1
      */
         int getType(){return 1;};
+        void visit(Planet* p){};
 };
 
 #endif

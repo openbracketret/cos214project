@@ -5,6 +5,7 @@
 #include <vector>
 #include "People.h"
 #include "Memento.h"
+#include "Planet.h"
 
 using namespace std;
 /** @brief Fighter class

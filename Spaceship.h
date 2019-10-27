@@ -51,7 +51,7 @@ class Spaceship {
         int getFuel() {return fuel;};
         int getEnergy() {return energy;};
         string getName(){return name;};
-        virtual void visit(Planet* p);
+        virtual void visit(Planet* p) {};
         /** Add passenger to spaceship
          * @param p - Person to be added
          */

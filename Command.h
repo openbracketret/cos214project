@@ -11,14 +11,14 @@ class Command{
     public:
     /** default constructor
      */
-       Command();
+       Command() {};
     /** Pure Virtual Execute Function That will be implemented by sub classes
      */
       virtual void execute() = 0; 
       
       /**Default Destructor 
       */
-       ~Command();
+       ~Command() {};
        
      
 

@@ -51,12 +51,23 @@ class Spaceship {
         int getFuel() {return fuel;};
         int getEnergy() {return energy;};
         string getName(){return name;};
+    /** Virtual incrase threat level
+     */
         virtual void increaseThreatLevel();
+    /** Virtual decrease threat level
+     */
         virtual void decreaseThreatLevel();
-        virtual void printThreatLevel();
+    /** Virtual print threat level
+     */
+        virtual void printThreatLevel() {};
+    
         virtual void visit(Planet* p) {};
-        virtual void selectStrategy(Strategy*);
-        virtual void executeStrategy();
+    /** Virtual select strategy method
+     */
+        virtual void selectStrategy(Strategy*){};
+    /** Virtual execute strategy
+     */
+        virtual void executeStrategy(){};
         /** Add passenger to spaceship
          * @param p - Person to be added
          */

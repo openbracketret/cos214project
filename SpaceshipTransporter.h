@@ -8,7 +8,10 @@ class SpaceshipTransporter : public Spaceship {
     public:
     /** default constructor
      */
-        SpaceshipTransporter() {};
+        SpaceshipTransporter() : Spaceship(){};
+    /** parameterized constructor
+     */
+        SpaceshipTransporter(string name) : Spaceship(name){};
     /** default desctructor
      */
         ~SpaceshipTransporter() {};

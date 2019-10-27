@@ -371,3 +371,7 @@ void Facade::printThreat() {
 void Facade::printCaptainsLog(Spaceship* spaceship){
     spaceship->printCaptainsLog();
 }
+
+void Facade::selectStrategy(Spaceship* spaceship, Strategy* strat){
+    spaceship->selectStrategy(strat);
+}

@@ -25,6 +25,8 @@ public:
     void addShip(Spaceship* s){
             space->addShip(s);
         };
+            /** stub resource collection */
+        double getResources(double a, double b);
 };
 
 #endif

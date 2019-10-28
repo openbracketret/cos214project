@@ -22,6 +22,10 @@ class Armory : public SpaceshipDecorator {
         double getResources(double a, double b){
             space->getResources(a,b);
         };
+            /** stub for visit */
+        void visit(Planet* p){
+            space->visit(p);
+        };
 };
 
 #endif

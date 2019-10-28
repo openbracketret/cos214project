@@ -33,6 +33,10 @@ public:
     /** stub for addPerson */
         void addPerson(People* p)
         {space->addPerson(p);};
+        /** stub for visit */
+        void visit(Planet* p){
+            space->visit(p);
+        };
 };
 
 #endif

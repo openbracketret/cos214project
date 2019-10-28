@@ -114,6 +114,7 @@ class Spaceship {
 
         /** virtual addPerson */
         virtual void addPerson(People* p)=0;
+        virtual void visit(People* p) = 0;
         
 
     protected:

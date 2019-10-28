@@ -53,6 +53,11 @@ class FighterTransporter : public Spaceship {
         void addPerson(People* p)
         {space->addPerson(p);};
 
+            /** stub for visit */
+        void visit(Planet* p){
+            space->visit(p);
+        };
+
     private:
         vector<People*> persons;/**<Vector of people that the transporter is currently holding*/
         int maxCapacity;/**<Max capacity that the transporter can hold*/

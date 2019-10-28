@@ -33,7 +33,9 @@ class Battleship : public Spaceship{
      */
         int getType(){return 1;};
     /** stub for visit */
-        void visit(Planet* p){};
+        void visit(Planet* p){
+            space->visit(p);
+        };
     /** stub for increaseThreatLevel */
         void increaseThreatLevel() {};
     /** stub for decreaseThreatLevel */

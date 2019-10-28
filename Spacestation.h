@@ -57,7 +57,11 @@ class SpaceStation : public Spaceship {
 
         /** stub for addPerson */
         void addPerson(People* p)
-        {space->addPerson(p);};   
+        {space->addPerson(p);};  
+            /** stub for visit */
+        void visit(Planet* p){
+            space->visit(p);
+        }; 
 
     protected:
     /** Paramaterised constructor

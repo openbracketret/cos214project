@@ -19,14 +19,17 @@ class Bridge : public SpaceshipDecorator {
         ~Bridge();
     /** resource collection */
         double getResources(double a, double b);
-        void visit(Planet* p){};
+            /** stub for visit */
+        void visit(Planet* p){
+            space->visit(p);
+        };
         void addShip(Spaceship* s){
             space->addShip(s);
-
+        };
         /** stub for addPerson */
         void addPerson(People* p)
-        {space->addPerson(p);};
-        };
+        {
+            space->addPerson(p);};
     private:
         Strategy* strategy;
 

@@ -47,6 +47,10 @@ class Frigate : public Spaceship {
         void addShip(Spaceship* s){
             space->addShip(s);
         };
+            /** stub for visit */
+        void visit(Planet* p){
+            space->visit(p);
+        };
 
 /** stub for addPerson */
         void addPerson(People* p)

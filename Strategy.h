@@ -7,7 +7,7 @@ using namespace std;
  */
 class Strategy {
     public:
-            /**execute that is overloaded by concreteStrategy*/
+            /**Virtual execute that is overloaded by concreteStrategy*/
         virtual double execute(double a, double b) = 0;
             /** Default destructor
             */

@@ -402,3 +402,23 @@ Planet* Facade::popPlanet() {
 void Facade::visitPlanetWithSpaceship(Spaceship* spaceship, Planet* plan){
     plan->accept(spaceship);
 }
+
+void Facade::createCritters(int number){
+    for (int i = 0; i < number; i++){
+        critters.push_back(new Critter());
+    }
+}
+
+Critter* Facade::getSomeCritter() {
+    return critters.back();
+}
+
+void Facade::removeCritter(Critter* crit){
+    vector<Critter*>::iterator it;
+    it = find(critters.begin(), critters.end(), crit);
+
+    if (it != critters.end()){
+        critters.erase(it);
+    }
+
+}

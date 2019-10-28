@@ -50,6 +50,9 @@ class ExplorationVessel : public Spaceship {
         void addShip(Spaceship* s){
             space->addShip(s);
         };
+        double getResources(double a, double b){
+            space->getResources(a,b);
+        };
 
 };
 

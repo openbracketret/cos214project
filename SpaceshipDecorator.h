@@ -26,7 +26,9 @@ class SpaceshipDecorator : public Spaceship {
             space->addShip(s);
         };
             /** stub resource collection */
-        virtual double getResources(double a, double b) = 0;
+        virtual double getResources(double a, double b){
+            space->getResources(a,b);
+        };
         
 
     private:

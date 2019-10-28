@@ -45,7 +45,9 @@ class FighterTransporter : public Spaceship {
         void addShip(Spaceship* s){
             space->addShip(s);
         };
-
+        double getResources(double a, double b){
+            space->getResources(a,b);
+        };
     private:
         vector<People*> persons;/**<Vector of people that the transporter is currently holding*/
         int maxCapacity;/**<Max capacity that the transporter can hold*/

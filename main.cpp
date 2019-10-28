@@ -48,9 +48,17 @@
 #include "MiningStrategy.h"
 #include "TradingStrategy.h"
 #include "NavigatorFactory.h"
-
+#include "Facade.h"
 
 
 int main () {
+
+    Facade* f = new Facade();
+
+    f->createFleet(2);
+    f->increaseThreat();
+    f->printThreat();
+
+
     return 0;
 }

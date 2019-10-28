@@ -11,3 +11,7 @@ void SpaceshipDecorator::addComponent(Spaceship* comp){
         space->addComponent(comp);
     }
 }
+
+void SpaceshipDecorator::addShip(Spaceship* s){
+    space->addShip(s);
+}

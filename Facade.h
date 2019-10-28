@@ -7,6 +7,7 @@
 #include "CommanderOfTheFleet.h"
 #include "PlanetQueue.h"
 #include "Spacestation.h"
+#include "Strategy.h"
 
 using namespace std;
 

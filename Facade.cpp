@@ -379,3 +379,4 @@ void Facade::selectStrategy(Spaceship* spaceship, Strategy* strat){
 void Facade::executeStrategy(Spaceship* spaceship){
     spaceship->executeStrategy();
 }
+

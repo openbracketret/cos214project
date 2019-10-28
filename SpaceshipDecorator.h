@@ -14,14 +14,18 @@ class SpaceshipDecorator : public Spaceship {
             @param comp The component to be added
             */
         virtual void addComponent(Spaceship* comp);
+    /** Virtual addShip
+     */
+        virtual void addShip(Spaceship*);
 
     protected:
     /** default desctructor
      */
-        ~SpaceshipDecorator() {delete space;};
+        ~SpaceshipDecorator() {};
+        
 
     private:
-        Spaceship* space;/**<The added decorator component*/
+        
         virtual void visit(Planet* p){};
 
 };

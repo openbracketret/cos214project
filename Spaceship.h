@@ -5,6 +5,7 @@
 #include <vector>
 #include "People.h"
 #include "CaptainsLog.h"
+#include "Strategy.h"
 
 class Planet;
 
@@ -53,10 +54,10 @@ class Spaceship {
         string getName(){return name;};
     /** Virtual incrase threat level
      */
-        virtual void increaseThreatLevel();
+        virtual void increaseThreatLevel() {};
     /** Virtual decrease threat level
      */
-        virtual void decreaseThreatLevel();
+        virtual void decreaseThreatLevel() {};
     /** Virtual print threat level
      */
         virtual void printThreatLevel() {};
@@ -105,6 +106,12 @@ class Spaceship {
          */
         vector<People*> getPeople() {return passengers;};
 
+        /** Virtual addShip
+         */
+        virtual void addShip(Spaceship*) = 0;
+
+    protected:
+        Spaceship* space;/**<The added decorator component*/
 
     private:
         double resources;/**<Number of resources on the ship*/

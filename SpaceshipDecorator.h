@@ -18,6 +18,9 @@ class SpaceshipDecorator : public Spaceship {
      */
         virtual void addShip(Spaceship*);
 
+        /** virtual addPerson */
+        virtual void addPerson(People* p)=0;
+
     protected:
     /** default desctructor
      */
@@ -25,6 +28,8 @@ class SpaceshipDecorator : public Spaceship {
         void addShip(Spaceship* s){
             space->addShip(s);
         };
+            /** stub resource collection */
+        double getResources(double a, double b);
         
 
     private:

@@ -25,6 +25,9 @@ public:
 	 * @return new spaceship
 	 */
 	Spaceship* spaceShipFactoryMethod(string n);
+
+	    /** stub resource collection */
+        double getResources(double a, double b);
 	
 };
 

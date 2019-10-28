@@ -49,7 +49,11 @@ class SpaceStation : public Spaceship {
         void executeStrategy() {};   
         void addShip(Spaceship* s){
             space->addShip(s);
-        };     
+        };  
+
+        /** stub for addPerson */
+        void addPerson(People* p)
+        {space->addPerson(p);};   
 
     protected:
     /** Paramaterised constructor

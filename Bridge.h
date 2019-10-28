@@ -17,11 +17,15 @@ class Bridge : public SpaceshipDecorator {
     /** Default destructor
      */
         ~Bridge();
-    /**resource collection*/
+    /** resource collection */
         double getResources(double a, double b);
         void visit(Planet* p){};
         void addShip(Spaceship* s){
             space->addShip(s);
+
+        /** stub for addPerson */
+        void addPerson(People* p)
+        {space->addPerson(p);};
         };
     private:
         Strategy* strategy;

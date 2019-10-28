@@ -46,6 +46,12 @@ class TransportBay : public SpaceshipDecorator {
         void addShip(Spaceship* s){
             space->addShip(s);
         };
+            /** stub resource collection */
+        double getResources(double a, double b);
+
+        /** stub for addPerson */
+        void addPerson(People* p)
+        {space->addPerson(p);};
 
     private:
         friend class Memento;

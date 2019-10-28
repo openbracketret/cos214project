@@ -40,6 +40,10 @@ class SpaceshipTransporter : public Spaceship {
         void addShip(Spaceship* s){
             space->addShip(s);
         };
+
+        /** stub for addPerson */
+        void addPerson(People* p)
+        {space->addPerson(p);};
 };
 
 #endif

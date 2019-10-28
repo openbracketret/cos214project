@@ -15,11 +15,13 @@ class Armory : public SpaceshipDecorator {
         ~Armory();
         void visit(Planet* p){};
 
-
-        void addShip(Spaceship*);
         void addShip(Spaceship* s){
             space->addShip(s);
         };
+
+        /** stub for addPerson */
+        void addPerson(People* p)
+        {space->addPerson(p);};
 };
 
 #endif

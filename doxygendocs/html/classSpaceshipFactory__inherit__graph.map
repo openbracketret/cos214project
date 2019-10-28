@@ -1,0 +1,8 @@
+<map id="SpaceshipFactory" name="SpaceshipFactory">
+<area shape="rect" id="node2" href="$classBattleshipFactory.html" title="Battleship Factory class. " alt="" coords="215,5,339,32"/>
+<area shape="rect" id="node3" href="$classExplorationVesselFactory.html" title="Exploration Vessel Factory class. " alt="" coords="191,56,362,83"/>
+<area shape="rect" id="node4" href="$classFighterTransporterFactory.html" title="Fighter Transporter Factory class. " alt="" coords="191,107,363,133"/>
+<area shape="rect" id="node5" href="$classFrigateFactory.html" title="Frigate Factory class. " alt="" coords="223,157,330,184"/>
+<area shape="rect" id="node6" href="$classSpaceshipTransporterFactory.html" title="Spaceship Transporter Factory class. " alt="" coords="180,208,373,235"/>
+<area shape="rect" id="node7" href="$classSpaceStationFactory.html" title="Spacestation Factory class. " alt="" coords="205,259,349,285"/>
+</map>

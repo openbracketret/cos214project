@@ -11,26 +11,52 @@ Spacestation class. A singleton.
 
 
 
-Inheritance diagram for Space\+Station\+:
-% FIG 0
+Inheritance diagram for Space\+Station\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{classSpaceStation__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for Space\+Station\+:
-% FIG 1
+Collaboration diagram for Space\+Station\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classSpaceStation__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classSpaceship}{Spaceship} $\ast$ \hyperlink{classSpaceStation_acffc1d332b904f06b55288819e69f3c8}{get\+Space\+Station} ()
 \item 
-void \hyperlink{classSpaceStation_acebba61d05be13cd336785ba5ee0ece5}{update\+Space\+Station} (\hyperlink{classSpaceStation}{Space\+Station} $\ast$)
+void \hyperlink{classSpaceStation_ab48ad7ea32bba4facb732bc988b96ca3}{update\+Space\+Station} (\hyperlink{classSpaceStation}{Space\+Station} $\ast$s)
 \item 
-void \hyperlink{classSpaceStation_af78aa518f63655701ff763461522ac7d}{add\+Component} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
+virtual void \hyperlink{classSpaceStation_ae89449fdcf5d44229fb93a14fc496fe1}{add\+Component} (\hyperlink{classSpaceship}{Spaceship} $\ast$comp)
 \item 
 void \hyperlink{classSpaceStation_aa9390e8af0d69fc176c190f8f6891736}{increase\+Threat\+Level} ()
 \item 
 void \hyperlink{classSpaceStation_a0cb67593dc02495793635adb66f595e9}{decrease\+Threat\+Level} ()
 \item 
 void \hyperlink{classSpaceStation_a430ee680ac20af8245640e9271095688}{print\+Threat\+Level} ()
+\item 
+void \hyperlink{classSpaceStation_a4a3c46e04527ecb72d19a1187dcfd31a}{execute\+Strategy} ()
+\item 
+void \hyperlink{classSpaceStation_adddfe90b720e2b0a8ce5d27a20eb204e}{select\+Strategy} (\hyperlink{classStrategy}{Strategy} $\ast$s)
+\item 
+void \hyperlink{classSpaceStation_ace2d37733fa5af9551aba31bc9229ad3}{add\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$s)
+\item 
+double \hyperlink{classSpaceStation_ae701844b2b5013cd51cc5ead813e7e51}{get\+Resources} (double a, double b)
+\item 
+void \hyperlink{classSpaceStation_a46146c02fcd8107eda2972cc5843afd8}{add\+Person} (\hyperlink{classPeople}{People} $\ast$p)
+\item 
+void \hyperlink{classSpaceStation_a22638e4ee44a667bd59b8795c9444b84}{visit} (\hyperlink{classPlanet}{Planet} $\ast$p)
+\item 
+\hyperlink{classMemento}{Memento} $\ast$ \hyperlink{classSpaceStation_a7396c4080f29ca9c20975f831008b011}{create\+Memento} (vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$ s)
+\item 
+void \hyperlink{classSpaceStation_a4d39ac0fe8f0aa521c32011f1a1bad9b}{reinstate\+Memento} (\hyperlink{classMemento}{Memento} $\ast$mem)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -48,6 +74,7 @@ virtual \hyperlink{classSpaceStation_ab14cf2bd79032be8342f6475911bd64b}{$\sim$\+
 \item 
 \hyperlink{classSpaceStation}{Space\+Station} \& \hyperlink{classSpaceStation_a1164b774315ebf10ff148ca0a658da5d}{operator=} (const \hyperlink{classSpaceStation}{Space\+Station} \&)
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -75,28 +102,87 @@ Default constructor \mbox{\Hypertarget{classSpaceStation_ab14cf2bd79032be8342f64
 Virtual default desctructor 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classSpaceStation_af78aa518f63655701ff763461522ac7d}\label{classSpaceStation_af78aa518f63655701ff763461522ac7d}} 
+\mbox{\Hypertarget{classSpaceStation_ae89449fdcf5d44229fb93a14fc496fe1}\label{classSpaceStation_ae89449fdcf5d44229fb93a14fc496fe1}} 
 \index{Space\+Station@{Space\+Station}!add\+Component@{add\+Component}}
 \index{add\+Component@{add\+Component}!Space\+Station@{Space\+Station}}
 \subsubsection{\texorpdfstring{add\+Component()}{addComponent()}}
-{\footnotesize\ttfamily void Space\+Station\+::add\+Component (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual void Space\+Station\+::add\+Component (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{comp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 Add component to spaceship 
 \begin{DoxyParams}{Parameters}
-{\em s} & -\/ component to be added \\
+{\em comp} & -\/ component to be added \\
 \hline
 \end{DoxyParams}
 
 
 Implements \hyperlink{classSpaceship_ac1b4673a691cd100708ddea08cd9f192}{Spaceship}.
 
+\mbox{\Hypertarget{classSpaceStation_a46146c02fcd8107eda2972cc5843afd8}\label{classSpaceStation_a46146c02fcd8107eda2972cc5843afd8}} 
+\index{Space\+Station@{Space\+Station}!add\+Person@{add\+Person}}
+\index{add\+Person@{add\+Person}!Space\+Station@{Space\+Station}}
+\subsubsection{\texorpdfstring{add\+Person()}{addPerson()}}
+{\footnotesize\ttfamily void Space\+Station\+::add\+Person (\begin{DoxyParamCaption}\item[{\hyperlink{classPeople}{People} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for add\+Person 
+
+Reimplemented from \hyperlink{classSpaceship_add8d9c6dfd5f6ecb8399e41e71e5b22f}{Spaceship}.
+
+\mbox{\Hypertarget{classSpaceStation_ace2d37733fa5af9551aba31bc9229ad3}\label{classSpaceStation_ace2d37733fa5af9551aba31bc9229ad3}} 
+\index{Space\+Station@{Space\+Station}!add\+Ship@{add\+Ship}}
+\index{add\+Ship@{add\+Ship}!Space\+Station@{Space\+Station}}
+\subsubsection{\texorpdfstring{add\+Ship()}{addShip()}}
+{\footnotesize\ttfamily void Space\+Station\+::add\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Add \hyperlink{classSpaceship}{Spaceship} 
+\begin{DoxyParams}{Parameters}
+{\em s} & \hyperlink{classSpaceship}{Spaceship} to be added \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classSpaceship_a90e1321cdbcb459b98b75ab39cef867d}{Spaceship}.
+
+\mbox{\Hypertarget{classSpaceStation_a7396c4080f29ca9c20975f831008b011}\label{classSpaceStation_a7396c4080f29ca9c20975f831008b011}} 
+\index{Space\+Station@{Space\+Station}!create\+Memento@{create\+Memento}}
+\index{create\+Memento@{create\+Memento}!Space\+Station@{Space\+Station}}
+\subsubsection{\texorpdfstring{create\+Memento()}{createMemento()}}
+{\footnotesize\ttfamily \hyperlink{classMemento}{Memento}$\ast$ Space\+Station\+::create\+Memento (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+create memento stub 
+
+Reimplemented from \hyperlink{classSpaceship_a6d272f846b019dec8226ddab65648a7b}{Spaceship}.
+
 \mbox{\Hypertarget{classSpaceStation_a0cb67593dc02495793635adb66f595e9}\label{classSpaceStation_a0cb67593dc02495793635adb66f595e9}} 
 \index{Space\+Station@{Space\+Station}!decrease\+Threat\+Level@{decrease\+Threat\+Level}}
 \index{decrease\+Threat\+Level@{decrease\+Threat\+Level}!Space\+Station@{Space\+Station}}
 \subsubsection{\texorpdfstring{decrease\+Threat\+Level()}{decreaseThreatLevel()}}
-{\footnotesize\ttfamily void Space\+Station\+::decrease\+Threat\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Space\+Station\+::decrease\+Threat\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Decrease threat level of spacespation \mbox{\Hypertarget{classSpaceStation_acffc1d332b904f06b55288819e69f3c8}\label{classSpaceStation_acffc1d332b904f06b55288819e69f3c8}} 
+Decrease threat level of spacespation 
+
+Reimplemented from \hyperlink{classSpaceship_a73a1eefd211e9a2063d924ee85f0c0c7}{Spaceship}.
+
+\mbox{\Hypertarget{classSpaceStation_a4a3c46e04527ecb72d19a1187dcfd31a}\label{classSpaceStation_a4a3c46e04527ecb72d19a1187dcfd31a}} 
+\index{Space\+Station@{Space\+Station}!execute\+Strategy@{execute\+Strategy}}
+\index{execute\+Strategy@{execute\+Strategy}!Space\+Station@{Space\+Station}}
+\subsubsection{\texorpdfstring{execute\+Strategy()}{executeStrategy()}}
+{\footnotesize\ttfamily void Space\+Station\+::execute\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+execute strategy 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
+
+\mbox{\Hypertarget{classSpaceStation_ae701844b2b5013cd51cc5ead813e7e51}\label{classSpaceStation_ae701844b2b5013cd51cc5ead813e7e51}} 
+\index{Space\+Station@{Space\+Station}!get\+Resources@{get\+Resources}}
+\index{get\+Resources@{get\+Resources}!Space\+Station@{Space\+Station}}
+\subsubsection{\texorpdfstring{get\+Resources()}{getResources()}}
+{\footnotesize\ttfamily double Space\+Station\+::get\+Resources (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub resource collection 
+
+Reimplemented from \hyperlink{classSpaceship_ad2027533de1d789db5e3efa22055f2d0}{Spaceship}.
+
+\mbox{\Hypertarget{classSpaceStation_acffc1d332b904f06b55288819e69f3c8}\label{classSpaceStation_acffc1d332b904f06b55288819e69f3c8}} 
 \index{Space\+Station@{Space\+Station}!get\+Space\+Station@{get\+Space\+Station}}
 \index{get\+Space\+Station@{get\+Space\+Station}!Space\+Station@{Space\+Station}}
 \subsubsection{\texorpdfstring{get\+Space\+Station()}{getSpaceStation()}}
@@ -109,9 +195,13 @@ Spaceship$\ast$
 \index{Space\+Station@{Space\+Station}!increase\+Threat\+Level@{increase\+Threat\+Level}}
 \index{increase\+Threat\+Level@{increase\+Threat\+Level}!Space\+Station@{Space\+Station}}
 \subsubsection{\texorpdfstring{increase\+Threat\+Level()}{increaseThreatLevel()}}
-{\footnotesize\ttfamily void Space\+Station\+::increase\+Threat\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Space\+Station\+::increase\+Threat\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Increase threat level of spacestation \mbox{\Hypertarget{classSpaceStation_aaf446a294ee415c89b91f7755ae50519}\label{classSpaceStation_aaf446a294ee415c89b91f7755ae50519}} 
+Increase threat level of spacestation 
+
+Reimplemented from \hyperlink{classSpaceship_a5ddf702124286d9d3a6b5e64c09515bc}{Spaceship}.
+
+\mbox{\Hypertarget{classSpaceStation_aaf446a294ee415c89b91f7755ae50519}\label{classSpaceStation_aaf446a294ee415c89b91f7755ae50519}} 
 \index{Space\+Station@{Space\+Station}!instance@{instance}}
 \index{instance@{instance}!Space\+Station@{Space\+Station}}
 \subsubsection{\texorpdfstring{instance()}{instance()}}
@@ -130,19 +220,53 @@ Overridden = operator \mbox{\Hypertarget{classSpaceStation_a430ee680ac20af824564
 \index{Space\+Station@{Space\+Station}!print\+Threat\+Level@{print\+Threat\+Level}}
 \index{print\+Threat\+Level@{print\+Threat\+Level}!Space\+Station@{Space\+Station}}
 \subsubsection{\texorpdfstring{print\+Threat\+Level()}{printThreatLevel()}}
-{\footnotesize\ttfamily void Space\+Station\+::print\+Threat\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Space\+Station\+::print\+Threat\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Print the current threat level of the space station \mbox{\Hypertarget{classSpaceStation_acebba61d05be13cd336785ba5ee0ece5}\label{classSpaceStation_acebba61d05be13cd336785ba5ee0ece5}} 
+Print the current threat level of the space station 
+
+Reimplemented from \hyperlink{classSpaceship_a8f16814f888a5a1423e5a491329cdb97}{Spaceship}.
+
+\mbox{\Hypertarget{classSpaceStation_a4d39ac0fe8f0aa521c32011f1a1bad9b}\label{classSpaceStation_a4d39ac0fe8f0aa521c32011f1a1bad9b}} 
+\index{Space\+Station@{Space\+Station}!reinstate\+Memento@{reinstate\+Memento}}
+\index{reinstate\+Memento@{reinstate\+Memento}!Space\+Station@{Space\+Station}}
+\subsubsection{\texorpdfstring{reinstate\+Memento()}{reinstateMemento()}}
+{\footnotesize\ttfamily void Space\+Station\+::reinstate\+Memento (\begin{DoxyParamCaption}\item[{\hyperlink{classMemento}{Memento} $\ast$}]{mem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+reinstate memento 
+
+Reimplemented from \hyperlink{classSpaceship_ab075c869473344b6471c8e28ca7ea61e}{Spaceship}.
+
+\mbox{\Hypertarget{classSpaceStation_adddfe90b720e2b0a8ce5d27a20eb204e}\label{classSpaceStation_adddfe90b720e2b0a8ce5d27a20eb204e}} 
+\index{Space\+Station@{Space\+Station}!select\+Strategy@{select\+Strategy}}
+\index{select\+Strategy@{select\+Strategy}!Space\+Station@{Space\+Station}}
+\subsubsection{\texorpdfstring{select\+Strategy()}{selectStrategy()}}
+{\footnotesize\ttfamily void Space\+Station\+::select\+Strategy (\begin{DoxyParamCaption}\item[{\hyperlink{classStrategy}{Strategy} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+select strategy 
+
+Reimplemented from \hyperlink{classSpaceship_a93be2d9d2b675ef978d866d4cd7a6524}{Spaceship}.
+
+\mbox{\Hypertarget{classSpaceStation_ab48ad7ea32bba4facb732bc988b96ca3}\label{classSpaceStation_ab48ad7ea32bba4facb732bc988b96ca3}} 
 \index{Space\+Station@{Space\+Station}!update\+Space\+Station@{update\+Space\+Station}}
 \index{update\+Space\+Station@{update\+Space\+Station}!Space\+Station@{Space\+Station}}
 \subsubsection{\texorpdfstring{update\+Space\+Station()}{updateSpaceStation()}}
-{\footnotesize\ttfamily void Space\+Station\+::update\+Space\+Station (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceStation}{Space\+Station} $\ast$}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Space\+Station\+::update\+Space\+Station (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceStation}{Space\+Station} $\ast$}]{s }\end{DoxyParamCaption})}
 
 Update the spacestation 
 \begin{DoxyParams}{Parameters}
 {\em s} & -\/ updated spacestation \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classSpaceStation_a22638e4ee44a667bd59b8795c9444b84}\label{classSpaceStation_a22638e4ee44a667bd59b8795c9444b84}} 
+\index{Space\+Station@{Space\+Station}!visit@{visit}}
+\index{visit@{visit}!Space\+Station@{Space\+Station}}
+\subsubsection{\texorpdfstring{visit()}{visit()}}
+{\footnotesize\ttfamily void Space\+Station\+::visit (\begin{DoxyParamCaption}\item[{\hyperlink{classPlanet}{Planet} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for visit 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

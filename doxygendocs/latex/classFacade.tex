@@ -1,0 +1,427 @@
+\hypertarget{classFacade}{}\section{Facade Class Reference}
+\label{classFacade}\index{Facade@{Facade}}
+
+
+\hyperlink{classFacade}{Facade} class.  
+
+
+
+
+{\ttfamily \#include $<$Facade.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classFacade_a1bac00087158eb5c52c31d38d3b0c5dd}{create\+Fleet} (int)
+\item 
+void \hyperlink{classFacade_ac8e923ca1b69cf459137572132a034b1}{create\+Planets} (int)
+\item 
+vector$<$ \hyperlink{classPeople}{People} $\ast$ $>$ \hyperlink{classFacade_ae17d6bf514b5b0b3ee2ccb4f1b6abcb7}{get\+People\+On\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
+\item 
+\hyperlink{classSpaceship}{Spaceship} $\ast$ \hyperlink{classFacade_a361ae4cbe6acd8bb8039f111fd6f437d}{get\+Spaceship\+With\+Name} ()
+\item 
+void \hyperlink{classFacade_aa4349e600d23bffb8077cfcf991ec115}{create\+People} (int)
+\item 
+void \hyperlink{classFacade_a91364a59aa7aedae6111ca81c01bab25}{send\+Error\+Message\+To\+Ship} (\hyperlink{classPeople}{People} $\ast$, string)
+\item 
+\hyperlink{classPeople}{People} $\ast$ \hyperlink{classFacade_addc3c5f6eee5a886287af62c910546e0}{get\+Doctor\+On\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
+\item 
+\hyperlink{classPeople}{People} $\ast$ \hyperlink{classFacade_a63631cca1ed46f8adb96083a72c169ca}{get\+Engineer\+On\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
+\item 
+\hyperlink{classPeople}{People} $\ast$ \hyperlink{classFacade_a3a5f6c00871cd14664a1f4ef1376bb9d}{get\+Comms\+On\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
+\item 
+\hyperlink{classPeople}{People} $\ast$ \hyperlink{classFacade_af607a431f6654f447620a47f6373ded3}{get\+Chief\+Engineer\+On\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
+\item 
+\hyperlink{classPeople}{People} $\ast$ \hyperlink{classFacade_ad1ebea64b1784cc42842ccb3271c848b}{get\+Fighter\+On\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
+\item 
+\hyperlink{classPeople}{People} $\ast$ \hyperlink{classFacade_aaf96fa03ebaa18acbd776e9f93545784}{get\+Navigator\+On\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
+\item 
+\hyperlink{classPeople}{People} $\ast$ \hyperlink{classFacade_ac12365765267ad5cc81b4eae205cf989}{get\+Captain\+On\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
+\item 
+void \hyperlink{classFacade_a71538ab2a843ef79bc998fb494b78591}{log\+Message} (\hyperlink{classSpaceship}{Spaceship} $\ast$, string)
+\item 
+void \hyperlink{classFacade_adbdce0c4dbae689cc1eca07ff861483d}{board\+Person\+To\+Ship} (\hyperlink{classPeople}{People} $\ast$, \hyperlink{classSpaceship}{Spaceship} $\ast$)
+\item 
+void \hyperlink{classFacade_a353ace75af9123f863869c57f9ba1e88}{begin\+Boarding} (int, \hyperlink{classSpaceship}{Spaceship} $\ast$)
+\item 
+void \hyperlink{classFacade_ad0bc0c8387b51b0ead3499747ba846cd}{remove\+Type\+From\+Ship} (string type, \hyperlink{classSpaceship}{Spaceship} $\ast$spaceship)
+\item 
+void \hyperlink{classFacade_ab7da0040c4f6f61a0bbff3cb0d4114ea}{increase\+Threat} ()
+\item 
+void \hyperlink{classFacade_ac64e351ea722a24829220fec59d7855f}{decrease\+Threat} ()
+\item 
+void \hyperlink{classFacade_a26a101d8f1a70a6af2eee1af45ca3ab8}{print\+Threat} ()
+\item 
+void \hyperlink{classFacade_a1e5bd61cd66ac14d31c02b2c1eebc015}{print\+Captains\+Log} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
+\item 
+void \hyperlink{classFacade_a284506af0f160efbe15bb93dfccb792e}{select\+Strategy} (\hyperlink{classSpaceship}{Spaceship} $\ast$, \hyperlink{classStrategy}{Strategy} $\ast$)
+\item 
+void \hyperlink{classFacade_a46b8ea3a69b017548c7eaf207f674976}{execute\+Strategy} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
+\item 
+void \hyperlink{classFacade_a4c49632c6a0cfc98ed5ffa5d4fe7575b}{do\+Command} (string type, \hyperlink{classSpaceship}{Spaceship} $\ast$)
+\item 
+\hyperlink{classPlanet}{Planet} $\ast$ \hyperlink{classFacade_a5519cbabe4e10ae5b904f9726133548b}{pop\+Planet} ()
+\item 
+void \hyperlink{classFacade_aebe418b146c51597d40684758830a476}{visit\+Planet\+With\+Spaceship} (\hyperlink{classSpaceship}{Spaceship} $\ast$, \hyperlink{classPlanet}{Planet} $\ast$)
+\item 
+void \hyperlink{classFacade_a2947cf249289176c61d53412f30eac14}{create\+Critters} (int)
+\item 
+\hyperlink{classCritter}{Critter} $\ast$ \hyperlink{classFacade_a9107be8f3d1f43ef4565e448608a89f8}{get\+Some\+Critter} ()
+\item 
+void \hyperlink{classFacade_aac0e65b823a1bbb8d824ff12c572144b}{remove\+Critter} (\hyperlink{classCritter}{Critter} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classFacade}{Facade} class. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classFacade_a353ace75af9123f863869c57f9ba1e88}\label{classFacade_a353ace75af9123f863869c57f9ba1e88}} 
+\index{Facade@{Facade}!begin\+Boarding@{begin\+Boarding}}
+\index{begin\+Boarding@{begin\+Boarding}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{begin\+Boarding()}{beginBoarding()}}
+{\footnotesize\ttfamily void Facade\+::begin\+Boarding (\begin{DoxyParamCaption}\item[{int}]{number,  }\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{spaceship }\end{DoxyParamCaption})}
+
+Start loading a ship with people 
+\begin{DoxyParams}{Parameters}
+{\em number} & -\/ the number of people to load \\
+\hline
+{\em spaceship} & -\/ the spaceship to load people into \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFacade_adbdce0c4dbae689cc1eca07ff861483d}\label{classFacade_adbdce0c4dbae689cc1eca07ff861483d}} 
+\index{Facade@{Facade}!board\+Person\+To\+Ship@{board\+Person\+To\+Ship}}
+\index{board\+Person\+To\+Ship@{board\+Person\+To\+Ship}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{board\+Person\+To\+Ship()}{boardPersonToShip()}}
+{\footnotesize\ttfamily void Facade\+::board\+Person\+To\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classPeople}{People} $\ast$}]{person,  }\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{spaceship }\end{DoxyParamCaption})}
+
+Load a person onto the given ship 
+\begin{DoxyParams}{Parameters}
+{\em person} & -\/ the person to board to the ship \\
+\hline
+{\em spaceship} & -\/ the spaceship to load the passenger to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFacade_a2947cf249289176c61d53412f30eac14}\label{classFacade_a2947cf249289176c61d53412f30eac14}} 
+\index{Facade@{Facade}!create\+Critters@{create\+Critters}}
+\index{create\+Critters@{create\+Critters}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{create\+Critters()}{createCritters()}}
+{\footnotesize\ttfamily void Facade\+::create\+Critters (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})}
+
+Create some critters 
+\begin{DoxyParams}{Parameters}
+{\em number} & -\/ the number of critters to create \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFacade_a1bac00087158eb5c52c31d38d3b0c5dd}\label{classFacade_a1bac00087158eb5c52c31d38d3b0c5dd}} 
+\index{Facade@{Facade}!create\+Fleet@{create\+Fleet}}
+\index{create\+Fleet@{create\+Fleet}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{create\+Fleet()}{createFleet()}}
+{\footnotesize\ttfamily void Facade\+::create\+Fleet (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})}
+
+Begin creation of a fleet 
+\begin{DoxyParams}{Parameters}
+{\em number} & -\/ The amount of ships to create in the fleet \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFacade_aa4349e600d23bffb8077cfcf991ec115}\label{classFacade_aa4349e600d23bffb8077cfcf991ec115}} 
+\index{Facade@{Facade}!create\+People@{create\+People}}
+\index{create\+People@{create\+People}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{create\+People()}{createPeople()}}
+{\footnotesize\ttfamily void Facade\+::create\+People (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})}
+
+Begin creation of people 
+\begin{DoxyParams}{Parameters}
+{\em number} & -\/ int the number of people to create \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFacade_ac8e923ca1b69cf459137572132a034b1}\label{classFacade_ac8e923ca1b69cf459137572132a034b1}} 
+\index{Facade@{Facade}!create\+Planets@{create\+Planets}}
+\index{create\+Planets@{create\+Planets}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{create\+Planets()}{createPlanets()}}
+{\footnotesize\ttfamily void Facade\+::create\+Planets (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})}
+
+Create planets 
+\begin{DoxyParams}{Parameters}
+{\em number} & -\/ The number of planets to create \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFacade_ac64e351ea722a24829220fec59d7855f}\label{classFacade_ac64e351ea722a24829220fec59d7855f}} 
+\index{Facade@{Facade}!decrease\+Threat@{decrease\+Threat}}
+\index{decrease\+Threat@{decrease\+Threat}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{decrease\+Threat()}{decreaseThreat()}}
+{\footnotesize\ttfamily void Facade\+::decrease\+Threat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Decrase the threat level the fleet \mbox{\Hypertarget{classFacade_a4c49632c6a0cfc98ed5ffa5d4fe7575b}\label{classFacade_a4c49632c6a0cfc98ed5ffa5d4fe7575b}} 
+\index{Facade@{Facade}!do\+Command@{do\+Command}}
+\index{do\+Command@{do\+Command}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{do\+Command()}{doCommand()}}
+{\footnotesize\ttfamily void Facade\+::do\+Command (\begin{DoxyParamCaption}\item[{string}]{type,  }\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{spaceship }\end{DoxyParamCaption})}
+
+Execute a command from the commander 
+\begin{DoxyParams}{Parameters}
+{\em type} & -\/ the command to execute \\
+\hline
+{\em spaceship} & -\/ the spaceship that the command executes on \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFacade_a46b8ea3a69b017548c7eaf207f674976}\label{classFacade_a46b8ea3a69b017548c7eaf207f674976}} 
+\index{Facade@{Facade}!execute\+Strategy@{execute\+Strategy}}
+\index{execute\+Strategy@{execute\+Strategy}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{execute\+Strategy()}{executeStrategy()}}
+{\footnotesize\ttfamily void Facade\+::execute\+Strategy (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{spaceship }\end{DoxyParamCaption})}
+
+Execute the selected strategy of the selected ship 
+\begin{DoxyParams}{Parameters}
+{\em spaceship} & -\/ the spaceship that will execute the strategy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFacade_ac12365765267ad5cc81b4eae205cf989}\label{classFacade_ac12365765267ad5cc81b4eae205cf989}} 
+\index{Facade@{Facade}!get\+Captain\+On\+Ship@{get\+Captain\+On\+Ship}}
+\index{get\+Captain\+On\+Ship@{get\+Captain\+On\+Ship}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{get\+Captain\+On\+Ship()}{getCaptainOnShip()}}
+{\footnotesize\ttfamily \hyperlink{classPeople}{People} $\ast$ Facade\+::get\+Captain\+On\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{spaceship }\end{DoxyParamCaption})}
+
+Get a captain aboard a ship 
+\begin{DoxyParams}{Parameters}
+{\em spaceship} & -\/ the spaceship to get the captin from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+People$\ast$ -\/ the captain 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFacade_af607a431f6654f447620a47f6373ded3}\label{classFacade_af607a431f6654f447620a47f6373ded3}} 
+\index{Facade@{Facade}!get\+Chief\+Engineer\+On\+Ship@{get\+Chief\+Engineer\+On\+Ship}}
+\index{get\+Chief\+Engineer\+On\+Ship@{get\+Chief\+Engineer\+On\+Ship}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{get\+Chief\+Engineer\+On\+Ship()}{getChiefEngineerOnShip()}}
+{\footnotesize\ttfamily \hyperlink{classPeople}{People} $\ast$ Facade\+::get\+Chief\+Engineer\+On\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{spaceship }\end{DoxyParamCaption})}
+
+Get a chief enginner aboard a ship 
+\begin{DoxyParams}{Parameters}
+{\em spaceship} & -\/ the ship to get the chief from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+People$\ast$ -\/ the chief engineer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFacade_a3a5f6c00871cd14664a1f4ef1376bb9d}\label{classFacade_a3a5f6c00871cd14664a1f4ef1376bb9d}} 
+\index{Facade@{Facade}!get\+Comms\+On\+Ship@{get\+Comms\+On\+Ship}}
+\index{get\+Comms\+On\+Ship@{get\+Comms\+On\+Ship}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{get\+Comms\+On\+Ship()}{getCommsOnShip()}}
+{\footnotesize\ttfamily \hyperlink{classPeople}{People} $\ast$ Facade\+::get\+Comms\+On\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{spaceship }\end{DoxyParamCaption})}
+
+Get comms on aboard a ship 
+\begin{DoxyParams}{Parameters}
+{\em spaceship} & -\/ the ship to get a comms from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+People$\ast$ -\/ the comms 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFacade_addc3c5f6eee5a886287af62c910546e0}\label{classFacade_addc3c5f6eee5a886287af62c910546e0}} 
+\index{Facade@{Facade}!get\+Doctor\+On\+Ship@{get\+Doctor\+On\+Ship}}
+\index{get\+Doctor\+On\+Ship@{get\+Doctor\+On\+Ship}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{get\+Doctor\+On\+Ship()}{getDoctorOnShip()}}
+{\footnotesize\ttfamily \hyperlink{classPeople}{People} $\ast$ Facade\+::get\+Doctor\+On\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{spaceship }\end{DoxyParamCaption})}
+
+Get a doctor aboard a ship 
+\begin{DoxyParams}{Parameters}
+{\em spaceship} & -\/ The spaceship to get a doctor from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+People$\ast$ -\/ the doctor on the ship 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFacade_a63631cca1ed46f8adb96083a72c169ca}\label{classFacade_a63631cca1ed46f8adb96083a72c169ca}} 
+\index{Facade@{Facade}!get\+Engineer\+On\+Ship@{get\+Engineer\+On\+Ship}}
+\index{get\+Engineer\+On\+Ship@{get\+Engineer\+On\+Ship}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{get\+Engineer\+On\+Ship()}{getEngineerOnShip()}}
+{\footnotesize\ttfamily \hyperlink{classPeople}{People} $\ast$ Facade\+::get\+Engineer\+On\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{spaceship }\end{DoxyParamCaption})}
+
+Get an engineer aboard the ship 
+\begin{DoxyParams}{Parameters}
+{\em spaceship} & -\/ the spaceship to get an engineer from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+People$\ast$ -\/ The engineer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFacade_ad1ebea64b1784cc42842ccb3271c848b}\label{classFacade_ad1ebea64b1784cc42842ccb3271c848b}} 
+\index{Facade@{Facade}!get\+Fighter\+On\+Ship@{get\+Fighter\+On\+Ship}}
+\index{get\+Fighter\+On\+Ship@{get\+Fighter\+On\+Ship}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{get\+Fighter\+On\+Ship()}{getFighterOnShip()}}
+{\footnotesize\ttfamily \hyperlink{classPeople}{People} $\ast$ Facade\+::get\+Fighter\+On\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{spaceship }\end{DoxyParamCaption})}
+
+Get a fighter aboard the ship 
+\begin{DoxyParams}{Parameters}
+{\em spaceship} & -\/ the the ship to get the fighter from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+People$\ast$ -\/ the fighter from the ship 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFacade_aaf96fa03ebaa18acbd776e9f93545784}\label{classFacade_aaf96fa03ebaa18acbd776e9f93545784}} 
+\index{Facade@{Facade}!get\+Navigator\+On\+Ship@{get\+Navigator\+On\+Ship}}
+\index{get\+Navigator\+On\+Ship@{get\+Navigator\+On\+Ship}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{get\+Navigator\+On\+Ship()}{getNavigatorOnShip()}}
+{\footnotesize\ttfamily \hyperlink{classPeople}{People} $\ast$ Facade\+::get\+Navigator\+On\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{spaceship }\end{DoxyParamCaption})}
+
+Get a navigator aboard the ship 
+\begin{DoxyParams}{Parameters}
+{\em spaceship} & -\/ The ship to get the navigator from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+People$\ast$ -\/ the navigator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFacade_ae17d6bf514b5b0b3ee2ccb4f1b6abcb7}\label{classFacade_ae17d6bf514b5b0b3ee2ccb4f1b6abcb7}} 
+\index{Facade@{Facade}!get\+People\+On\+Ship@{get\+People\+On\+Ship}}
+\index{get\+People\+On\+Ship@{get\+People\+On\+Ship}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{get\+People\+On\+Ship()}{getPeopleOnShip()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{classPeople}{People} $\ast$ $>$ Facade\+::get\+People\+On\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{s }\end{DoxyParamCaption})}
+
+Get the people contained in a spaceship 
+\begin{DoxyParams}{Parameters}
+{\em s} & -\/ spaceship to get people from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$\+People$\ast$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFacade_a9107be8f3d1f43ef4565e448608a89f8}\label{classFacade_a9107be8f3d1f43ef4565e448608a89f8}} 
+\index{Facade@{Facade}!get\+Some\+Critter@{get\+Some\+Critter}}
+\index{get\+Some\+Critter@{get\+Some\+Critter}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{get\+Some\+Critter()}{getSomeCritter()}}
+{\footnotesize\ttfamily \hyperlink{classCritter}{Critter} $\ast$ Facade\+::get\+Some\+Critter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get a random critter from the list \begin{DoxyReturn}{Returns}
+Critter$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFacade_a361ae4cbe6acd8bb8039f111fd6f437d}\label{classFacade_a361ae4cbe6acd8bb8039f111fd6f437d}} 
+\index{Facade@{Facade}!get\+Spaceship\+With\+Name@{get\+Spaceship\+With\+Name}}
+\index{get\+Spaceship\+With\+Name@{get\+Spaceship\+With\+Name}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{get\+Spaceship\+With\+Name()}{getSpaceshipWithName()}}
+{\footnotesize\ttfamily \hyperlink{classSpaceship}{Spaceship} $\ast$ Facade\+::get\+Spaceship\+With\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get a spaceship with a specific name 
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ the name of the spaceship \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Spaceship$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFacade_ab7da0040c4f6f61a0bbff3cb0d4114ea}\label{classFacade_ab7da0040c4f6f61a0bbff3cb0d4114ea}} 
+\index{Facade@{Facade}!increase\+Threat@{increase\+Threat}}
+\index{increase\+Threat@{increase\+Threat}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{increase\+Threat()}{increaseThreat()}}
+{\footnotesize\ttfamily void Facade\+::increase\+Threat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Increase the threat level of the fleet \mbox{\Hypertarget{classFacade_a71538ab2a843ef79bc998fb494b78591}\label{classFacade_a71538ab2a843ef79bc998fb494b78591}} 
+\index{Facade@{Facade}!log\+Message@{log\+Message}}
+\index{log\+Message@{log\+Message}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{log\+Message()}{logMessage()}}
+{\footnotesize\ttfamily void Facade\+::log\+Message (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{spaceship,  }\item[{string}]{message }\end{DoxyParamCaption})}
+
+Log a message to the captains log of specified ship 
+\begin{DoxyParams}{Parameters}
+{\em spaceship} & -\/ The spaceship to log the message to \\
+\hline
+{\em message} & -\/ the message to me logged \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFacade_a5519cbabe4e10ae5b904f9726133548b}\label{classFacade_a5519cbabe4e10ae5b904f9726133548b}} 
+\index{Facade@{Facade}!pop\+Planet@{pop\+Planet}}
+\index{pop\+Planet@{pop\+Planet}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{pop\+Planet()}{popPlanet()}}
+{\footnotesize\ttfamily \hyperlink{classPlanet}{Planet} $\ast$ Facade\+::pop\+Planet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+pop off a planet from the queue \begin{DoxyReturn}{Returns}
+Planet$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFacade_a1e5bd61cd66ac14d31c02b2c1eebc015}\label{classFacade_a1e5bd61cd66ac14d31c02b2c1eebc015}} 
+\index{Facade@{Facade}!print\+Captains\+Log@{print\+Captains\+Log}}
+\index{print\+Captains\+Log@{print\+Captains\+Log}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{print\+Captains\+Log()}{printCaptainsLog()}}
+{\footnotesize\ttfamily void Facade\+::print\+Captains\+Log (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{spaceship }\end{DoxyParamCaption})}
+
+Print captains log of specified ship 
+\begin{DoxyParams}{Parameters}
+{\em spaceship} & -\/ the spaceship specified \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFacade_a26a101d8f1a70a6af2eee1af45ca3ab8}\label{classFacade_a26a101d8f1a70a6af2eee1af45ca3ab8}} 
+\index{Facade@{Facade}!print\+Threat@{print\+Threat}}
+\index{print\+Threat@{print\+Threat}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{print\+Threat()}{printThreat()}}
+{\footnotesize\ttfamily void Facade\+::print\+Threat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Print out the current threat level of the fleet \mbox{\Hypertarget{classFacade_aac0e65b823a1bbb8d824ff12c572144b}\label{classFacade_aac0e65b823a1bbb8d824ff12c572144b}} 
+\index{Facade@{Facade}!remove\+Critter@{remove\+Critter}}
+\index{remove\+Critter@{remove\+Critter}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{remove\+Critter()}{removeCritter()}}
+{\footnotesize\ttfamily void Facade\+::remove\+Critter (\begin{DoxyParamCaption}\item[{\hyperlink{classCritter}{Critter} $\ast$}]{crit }\end{DoxyParamCaption})}
+
+Remove specific critter from list 
+\begin{DoxyParams}{Parameters}
+{\em crit} & -\/ the critter to be removed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFacade_ad0bc0c8387b51b0ead3499747ba846cd}\label{classFacade_ad0bc0c8387b51b0ead3499747ba846cd}} 
+\index{Facade@{Facade}!remove\+Type\+From\+Ship@{remove\+Type\+From\+Ship}}
+\index{remove\+Type\+From\+Ship@{remove\+Type\+From\+Ship}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{remove\+Type\+From\+Ship()}{removeTypeFromShip()}}
+{\footnotesize\ttfamily void Facade\+::remove\+Type\+From\+Ship (\begin{DoxyParamCaption}\item[{string}]{type,  }\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{spaceship }\end{DoxyParamCaption})}
+
+Remove a type of person from a ship 
+\begin{DoxyParams}{Parameters}
+{\em type} & -\/ the type of person \\
+\hline
+{\em spaceship} & -\/ the spaceship to remove the person from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFacade_a284506af0f160efbe15bb93dfccb792e}\label{classFacade_a284506af0f160efbe15bb93dfccb792e}} 
+\index{Facade@{Facade}!select\+Strategy@{select\+Strategy}}
+\index{select\+Strategy@{select\+Strategy}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{select\+Strategy()}{selectStrategy()}}
+{\footnotesize\ttfamily void Facade\+::select\+Strategy (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{spaceship,  }\item[{\hyperlink{classStrategy}{Strategy} $\ast$}]{strat }\end{DoxyParamCaption})}
+
+Change strategy of selected ship 
+\begin{DoxyParams}{Parameters}
+{\em spaceship} & -\/ the spaceship to change strategy \\
+\hline
+{\em strat} & -\/ the selected strategy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFacade_a91364a59aa7aedae6111ca81c01bab25}\label{classFacade_a91364a59aa7aedae6111ca81c01bab25}} 
+\index{Facade@{Facade}!send\+Error\+Message\+To\+Ship@{send\+Error\+Message\+To\+Ship}}
+\index{send\+Error\+Message\+To\+Ship@{send\+Error\+Message\+To\+Ship}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{send\+Error\+Message\+To\+Ship()}{sendErrorMessageToShip()}}
+{\footnotesize\ttfamily void Facade\+::send\+Error\+Message\+To\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classPeople}{People} $\ast$}]{person,  }\item[{string}]{message }\end{DoxyParamCaption})}
+
+Send an error message from a person to the ship they are onboard 
+\begin{DoxyParams}{Parameters}
+{\em person} & -\/ the person sending the error message \\
+\hline
+{\em message} & -\/ string -\/ the message being sent \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFacade_aebe418b146c51597d40684758830a476}\label{classFacade_aebe418b146c51597d40684758830a476}} 
+\index{Facade@{Facade}!visit\+Planet\+With\+Spaceship@{visit\+Planet\+With\+Spaceship}}
+\index{visit\+Planet\+With\+Spaceship@{visit\+Planet\+With\+Spaceship}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{visit\+Planet\+With\+Spaceship()}{visitPlanetWithSpaceship()}}
+{\footnotesize\ttfamily void Facade\+::visit\+Planet\+With\+Spaceship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{spaceship,  }\item[{\hyperlink{classPlanet}{Planet} $\ast$}]{plan }\end{DoxyParamCaption})}
+
+Visit a planet 
+\begin{DoxyParams}{Parameters}
+{\em spaceship} & -\/ the spaceship to visit the planet with \\
+\hline
+{\em plan} & -\/ the planet to be visited \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Facade.\+h\item 
+Facade.\+cpp\end{DoxyCompactItemize}

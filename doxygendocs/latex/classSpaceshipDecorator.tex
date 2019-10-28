@@ -11,24 +11,47 @@
 
 
 
-Inheritance diagram for Spaceship\+Decorator\+:
-% FIG 0
+Inheritance diagram for Spaceship\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSpaceshipDecorator__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for Spaceship\+Decorator\+:
-% FIG 1
+Collaboration diagram for Spaceship\+Decorator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classSpaceshipDecorator__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classSpaceshipDecorator_a7a3248a02147d6b5399cd6fac9f73ed4}{Spaceship\+Decorator} ()
 \item 
 virtual void \hyperlink{classSpaceshipDecorator_a08442441af1fa8979f1e411a5e7b511c}{add\+Component} (\hyperlink{classSpaceship}{Spaceship} $\ast$comp)
+\item 
+virtual void \hyperlink{classSpaceshipDecorator_a5ed39419f5fab65dd4af11bf5136f7a4}{add\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
+\item 
+virtual void \hyperlink{classSpaceshipDecorator_a6e289d8a65f35b9f223255ae0eaa3b00}{add\+Person} (\hyperlink{classPeople}{People} $\ast$p)
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classSpaceshipDecorator_ad29c1235cbfe963e073fd63ea607bf35}{$\sim$\+Spaceship\+Decorator} ()
+\item 
+virtual double \hyperlink{classSpaceshipDecorator_a5ee7a9a8c146c85f08591e47d971dce7}{get\+Resources} (double a, double b)
+\item 
+void \hyperlink{classSpaceshipDecorator_ae11d728646b22a33ce5bb465c23bab32}{visit} (\hyperlink{classPlanet}{Planet} $\ast$p)
+\item 
+\hyperlink{classMemento}{Memento} $\ast$ \hyperlink{classSpaceshipDecorator_a1acde91cd10517c94af41032aa5fdd9e}{create\+Memento} (vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$ s)
+\item 
+void \hyperlink{classSpaceshipDecorator_ac043134e491d99a8e0d985d7ce409a87}{reinstate\+Memento} (\hyperlink{classMemento}{Memento} $\ast$mem)
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -64,6 +87,90 @@ Add a component to the spaceship
 
 
 Implements \hyperlink{classSpaceship_ac1b4673a691cd100708ddea08cd9f192}{Spaceship}.
+
+\mbox{\Hypertarget{classSpaceshipDecorator_a6e289d8a65f35b9f223255ae0eaa3b00}\label{classSpaceshipDecorator_a6e289d8a65f35b9f223255ae0eaa3b00}} 
+\index{Spaceship\+Decorator@{Spaceship\+Decorator}!add\+Person@{add\+Person}}
+\index{add\+Person@{add\+Person}!Spaceship\+Decorator@{Spaceship\+Decorator}}
+\subsubsection{\texorpdfstring{add\+Person()}{addPerson()}}
+{\footnotesize\ttfamily virtual void Spaceship\+Decorator\+::add\+Person (\begin{DoxyParamCaption}\item[{\hyperlink{classPeople}{People} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+virtual add\+Person 
+
+Reimplemented from \hyperlink{classSpaceship_add8d9c6dfd5f6ecb8399e41e71e5b22f}{Spaceship}.
+
+
+
+Reimplemented in \hyperlink{classTransportBay_a2be08f6085583ec9f839ff8939c6a6b7}{Transport\+Bay}, \hyperlink{classFighterBay_aa0777fe7c8a3e6b772fc8bf58a3cb9bb}{Fighter\+Bay}, \hyperlink{classRefuelStation_a6bd40214cf5dc4d46739943f545c6d7a}{Refuel\+Station}, \hyperlink{classBridge_aec10bfb9af885933640548b509144a29}{Bridge}, \hyperlink{classSleepingQuarters_addd107a8005b61d51846e8e955922d50}{Sleeping\+Quarters}, and \hyperlink{classSickBay_a3934a1b821fbd192a946a9aff4575afa}{Sick\+Bay}.
+
+\mbox{\Hypertarget{classSpaceshipDecorator_a5ed39419f5fab65dd4af11bf5136f7a4}\label{classSpaceshipDecorator_a5ed39419f5fab65dd4af11bf5136f7a4}} 
+\index{Spaceship\+Decorator@{Spaceship\+Decorator}!add\+Ship@{add\+Ship}}
+\index{add\+Ship@{add\+Ship}!Spaceship\+Decorator@{Spaceship\+Decorator}}
+\subsubsection{\texorpdfstring{add\+Ship()}{addShip()}}
+{\footnotesize\ttfamily void Spaceship\+Decorator\+::add\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Virtual add\+Ship 
+
+Reimplemented from \hyperlink{classSpaceship_a90e1321cdbcb459b98b75ab39cef867d}{Spaceship}.
+
+
+
+Reimplemented in \hyperlink{classFighterBay_a8975b88b27663c76f82168752593ceda}{Fighter\+Bay}, \hyperlink{classTransportBay_acd6b5b09e81bd28c6dcbe23d561fd99c}{Transport\+Bay}, \hyperlink{classBridge_a49676496d07502909958e747ef4c3214}{Bridge}, \hyperlink{classRefuelStation_a03510ee8365b5095ca80fac0c5a0a780}{Refuel\+Station}, \hyperlink{classArmory_adccb51a0901294546bfb1da350ae6836}{Armory}, \hyperlink{classSleepingQuarters_ae15ba2bf6be5cc0d4580da9ecbbe28f5}{Sleeping\+Quarters}, and \hyperlink{classSickBay_aa70415a7714cdd88553f3694b3f2e9e1}{Sick\+Bay}.
+
+\mbox{\Hypertarget{classSpaceshipDecorator_a1acde91cd10517c94af41032aa5fdd9e}\label{classSpaceshipDecorator_a1acde91cd10517c94af41032aa5fdd9e}} 
+\index{Spaceship\+Decorator@{Spaceship\+Decorator}!create\+Memento@{create\+Memento}}
+\index{create\+Memento@{create\+Memento}!Spaceship\+Decorator@{Spaceship\+Decorator}}
+\subsubsection{\texorpdfstring{create\+Memento()}{createMemento()}}
+{\footnotesize\ttfamily \hyperlink{classMemento}{Memento}$\ast$ Spaceship\+Decorator\+::create\+Memento (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+create memento stub 
+
+Reimplemented from \hyperlink{classSpaceship_a6d272f846b019dec8226ddab65648a7b}{Spaceship}.
+
+
+
+Reimplemented in \hyperlink{classTransportBay_aff9390fd8b7434bfa03b408028caf920}{Transport\+Bay}.
+
+\mbox{\Hypertarget{classSpaceshipDecorator_a5ee7a9a8c146c85f08591e47d971dce7}\label{classSpaceshipDecorator_a5ee7a9a8c146c85f08591e47d971dce7}} 
+\index{Spaceship\+Decorator@{Spaceship\+Decorator}!get\+Resources@{get\+Resources}}
+\index{get\+Resources@{get\+Resources}!Spaceship\+Decorator@{Spaceship\+Decorator}}
+\subsubsection{\texorpdfstring{get\+Resources()}{getResources()}}
+{\footnotesize\ttfamily virtual double Spaceship\+Decorator\+::get\+Resources (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+stub resource collection 
+
+Reimplemented from \hyperlink{classSpaceship_ad2027533de1d789db5e3efa22055f2d0}{Spaceship}.
+
+
+
+Reimplemented in \hyperlink{classTransportBay_afac369115f4c17522a123f36be183e29}{Transport\+Bay}, \hyperlink{classFighterBay_ae6071df768f59aeeab67f7b2bb1cce52}{Fighter\+Bay}, \hyperlink{classRefuelStation_a69c7e7aca14ba70f4d2c4c11e43b4bb4}{Refuel\+Station}, \hyperlink{classSickBay_ab14fde02df1e95c352ba51d59480c3fa}{Sick\+Bay}, \hyperlink{classArmory_a06bba21799ef0b2a9f835632411420a4}{Armory}, \hyperlink{classBridge_a1508c1c9cfb44850fea31afcb7f1e403}{Bridge}, and \hyperlink{classSleepingQuarters_aa1c2a40c05a566955965dee8118dc410}{Sleeping\+Quarters}.
+
+\mbox{\Hypertarget{classSpaceshipDecorator_ac043134e491d99a8e0d985d7ce409a87}\label{classSpaceshipDecorator_ac043134e491d99a8e0d985d7ce409a87}} 
+\index{Spaceship\+Decorator@{Spaceship\+Decorator}!reinstate\+Memento@{reinstate\+Memento}}
+\index{reinstate\+Memento@{reinstate\+Memento}!Spaceship\+Decorator@{Spaceship\+Decorator}}
+\subsubsection{\texorpdfstring{reinstate\+Memento()}{reinstateMemento()}}
+{\footnotesize\ttfamily void Spaceship\+Decorator\+::reinstate\+Memento (\begin{DoxyParamCaption}\item[{\hyperlink{classMemento}{Memento} $\ast$}]{mem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+reinstate memento 
+
+Reimplemented from \hyperlink{classSpaceship_ab075c869473344b6471c8e28ca7ea61e}{Spaceship}.
+
+
+
+Reimplemented in \hyperlink{classTransportBay_a501256401b6845a16ced9ea65c294f70}{Transport\+Bay}.
+
+\mbox{\Hypertarget{classSpaceshipDecorator_ae11d728646b22a33ce5bb465c23bab32}\label{classSpaceshipDecorator_ae11d728646b22a33ce5bb465c23bab32}} 
+\index{Spaceship\+Decorator@{Spaceship\+Decorator}!visit@{visit}}
+\index{visit@{visit}!Spaceship\+Decorator@{Spaceship\+Decorator}}
+\subsubsection{\texorpdfstring{visit()}{visit()}}
+{\footnotesize\ttfamily void Spaceship\+Decorator\+::visit (\begin{DoxyParamCaption}\item[{\hyperlink{classPlanet}{Planet} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+stub for visit 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
+
+
+
+Reimplemented in \hyperlink{classTransportBay_a01efe0f6bd015b1ae194e111e5589444}{Transport\+Bay}.
 
 
 

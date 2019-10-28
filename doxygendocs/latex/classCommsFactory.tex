@@ -11,12 +11,22 @@
 
 
 
-Inheritance diagram for Comms\+Factory\+:
-% FIG 0
+Inheritance diagram for Comms\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{classCommsFactory__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for Comms\+Factory\+:
-% FIG 1
+Collaboration diagram for Comms\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{classCommsFactory__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -24,11 +34,7 @@ Collaboration diagram for Comms\+Factory\+:
 \item 
 \hyperlink{classCommsFactory_ac5f4f8909ae9fd5d86ac41812227bdef}{$\sim$\+Comms\+Factory} ()
 \item 
-virtual \hyperlink{classPeople}{People} $\ast$ \hyperlink{classCommsFactory_a91017f5bf12f0e8166c4be9efe9efa11}{create\+People} ()=0
-\item 
-void \hyperlink{classCommsFactory_ae0c2cf49336ef7346944970f0a1661d2}{recieve\+Spaceship\+Error} (string)
-\item 
-void \hyperlink{classCommsFactory_a5f565ce3e7a75ab2f40dece51adda485}{send\+Error\+Message} (string)
+\hyperlink{classPeople}{People} $\ast$ \hyperlink{classCommsFactory_a424583e920e224310d47ea5e32f74ce3}{create} ()
 \end{DoxyCompactItemize}
 
 
@@ -51,34 +57,16 @@ Default constructor \mbox{\Hypertarget{classCommsFactory_ac5f4f8909ae9fd5d86ac41
 Default desctructor 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classCommsFactory_a91017f5bf12f0e8166c4be9efe9efa11}\label{classCommsFactory_a91017f5bf12f0e8166c4be9efe9efa11}} 
-\index{Comms\+Factory@{Comms\+Factory}!create\+People@{create\+People}}
-\index{create\+People@{create\+People}!Comms\+Factory@{Comms\+Factory}}
-\subsubsection{\texorpdfstring{create\+People()}{createPeople()}}
-{\footnotesize\ttfamily virtual \hyperlink{classPeople}{People}$\ast$ Comms\+Factory\+::create\+People (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\mbox{\Hypertarget{classCommsFactory_a424583e920e224310d47ea5e32f74ce3}\label{classCommsFactory_a424583e920e224310d47ea5e32f74ce3}} 
+\index{Comms\+Factory@{Comms\+Factory}!create@{create}}
+\index{create@{create}!Comms\+Factory@{Comms\+Factory}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \hyperlink{classPeople}{People}$\ast$ Comms\+Factory\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
-pure virtual comms creator \mbox{\Hypertarget{classCommsFactory_ae0c2cf49336ef7346944970f0a1661d2}\label{classCommsFactory_ae0c2cf49336ef7346944970f0a1661d2}} 
-\index{Comms\+Factory@{Comms\+Factory}!recieve\+Spaceship\+Error@{recieve\+Spaceship\+Error}}
-\index{recieve\+Spaceship\+Error@{recieve\+Spaceship\+Error}!Comms\+Factory@{Comms\+Factory}}
-\subsubsection{\texorpdfstring{recieve\+Spaceship\+Error()}{recieveSpaceshipError()}}
-{\footnotesize\ttfamily void Comms\+Factory\+::recieve\+Spaceship\+Error (\begin{DoxyParamCaption}\item[{string}]{ }\end{DoxyParamCaption})}
+pure virtual comms creator 
 
-Recieve an error from the spaceship 
-\begin{DoxyParams}{Parameters}
-{\em message} & -\/ the error message being received \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classCommsFactory_a5f565ce3e7a75ab2f40dece51adda485}\label{classCommsFactory_a5f565ce3e7a75ab2f40dece51adda485}} 
-\index{Comms\+Factory@{Comms\+Factory}!send\+Error\+Message@{send\+Error\+Message}}
-\index{send\+Error\+Message@{send\+Error\+Message}!Comms\+Factory@{Comms\+Factory}}
-\subsubsection{\texorpdfstring{send\+Error\+Message()}{sendErrorMessage()}}
-{\footnotesize\ttfamily void Comms\+Factory\+::send\+Error\+Message (\begin{DoxyParamCaption}\item[{string}]{ }\end{DoxyParamCaption})}
+Implements \hyperlink{classPeopleFactory}{People\+Factory}.
 
-Send an error to the spaceship 
-\begin{DoxyParams}{Parameters}
-{\em message} & -\/ the error message being sent \\
-\hline
-\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

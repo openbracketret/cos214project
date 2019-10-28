@@ -49,6 +49,8 @@
 #include "TradingStrategy.h"
 #include "NavigatorFactory.h"
 #include "Facade.h"
+#include "Retreat.h"
+#include "MiningStrategy.h"
 
 
 int main () {
@@ -59,9 +61,25 @@ int main () {
     f->increaseThreat();
     f->printThreat();
     f->createPeople(3);
+    cout << "****BOARDING SHIP *****" << endl;
     f->beginBoarding(3,f->getSpaceshipWithName());
-    f->getCaptainOnShip(f->getSpaceshipWithName());
-    f->getDoctorOnShip(f->getSpaceshipWithName());
+    cout << "*****BOARDING COMPLETE" << endl;
+    cout << "********CAPTAINS LOG" << endl;
+    f->printCaptainsLog(f->getSpaceshipWithName());
+    cout << "****DONE CAPTAINS LOG" << endl;
+    f->createPlanets(2);
+
+    Planet* temp = f->popPlanet();
+    cout << "*****VISITNG PLANET" << endl;
+    f->visitPlanetWithSpaceship(f->getSpaceshipWithName(), temp);
+    cout << "*******STRATEGY " << endl;
+    f->selectStrategy(f->getSpaceshipWithName(), new MiningStrategy());
+    f->executeStrategy(f->getSpaceshipWithName());
+    cout << "******DONE WITH STRATEGY" << endl;
+
+    cout << "*****DO COMMAND" << endl;
+    f->doCommand("retreat", f->getSpaceshipWithName());
+    cout << "****DONE WITH COMMAND" << endl;
 
     return 0;
 }

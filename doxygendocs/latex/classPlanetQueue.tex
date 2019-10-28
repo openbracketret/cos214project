@@ -1,0 +1,105 @@
+\hypertarget{classPlanetQueue}{}\section{Planet\+Queue Class Reference}
+\label{classPlanetQueue}\index{Planet\+Queue@{Planet\+Queue}}
+
+
+\hyperlink{classPlanetQueue}{Planet\+Queue} class.  
+
+
+
+
+{\ttfamily \#include $<$Planet\+Queue.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPlanetQueue_aece3bd14bfbffdd61c5413bac9d92abf}{Planet\+Queue} ()
+\item 
+\hyperlink{classPlanetQueue_a401c7ec48201e2a9941ca9c952491f52}{$\sim$\+Planet\+Queue} ()
+\item 
+bool \hyperlink{classPlanetQueue_a50400f0c70785492f23f2703d9eac0cc}{is\+Empty} ()
+\item 
+\hyperlink{classPlanetIterator}{Planet\+Iterator} \hyperlink{classPlanetQueue_a00290482aee16d320ce429a03437751c}{begin} ()
+\item 
+\hyperlink{classPlanetIterator}{Planet\+Iterator} \hyperlink{classPlanetQueue_a587798b5e8ce4c647804379abbbcfd26}{end} ()
+\item 
+void \hyperlink{classPlanetQueue_a6876331ffc6b56a0e960e0be397babbb}{enqueue} (\hyperlink{classPlanet}{Planet} $\ast$p)
+\item 
+\hyperlink{classPlanet}{Planet} $\ast$ \hyperlink{classPlanetQueue_a9d64880eea8788b78ebb1b2f430f9f1f}{dequeue} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPlanetQueue_a58d980e86656218a4f34476255718e53}\label{classPlanetQueue_a58d980e86656218a4f34476255718e53}} 
+class {\bfseries Planet\+Iterator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classPlanetQueue}{Planet\+Queue} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPlanetQueue_aece3bd14bfbffdd61c5413bac9d92abf}\label{classPlanetQueue_aece3bd14bfbffdd61c5413bac9d92abf}} 
+\index{Planet\+Queue@{Planet\+Queue}!Planet\+Queue@{Planet\+Queue}}
+\index{Planet\+Queue@{Planet\+Queue}!Planet\+Queue@{Planet\+Queue}}
+\subsubsection{\texorpdfstring{Planet\+Queue()}{PlanetQueue()}}
+{\footnotesize\ttfamily Planet\+Queue\+::\+Planet\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor \mbox{\Hypertarget{classPlanetQueue_a401c7ec48201e2a9941ca9c952491f52}\label{classPlanetQueue_a401c7ec48201e2a9941ca9c952491f52}} 
+\index{Planet\+Queue@{Planet\+Queue}!````~Planet\+Queue@{$\sim$\+Planet\+Queue}}
+\index{````~Planet\+Queue@{$\sim$\+Planet\+Queue}!Planet\+Queue@{Planet\+Queue}}
+\subsubsection{\texorpdfstring{$\sim$\+Planet\+Queue()}{~PlanetQueue()}}
+{\footnotesize\ttfamily Planet\+Queue\+::$\sim$\+Planet\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlanetQueue_a00290482aee16d320ce429a03437751c}\label{classPlanetQueue_a00290482aee16d320ce429a03437751c}} 
+\index{Planet\+Queue@{Planet\+Queue}!begin@{begin}}
+\index{begin@{begin}!Planet\+Queue@{Planet\+Queue}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \hyperlink{classPlanetIterator}{Planet\+Iterator} Planet\+Queue\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Start of the queue \begin{DoxyReturn}{Returns}
+\hyperlink{classPlanetIterator}{Planet\+Iterator} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlanetQueue_a9d64880eea8788b78ebb1b2f430f9f1f}\label{classPlanetQueue_a9d64880eea8788b78ebb1b2f430f9f1f}} 
+\index{Planet\+Queue@{Planet\+Queue}!dequeue@{dequeue}}
+\index{dequeue@{dequeue}!Planet\+Queue@{Planet\+Queue}}
+\subsubsection{\texorpdfstring{dequeue()}{dequeue()}}
+{\footnotesize\ttfamily \hyperlink{classPlanet}{Planet} $\ast$ Planet\+Queue\+::dequeue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Dequeue a planet \mbox{\Hypertarget{classPlanetQueue_a587798b5e8ce4c647804379abbbcfd26}\label{classPlanetQueue_a587798b5e8ce4c647804379abbbcfd26}} 
+\index{Planet\+Queue@{Planet\+Queue}!end@{end}}
+\index{end@{end}!Planet\+Queue@{Planet\+Queue}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \hyperlink{classPlanetIterator}{Planet\+Iterator} Planet\+Queue\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+End of the queue \begin{DoxyReturn}{Returns}
+\hyperlink{classPlanetIterator}{Planet\+Iterator} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlanetQueue_a6876331ffc6b56a0e960e0be397babbb}\label{classPlanetQueue_a6876331ffc6b56a0e960e0be397babbb}} 
+\index{Planet\+Queue@{Planet\+Queue}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!Planet\+Queue@{Planet\+Queue}}
+\subsubsection{\texorpdfstring{enqueue()}{enqueue()}}
+{\footnotesize\ttfamily void Planet\+Queue\+::enqueue (\begin{DoxyParamCaption}\item[{\hyperlink{classPlanet}{Planet} $\ast$}]{p }\end{DoxyParamCaption})}
+
+Enqueue planet into queue 
+\begin{DoxyParams}{Parameters}
+{\em p} & -\/ \hyperlink{classPlanet}{Planet} to enqueue \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlanetQueue_a50400f0c70785492f23f2703d9eac0cc}\label{classPlanetQueue_a50400f0c70785492f23f2703d9eac0cc}} 
+\index{Planet\+Queue@{Planet\+Queue}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Planet\+Queue@{Planet\+Queue}}
+\subsubsection{\texorpdfstring{is\+Empty()}{isEmpty()}}
+{\footnotesize\ttfamily bool Planet\+Queue\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Is the queue empty \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Planet\+Queue.\+h\item 
+Planet\+Queue.\+cpp\end{DoxyCompactItemize}

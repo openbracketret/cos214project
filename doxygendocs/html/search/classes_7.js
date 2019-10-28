@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['memento',['Memento',['../classMemento.html',1,'']]],
-  ['miningstrategy',['MiningStrategy',['../classMiningStrategy.html',1,'']]]
+  ['levelonethreat',['LevelOneThreat',['../classLevelOneThreat.html',1,'']]],
+  ['levelthreethreat',['LevelThreeThreat',['../classLevelThreeThreat.html',1,'']]],
+  ['leveltwothreat',['LevelTwoThreat',['../classLevelTwoThreat.html',1,'']]]
 ];

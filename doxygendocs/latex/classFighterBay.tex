@@ -11,12 +11,22 @@ Fighterbay class.
 
 
 
-Inheritance diagram for Fighter\+Bay\+:
-% FIG 0
+Inheritance diagram for Fighter\+Bay\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{classFighterBay__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for Fighter\+Bay\+:
-% FIG 1
+Collaboration diagram for Fighter\+Bay\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classFighterBay__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -27,6 +37,22 @@ Collaboration diagram for Fighter\+Bay\+:
 void \hyperlink{classFighterBay_a24764deae3987f30be8825c7673b90a0}{add\+Fighter} (\hyperlink{classFighter}{Fighter} $\ast$)
 \item 
 void \hyperlink{classFighterBay_ab504d923d2e3837c29c56453bd1f7ba1}{remove\+Fighter} (\hyperlink{classFighter}{Fighter} $\ast$)
+\item 
+void \hyperlink{classFighterBay_ac0a0c1629ee0b28ade380e88774bbad4}{visit} (\hyperlink{classPlanet}{Planet} $\ast$p)
+\item 
+void \hyperlink{classFighterBay_a8975b88b27663c76f82168752593ceda}{add\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$s)
+\item 
+double \hyperlink{classFighterBay_ae6071df768f59aeeab67f7b2bb1cce52}{get\+Resources} (double a, double b)
+\item 
+void \hyperlink{classFighterBay_aa0777fe7c8a3e6b772fc8bf58a3cb9bb}{add\+Person} (\hyperlink{classPeople}{People} $\ast$p)
+\item 
+\hyperlink{classMemento}{Memento} $\ast$ \hyperlink{classFighterBay_a925de99777e92d00e51e8aba09d5135c}{create\+Memento} (vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$ s)
+\item 
+void \hyperlink{classFighterBay_ab7971eefc44f85b00424014916616fb6}{reinstate\+Memento} (\hyperlink{classMemento}{Memento} $\ast$mem)
+\item 
+void \hyperlink{classFighterBay_ae450be19e2e5233e36031db1f7b17503}{execute\+Strategy} ()
+\item 
+void \hyperlink{classFighterBay_a32655a70f39312f94403d9aada55788b}{select\+Strategy} (\hyperlink{classStrategy}{Strategy} $\ast$s)
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -61,6 +87,66 @@ Method to add fighters into the fighter bay
 {\em f} & -\/ \hyperlink{classFighter}{Fighter} being added \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classFighterBay_aa0777fe7c8a3e6b772fc8bf58a3cb9bb}\label{classFighterBay_aa0777fe7c8a3e6b772fc8bf58a3cb9bb}} 
+\index{Fighter\+Bay@{Fighter\+Bay}!add\+Person@{add\+Person}}
+\index{add\+Person@{add\+Person}!Fighter\+Bay@{Fighter\+Bay}}
+\subsubsection{\texorpdfstring{add\+Person()}{addPerson()}}
+{\footnotesize\ttfamily void Fighter\+Bay\+::add\+Person (\begin{DoxyParamCaption}\item[{\hyperlink{classPeople}{People} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for add\+Person 
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_a6e289d8a65f35b9f223255ae0eaa3b00}{Spaceship\+Decorator}.
+
+\mbox{\Hypertarget{classFighterBay_a8975b88b27663c76f82168752593ceda}\label{classFighterBay_a8975b88b27663c76f82168752593ceda}} 
+\index{Fighter\+Bay@{Fighter\+Bay}!add\+Ship@{add\+Ship}}
+\index{add\+Ship@{add\+Ship}!Fighter\+Bay@{Fighter\+Bay}}
+\subsubsection{\texorpdfstring{add\+Ship()}{addShip()}}
+{\footnotesize\ttfamily void Fighter\+Bay\+::add\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual add\+Ship 
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_a5ed39419f5fab65dd4af11bf5136f7a4}{Spaceship\+Decorator}.
+
+\mbox{\Hypertarget{classFighterBay_a925de99777e92d00e51e8aba09d5135c}\label{classFighterBay_a925de99777e92d00e51e8aba09d5135c}} 
+\index{Fighter\+Bay@{Fighter\+Bay}!create\+Memento@{create\+Memento}}
+\index{create\+Memento@{create\+Memento}!Fighter\+Bay@{Fighter\+Bay}}
+\subsubsection{\texorpdfstring{create\+Memento()}{createMemento()}}
+{\footnotesize\ttfamily \hyperlink{classMemento}{Memento}$\ast$ Fighter\+Bay\+::create\+Memento (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+create memento stub 
+
+Reimplemented from \hyperlink{classSpaceship_a6d272f846b019dec8226ddab65648a7b}{Spaceship}.
+
+\mbox{\Hypertarget{classFighterBay_ae450be19e2e5233e36031db1f7b17503}\label{classFighterBay_ae450be19e2e5233e36031db1f7b17503}} 
+\index{Fighter\+Bay@{Fighter\+Bay}!execute\+Strategy@{execute\+Strategy}}
+\index{execute\+Strategy@{execute\+Strategy}!Fighter\+Bay@{Fighter\+Bay}}
+\subsubsection{\texorpdfstring{execute\+Strategy()}{executeStrategy()}}
+{\footnotesize\ttfamily void Fighter\+Bay\+::execute\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+execute strategy 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
+
+\mbox{\Hypertarget{classFighterBay_ae6071df768f59aeeab67f7b2bb1cce52}\label{classFighterBay_ae6071df768f59aeeab67f7b2bb1cce52}} 
+\index{Fighter\+Bay@{Fighter\+Bay}!get\+Resources@{get\+Resources}}
+\index{get\+Resources@{get\+Resources}!Fighter\+Bay@{Fighter\+Bay}}
+\subsubsection{\texorpdfstring{get\+Resources()}{getResources()}}
+{\footnotesize\ttfamily double Fighter\+Bay\+::get\+Resources (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub resource collection 
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_a5ee7a9a8c146c85f08591e47d971dce7}{Spaceship\+Decorator}.
+
+\mbox{\Hypertarget{classFighterBay_ab7971eefc44f85b00424014916616fb6}\label{classFighterBay_ab7971eefc44f85b00424014916616fb6}} 
+\index{Fighter\+Bay@{Fighter\+Bay}!reinstate\+Memento@{reinstate\+Memento}}
+\index{reinstate\+Memento@{reinstate\+Memento}!Fighter\+Bay@{Fighter\+Bay}}
+\subsubsection{\texorpdfstring{reinstate\+Memento()}{reinstateMemento()}}
+{\footnotesize\ttfamily void Fighter\+Bay\+::reinstate\+Memento (\begin{DoxyParamCaption}\item[{\hyperlink{classMemento}{Memento} $\ast$}]{mem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+reinstate memento 
+
+Reimplemented from \hyperlink{classSpaceship_ab075c869473344b6471c8e28ca7ea61e}{Spaceship}.
+
 \mbox{\Hypertarget{classFighterBay_ab504d923d2e3837c29c56453bd1f7ba1}\label{classFighterBay_ab504d923d2e3837c29c56453bd1f7ba1}} 
 \index{Fighter\+Bay@{Fighter\+Bay}!remove\+Fighter@{remove\+Fighter}}
 \index{remove\+Fighter@{remove\+Fighter}!Fighter\+Bay@{Fighter\+Bay}}
@@ -72,6 +158,26 @@ Method to remove a specific fighter from the fighter bay
 {\em f} & -\/ \hyperlink{classFighter}{Fighter} being removed \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classFighterBay_a32655a70f39312f94403d9aada55788b}\label{classFighterBay_a32655a70f39312f94403d9aada55788b}} 
+\index{Fighter\+Bay@{Fighter\+Bay}!select\+Strategy@{select\+Strategy}}
+\index{select\+Strategy@{select\+Strategy}!Fighter\+Bay@{Fighter\+Bay}}
+\subsubsection{\texorpdfstring{select\+Strategy()}{selectStrategy()}}
+{\footnotesize\ttfamily void Fighter\+Bay\+::select\+Strategy (\begin{DoxyParamCaption}\item[{\hyperlink{classStrategy}{Strategy} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+select strategy 
+
+Reimplemented from \hyperlink{classSpaceship_a93be2d9d2b675ef978d866d4cd7a6524}{Spaceship}.
+
+\mbox{\Hypertarget{classFighterBay_ac0a0c1629ee0b28ade380e88774bbad4}\label{classFighterBay_ac0a0c1629ee0b28ade380e88774bbad4}} 
+\index{Fighter\+Bay@{Fighter\+Bay}!visit@{visit}}
+\index{visit@{visit}!Fighter\+Bay@{Fighter\+Bay}}
+\subsubsection{\texorpdfstring{visit()}{visit()}}
+{\footnotesize\ttfamily void Fighter\+Bay\+::visit (\begin{DoxyParamCaption}\item[{\hyperlink{classPlanet}{Planet} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for visit 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

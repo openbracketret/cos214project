@@ -75,13 +75,24 @@ $(function() {
 Inheritance diagram for People:</div>
 <div class="dyncontent">
 <div class="center"><img src="classPeople__inherit__graph.png" border="0" usemap="#People_inherit__map" alt="Inheritance graph"/></div>
-<!-- MAP 0 -->
+<map name="People_inherit__map" id="People_inherit__map">
+<area shape="rect" id="node2" href="classCaptain.html" title="Captain class. " alt="" coords="5,80,72,107"/>
+<area shape="rect" id="node3" href="classChiefEngineer.html" title="Chief Engineer class. " alt="" coords="96,80,200,107"/>
+<area shape="rect" id="node4" href="classCommanderOfTheFleet.html" title="Commander of the fleet class. A singleton. " alt="" coords="225,80,383,107"/>
+<area shape="rect" id="node5" href="classComms.html" title="Comms class. " alt="" coords="407,80,475,107"/>
+<area shape="rect" id="node6" href="classDoctor.html" title="Doctor class. " alt="" coords="500,80,561,107"/>
+<area shape="rect" id="node7" href="classEngineer.html" title="Engineer class. " alt="" coords="586,80,659,107"/>
+<area shape="rect" id="node8" href="classFighter.html" title="Fighter class. " alt="" coords="683,80,746,107"/>
+<area shape="rect" id="node9" href="classNavigator.html" title="Navigator class. " alt="" coords="770,80,849,107"/>
+</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for People:</div>
 <div class="dyncontent">
 <div class="center"><img src="classPeople__coll__graph.png" border="0" usemap="#People_coll__map" alt="Collaboration graph"/></div>
-<!-- MAP 1 -->
+<map name="People_coll__map" id="People_coll__map">
+<area shape="rect" id="node2" href="classSpaceship.html" title="Spaceship class. " alt="" coords="5,5,88,32"/>
+</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -98,6 +109,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a66c99da939fe89614360953a3619a271"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e87ed1cfd4d4d90b95e3b2196c7687e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPeople.html#a5e87ed1cfd4d4d90b95e3b2196c7687e">leaveShip</a> ()</td></tr>
 <tr class="separator:a5e87ed1cfd4d4d90b95e3b2196c7687e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af60dd882d60cddf63f9b95815ce551a8"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPeople.html#af60dd882d60cddf63f9b95815ce551a8">getType</a> ()=0</td></tr>
+<tr class="separator:af60dd882d60cddf63f9b95815ce551a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf8a17cdc24354a5163d212a77312873"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPeople.html#abf8a17cdc24354a5163d212a77312873">beginCommand</a> (string, <a class="el" href="classSpaceship.html">Spaceship</a> *)</td></tr>
+<tr class="separator:abf8a17cdc24354a5163d212a77312873"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -162,6 +177,40 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="abf8a17cdc24354a5163d212a77312873"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf8a17cdc24354a5163d212a77312873">&#9670;&nbsp;</a></span>beginCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void People::beginCommand </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpaceship.html">Spaceship</a> *&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Begin doing a command with the commander of the fleet </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>- the command type </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a66c99da939fe89614360953a3619a271"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a66c99da939fe89614360953a3619a271">&#9670;&nbsp;</a></span>boardShip()</h2>
 
@@ -183,6 +232,34 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="af60dd882d60cddf63f9b95815ce551a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af60dd882d60cddf63f9b95815ce551a8">&#9670;&nbsp;</a></span>getType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual string People::getType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Getting type of the person </p>
+
+<p>Implemented in <a class="el" href="classCommanderOfTheFleet.html#a6e025eb090e0e231ffa72e5e6a9f7ce0">CommanderOfTheFleet</a>, <a class="el" href="classEngineer.html#ae2f83b9c2df3e8d3937697b23546571a">Engineer</a>, <a class="el" href="classComms.html#ae76ecf305b690220aa4fa68d0d798357">Comms</a>, <a class="el" href="classDoctor.html#a6aee07e1096c01e16c11b461150083eb">Doctor</a>, <a class="el" href="classFighter.html#ae8bd1a16211422b1898f41dec347281c">Fighter</a>, <a class="el" href="classCaptain.html#a87ae1c47127aec69cc58133d82e488d3">Captain</a>, <a class="el" href="classNavigator.html#a3b6314e429bc38e2cd330db7c187a7ae">Navigator</a>, and <a class="el" href="classChiefEngineer.html#abd3df4d2f94acff4c659f9e428ad1789">ChiefEngineer</a>.</p>
 
 </div>
 </div>

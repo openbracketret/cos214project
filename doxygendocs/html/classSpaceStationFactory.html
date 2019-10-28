@@ -74,13 +74,17 @@ $(function() {
 Inheritance diagram for SpaceStationFactory:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSpaceStationFactory__inherit__graph.png" border="0" usemap="#SpaceStationFactory_inherit__map" alt="Inheritance graph"/></div>
-<!-- MAP 0 -->
+<map name="SpaceStationFactory_inherit__map" id="SpaceStationFactory_inherit__map">
+<area shape="rect" id="node2" href="classSpaceshipFactory.html" title="SpaceshipFactory" alt="" coords="14,5,141,32"/>
+</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for SpaceStationFactory:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSpaceStationFactory__coll__graph.png" border="0" usemap="#SpaceStationFactory_coll__map" alt="Collaboration graph"/></div>
-<!-- MAP 1 -->
+<map name="SpaceStationFactory_coll__map" id="SpaceStationFactory_coll__map">
+<area shape="rect" id="node2" href="classSpaceshipFactory.html" title="SpaceshipFactory" alt="" coords="14,5,141,32"/>
+</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -89,11 +93,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6f17e032052e7bdd507a52947dbd7362"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6428ec2e2302246b5e283ff6fee31cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpaceStationFactory.html#ae6428ec2e2302246b5e283ff6fee31cd">~SpaceStationFactory</a> ()</td></tr>
 <tr class="separator:ae6428ec2e2302246b5e283ff6fee31cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7264b3120ab76303b49a5416e834f5d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpaceship.html">Spaceship</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpaceStationFactory.html#a7264b3120ab76303b49a5416e834f5d4">spaceshipFactoryMethod</a> ()</td></tr>
-<tr class="separator:a7264b3120ab76303b49a5416e834f5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classSpaceshipFactory"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classSpaceshipFactory')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classSpaceshipFactory.html">SpaceshipFactory</a></td></tr>
-<tr class="memitem:a146f5e82385a55e9bf4ce63e28f99a9d inherit pub_methods_classSpaceshipFactory"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classSpaceship.html">Spaceship</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpaceshipFactory.html#a146f5e82385a55e9bf4ce63e28f99a9d">spaceShipFactoryMethod</a> ()</td></tr>
-<tr class="separator:a146f5e82385a55e9bf4ce63e28f99a9d inherit pub_methods_classSpaceshipFactory"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21bbba99fbe7a2edeb3e63177d7f2e1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpaceship.html">Spaceship</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpaceStationFactory.html#a21bbba99fbe7a2edeb3e63177d7f2e1c">spaceShipFactoryMethod</a> (string n)</td></tr>
+<tr class="separator:a21bbba99fbe7a2edeb3e63177d7f2e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Spacestation Factory class. </p>
@@ -135,21 +136,32 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7264b3120ab76303b49a5416e834f5d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7264b3120ab76303b49a5416e834f5d4">&#9670;&nbsp;</a></span>spaceshipFactoryMethod()</h2>
+<a id="a21bbba99fbe7a2edeb3e63177d7f2e1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21bbba99fbe7a2edeb3e63177d7f2e1c">&#9670;&nbsp;</a></span>spaceShipFactoryMethod()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classSpaceship.html">Spaceship</a> * SpaceStationFactory::spaceshipFactoryMethod </td>
+          <td class="memname"><a class="el" href="classSpaceship.html">Spaceship</a> * SpaceStationFactory::spaceShipFactoryMethod </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Method to create <a class="el" href="classSpaceStation.html" title="Spacestation class. A singleton. ">SpaceStation</a> </p><dl class="section return"><dt>Returns</dt><dd>new spaceship </dd></dl>
+
+<p>Implements <a class="el" href="classSpaceshipFactory.html#a70b50dd616cb16f50088eff9ca07cda9">SpaceshipFactory</a>.</p>
 
 </div>
 </div>

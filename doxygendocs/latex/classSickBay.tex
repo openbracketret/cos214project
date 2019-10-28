@@ -11,18 +11,44 @@ Sickbay class.
 
 
 
-Inheritance diagram for Sick\+Bay\+:
-% FIG 0
+Inheritance diagram for Sick\+Bay\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{classSickBay__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for Sick\+Bay\+:
-% FIG 1
+Collaboration diagram for Sick\+Bay\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classSickBay__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classSickBay_a6deba7260251b077d29cabb75587f9c6}{Sick\+Bay} ()
 \item 
 \hyperlink{classSickBay_a527219ede6b1a75938fef90ecc0b7755}{$\sim$\+Sick\+Bay} ()
+\item 
+void \hyperlink{classSickBay_aa70415a7714cdd88553f3694b3f2e9e1}{add\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$s)
+\item 
+void \hyperlink{classSickBay_a3934a1b821fbd192a946a9aff4575afa}{add\+Person} (\hyperlink{classPeople}{People} $\ast$p)
+\item 
+double \hyperlink{classSickBay_ab14fde02df1e95c352ba51d59480c3fa}{get\+Resources} (double a, double b)
+\item 
+void \hyperlink{classSickBay_a4f8395f68f93b62e0cc68f6a3bd3af79}{visit} (\hyperlink{classPlanet}{Planet} $\ast$p)
+\item 
+\hyperlink{classMemento}{Memento} $\ast$ \hyperlink{classSickBay_a0d06ca126941dae25aaf74838dd1914b}{create\+Memento} (vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$ s)
+\item 
+void \hyperlink{classSickBay_a1b2156dee5ed14c68c3f25ee3a53e9c8}{reinstate\+Memento} (\hyperlink{classMemento}{Memento} $\ast$mem)
+\item 
+void \hyperlink{classSickBay_af053a3507f8246fd1577124644cf7477}{execute\+Strategy} ()
+\item 
+void \hyperlink{classSickBay_ac25920ac3e757e289ea25233991fa94e}{select\+Strategy} (\hyperlink{classStrategy}{Strategy} $\ast$s)
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -44,6 +70,89 @@ Default constructor \mbox{\Hypertarget{classSickBay_a527219ede6b1a75938fef90ecc0
 {\footnotesize\ttfamily Sick\+Bay\+::$\sim$\+Sick\+Bay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Default desctructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSickBay_a3934a1b821fbd192a946a9aff4575afa}\label{classSickBay_a3934a1b821fbd192a946a9aff4575afa}} 
+\index{Sick\+Bay@{Sick\+Bay}!add\+Person@{add\+Person}}
+\index{add\+Person@{add\+Person}!Sick\+Bay@{Sick\+Bay}}
+\subsubsection{\texorpdfstring{add\+Person()}{addPerson()}}
+{\footnotesize\ttfamily void Sick\+Bay\+::add\+Person (\begin{DoxyParamCaption}\item[{\hyperlink{classPeople}{People} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for add\+Person 
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_a6e289d8a65f35b9f223255ae0eaa3b00}{Spaceship\+Decorator}.
+
+\mbox{\Hypertarget{classSickBay_aa70415a7714cdd88553f3694b3f2e9e1}\label{classSickBay_aa70415a7714cdd88553f3694b3f2e9e1}} 
+\index{Sick\+Bay@{Sick\+Bay}!add\+Ship@{add\+Ship}}
+\index{add\+Ship@{add\+Ship}!Sick\+Bay@{Sick\+Bay}}
+\subsubsection{\texorpdfstring{add\+Ship()}{addShip()}}
+{\footnotesize\ttfamily void Sick\+Bay\+::add\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual add\+Ship 
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_a5ed39419f5fab65dd4af11bf5136f7a4}{Spaceship\+Decorator}.
+
+\mbox{\Hypertarget{classSickBay_a0d06ca126941dae25aaf74838dd1914b}\label{classSickBay_a0d06ca126941dae25aaf74838dd1914b}} 
+\index{Sick\+Bay@{Sick\+Bay}!create\+Memento@{create\+Memento}}
+\index{create\+Memento@{create\+Memento}!Sick\+Bay@{Sick\+Bay}}
+\subsubsection{\texorpdfstring{create\+Memento()}{createMemento()}}
+{\footnotesize\ttfamily \hyperlink{classMemento}{Memento}$\ast$ Sick\+Bay\+::create\+Memento (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+create memento stub 
+
+Reimplemented from \hyperlink{classSpaceship_a6d272f846b019dec8226ddab65648a7b}{Spaceship}.
+
+\mbox{\Hypertarget{classSickBay_af053a3507f8246fd1577124644cf7477}\label{classSickBay_af053a3507f8246fd1577124644cf7477}} 
+\index{Sick\+Bay@{Sick\+Bay}!execute\+Strategy@{execute\+Strategy}}
+\index{execute\+Strategy@{execute\+Strategy}!Sick\+Bay@{Sick\+Bay}}
+\subsubsection{\texorpdfstring{execute\+Strategy()}{executeStrategy()}}
+{\footnotesize\ttfamily void Sick\+Bay\+::execute\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+execute strategy 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
+
+\mbox{\Hypertarget{classSickBay_ab14fde02df1e95c352ba51d59480c3fa}\label{classSickBay_ab14fde02df1e95c352ba51d59480c3fa}} 
+\index{Sick\+Bay@{Sick\+Bay}!get\+Resources@{get\+Resources}}
+\index{get\+Resources@{get\+Resources}!Sick\+Bay@{Sick\+Bay}}
+\subsubsection{\texorpdfstring{get\+Resources()}{getResources()}}
+{\footnotesize\ttfamily double Sick\+Bay\+::get\+Resources (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub resource collection 
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_a5ee7a9a8c146c85f08591e47d971dce7}{Spaceship\+Decorator}.
+
+\mbox{\Hypertarget{classSickBay_a1b2156dee5ed14c68c3f25ee3a53e9c8}\label{classSickBay_a1b2156dee5ed14c68c3f25ee3a53e9c8}} 
+\index{Sick\+Bay@{Sick\+Bay}!reinstate\+Memento@{reinstate\+Memento}}
+\index{reinstate\+Memento@{reinstate\+Memento}!Sick\+Bay@{Sick\+Bay}}
+\subsubsection{\texorpdfstring{reinstate\+Memento()}{reinstateMemento()}}
+{\footnotesize\ttfamily void Sick\+Bay\+::reinstate\+Memento (\begin{DoxyParamCaption}\item[{\hyperlink{classMemento}{Memento} $\ast$}]{mem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+reinstate memento 
+
+Reimplemented from \hyperlink{classSpaceship_ab075c869473344b6471c8e28ca7ea61e}{Spaceship}.
+
+\mbox{\Hypertarget{classSickBay_ac25920ac3e757e289ea25233991fa94e}\label{classSickBay_ac25920ac3e757e289ea25233991fa94e}} 
+\index{Sick\+Bay@{Sick\+Bay}!select\+Strategy@{select\+Strategy}}
+\index{select\+Strategy@{select\+Strategy}!Sick\+Bay@{Sick\+Bay}}
+\subsubsection{\texorpdfstring{select\+Strategy()}{selectStrategy()}}
+{\footnotesize\ttfamily void Sick\+Bay\+::select\+Strategy (\begin{DoxyParamCaption}\item[{\hyperlink{classStrategy}{Strategy} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+select strategy 
+
+Reimplemented from \hyperlink{classSpaceship_a93be2d9d2b675ef978d866d4cd7a6524}{Spaceship}.
+
+\mbox{\Hypertarget{classSickBay_a4f8395f68f93b62e0cc68f6a3bd3af79}\label{classSickBay_a4f8395f68f93b62e0cc68f6a3bd3af79}} 
+\index{Sick\+Bay@{Sick\+Bay}!visit@{visit}}
+\index{visit@{visit}!Sick\+Bay@{Sick\+Bay}}
+\subsubsection{\texorpdfstring{visit()}{visit()}}
+{\footnotesize\ttfamily void Sick\+Bay\+::visit (\begin{DoxyParamCaption}\item[{\hyperlink{classPlanet}{Planet} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for visit 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
+
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

@@ -66,21 +66,60 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="classMiningStrategy.html" title="MiningStrategy class. ">MiningStrategy</a> class.  
+<p><a class="el" href="classTradingStrategy.html" title="TradingStrategy class. ">TradingStrategy</a> class.  
  <a href="classTradingStrategy.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="TradingStrategy_8h_source.html">TradingStrategy.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for TradingStrategy:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTradingStrategy__inherit__graph.png" border="0" usemap="#TradingStrategy_inherit__map" alt="Inheritance graph"/></div>
+<map name="TradingStrategy_inherit__map" id="TradingStrategy_inherit__map">
+<area shape="rect" id="node2" href="classStrategy.html" title="Strategy class. " alt="" coords="27,5,98,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for TradingStrategy:</div>
+<div class="dyncontent">
+<div class="center"><img src="classTradingStrategy__coll__graph.png" border="0" usemap="#TradingStrategy_coll__map" alt="Collaboration graph"/></div>
+<map name="TradingStrategy_coll__map" id="TradingStrategy_coll__map">
+<area shape="rect" id="node2" href="classStrategy.html" title="Strategy class. " alt="" coords="27,5,98,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a26f088c714200a67a248591fc2023a20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTradingStrategy.html#a26f088c714200a67a248591fc2023a20">TradingStrategy</a> ()</td></tr>
+<tr class="separator:a26f088c714200a67a248591fc2023a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4029029df708f9f0f013603b19f449ff"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTradingStrategy.html#a4029029df708f9f0f013603b19f449ff">execute</a> (double a, double b)</td></tr>
 <tr class="separator:a4029029df708f9f0f013603b19f449ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab4c9c86553ad820ccc52fda3412d32b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTradingStrategy.html#aab4c9c86553ad820ccc52fda3412d32b">~TradingStrategy</a> ()</td></tr>
 <tr class="separator:aab4c9c86553ad820ccc52fda3412d32b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classStrategy"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classStrategy')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classStrategy.html">Strategy</a></td></tr>
+<tr class="memitem:a37c0bbdd64fd7dfcdd91578784a64775 inherit pub_methods_classStrategy"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStrategy.html#a37c0bbdd64fd7dfcdd91578784a64775">~Strategy</a> ()</td></tr>
+<tr class="separator:a37c0bbdd64fd7dfcdd91578784a64775 inherit pub_methods_classStrategy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classMiningStrategy.html" title="MiningStrategy class. ">MiningStrategy</a> class. </p>
+<div class="textblock"><p><a class="el" href="classTradingStrategy.html" title="TradingStrategy class. ">TradingStrategy</a> class. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a26f088c714200a67a248591fc2023a20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26f088c714200a67a248591fc2023a20">&#9670;&nbsp;</a></span>TradingStrategy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TradingStrategy::TradingStrategy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>default constructor </p>
+
+</div>
+</div>
 <a id="aab4c9c86553ad820ccc52fda3412d32b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab4c9c86553ad820ccc52fda3412d32b">&#9670;&nbsp;</a></span>~TradingStrategy()</h2>
 
@@ -133,7 +172,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>overloaded execute for trading for resources </p>
+<p>overloaded execute for trading for resources </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>is credits for resources. </td></tr>
+    <tr><td class="paramname">b</td><td>is exchange rate for the resources </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classStrategy.html#a81b8d4f53494c438b21fc999c7ea59f4">Strategy</a>.</p>
 
 </div>
 </div>

@@ -11,18 +11,42 @@
 
 
 
-Inheritance diagram for Armory\+:
-% FIG 0
+Inheritance diagram for Armory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{classArmory__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for Armory\+:
-% FIG 1
+Collaboration diagram for Armory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classArmory__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classArmory_ad1d556c807fe5f3e5852cfbb818c4f1c}{Armory} ()
 \item 
 \hyperlink{classArmory_a4af8efb475734ef6292e5cdef489c9d9}{$\sim$\+Armory} ()
+\item 
+void \hyperlink{classArmory_adccb51a0901294546bfb1da350ae6836}{add\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$s)
+\item 
+double \hyperlink{classArmory_a06bba21799ef0b2a9f835632411420a4}{get\+Resources} (double a, double b)
+\item 
+void \hyperlink{classArmory_a76e105e23137e82f67e752ff13f52d75}{visit} (\hyperlink{classPlanet}{Planet} $\ast$p)
+\item 
+\hyperlink{classMemento}{Memento} $\ast$ \hyperlink{classArmory_aba8aa540182986fbb0ca8a741f491ffe}{create\+Memento} (vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$ s)
+\item 
+void \hyperlink{classArmory_ad4027c724be016da41eeac5aaab2238b}{reinstate\+Memento} (\hyperlink{classMemento}{Memento} $\ast$mem)
+\item 
+void \hyperlink{classArmory_aab75c86069fac4995a56c6318a33e504}{execute\+Strategy} ()
+\item 
+void \hyperlink{classArmory_a85d472873bf4ce934c849f7c362f7064}{select\+Strategy} (\hyperlink{classStrategy}{Strategy} $\ast$s)
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -44,6 +68,79 @@ Default constructor \mbox{\Hypertarget{classArmory_a4af8efb475734ef6292e5cdef489
 {\footnotesize\ttfamily Armory\+::$\sim$\+Armory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Default destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classArmory_adccb51a0901294546bfb1da350ae6836}\label{classArmory_adccb51a0901294546bfb1da350ae6836}} 
+\index{Armory@{Armory}!add\+Ship@{add\+Ship}}
+\index{add\+Ship@{add\+Ship}!Armory@{Armory}}
+\subsubsection{\texorpdfstring{add\+Ship()}{addShip()}}
+{\footnotesize\ttfamily void Armory\+::add\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual add\+Ship 
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_a5ed39419f5fab65dd4af11bf5136f7a4}{Spaceship\+Decorator}.
+
+\mbox{\Hypertarget{classArmory_aba8aa540182986fbb0ca8a741f491ffe}\label{classArmory_aba8aa540182986fbb0ca8a741f491ffe}} 
+\index{Armory@{Armory}!create\+Memento@{create\+Memento}}
+\index{create\+Memento@{create\+Memento}!Armory@{Armory}}
+\subsubsection{\texorpdfstring{create\+Memento()}{createMemento()}}
+{\footnotesize\ttfamily \hyperlink{classMemento}{Memento}$\ast$ Armory\+::create\+Memento (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+create memento stub 
+
+Reimplemented from \hyperlink{classSpaceship_a6d272f846b019dec8226ddab65648a7b}{Spaceship}.
+
+\mbox{\Hypertarget{classArmory_aab75c86069fac4995a56c6318a33e504}\label{classArmory_aab75c86069fac4995a56c6318a33e504}} 
+\index{Armory@{Armory}!execute\+Strategy@{execute\+Strategy}}
+\index{execute\+Strategy@{execute\+Strategy}!Armory@{Armory}}
+\subsubsection{\texorpdfstring{execute\+Strategy()}{executeStrategy()}}
+{\footnotesize\ttfamily void Armory\+::execute\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+execute strategy 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
+
+\mbox{\Hypertarget{classArmory_a06bba21799ef0b2a9f835632411420a4}\label{classArmory_a06bba21799ef0b2a9f835632411420a4}} 
+\index{Armory@{Armory}!get\+Resources@{get\+Resources}}
+\index{get\+Resources@{get\+Resources}!Armory@{Armory}}
+\subsubsection{\texorpdfstring{get\+Resources()}{getResources()}}
+{\footnotesize\ttfamily double Armory\+::get\+Resources (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub resource collection 
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_a5ee7a9a8c146c85f08591e47d971dce7}{Spaceship\+Decorator}.
+
+\mbox{\Hypertarget{classArmory_ad4027c724be016da41eeac5aaab2238b}\label{classArmory_ad4027c724be016da41eeac5aaab2238b}} 
+\index{Armory@{Armory}!reinstate\+Memento@{reinstate\+Memento}}
+\index{reinstate\+Memento@{reinstate\+Memento}!Armory@{Armory}}
+\subsubsection{\texorpdfstring{reinstate\+Memento()}{reinstateMemento()}}
+{\footnotesize\ttfamily void Armory\+::reinstate\+Memento (\begin{DoxyParamCaption}\item[{\hyperlink{classMemento}{Memento} $\ast$}]{mem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+reinstate memento 
+
+Reimplemented from \hyperlink{classSpaceship_ab075c869473344b6471c8e28ca7ea61e}{Spaceship}.
+
+\mbox{\Hypertarget{classArmory_a85d472873bf4ce934c849f7c362f7064}\label{classArmory_a85d472873bf4ce934c849f7c362f7064}} 
+\index{Armory@{Armory}!select\+Strategy@{select\+Strategy}}
+\index{select\+Strategy@{select\+Strategy}!Armory@{Armory}}
+\subsubsection{\texorpdfstring{select\+Strategy()}{selectStrategy()}}
+{\footnotesize\ttfamily void Armory\+::select\+Strategy (\begin{DoxyParamCaption}\item[{\hyperlink{classStrategy}{Strategy} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+select strategy 
+
+Reimplemented from \hyperlink{classSpaceship_a93be2d9d2b675ef978d866d4cd7a6524}{Spaceship}.
+
+\mbox{\Hypertarget{classArmory_a76e105e23137e82f67e752ff13f52d75}\label{classArmory_a76e105e23137e82f67e752ff13f52d75}} 
+\index{Armory@{Armory}!visit@{visit}}
+\index{visit@{visit}!Armory@{Armory}}
+\subsubsection{\texorpdfstring{visit()}{visit()}}
+{\footnotesize\ttfamily void Armory\+::visit (\begin{DoxyParamCaption}\item[{\hyperlink{classPlanet}{Planet} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for visit 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
+
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

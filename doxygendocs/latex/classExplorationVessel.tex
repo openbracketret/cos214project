@@ -11,12 +11,22 @@ Exploration Vessel class.
 
 
 
-Inheritance diagram for Exploration\+Vessel\+:
-% FIG 0
+Inheritance diagram for Exploration\+Vessel\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classExplorationVessel__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for Exploration\+Vessel\+:
-% FIG 1
+Collaboration diagram for Exploration\+Vessel\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classExplorationVessel__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -24,8 +34,35 @@ Collaboration diagram for Exploration\+Vessel\+:
 \item 
 \hyperlink{classExplorationVessel_ac7b29c63250f7263808af4e21e412cce}{$\sim$\+Exploration\+Vessel} ()
 \item 
-virtual void \hyperlink{classExplorationVessel_ab7a52cecc1b68a5b9b1c478b00d67f65}{add\+Component} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
+\hyperlink{classExplorationVessel_acc004a39ae71f367d3bca876fb02e9c5}{Exploration\+Vessel} (string name)
+\item 
+virtual void \hyperlink{classExplorationVessel_ae952e198a28fd0a5ec998ecdcca86561}{add\+Component} (\hyperlink{classSpaceship}{Spaceship} $\ast$comp)
+\item 
+void \hyperlink{classExplorationVessel_a31ce2f706dab569719ec91db00ecc49d}{visit} (\hyperlink{classPlanet}{Planet} $\ast$p)
+\item 
+int \hyperlink{classExplorationVessel_ab06e219200100bbd40a8f79702e52ae8}{get\+Type} ()
+\item 
+void \hyperlink{classExplorationVessel_a2f164fa9477a2624c5f04b4d9d84ec84}{increase\+Threat\+Level} ()
+\item 
+void \hyperlink{classExplorationVessel_afac2ec0016d6934629418074e3de5950}{decrease\+Threat\+Level} ()
+\item 
+void \hyperlink{classExplorationVessel_af08a3db5b456781106f33a03bfbe7621}{print\+Threat\+Level} ()
+\item 
+void \hyperlink{classExplorationVessel_a83a2bacf57d718eb75ba033bbe363b9e}{execute\+Strategy} ()
+\item 
+void \hyperlink{classExplorationVessel_aeaec72883c8cc5b951be9dd8f4184515}{select\+Strategy} (\hyperlink{classStrategy}{Strategy} $\ast$s)
+\item 
+void \hyperlink{classExplorationVessel_ac6bc6807891edf928fae68e7ed850d14}{add\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$s)
+\item 
+double \hyperlink{classExplorationVessel_a3c3a641c6c249f80d68f20cf73f440f7}{get\+Resources} (double a, double b)
+\item 
+void \hyperlink{classExplorationVessel_a7be654e42a9e83800abfb897d9b308b8}{add\+Person} (\hyperlink{classPeople}{People} $\ast$p)
+\item 
+\hyperlink{classMemento}{Memento} $\ast$ \hyperlink{classExplorationVessel_a90a2c653d736fadf0599af87269fa36e}{create\+Memento} (vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$ s)
+\item 
+void \hyperlink{classExplorationVessel_a314e19ec45f722d80adb800eb7b36d20}{reinstate\+Memento} (\hyperlink{classMemento}{Memento} $\ast$mem)
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -35,7 +72,7 @@ Exploration Vessel class.
 \mbox{\Hypertarget{classExplorationVessel_ab664e2a5b901063c15d86e13f3b981f6}\label{classExplorationVessel_ab664e2a5b901063c15d86e13f3b981f6}} 
 \index{Exploration\+Vessel@{Exploration\+Vessel}!Exploration\+Vessel@{Exploration\+Vessel}}
 \index{Exploration\+Vessel@{Exploration\+Vessel}!Exploration\+Vessel@{Exploration\+Vessel}}
-\subsubsection{\texorpdfstring{Exploration\+Vessel()}{ExplorationVessel()}}
+\subsubsection{\texorpdfstring{Exploration\+Vessel()}{ExplorationVessel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Exploration\+Vessel\+::\+Exploration\+Vessel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Default constructor \mbox{\Hypertarget{classExplorationVessel_ac7b29c63250f7263808af4e21e412cce}\label{classExplorationVessel_ac7b29c63250f7263808af4e21e412cce}} 
@@ -44,14 +81,20 @@ Default constructor \mbox{\Hypertarget{classExplorationVessel_ac7b29c63250f72638
 \subsubsection{\texorpdfstring{$\sim$\+Exploration\+Vessel()}{~ExplorationVessel()}}
 {\footnotesize\ttfamily Exploration\+Vessel\+::$\sim$\+Exploration\+Vessel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Default desctructor 
+Default desctructor \mbox{\Hypertarget{classExplorationVessel_acc004a39ae71f367d3bca876fb02e9c5}\label{classExplorationVessel_acc004a39ae71f367d3bca876fb02e9c5}} 
+\index{Exploration\+Vessel@{Exploration\+Vessel}!Exploration\+Vessel@{Exploration\+Vessel}}
+\index{Exploration\+Vessel@{Exploration\+Vessel}!Exploration\+Vessel@{Exploration\+Vessel}}
+\subsubsection{\texorpdfstring{Exploration\+Vessel()}{ExplorationVessel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Exploration\+Vessel\+::\+Exploration\+Vessel (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Paramaterised constructor 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classExplorationVessel_ab7a52cecc1b68a5b9b1c478b00d67f65}\label{classExplorationVessel_ab7a52cecc1b68a5b9b1c478b00d67f65}} 
+\mbox{\Hypertarget{classExplorationVessel_ae952e198a28fd0a5ec998ecdcca86561}\label{classExplorationVessel_ae952e198a28fd0a5ec998ecdcca86561}} 
 \index{Exploration\+Vessel@{Exploration\+Vessel}!add\+Component@{add\+Component}}
 \index{add\+Component@{add\+Component}!Exploration\+Vessel@{Exploration\+Vessel}}
 \subsubsection{\texorpdfstring{add\+Component()}{addComponent()}}
-{\footnotesize\ttfamily virtual void Exploration\+Vessel\+::add\+Component (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual void Exploration\+Vessel\+::add\+Component (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{comp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 Add a component to the vessel 
 \begin{DoxyParams}{Parameters}
@@ -62,8 +105,137 @@ Add a component to the vessel
 
 Implements \hyperlink{classSpaceship_ac1b4673a691cd100708ddea08cd9f192}{Spaceship}.
 
+\mbox{\Hypertarget{classExplorationVessel_a7be654e42a9e83800abfb897d9b308b8}\label{classExplorationVessel_a7be654e42a9e83800abfb897d9b308b8}} 
+\index{Exploration\+Vessel@{Exploration\+Vessel}!add\+Person@{add\+Person}}
+\index{add\+Person@{add\+Person}!Exploration\+Vessel@{Exploration\+Vessel}}
+\subsubsection{\texorpdfstring{add\+Person()}{addPerson()}}
+{\footnotesize\ttfamily void Exploration\+Vessel\+::add\+Person (\begin{DoxyParamCaption}\item[{\hyperlink{classPeople}{People} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for add\+Person 
+
+Reimplemented from \hyperlink{classSpaceship_add8d9c6dfd5f6ecb8399e41e71e5b22f}{Spaceship}.
+
+\mbox{\Hypertarget{classExplorationVessel_ac6bc6807891edf928fae68e7ed850d14}\label{classExplorationVessel_ac6bc6807891edf928fae68e7ed850d14}} 
+\index{Exploration\+Vessel@{Exploration\+Vessel}!add\+Ship@{add\+Ship}}
+\index{add\+Ship@{add\+Ship}!Exploration\+Vessel@{Exploration\+Vessel}}
+\subsubsection{\texorpdfstring{add\+Ship()}{addShip()}}
+{\footnotesize\ttfamily void Exploration\+Vessel\+::add\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual add\+Ship 
+
+Reimplemented from \hyperlink{classSpaceship_a90e1321cdbcb459b98b75ab39cef867d}{Spaceship}.
+
+\mbox{\Hypertarget{classExplorationVessel_a90a2c653d736fadf0599af87269fa36e}\label{classExplorationVessel_a90a2c653d736fadf0599af87269fa36e}} 
+\index{Exploration\+Vessel@{Exploration\+Vessel}!create\+Memento@{create\+Memento}}
+\index{create\+Memento@{create\+Memento}!Exploration\+Vessel@{Exploration\+Vessel}}
+\subsubsection{\texorpdfstring{create\+Memento()}{createMemento()}}
+{\footnotesize\ttfamily \hyperlink{classMemento}{Memento}$\ast$ Exploration\+Vessel\+::create\+Memento (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+create memento stub 
+
+Reimplemented from \hyperlink{classSpaceship_a6d272f846b019dec8226ddab65648a7b}{Spaceship}.
+
+\mbox{\Hypertarget{classExplorationVessel_afac2ec0016d6934629418074e3de5950}\label{classExplorationVessel_afac2ec0016d6934629418074e3de5950}} 
+\index{Exploration\+Vessel@{Exploration\+Vessel}!decrease\+Threat\+Level@{decrease\+Threat\+Level}}
+\index{decrease\+Threat\+Level@{decrease\+Threat\+Level}!Exploration\+Vessel@{Exploration\+Vessel}}
+\subsubsection{\texorpdfstring{decrease\+Threat\+Level()}{decreaseThreatLevel()}}
+{\footnotesize\ttfamily void Exploration\+Vessel\+::decrease\+Threat\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for decrease\+Threat\+Level 
+
+Reimplemented from \hyperlink{classSpaceship_a73a1eefd211e9a2063d924ee85f0c0c7}{Spaceship}.
+
+\mbox{\Hypertarget{classExplorationVessel_a83a2bacf57d718eb75ba033bbe363b9e}\label{classExplorationVessel_a83a2bacf57d718eb75ba033bbe363b9e}} 
+\index{Exploration\+Vessel@{Exploration\+Vessel}!execute\+Strategy@{execute\+Strategy}}
+\index{execute\+Strategy@{execute\+Strategy}!Exploration\+Vessel@{Exploration\+Vessel}}
+\subsubsection{\texorpdfstring{execute\+Strategy()}{executeStrategy()}}
+{\footnotesize\ttfamily void Exploration\+Vessel\+::execute\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+execute strategy 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
+
+\mbox{\Hypertarget{classExplorationVessel_a3c3a641c6c249f80d68f20cf73f440f7}\label{classExplorationVessel_a3c3a641c6c249f80d68f20cf73f440f7}} 
+\index{Exploration\+Vessel@{Exploration\+Vessel}!get\+Resources@{get\+Resources}}
+\index{get\+Resources@{get\+Resources}!Exploration\+Vessel@{Exploration\+Vessel}}
+\subsubsection{\texorpdfstring{get\+Resources()}{getResources()}}
+{\footnotesize\ttfamily double Exploration\+Vessel\+::get\+Resources (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub resource collection 
+
+Reimplemented from \hyperlink{classSpaceship_ad2027533de1d789db5e3efa22055f2d0}{Spaceship}.
+
+\mbox{\Hypertarget{classExplorationVessel_ab06e219200100bbd40a8f79702e52ae8}\label{classExplorationVessel_ab06e219200100bbd40a8f79702e52ae8}} 
+\index{Exploration\+Vessel@{Exploration\+Vessel}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Exploration\+Vessel@{Exploration\+Vessel}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily int Exploration\+Vessel\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get type of spaceship -\/ \hyperlink{classExplorationVessel}{Exploration\+Vessel} = 2 \begin{DoxyReturn}{Returns}
+int -\/ 2 
+\end{DoxyReturn}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Reimplemented from \hyperlink{classSpaceship_a113055e6d793f8fbc55e44efc4d57e07}{Spaceship}.
+
+\mbox{\Hypertarget{classExplorationVessel_a2f164fa9477a2624c5f04b4d9d84ec84}\label{classExplorationVessel_a2f164fa9477a2624c5f04b4d9d84ec84}} 
+\index{Exploration\+Vessel@{Exploration\+Vessel}!increase\+Threat\+Level@{increase\+Threat\+Level}}
+\index{increase\+Threat\+Level@{increase\+Threat\+Level}!Exploration\+Vessel@{Exploration\+Vessel}}
+\subsubsection{\texorpdfstring{increase\+Threat\+Level()}{increaseThreatLevel()}}
+{\footnotesize\ttfamily void Exploration\+Vessel\+::increase\+Threat\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for increase\+Threat\+Level 
+
+Reimplemented from \hyperlink{classSpaceship_a5ddf702124286d9d3a6b5e64c09515bc}{Spaceship}.
+
+\mbox{\Hypertarget{classExplorationVessel_af08a3db5b456781106f33a03bfbe7621}\label{classExplorationVessel_af08a3db5b456781106f33a03bfbe7621}} 
+\index{Exploration\+Vessel@{Exploration\+Vessel}!print\+Threat\+Level@{print\+Threat\+Level}}
+\index{print\+Threat\+Level@{print\+Threat\+Level}!Exploration\+Vessel@{Exploration\+Vessel}}
+\subsubsection{\texorpdfstring{print\+Threat\+Level()}{printThreatLevel()}}
+{\footnotesize\ttfamily void Exploration\+Vessel\+::print\+Threat\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for print\+Threat\+Level 
+
+Reimplemented from \hyperlink{classSpaceship_a8f16814f888a5a1423e5a491329cdb97}{Spaceship}.
+
+\mbox{\Hypertarget{classExplorationVessel_a314e19ec45f722d80adb800eb7b36d20}\label{classExplorationVessel_a314e19ec45f722d80adb800eb7b36d20}} 
+\index{Exploration\+Vessel@{Exploration\+Vessel}!reinstate\+Memento@{reinstate\+Memento}}
+\index{reinstate\+Memento@{reinstate\+Memento}!Exploration\+Vessel@{Exploration\+Vessel}}
+\subsubsection{\texorpdfstring{reinstate\+Memento()}{reinstateMemento()}}
+{\footnotesize\ttfamily void Exploration\+Vessel\+::reinstate\+Memento (\begin{DoxyParamCaption}\item[{\hyperlink{classMemento}{Memento} $\ast$}]{mem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+reinstate memento 
+
+Reimplemented from \hyperlink{classSpaceship_ab075c869473344b6471c8e28ca7ea61e}{Spaceship}.
+
+\mbox{\Hypertarget{classExplorationVessel_aeaec72883c8cc5b951be9dd8f4184515}\label{classExplorationVessel_aeaec72883c8cc5b951be9dd8f4184515}} 
+\index{Exploration\+Vessel@{Exploration\+Vessel}!select\+Strategy@{select\+Strategy}}
+\index{select\+Strategy@{select\+Strategy}!Exploration\+Vessel@{Exploration\+Vessel}}
+\subsubsection{\texorpdfstring{select\+Strategy()}{selectStrategy()}}
+{\footnotesize\ttfamily void Exploration\+Vessel\+::select\+Strategy (\begin{DoxyParamCaption}\item[{\hyperlink{classStrategy}{Strategy} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+select strategy 
+
+Reimplemented from \hyperlink{classSpaceship_a93be2d9d2b675ef978d866d4cd7a6524}{Spaceship}.
+
+\mbox{\Hypertarget{classExplorationVessel_a31ce2f706dab569719ec91db00ecc49d}\label{classExplorationVessel_a31ce2f706dab569719ec91db00ecc49d}} 
+\index{Exploration\+Vessel@{Exploration\+Vessel}!visit@{visit}}
+\index{visit@{visit}!Exploration\+Vessel@{Exploration\+Vessel}}
+\subsubsection{\texorpdfstring{visit()}{visit()}}
+{\footnotesize\ttfamily void Exploration\+Vessel\+::visit (\begin{DoxyParamCaption}\item[{\hyperlink{classPlanet}{Planet} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Add a visitor to the vessel and planet 
+\begin{DoxyParams}{Parameters}
+{\em p} & -\/ planet to be visited \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Exploration\+Vessel.\+h\end{DoxyCompactItemize}
+Exploration\+Vessel.\+h\item 
+Exploration\+Vessel.\+cpp\end{DoxyCompactItemize}

@@ -11,12 +11,22 @@ Transport bay class.
 
 
 
-Inheritance diagram for Transport\+Bay\+:
-% FIG 0
+Inheritance diagram for Transport\+Bay\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{classTransportBay__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for Transport\+Bay\+:
-% FIG 1
+Collaboration diagram for Transport\+Bay\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classTransportBay__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -29,14 +39,14 @@ Collaboration diagram for Transport\+Bay\+:
 \mbox{\Hypertarget{classTransportBay_a3e28498ac79aaf21921c1d03917ef390}\label{classTransportBay_a3e28498ac79aaf21921c1d03917ef390}} 
 int {\bfseries get\+Current\+Capacity} ()
 \item 
-\mbox{\Hypertarget{classTransportBay_adc883bc6b55736576e3a400ba8de4b8b}\label{classTransportBay_adc883bc6b55736576e3a400ba8de4b8b}} 
-int {\bfseries set\+Current\+Capacity} (int i)
+\mbox{\Hypertarget{classTransportBay_ab8736f17ce87955d9a60adc5a17fec09}\label{classTransportBay_ab8736f17ce87955d9a60adc5a17fec09}} 
+void {\bfseries set\+Current\+Capacity} (int i)
 \item 
 \mbox{\Hypertarget{classTransportBay_a4d19bec72afdf29f7bb693610e62759c}\label{classTransportBay_a4d19bec72afdf29f7bb693610e62759c}} 
 int {\bfseries get\+Max\+Capacity} ()
 \item 
-\mbox{\Hypertarget{classTransportBay_a504e2ae52391c29e633e79fc5a46de22}\label{classTransportBay_a504e2ae52391c29e633e79fc5a46de22}} 
-int {\bfseries set\+Max\+Capacity} (int i)
+\mbox{\Hypertarget{classTransportBay_ab3d6bcacbf6d0a407774e16e28655009}\label{classTransportBay_ab3d6bcacbf6d0a407774e16e28655009}} 
+void {\bfseries set\+Max\+Capacity} (int i)
 \item 
 void \hyperlink{classTransportBay_acd6b5b09e81bd28c6dcbe23d561fd99c}{add\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
 \item 
@@ -45,6 +55,16 @@ void \hyperlink{classTransportBay_a053ab5bbf5b6cafe1f5b3782176bd214}{remove\+Shi
 \hyperlink{classMemento}{Memento} $\ast$ \hyperlink{classTransportBay_aff9390fd8b7434bfa03b408028caf920}{create\+Memento} (vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$ s)
 \item 
 void \hyperlink{classTransportBay_a501256401b6845a16ced9ea65c294f70}{reinstate\+Memento} (\hyperlink{classMemento}{Memento} $\ast$mem)
+\item 
+double \hyperlink{classTransportBay_afac369115f4c17522a123f36be183e29}{get\+Resources} (double a, double b)
+\item 
+void \hyperlink{classTransportBay_a04aea7cba776cb1a8fd40f40cc6f495c}{execute\+Strategy} ()
+\item 
+void \hyperlink{classTransportBay_a277ec0488bbafbeef8d25a77dc5576c8}{select\+Strategy} (\hyperlink{classStrategy}{Strategy} $\ast$s)
+\item 
+void \hyperlink{classTransportBay_a2be08f6085583ec9f839ff8939c6a6b7}{add\+Person} (\hyperlink{classPeople}{People} $\ast$p)
+\item 
+void \hyperlink{classTransportBay_a01efe0f6bd015b1ae194e111e5589444}{visit} (\hyperlink{classPlanet}{Planet} $\ast$p)
 \end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -85,22 +105,36 @@ Parameterised constructor to set transport bay max capacity
 default destructor 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTransportBay_a2be08f6085583ec9f839ff8939c6a6b7}\label{classTransportBay_a2be08f6085583ec9f839ff8939c6a6b7}} 
+\index{Transport\+Bay@{Transport\+Bay}!add\+Person@{add\+Person}}
+\index{add\+Person@{add\+Person}!Transport\+Bay@{Transport\+Bay}}
+\subsubsection{\texorpdfstring{add\+Person()}{addPerson()}}
+{\footnotesize\ttfamily void Transport\+Bay\+::add\+Person (\begin{DoxyParamCaption}\item[{\hyperlink{classPeople}{People} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for add\+Person 
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_a6e289d8a65f35b9f223255ae0eaa3b00}{Spaceship\+Decorator}.
+
 \mbox{\Hypertarget{classTransportBay_acd6b5b09e81bd28c6dcbe23d561fd99c}\label{classTransportBay_acd6b5b09e81bd28c6dcbe23d561fd99c}} 
 \index{Transport\+Bay@{Transport\+Bay}!add\+Ship@{add\+Ship}}
 \index{add\+Ship@{add\+Ship}!Transport\+Bay@{Transport\+Bay}}
 \subsubsection{\texorpdfstring{add\+Ship()}{addShip()}}
-{\footnotesize\ttfamily void Transport\+Bay\+::add\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{s }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Transport\+Bay\+::add\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 Method to add spaceships into the transport bay 
 \begin{DoxyParams}{Parameters}
 {\em spaceship} & \hyperlink{classSpaceship}{Spaceship} to be added \\
 \hline
 \end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_a5ed39419f5fab65dd4af11bf5136f7a4}{Spaceship\+Decorator}.
+
 \mbox{\Hypertarget{classTransportBay_aff9390fd8b7434bfa03b408028caf920}\label{classTransportBay_aff9390fd8b7434bfa03b408028caf920}} 
 \index{Transport\+Bay@{Transport\+Bay}!create\+Memento@{create\+Memento}}
 \index{create\+Memento@{create\+Memento}!Transport\+Bay@{Transport\+Bay}}
 \subsubsection{\texorpdfstring{create\+Memento()}{createMemento()}}
-{\footnotesize\ttfamily \hyperlink{classMemento}{Memento} $\ast$ Transport\+Bay\+::create\+Memento (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$}]{s }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \hyperlink{classMemento}{Memento} $\ast$ Transport\+Bay\+::create\+Memento (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 Create memento 
 \begin{DoxyParams}{Parameters}
@@ -110,17 +144,45 @@ Create memento
 \begin{DoxyReturn}{Returns}
 Memento$\ast$ 
 \end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_a1acde91cd10517c94af41032aa5fdd9e}{Spaceship\+Decorator}.
+
+\mbox{\Hypertarget{classTransportBay_a04aea7cba776cb1a8fd40f40cc6f495c}\label{classTransportBay_a04aea7cba776cb1a8fd40f40cc6f495c}} 
+\index{Transport\+Bay@{Transport\+Bay}!execute\+Strategy@{execute\+Strategy}}
+\index{execute\+Strategy@{execute\+Strategy}!Transport\+Bay@{Transport\+Bay}}
+\subsubsection{\texorpdfstring{execute\+Strategy()}{executeStrategy()}}
+{\footnotesize\ttfamily void Transport\+Bay\+::execute\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+execute strategy 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
+
+\mbox{\Hypertarget{classTransportBay_afac369115f4c17522a123f36be183e29}\label{classTransportBay_afac369115f4c17522a123f36be183e29}} 
+\index{Transport\+Bay@{Transport\+Bay}!get\+Resources@{get\+Resources}}
+\index{get\+Resources@{get\+Resources}!Transport\+Bay@{Transport\+Bay}}
+\subsubsection{\texorpdfstring{get\+Resources()}{getResources()}}
+{\footnotesize\ttfamily double Transport\+Bay\+::get\+Resources (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub resource collection 
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_a5ee7a9a8c146c85f08591e47d971dce7}{Spaceship\+Decorator}.
+
 \mbox{\Hypertarget{classTransportBay_a501256401b6845a16ced9ea65c294f70}\label{classTransportBay_a501256401b6845a16ced9ea65c294f70}} 
 \index{Transport\+Bay@{Transport\+Bay}!reinstate\+Memento@{reinstate\+Memento}}
 \index{reinstate\+Memento@{reinstate\+Memento}!Transport\+Bay@{Transport\+Bay}}
 \subsubsection{\texorpdfstring{reinstate\+Memento()}{reinstateMemento()}}
-{\footnotesize\ttfamily void Transport\+Bay\+::reinstate\+Memento (\begin{DoxyParamCaption}\item[{\hyperlink{classMemento}{Memento} $\ast$}]{mem }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Transport\+Bay\+::reinstate\+Memento (\begin{DoxyParamCaption}\item[{\hyperlink{classMemento}{Memento} $\ast$}]{mem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 Reinstate memento 
 \begin{DoxyParams}{Parameters}
 {\em mem} & -\/ \hyperlink{classMemento}{Memento} to be recalled \\
 \hline
 \end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_ac043134e491d99a8e0d985d7ce409a87}{Spaceship\+Decorator}.
+
 \mbox{\Hypertarget{classTransportBay_a053ab5bbf5b6cafe1f5b3782176bd214}\label{classTransportBay_a053ab5bbf5b6cafe1f5b3782176bd214}} 
 \index{Transport\+Bay@{Transport\+Bay}!remove\+Ship@{remove\+Ship}}
 \index{remove\+Ship@{remove\+Ship}!Transport\+Bay@{Transport\+Bay}}
@@ -132,6 +194,26 @@ Method to remove a specific spaceship from the transport bay
 {\em spaceship} & \hyperlink{classSpaceship}{Spaceship} to be removed from the transport bay \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classTransportBay_a277ec0488bbafbeef8d25a77dc5576c8}\label{classTransportBay_a277ec0488bbafbeef8d25a77dc5576c8}} 
+\index{Transport\+Bay@{Transport\+Bay}!select\+Strategy@{select\+Strategy}}
+\index{select\+Strategy@{select\+Strategy}!Transport\+Bay@{Transport\+Bay}}
+\subsubsection{\texorpdfstring{select\+Strategy()}{selectStrategy()}}
+{\footnotesize\ttfamily void Transport\+Bay\+::select\+Strategy (\begin{DoxyParamCaption}\item[{\hyperlink{classStrategy}{Strategy} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+select strategy 
+
+Reimplemented from \hyperlink{classSpaceship_a93be2d9d2b675ef978d866d4cd7a6524}{Spaceship}.
+
+\mbox{\Hypertarget{classTransportBay_a01efe0f6bd015b1ae194e111e5589444}\label{classTransportBay_a01efe0f6bd015b1ae194e111e5589444}} 
+\index{Transport\+Bay@{Transport\+Bay}!visit@{visit}}
+\index{visit@{visit}!Transport\+Bay@{Transport\+Bay}}
+\subsubsection{\texorpdfstring{visit()}{visit()}}
+{\footnotesize\ttfamily void Transport\+Bay\+::visit (\begin{DoxyParamCaption}\item[{\hyperlink{classPlanet}{Planet} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for visit 
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_ae11d728646b22a33ce5bb465c23bab32}{Spaceship\+Decorator}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

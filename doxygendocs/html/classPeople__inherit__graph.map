@@ -1,0 +1,10 @@
+<map id="People" name="People">
+<area shape="rect" id="node2" href="$classCaptain.html" title="Captain class. " alt="" coords="5,80,72,107"/>
+<area shape="rect" id="node3" href="$classChiefEngineer.html" title="Chief Engineer class. " alt="" coords="96,80,200,107"/>
+<area shape="rect" id="node4" href="$classCommanderOfTheFleet.html" title="Commander of the fleet class. A singleton. " alt="" coords="225,80,383,107"/>
+<area shape="rect" id="node5" href="$classComms.html" title="Comms class. " alt="" coords="407,80,475,107"/>
+<area shape="rect" id="node6" href="$classDoctor.html" title="Doctor class. " alt="" coords="500,80,561,107"/>
+<area shape="rect" id="node7" href="$classEngineer.html" title="Engineer class. " alt="" coords="586,80,659,107"/>
+<area shape="rect" id="node8" href="$classFighter.html" title="Fighter class. " alt="" coords="683,80,746,107"/>
+<area shape="rect" id="node9" href="$classNavigator.html" title="Navigator class. " alt="" coords="770,80,849,107"/>
+</map>

@@ -11,18 +11,32 @@ Commander of the fleet class. A singleton.
 
 
 
-Inheritance diagram for Commander\+Of\+The\+Fleet\+:
-% FIG 0
+Inheritance diagram for Commander\+Of\+The\+Fleet\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classCommanderOfTheFleet__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for Commander\+Of\+The\+Fleet\+:
-% FIG 1
+Collaboration diagram for Commander\+Of\+The\+Fleet\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{classCommanderOfTheFleet__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{classCommanderOfTheFleet_a13e91b9342df067b375f7ef2b929c0d5}{recieve\+Spaceship\+Error} (string)
 \item 
 void \hyperlink{classCommanderOfTheFleet_a39cfd5c0016355543515e919791d7984}{send\+Error\+Message} (string)
+\item 
+string \hyperlink{classCommanderOfTheFleet_a6e025eb090e0e231ffa72e5e6a9f7ce0}{get\+Type} ()
+\item 
+void \hyperlink{classCommanderOfTheFleet_a083604612b705c159fdd16dff0d2d396}{do\+Command} (string, \hyperlink{classSpaceship}{Spaceship} $\ast$)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -68,6 +82,27 @@ Virtual default destructor \mbox{\Hypertarget{classCommanderOfTheFleet_a83cb8584
 Parameterised constructor. In order to prevent copies being created 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCommanderOfTheFleet_a083604612b705c159fdd16dff0d2d396}\label{classCommanderOfTheFleet_a083604612b705c159fdd16dff0d2d396}} 
+\index{Commander\+Of\+The\+Fleet@{Commander\+Of\+The\+Fleet}!do\+Command@{do\+Command}}
+\index{do\+Command@{do\+Command}!Commander\+Of\+The\+Fleet@{Commander\+Of\+The\+Fleet}}
+\subsubsection{\texorpdfstring{do\+Command()}{doCommand()}}
+{\footnotesize\ttfamily void Commander\+Of\+The\+Fleet\+::do\+Command (\begin{DoxyParamCaption}\item[{string}]{type,  }\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{s }\end{DoxyParamCaption})}
+
+Execute a command 
+\begin{DoxyParams}{Parameters}
+{\em type} & -\/ the command type \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCommanderOfTheFleet_a6e025eb090e0e231ffa72e5e6a9f7ce0}\label{classCommanderOfTheFleet_a6e025eb090e0e231ffa72e5e6a9f7ce0}} 
+\index{Commander\+Of\+The\+Fleet@{Commander\+Of\+The\+Fleet}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Commander\+Of\+The\+Fleet@{Commander\+Of\+The\+Fleet}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily string Commander\+Of\+The\+Fleet\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+get type of person 
+
+Implements \hyperlink{classPeople_af60dd882d60cddf63f9b95815ce551a8}{People}.
+
 \mbox{\Hypertarget{classCommanderOfTheFleet_a19e2583c1a60a01f5530b0f97fbcbca5}\label{classCommanderOfTheFleet_a19e2583c1a60a01f5530b0f97fbcbca5}} 
 \index{Commander\+Of\+The\+Fleet@{Commander\+Of\+The\+Fleet}!instance@{instance}}
 \index{instance@{instance}!Commander\+Of\+The\+Fleet@{Commander\+Of\+The\+Fleet}}

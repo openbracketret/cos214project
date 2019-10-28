@@ -11,18 +11,45 @@ Sleeping quarters class.
 
 
 
-Inheritance diagram for Sleeping\+Quarters\+:
-% FIG 0
+Inheritance diagram for Sleeping\+Quarters\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{classSleepingQuarters__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for Sleeping\+Quarters\+:
-% FIG 1
+Collaboration diagram for Sleeping\+Quarters\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classSleepingQuarters__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classSleepingQuarters_ab4055fa9d6ac27506b1577faec404fbb}{Sleeping\+Quarters} ()
 \item 
 \hyperlink{classSleepingQuarters_ad32e286540e322186993b15f5ebcffbc}{$\sim$\+Sleeping\+Quarters} ()
+\item 
+\mbox{\Hypertarget{classSleepingQuarters_a586d57ac2ee057114d2d763890d863b9}\label{classSleepingQuarters_a586d57ac2ee057114d2d763890d863b9}} 
+void {\bfseries visit} (\hyperlink{classPlanet}{Planet} $\ast$p)
+\item 
+void \hyperlink{classSleepingQuarters_ae15ba2bf6be5cc0d4580da9ecbbe28f5}{add\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$s)
+\item 
+double \hyperlink{classSleepingQuarters_aa1c2a40c05a566955965dee8118dc410}{get\+Resources} (double a, double b)
+\item 
+void \hyperlink{classSleepingQuarters_addd107a8005b61d51846e8e955922d50}{add\+Person} (\hyperlink{classPeople}{People} $\ast$p)
+\item 
+\hyperlink{classMemento}{Memento} $\ast$ \hyperlink{classSleepingQuarters_ac71f6fb8b3ec0be83be6cd3c080fecc0}{create\+Memento} (vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$ s)
+\item 
+void \hyperlink{classSleepingQuarters_a9a1fd96cb88a4eee245c7dda3672fac5}{reinstate\+Memento} (\hyperlink{classMemento}{Memento} $\ast$mem)
+\item 
+void \hyperlink{classSleepingQuarters_aa914af0350fa1a9ac5ebb7509d28b758}{execute\+Strategy} ()
+\item 
+void \hyperlink{classSleepingQuarters_a9a3c4618cd1a852984c0adba025c159f}{select\+Strategy} (\hyperlink{classStrategy}{Strategy} $\ast$s)
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -44,6 +71,79 @@ default constructor \mbox{\Hypertarget{classSleepingQuarters_ad32e286540e3221869
 {\footnotesize\ttfamily Sleeping\+Quarters\+::$\sim$\+Sleeping\+Quarters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 default desctructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSleepingQuarters_addd107a8005b61d51846e8e955922d50}\label{classSleepingQuarters_addd107a8005b61d51846e8e955922d50}} 
+\index{Sleeping\+Quarters@{Sleeping\+Quarters}!add\+Person@{add\+Person}}
+\index{add\+Person@{add\+Person}!Sleeping\+Quarters@{Sleeping\+Quarters}}
+\subsubsection{\texorpdfstring{add\+Person()}{addPerson()}}
+{\footnotesize\ttfamily void Sleeping\+Quarters\+::add\+Person (\begin{DoxyParamCaption}\item[{\hyperlink{classPeople}{People} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for add\+Person 
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_a6e289d8a65f35b9f223255ae0eaa3b00}{Spaceship\+Decorator}.
+
+\mbox{\Hypertarget{classSleepingQuarters_ae15ba2bf6be5cc0d4580da9ecbbe28f5}\label{classSleepingQuarters_ae15ba2bf6be5cc0d4580da9ecbbe28f5}} 
+\index{Sleeping\+Quarters@{Sleeping\+Quarters}!add\+Ship@{add\+Ship}}
+\index{add\+Ship@{add\+Ship}!Sleeping\+Quarters@{Sleeping\+Quarters}}
+\subsubsection{\texorpdfstring{add\+Ship()}{addShip()}}
+{\footnotesize\ttfamily void Sleeping\+Quarters\+::add\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual add\+Ship 
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_a5ed39419f5fab65dd4af11bf5136f7a4}{Spaceship\+Decorator}.
+
+\mbox{\Hypertarget{classSleepingQuarters_ac71f6fb8b3ec0be83be6cd3c080fecc0}\label{classSleepingQuarters_ac71f6fb8b3ec0be83be6cd3c080fecc0}} 
+\index{Sleeping\+Quarters@{Sleeping\+Quarters}!create\+Memento@{create\+Memento}}
+\index{create\+Memento@{create\+Memento}!Sleeping\+Quarters@{Sleeping\+Quarters}}
+\subsubsection{\texorpdfstring{create\+Memento()}{createMemento()}}
+{\footnotesize\ttfamily \hyperlink{classMemento}{Memento}$\ast$ Sleeping\+Quarters\+::create\+Memento (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+create memento stub 
+
+Reimplemented from \hyperlink{classSpaceship_a6d272f846b019dec8226ddab65648a7b}{Spaceship}.
+
+\mbox{\Hypertarget{classSleepingQuarters_aa914af0350fa1a9ac5ebb7509d28b758}\label{classSleepingQuarters_aa914af0350fa1a9ac5ebb7509d28b758}} 
+\index{Sleeping\+Quarters@{Sleeping\+Quarters}!execute\+Strategy@{execute\+Strategy}}
+\index{execute\+Strategy@{execute\+Strategy}!Sleeping\+Quarters@{Sleeping\+Quarters}}
+\subsubsection{\texorpdfstring{execute\+Strategy()}{executeStrategy()}}
+{\footnotesize\ttfamily void Sleeping\+Quarters\+::execute\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+execute strategy 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
+
+\mbox{\Hypertarget{classSleepingQuarters_aa1c2a40c05a566955965dee8118dc410}\label{classSleepingQuarters_aa1c2a40c05a566955965dee8118dc410}} 
+\index{Sleeping\+Quarters@{Sleeping\+Quarters}!get\+Resources@{get\+Resources}}
+\index{get\+Resources@{get\+Resources}!Sleeping\+Quarters@{Sleeping\+Quarters}}
+\subsubsection{\texorpdfstring{get\+Resources()}{getResources()}}
+{\footnotesize\ttfamily double Sleeping\+Quarters\+::get\+Resources (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub resource collection 
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_a5ee7a9a8c146c85f08591e47d971dce7}{Spaceship\+Decorator}.
+
+\mbox{\Hypertarget{classSleepingQuarters_a9a1fd96cb88a4eee245c7dda3672fac5}\label{classSleepingQuarters_a9a1fd96cb88a4eee245c7dda3672fac5}} 
+\index{Sleeping\+Quarters@{Sleeping\+Quarters}!reinstate\+Memento@{reinstate\+Memento}}
+\index{reinstate\+Memento@{reinstate\+Memento}!Sleeping\+Quarters@{Sleeping\+Quarters}}
+\subsubsection{\texorpdfstring{reinstate\+Memento()}{reinstateMemento()}}
+{\footnotesize\ttfamily void Sleeping\+Quarters\+::reinstate\+Memento (\begin{DoxyParamCaption}\item[{\hyperlink{classMemento}{Memento} $\ast$}]{mem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+reinstate memento 
+
+Reimplemented from \hyperlink{classSpaceship_ab075c869473344b6471c8e28ca7ea61e}{Spaceship}.
+
+\mbox{\Hypertarget{classSleepingQuarters_a9a3c4618cd1a852984c0adba025c159f}\label{classSleepingQuarters_a9a3c4618cd1a852984c0adba025c159f}} 
+\index{Sleeping\+Quarters@{Sleeping\+Quarters}!select\+Strategy@{select\+Strategy}}
+\index{select\+Strategy@{select\+Strategy}!Sleeping\+Quarters@{Sleeping\+Quarters}}
+\subsubsection{\texorpdfstring{select\+Strategy()}{selectStrategy()}}
+{\footnotesize\ttfamily void Sleeping\+Quarters\+::select\+Strategy (\begin{DoxyParamCaption}\item[{\hyperlink{classStrategy}{Strategy} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+select strategy 
+
+Reimplemented from \hyperlink{classSpaceship_a93be2d9d2b675ef978d866d4cd7a6524}{Spaceship}.
+
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

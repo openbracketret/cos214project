@@ -11,12 +11,22 @@
 
 
 
-Inheritance diagram for People\+:
-% FIG 0
+Inheritance diagram for People\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPeople__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for People\+:
-% FIG 1
+Collaboration diagram for People\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classPeople__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -31,6 +41,10 @@ virtual void \hyperlink{classPeople_a572a35170f61d1848eb04b65baafb057}{send\+Err
 void \hyperlink{classPeople_a66c99da939fe89614360953a3619a271}{board\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
 \item 
 void \hyperlink{classPeople_a5e87ed1cfd4d4d90b95e3b2196c7687e}{leave\+Ship} ()
+\item 
+virtual string \hyperlink{classPeople_af60dd882d60cddf63f9b95815ce551a8}{get\+Type} ()=0
+\item 
+void \hyperlink{classPeople_abf8a17cdc24354a5163d212a77312873}{begin\+Command} (string, \hyperlink{classSpaceship}{Spaceship} $\ast$)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -60,6 +74,17 @@ Default constructor \mbox{\Hypertarget{classPeople_a26b0c041fafa38a1f84e0d51742e
 Virtual default desctructor 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPeople_abf8a17cdc24354a5163d212a77312873}\label{classPeople_abf8a17cdc24354a5163d212a77312873}} 
+\index{People@{People}!begin\+Command@{begin\+Command}}
+\index{begin\+Command@{begin\+Command}!People@{People}}
+\subsubsection{\texorpdfstring{begin\+Command()}{beginCommand()}}
+{\footnotesize\ttfamily void People\+::begin\+Command (\begin{DoxyParamCaption}\item[{string}]{type,  }\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{s }\end{DoxyParamCaption})}
+
+Begin doing a command with the commander of the fleet 
+\begin{DoxyParams}{Parameters}
+{\em type} & -\/ the command type \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classPeople_a66c99da939fe89614360953a3619a271}\label{classPeople_a66c99da939fe89614360953a3619a271}} 
 \index{People@{People}!board\+Ship@{board\+Ship}}
 \index{board\+Ship@{board\+Ship}!People@{People}}
@@ -71,6 +96,16 @@ Board ship. Register with spaceship
 {\em spaceship} & -\/ spaceship being registered \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classPeople_af60dd882d60cddf63f9b95815ce551a8}\label{classPeople_af60dd882d60cddf63f9b95815ce551a8}} 
+\index{People@{People}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!People@{People}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily virtual string People\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Getting type of the person 
+
+Implemented in \hyperlink{classCommanderOfTheFleet_a6e025eb090e0e231ffa72e5e6a9f7ce0}{Commander\+Of\+The\+Fleet}, \hyperlink{classEngineer_ae2f83b9c2df3e8d3937697b23546571a}{Engineer}, \hyperlink{classComms_ae76ecf305b690220aa4fa68d0d798357}{Comms}, \hyperlink{classDoctor_a6aee07e1096c01e16c11b461150083eb}{Doctor}, \hyperlink{classFighter_ae8bd1a16211422b1898f41dec347281c}{Fighter}, \hyperlink{classCaptain_a87ae1c47127aec69cc58133d82e488d3}{Captain}, \hyperlink{classNavigator_a3b6314e429bc38e2cd330db7c187a7ae}{Navigator}, and \hyperlink{classChiefEngineer_abd3df4d2f94acff4c659f9e428ad1789}{Chief\+Engineer}.
+
 \mbox{\Hypertarget{classPeople_a5e87ed1cfd4d4d90b95e3b2196c7687e}\label{classPeople_a5e87ed1cfd4d4d90b95e3b2196c7687e}} 
 \index{People@{People}!leave\+Ship@{leave\+Ship}}
 \index{leave\+Ship@{leave\+Ship}!People@{People}}

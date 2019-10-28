@@ -60,6 +60,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classSpaceship-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Spaceship Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -74,7 +75,27 @@ $(function() {
 Inheritance diagram for Spaceship:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSpaceship__inherit__graph.png" border="0" usemap="#Spaceship_inherit__map" alt="Inheritance graph"/></div>
-<!-- MAP 0 -->
+<map name="Spaceship_inherit__map" id="Spaceship_inherit__map">
+<area shape="rect" id="node2" href="classBattleship.html" title="Battleship class. " alt="" coords="171,5,251,32"/>
+<area shape="rect" id="node3" href="classExplorationVessel.html" title="Exploration Vessel class. " alt="" coords="147,56,274,83"/>
+<area shape="rect" id="node4" href="classFighterTransporter.html" title="Fighter Transporter class. " alt="" coords="147,107,275,133"/>
+<area shape="rect" id="node5" href="classFrigate.html" title="Frigate class. " alt="" coords="179,157,242,184"/>
+<area shape="rect" id="node6" href="classSpaceshipDecorator.html" title="Spaceship Decorator class. " alt="" coords="141,208,281,235"/>
+<area shape="rect" id="node14" href="classSpaceshipTransporter.html" title="Spaceship Transporter class. " alt="" coords="136,259,285,285"/>
+<area shape="rect" id="node15" href="classSpaceStation.html" title="Spacestation class. A singleton. " alt="" coords="161,309,261,336"/>
+<area shape="rect" id="node7" href="classArmory.html" title="Armory class. " alt="" coords="363,56,427,83"/>
+<area shape="rect" id="node8" href="classBridge.html" title="Bridge class. " alt="" coords="365,107,424,133"/>
+<area shape="rect" id="node9" href="classFighterBay.html" title="Fighterbay class. " alt="" coords="352,157,437,184"/>
+<area shape="rect" id="node10" href="classRefuelStation.html" title="Refuel station class. " alt="" coords="344,208,445,235"/>
+<area shape="rect" id="node11" href="classSickBay.html" title="Sickbay class. " alt="" coords="359,259,430,285"/>
+<area shape="rect" id="node12" href="classSleepingQuarters.html" title="Sleeping quarters class. " alt="" coords="333,309,456,336"/>
+<area shape="rect" id="node13" href="classTransportBay.html" title="Transport bay class. " alt="" coords="345,360,445,387"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for Spaceship:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSpaceship__coll__graph.png" border="0" usemap="#Spaceship_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -85,6 +106,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a27d48c8aff00407fd50f18522aa5164c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1b4673a691cd100708ddea08cd9f192"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpaceship.html#ac1b4673a691cd100708ddea08cd9f192">addComponent</a> (<a class="el" href="classSpaceship.html">Spaceship</a> *)=0</td></tr>
 <tr class="separator:ac1b4673a691cd100708ddea08cd9f192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf51352795ea2382e2aaea4b9a058804"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpaceship.html#aaf51352795ea2382e2aaea4b9a058804">~Spaceship</a> ()</td></tr>
+<tr class="separator:aaf51352795ea2382e2aaea4b9a058804"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c2741aa19fc4f38c1507b7c266fad1b"><td class="memItemLeft" align="right" valign="top"><a id="a5c2741aa19fc4f38c1507b7c266fad1b"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>getDisplacement</b> ()</td></tr>
 <tr class="separator:a5c2741aa19fc4f38c1507b7c266fad1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +174,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getFuel</b> ()</td></t
 <tr class="memitem:ad28625e31d78cc1edb5e248aaf3f01d8"><td class="memItemLeft" align="right" valign="top"><a id="ad28625e31d78cc1edb5e248aaf3f01d8"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>getEnergy</b> ()</td></tr>
 <tr class="separator:ad28625e31d78cc1edb5e248aaf3f01d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89441170fc458252bf8fad377683c23d"><td class="memItemLeft" align="right" valign="top"><a id="a89441170fc458252bf8fad377683c23d"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> ()</td></tr>
+<tr class="separator:a89441170fc458252bf8fad377683c23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ddf702124286d9d3a6b5e64c09515bc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpaceship.html#a5ddf702124286d9d3a6b5e64c09515bc">increaseThreatLevel</a> ()</td></tr>
+<tr class="separator:a5ddf702124286d9d3a6b5e64c09515bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73a1eefd211e9a2063d924ee85f0c0c7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpaceship.html#a73a1eefd211e9a2063d924ee85f0c0c7">decreaseThreatLevel</a> ()</td></tr>
+<tr class="separator:a73a1eefd211e9a2063d924ee85f0c0c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f16814f888a5a1423e5a491329cdb97"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpaceship.html#a8f16814f888a5a1423e5a491329cdb97">printThreatLevel</a> ()</td></tr>
+<tr class="separator:a8f16814f888a5a1423e5a491329cdb97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add79868aef85232b23c04af06f288447"><td class="memItemLeft" align="right" valign="top"><a id="add79868aef85232b23c04af06f288447"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>visit</b> (<a class="el" href="classPlanet.html">Planet</a> *p)</td></tr>
+<tr class="separator:add79868aef85232b23c04af06f288447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10e76fb093ab448894cdeb70994c821d"><td class="memItemLeft" align="right" valign="top"><a id="a10e76fb093ab448894cdeb70994c821d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>executeStrategy</b> ()</td></tr>
+<tr class="separator:a10e76fb093ab448894cdeb70994c821d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93be2d9d2b675ef978d866d4cd7a6524"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpaceship.html#a93be2d9d2b675ef978d866d4cd7a6524">selectStrategy</a> (<a class="el" href="classStrategy.html">Strategy</a> *s)</td></tr>
+<tr class="separator:a93be2d9d2b675ef978d866d4cd7a6524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67b7e60d2dc77e740309a9d994d653a1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpaceship.html#a67b7e60d2dc77e740309a9d994d653a1">addPassenger</a> (<a class="el" href="classPeople.html">People</a> *)</td></tr>
 <tr class="separator:a67b7e60d2dc77e740309a9d994d653a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac816c2990b25a1b7c9f6acbc9ca132ee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpaceship.html#ac816c2990b25a1b7c9f6acbc9ca132ee">removePassenger</a> (<a class="el" href="classPeople.html">People</a> *)</td></tr>
@@ -165,6 +205,28 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getEnergy</b> ()</td><
 <tr class="separator:a949e9815b99d5598da2239e307036141"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf25a335848231435a64a484c103dfcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpaceship.html#acf25a335848231435a64a484c103dfcb">addLog</a> (string)</td></tr>
 <tr class="separator:acf25a335848231435a64a484c103dfcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a113055e6d793f8fbc55e44efc4d57e07"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpaceship.html#a113055e6d793f8fbc55e44efc4d57e07">getType</a> ()</td></tr>
+<tr class="separator:a113055e6d793f8fbc55e44efc4d57e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23155ea96d499b31bde27e0c2f704ae6"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classPeople.html">People</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpaceship.html#a23155ea96d499b31bde27e0c2f704ae6">getPeople</a> ()</td></tr>
+<tr class="separator:a23155ea96d499b31bde27e0c2f704ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90e1321cdbcb459b98b75ab39cef867d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpaceship.html#a90e1321cdbcb459b98b75ab39cef867d">addShip</a> (<a class="el" href="classSpaceship.html">Spaceship</a> *)</td></tr>
+<tr class="separator:a90e1321cdbcb459b98b75ab39cef867d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2027533de1d789db5e3efa22055f2d0"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpaceship.html#ad2027533de1d789db5e3efa22055f2d0">getResources</a> (double a, double b)</td></tr>
+<tr class="separator:ad2027533de1d789db5e3efa22055f2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add8d9c6dfd5f6ecb8399e41e71e5b22f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpaceship.html#add8d9c6dfd5f6ecb8399e41e71e5b22f">addPerson</a> (<a class="el" href="classPeople.html">People</a> *p)</td></tr>
+<tr class="separator:add8d9c6dfd5f6ecb8399e41e71e5b22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0738743f89a841847605c3262a822183"><td class="memItemLeft" align="right" valign="top"><a id="a0738743f89a841847605c3262a822183"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>visit</b> (<a class="el" href="classPeople.html">People</a> *p)</td></tr>
+<tr class="separator:a0738743f89a841847605c3262a822183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d272f846b019dec8226ddab65648a7b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classMemento.html">Memento</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpaceship.html#a6d272f846b019dec8226ddab65648a7b">createMemento</a> (vector&lt; <a class="el" href="classSpaceship.html">Spaceship</a> *&gt; s)</td></tr>
+<tr class="separator:a6d272f846b019dec8226ddab65648a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab075c869473344b6471c8e28ca7ea61e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpaceship.html#ab075c869473344b6471c8e28ca7ea61e">reinstateMemento</a> (<a class="el" href="classMemento.html">Memento</a> *mem)</td></tr>
+<tr class="separator:ab075c869473344b6471c8e28ca7ea61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a0f53795d5f23cc37369cea2e52bd70b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpaceship.html">Spaceship</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpaceship.html#a0f53795d5f23cc37369cea2e52bd70b1">space</a></td></tr>
+<tr class="separator:a0f53795d5f23cc37369cea2e52bd70b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classSpaceship.html" title="Spaceship class. ">Spaceship</a> class. </p>
@@ -222,6 +284,32 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getEnergy</b> ()</td><
 
 </div>
 </div>
+<a id="aaf51352795ea2382e2aaea4b9a058804"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf51352795ea2382e2aaea4b9a058804">&#9670;&nbsp;</a></span>~Spaceship()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Spaceship::~Spaceship </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Default desctructor </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac1b4673a691cd100708ddea08cd9f192"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac1b4673a691cd100708ddea08cd9f192">&#9670;&nbsp;</a></span>addComponent()</h2>
@@ -248,7 +336,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getEnergy</b> ()</td><
 </div><div class="memdoc">
 <p>Pure virtual method for decorator to add components to the spaceship </p>
 
-<p>Implemented in <a class="el" href="classSpaceStation.html#af78aa518f63655701ff763461522ac7d">SpaceStation</a>, <a class="el" href="classExplorationVessel.html#ab7a52cecc1b68a5b9b1c478b00d67f65">ExplorationVessel</a>, <a class="el" href="classFrigate.html#ae06208eed84e006385e4d337e1f04c7d">Frigate</a>, <a class="el" href="classBattleship.html#a975ecf4aaef329705c1e1b3a4584a302">Battleship</a>, <a class="el" href="classFighterTransporter.html#a2c001243993307f51abba10636c0fbb9">FighterTransporter</a>, <a class="el" href="classSpaceshipTransporter.html#a3e7646b5937a9967885cd3034a2f5637">SpaceshipTransporter</a>, and <a class="el" href="classSpaceshipDecorator.html#a08442441af1fa8979f1e411a5e7b511c">SpaceshipDecorator</a>.</p>
+<p>Implemented in <a class="el" href="classSpaceshipTransporter.html#acd55c6864eab86db5e0485beeec4e8b9">SpaceshipTransporter</a>, <a class="el" href="classSpaceStation.html#ae89449fdcf5d44229fb93a14fc496fe1">SpaceStation</a>, <a class="el" href="classFighterTransporter.html#a962db4e241d764360407380ce1438788">FighterTransporter</a>, <a class="el" href="classExplorationVessel.html#ae952e198a28fd0a5ec998ecdcca86561">ExplorationVessel</a>, <a class="el" href="classBattleship.html#a698e2d0ef1ffa4e6b5e7b09c0ff7d07c">Battleship</a>, <a class="el" href="classFrigate.html#af1c809e79096219e53da2f577ec8178d">Frigate</a>, and <a class="el" href="classSpaceshipDecorator.html#a08442441af1fa8979f1e411a5e7b511c">SpaceshipDecorator</a>.</p>
 
 </div>
 </div>
@@ -308,6 +396,64 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getEnergy</b> ()</td><
 
 </div>
 </div>
+<a id="add8d9c6dfd5f6ecb8399e41e71e5b22f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add8d9c6dfd5f6ecb8399e41e71e5b22f">&#9670;&nbsp;</a></span>addPerson()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Spaceship::addPerson </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classPeople.html">People</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>virtual addPerson </p>
+
+<p>Reimplemented in <a class="el" href="classFrigate.html#a5da866e084d1d07363f06ff052005b41">Frigate</a>, <a class="el" href="classSpaceStation.html#a46146c02fcd8107eda2972cc5843afd8">SpaceStation</a>, <a class="el" href="classExplorationVessel.html#a7be654e42a9e83800abfb897d9b308b8">ExplorationVessel</a>, <a class="el" href="classTransportBay.html#a2be08f6085583ec9f839ff8939c6a6b7">TransportBay</a>, <a class="el" href="classSpaceshipTransporter.html#a5c9ee82688e97545baa7a876e69d5dd3">SpaceshipTransporter</a>, <a class="el" href="classFighterBay.html#aa0777fe7c8a3e6b772fc8bf58a3cb9bb">FighterBay</a>, <a class="el" href="classFighterTransporter.html#a79b9099ea2cbdd17d1a0d6c8122e9bfa">FighterTransporter</a>, <a class="el" href="classRefuelStation.html#a6bd40214cf5dc4d46739943f545c6d7a">RefuelStation</a>, <a class="el" href="classBridge.html#aec10bfb9af885933640548b509144a29">Bridge</a>, <a class="el" href="classSleepingQuarters.html#addd107a8005b61d51846e8e955922d50">SleepingQuarters</a>, <a class="el" href="classSpaceshipDecorator.html#a6e289d8a65f35b9f223255ae0eaa3b00">SpaceshipDecorator</a>, and <a class="el" href="classSickBay.html#a3934a1b821fbd192a946a9aff4575afa">SickBay</a>.</p>
+
+</div>
+</div>
+<a id="a90e1321cdbcb459b98b75ab39cef867d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90e1321cdbcb459b98b75ab39cef867d">&#9670;&nbsp;</a></span>addShip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Spaceship::addShip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSpaceship.html">Spaceship</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Virtual addShip </p>
+
+<p>Reimplemented in <a class="el" href="classSpaceStation.html#ace2d37733fa5af9551aba31bc9229ad3">SpaceStation</a>, <a class="el" href="classExplorationVessel.html#ac6bc6807891edf928fae68e7ed850d14">ExplorationVessel</a>, <a class="el" href="classBattleship.html#a9167350d564a8f8286841408f0bacdf9">Battleship</a>, <a class="el" href="classFighterTransporter.html#ae4191358a54d0f30476beea30aa16317">FighterTransporter</a>, <a class="el" href="classFrigate.html#a000802431ba3db8b45bfa6e7ae153de4">Frigate</a>, <a class="el" href="classSpaceshipTransporter.html#a493a4ba44d26a2ae4e85b79e6970fb91">SpaceshipTransporter</a>, <a class="el" href="classFighterBay.html#a8975b88b27663c76f82168752593ceda">FighterBay</a>, <a class="el" href="classTransportBay.html#acd6b5b09e81bd28c6dcbe23d561fd99c">TransportBay</a>, <a class="el" href="classBridge.html#a49676496d07502909958e747ef4c3214">Bridge</a>, <a class="el" href="classRefuelStation.html#a03510ee8365b5095ca80fac0c5a0a780">RefuelStation</a>, <a class="el" href="classSpaceshipDecorator.html#a5ed39419f5fab65dd4af11bf5136f7a4">SpaceshipDecorator</a>, <a class="el" href="classArmory.html#adccb51a0901294546bfb1da350ae6836">Armory</a>, <a class="el" href="classSleepingQuarters.html#ae15ba2bf6be5cc0d4580da9ecbbe28f5">SleepingQuarters</a>, and <a class="el" href="classSickBay.html#aa70415a7714cdd88553f3694b3f2e9e1">SickBay</a>.</p>
+
+</div>
+</div>
 <a id="a6539b155cc0dc525c506eee788fe9449"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6539b155cc0dc525c506eee788fe9449">&#9670;&nbsp;</a></span>broadcast()</h2>
 
@@ -329,6 +475,63 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getEnergy</b> ()</td><
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a6d272f846b019dec8226ddab65648a7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d272f846b019dec8226ddab65648a7b">&#9670;&nbsp;</a></span>createMemento()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classMemento.html">Memento</a>* Spaceship::createMemento </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; <a class="el" href="classSpaceship.html">Spaceship</a> *&gt;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>create memento stub </p>
+
+<p>Reimplemented in <a class="el" href="classSpaceStation.html#a7396c4080f29ca9c20975f831008b011">SpaceStation</a>, <a class="el" href="classExplorationVessel.html#a90a2c653d736fadf0599af87269fa36e">ExplorationVessel</a>, <a class="el" href="classBattleship.html#a0e039fa419a67ff2fec0e65d93f2fefd">Battleship</a>, <a class="el" href="classFighterTransporter.html#ac20f71500dbddc40b9c6fcfd0dfd3b46">FighterTransporter</a>, <a class="el" href="classSpaceshipTransporter.html#a40fe0a655d0d2d1fecadff29439b9ddd">SpaceshipTransporter</a>, <a class="el" href="classFrigate.html#a69d6b412c52d49b55135516d3e0b2a64">Frigate</a>, <a class="el" href="classFighterBay.html#a925de99777e92d00e51e8aba09d5135c">FighterBay</a>, <a class="el" href="classRefuelStation.html#abd79d981cc7650d6417b8c8166a3fb85">RefuelStation</a>, <a class="el" href="classTransportBay.html#aff9390fd8b7434bfa03b408028caf920">TransportBay</a>, <a class="el" href="classSpaceshipDecorator.html#a1acde91cd10517c94af41032aa5fdd9e">SpaceshipDecorator</a>, <a class="el" href="classBridge.html#ae6e139b786743b19ec4f1762283b6fc1">Bridge</a>, <a class="el" href="classSickBay.html#a0d06ca126941dae25aaf74838dd1914b">SickBay</a>, <a class="el" href="classArmory.html#aba8aa540182986fbb0ca8a741f491ffe">Armory</a>, and <a class="el" href="classSleepingQuarters.html#ac71f6fb8b3ec0be83be6cd3c080fecc0">SleepingQuarters</a>.</p>
+
+</div>
+</div>
+<a id="a73a1eefd211e9a2063d924ee85f0c0c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73a1eefd211e9a2063d924ee85f0c0c7">&#9670;&nbsp;</a></span>decreaseThreatLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Spaceship::decreaseThreatLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Virtual decrease threat level </p>
+
+<p>Reimplemented in <a class="el" href="classExplorationVessel.html#afac2ec0016d6934629418074e3de5950">ExplorationVessel</a>, <a class="el" href="classBattleship.html#a31ab6421ece477f4de7989b31aa8ed02">Battleship</a>, <a class="el" href="classFrigate.html#a756cc705b54d5aa48d4529bbfbeee74f">Frigate</a>, <a class="el" href="classSpaceStation.html#a0cb67593dc02495793635adb66f595e9">SpaceStation</a>, and <a class="el" href="classSpaceshipTransporter.html#aab6415c16cb8e3fd511a995846099068">SpaceshipTransporter</a>.</p>
 
 </div>
 </div>
@@ -397,6 +600,127 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getEnergy</b> ()</td><
 
 </div>
 </div>
+<a id="a23155ea96d499b31bde27e0c2f704ae6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23155ea96d499b31bde27e0c2f704ae6">&#9670;&nbsp;</a></span>getPeople()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="classPeople.html">People</a>*&gt; Spaceship::getPeople </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the people aboard the ship </p><dl class="section return"><dt>Returns</dt><dd>vector&lt;People*&gt; </dd></dl>
+
+</div>
+</div>
+<a id="ad2027533de1d789db5e3efa22055f2d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2027533de1d789db5e3efa22055f2d0">&#9670;&nbsp;</a></span>getResources()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double Spaceship::getResources </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>stub resource collection </p>
+
+<p>Reimplemented in <a class="el" href="classFrigate.html#a333512076606313c57fc9957dccf9cb9">Frigate</a>, <a class="el" href="classSpaceStation.html#ae701844b2b5013cd51cc5ead813e7e51">SpaceStation</a>, <a class="el" href="classBattleship.html#a91c6d577c5c761b607b204a9fc59c3ad">Battleship</a>, <a class="el" href="classExplorationVessel.html#a3c3a641c6c249f80d68f20cf73f440f7">ExplorationVessel</a>, <a class="el" href="classFighterTransporter.html#ab2b29c07f0e5fd4fa5e35a37abefb26d">FighterTransporter</a>, <a class="el" href="classTransportBay.html#afac369115f4c17522a123f36be183e29">TransportBay</a>, <a class="el" href="classFighterBay.html#ae6071df768f59aeeab67f7b2bb1cce52">FighterBay</a>, <a class="el" href="classSpaceshipDecorator.html#a5ee7a9a8c146c85f08591e47d971dce7">SpaceshipDecorator</a>, <a class="el" href="classRefuelStation.html#a69c7e7aca14ba70f4d2c4c11e43b4bb4">RefuelStation</a>, <a class="el" href="classSickBay.html#ab14fde02df1e95c352ba51d59480c3fa">SickBay</a>, <a class="el" href="classArmory.html#a06bba21799ef0b2a9f835632411420a4">Armory</a>, <a class="el" href="classBridge.html#a1508c1c9cfb44850fea31afcb7f1e403">Bridge</a>, and <a class="el" href="classSleepingQuarters.html#aa1c2a40c05a566955965dee8118dc410">SleepingQuarters</a>.</p>
+
+</div>
+</div>
+<a id="a113055e6d793f8fbc55e44efc4d57e07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a113055e6d793f8fbc55e44efc4d57e07">&#9670;&nbsp;</a></span>getType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int Spaceship::getType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the type of the spaceship </p><dl class="section return"><dt>Returns</dt><dd>int - the type of spaceship </dd></dl>
+
+<p>Reimplemented in <a class="el" href="classExplorationVessel.html#ab06e219200100bbd40a8f79702e52ae8">ExplorationVessel</a>, <a class="el" href="classFighterTransporter.html#ad173e903951580bb222eb94896a15407">FighterTransporter</a>, <a class="el" href="classBattleship.html#a5fadf030665554b56456467e98c75228">Battleship</a>, and <a class="el" href="classFrigate.html#a9716770249d0a26a114a69e5e3794bd9">Frigate</a>.</p>
+
+</div>
+</div>
+<a id="a5ddf702124286d9d3a6b5e64c09515bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ddf702124286d9d3a6b5e64c09515bc">&#9670;&nbsp;</a></span>increaseThreatLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Spaceship::increaseThreatLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Virtual incrase threat level </p>
+
+<p>Reimplemented in <a class="el" href="classExplorationVessel.html#a2f164fa9477a2624c5f04b4d9d84ec84">ExplorationVessel</a>, <a class="el" href="classBattleship.html#a4db634686a840f3348c2a124e5f42d66">Battleship</a>, <a class="el" href="classFrigate.html#ab4dd2319ec0a045e613c85b2c599a3e2">Frigate</a>, <a class="el" href="classSpaceStation.html#aa9390e8af0d69fc176c190f8f6891736">SpaceStation</a>, and <a class="el" href="classSpaceshipTransporter.html#ac581cb475c2eeab71c976d708f3fcb87">SpaceshipTransporter</a>.</p>
+
+</div>
+</div>
 <a id="a949e9815b99d5598da2239e307036141"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a949e9815b99d5598da2239e307036141">&#9670;&nbsp;</a></span>printCaptainsLog()</h2>
 
@@ -412,6 +736,63 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getEnergy</b> ()</td><
       </table>
 </div><div class="memdoc">
 <p>Print the captains log </p>
+
+</div>
+</div>
+<a id="a8f16814f888a5a1423e5a491329cdb97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f16814f888a5a1423e5a491329cdb97">&#9670;&nbsp;</a></span>printThreatLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Spaceship::printThreatLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Virtual print threat level </p>
+
+<p>Reimplemented in <a class="el" href="classExplorationVessel.html#af08a3db5b456781106f33a03bfbe7621">ExplorationVessel</a>, <a class="el" href="classBattleship.html#a41f44a1437e169165b943c3b98316f32">Battleship</a>, <a class="el" href="classSpaceStation.html#a430ee680ac20af8245640e9271095688">SpaceStation</a>, <a class="el" href="classFrigate.html#a97f2fd73f269ee81e6f8185110769cc5">Frigate</a>, and <a class="el" href="classSpaceshipTransporter.html#ae153196ed515ac051be2ef7aa225c064">SpaceshipTransporter</a>.</p>
+
+</div>
+</div>
+<a id="ab075c869473344b6471c8e28ca7ea61e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab075c869473344b6471c8e28ca7ea61e">&#9670;&nbsp;</a></span>reinstateMemento()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Spaceship::reinstateMemento </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMemento.html">Memento</a> *&#160;</td>
+          <td class="paramname"><em>mem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>reinstate memento </p>
+
+<p>Reimplemented in <a class="el" href="classSpaceStation.html#a4d39ac0fe8f0aa521c32011f1a1bad9b">SpaceStation</a>, <a class="el" href="classExplorationVessel.html#a314e19ec45f722d80adb800eb7b36d20">ExplorationVessel</a>, <a class="el" href="classBattleship.html#a46f7920029ef4968db3a4429f0fb9372">Battleship</a>, <a class="el" href="classFighterTransporter.html#acad1a7b3d68741c58b632ff49b043414">FighterTransporter</a>, <a class="el" href="classSpaceshipTransporter.html#a41af86fad998c5fb7a86d03e7a600ab7">SpaceshipTransporter</a>, <a class="el" href="classFrigate.html#af6db10cd052dc5382857452dcb4e6d2a">Frigate</a>, <a class="el" href="classFighterBay.html#ab7971eefc44f85b00424014916616fb6">FighterBay</a>, <a class="el" href="classRefuelStation.html#aa984ee5ed5a4cea0b96ba1c3903a1b1c">RefuelStation</a>, <a class="el" href="classTransportBay.html#a501256401b6845a16ced9ea65c294f70">TransportBay</a>, <a class="el" href="classSpaceshipDecorator.html#ac043134e491d99a8e0d985d7ce409a87">SpaceshipDecorator</a>, <a class="el" href="classBridge.html#a3d551c6ea3d807c08a32214df2589ecc">Bridge</a>, <a class="el" href="classSickBay.html#a1b2156dee5ed14c68c3f25ee3a53e9c8">SickBay</a>, <a class="el" href="classArmory.html#ad4027c724be016da41eeac5aaab2238b">Armory</a>, and <a class="el" href="classSleepingQuarters.html#a9a1fd96cb88a4eee245c7dda3672fac5">SleepingQuarters</a>.</p>
 
 </div>
 </div>
@@ -444,6 +825,59 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getEnergy</b> ()</td><
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a93be2d9d2b675ef978d866d4cd7a6524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93be2d9d2b675ef978d866d4cd7a6524">&#9670;&nbsp;</a></span>selectStrategy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Spaceship::selectStrategy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classStrategy.html">Strategy</a> *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>select strategy </p>
+
+<p>Reimplemented in <a class="el" href="classFighterTransporter.html#af7050ee155b38c4ae45d38d66bc5fc2f">FighterTransporter</a>, <a class="el" href="classFrigate.html#a484e16990cddb79fbc51ff29e815fec5">Frigate</a>, <a class="el" href="classFighterBay.html#a32655a70f39312f94403d9aada55788b">FighterBay</a>, <a class="el" href="classTransportBay.html#a277ec0488bbafbeef8d25a77dc5576c8">TransportBay</a>, <a class="el" href="classRefuelStation.html#a1dfda37915eca25344aa2fdeaacab4b4">RefuelStation</a>, <a class="el" href="classExplorationVessel.html#aeaec72883c8cc5b951be9dd8f4184515">ExplorationVessel</a>, <a class="el" href="classBattleship.html#a2a729de36df2648305cb68c9779c9c2e">Battleship</a>, <a class="el" href="classSpaceStation.html#adddfe90b720e2b0a8ce5d27a20eb204e">SpaceStation</a>, <a class="el" href="classSickBay.html#ac25920ac3e757e289ea25233991fa94e">SickBay</a>, <a class="el" href="classArmory.html#a85d472873bf4ce934c849f7c362f7064">Armory</a>, <a class="el" href="classBridge.html#a07283d7cf98c500020b1f91594f48678">Bridge</a>, and <a class="el" href="classSleepingQuarters.html#a9a3c4618cd1a852984c0adba025c159f">SleepingQuarters</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a0f53795d5f23cc37369cea2e52bd70b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f53795d5f23cc37369cea2e52bd70b1">&#9670;&nbsp;</a></span>space</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSpaceship.html">Spaceship</a>* Spaceship::space</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The added decorator component </p>
 
 </div>
 </div>

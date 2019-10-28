@@ -11,12 +11,22 @@ Spacestation Factory class.
 
 
 
-Inheritance diagram for Space\+Station\+Factory\+:
-% FIG 0
+Inheritance diagram for Space\+Station\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classSpaceStationFactory__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for Space\+Station\+Factory\+:
-% FIG 1
+Collaboration diagram for Space\+Station\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classSpaceStationFactory__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -24,7 +34,7 @@ Collaboration diagram for Space\+Station\+Factory\+:
 \item 
 \hyperlink{classSpaceStationFactory_ae6428ec2e2302246b5e283ff6fee31cd}{$\sim$\+Space\+Station\+Factory} ()
 \item 
-\hyperlink{classSpaceship}{Spaceship} $\ast$ \hyperlink{classSpaceStationFactory_a7264b3120ab76303b49a5416e834f5d4}{spaceship\+Factory\+Method} ()
+\hyperlink{classSpaceship}{Spaceship} $\ast$ \hyperlink{classSpaceStationFactory_a21bbba99fbe7a2edeb3e63177d7f2e1c}{space\+Ship\+Factory\+Method} (string n)
 \end{DoxyCompactItemize}
 
 
@@ -47,15 +57,19 @@ Default constructor \mbox{\Hypertarget{classSpaceStationFactory_ae6428ec2e230224
 Default destructor 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classSpaceStationFactory_a7264b3120ab76303b49a5416e834f5d4}\label{classSpaceStationFactory_a7264b3120ab76303b49a5416e834f5d4}} 
-\index{Space\+Station\+Factory@{Space\+Station\+Factory}!spaceship\+Factory\+Method@{spaceship\+Factory\+Method}}
-\index{spaceship\+Factory\+Method@{spaceship\+Factory\+Method}!Space\+Station\+Factory@{Space\+Station\+Factory}}
-\subsubsection{\texorpdfstring{spaceship\+Factory\+Method()}{spaceshipFactoryMethod()}}
-{\footnotesize\ttfamily \hyperlink{classSpaceship}{Spaceship} $\ast$ Space\+Station\+Factory\+::spaceship\+Factory\+Method (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classSpaceStationFactory_a21bbba99fbe7a2edeb3e63177d7f2e1c}\label{classSpaceStationFactory_a21bbba99fbe7a2edeb3e63177d7f2e1c}} 
+\index{Space\+Station\+Factory@{Space\+Station\+Factory}!space\+Ship\+Factory\+Method@{space\+Ship\+Factory\+Method}}
+\index{space\+Ship\+Factory\+Method@{space\+Ship\+Factory\+Method}!Space\+Station\+Factory@{Space\+Station\+Factory}}
+\subsubsection{\texorpdfstring{space\+Ship\+Factory\+Method()}{spaceShipFactoryMethod()}}
+{\footnotesize\ttfamily \hyperlink{classSpaceship}{Spaceship} $\ast$ Space\+Station\+Factory\+::space\+Ship\+Factory\+Method (\begin{DoxyParamCaption}\item[{string}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 Method to create \hyperlink{classSpaceStation}{Space\+Station} \begin{DoxyReturn}{Returns}
 new spaceship 
 \end{DoxyReturn}
+
+
+Implements \hyperlink{classSpaceshipFactory_a70b50dd616cb16f50088eff9ca07cda9}{Spaceship\+Factory}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

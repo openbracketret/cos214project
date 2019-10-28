@@ -63,13 +63,14 @@ class Spaceship {
      */
         virtual void printThreatLevel() {};
     
-        virtual void visit(Planet* p) {};
-        /** execute strategy */
-        void executeStrategy(){
+        virtual void visit(Planet* p) {
+            space->visit(p);
+        };
+        virtual void executeStrategy(){
             space->executeStrategy();
         };
         /** select strategy */
-        void selectStrategy(Strategy* s){
+        virtual void selectStrategy(Strategy* s){
             space->selectStrategy(s);
         }
         /** Add passenger to spaceship

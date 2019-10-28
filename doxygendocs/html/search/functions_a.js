@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['operator_3d',['operator=',['../classCommanderOfTheFleet.html#aaa476181b99052293306fcfe57dfd642',1,'CommanderOfTheFleet::operator=()'],['../classSpaceStation.html#a1164b774315ebf10ff148ca0a658da5d',1,'SpaceStation::operator=()']]]
+  ['navigator',['Navigator',['../classNavigator.html#a59230ab4698882f754d5ce275a1a4030',1,'Navigator']]],
+  ['navigatorfactory',['NavigatorFactory',['../classNavigatorFactory.html#a6dffc936447428b43de6432c3684f43e',1,'NavigatorFactory']]]
 ];

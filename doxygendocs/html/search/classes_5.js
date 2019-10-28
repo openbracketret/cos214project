@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['facade',['Facade',['../classFacade.html',1,'']]],
   ['fighter',['Fighter',['../classFighter.html',1,'']]],
   ['fighterbay',['FighterBay',['../classFighterBay.html',1,'']]],
   ['fighterfactory',['FighterFactory',['../classFighterFactory.html',1,'']]],

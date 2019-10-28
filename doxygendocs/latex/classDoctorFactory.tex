@@ -11,12 +11,22 @@
 
 
 
-Inheritance diagram for Doctor\+Factory\+:
-% FIG 0
+Inheritance diagram for Doctor\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{classDoctorFactory__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for Doctor\+Factory\+:
-% FIG 1
+Collaboration diagram for Doctor\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{classDoctorFactory__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -24,9 +34,8 @@ Collaboration diagram for Doctor\+Factory\+:
 \item 
 \hyperlink{classDoctorFactory_a3f2ed2a1a4378d3490c0412645f70767}{$\sim$\+Doctor\+Factory} ()
 \item 
-virtual \hyperlink{classPeople}{People} $\ast$ \hyperlink{classDoctorFactory_a2fead4ec5680093ba93fde6b1b734c59}{create\+People} ()=0
+\hyperlink{classPeople}{People} $\ast$ \hyperlink{classDoctorFactory_ab63193e85abefc65e13ba1c528a0d675}{create} ()
 \end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -37,24 +46,28 @@ virtual \hyperlink{classPeople}{People} $\ast$ \hyperlink{classDoctorFactory_a2f
 \index{Doctor\+Factory@{Doctor\+Factory}!Doctor\+Factory@{Doctor\+Factory}}
 \index{Doctor\+Factory@{Doctor\+Factory}!Doctor\+Factory@{Doctor\+Factory}}
 \subsubsection{\texorpdfstring{Doctor\+Factory()}{DoctorFactory()}}
-{\footnotesize\ttfamily Doctor\+Factory\+::\+Doctor\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Doctor\+Factory\+::\+Doctor\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Default constructor \mbox{\Hypertarget{classDoctorFactory_a3f2ed2a1a4378d3490c0412645f70767}\label{classDoctorFactory_a3f2ed2a1a4378d3490c0412645f70767}} 
 \index{Doctor\+Factory@{Doctor\+Factory}!````~Doctor\+Factory@{$\sim$\+Doctor\+Factory}}
 \index{````~Doctor\+Factory@{$\sim$\+Doctor\+Factory}!Doctor\+Factory@{Doctor\+Factory}}
 \subsubsection{\texorpdfstring{$\sim$\+Doctor\+Factory()}{~DoctorFactory()}}
-{\footnotesize\ttfamily Doctor\+Factory\+::$\sim$\+Doctor\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Doctor\+Factory\+::$\sim$\+Doctor\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Default destructor 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classDoctorFactory_a2fead4ec5680093ba93fde6b1b734c59}\label{classDoctorFactory_a2fead4ec5680093ba93fde6b1b734c59}} 
-\index{Doctor\+Factory@{Doctor\+Factory}!create\+People@{create\+People}}
-\index{create\+People@{create\+People}!Doctor\+Factory@{Doctor\+Factory}}
-\subsubsection{\texorpdfstring{create\+People()}{createPeople()}}
-{\footnotesize\ttfamily virtual \hyperlink{classPeople}{People}$\ast$ Doctor\+Factory\+::create\+People (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\mbox{\Hypertarget{classDoctorFactory_ab63193e85abefc65e13ba1c528a0d675}\label{classDoctorFactory_ab63193e85abefc65e13ba1c528a0d675}} 
+\index{Doctor\+Factory@{Doctor\+Factory}!create@{create}}
+\index{create@{create}!Doctor\+Factory@{Doctor\+Factory}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \hyperlink{classPeople}{People}$\ast$ Doctor\+Factory\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
-virtual doctor 
+creates doctor 
+
+Implements \hyperlink{classPeopleFactory}{People\+Factory}.
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

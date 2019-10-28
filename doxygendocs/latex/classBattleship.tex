@@ -11,21 +11,54 @@
 
 
 
-Inheritance diagram for Battleship\+:
-% FIG 0
+Inheritance diagram for Battleship\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{classBattleship__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for Battleship\+:
-% FIG 1
+Collaboration diagram for Battleship\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classBattleship__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classBattleship_a57a0db9eadfe53049035b3b0e5ec5367}{Battleship} ()
 \item 
-\hyperlink{classBattleship_a89425138ec38aec5ea9da7889445dc27}{$\sim$\+Battleship} ()
+\hyperlink{classBattleship_afdc3250fb22d1d2dac6f1f71041888c4}{Battleship} (string name)
 \item 
-virtual void \hyperlink{classBattleship_a975ecf4aaef329705c1e1b3a4584a302}{add\+Component} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
+virtual void \hyperlink{classBattleship_a698e2d0ef1ffa4e6b5e7b09c0ff7d07c}{add\+Component} (\hyperlink{classSpaceship}{Spaceship} $\ast$comp)
+\item 
+int \hyperlink{classBattleship_a5fadf030665554b56456467e98c75228}{get\+Type} ()
+\item 
+void \hyperlink{classBattleship_af89b875b0dadcbf79b6d65d97398e7c1}{visit} (\hyperlink{classPlanet}{Planet} $\ast$p)
+\item 
+void \hyperlink{classBattleship_a4db634686a840f3348c2a124e5f42d66}{increase\+Threat\+Level} ()
+\item 
+void \hyperlink{classBattleship_a31ab6421ece477f4de7989b31aa8ed02}{decrease\+Threat\+Level} ()
+\item 
+void \hyperlink{classBattleship_a41f44a1437e169165b943c3b98316f32}{print\+Threat\+Level} ()
+\item 
+void \hyperlink{classBattleship_acbb94a57bb20013b07686b750985eb9e}{execute\+Strategy} ()
+\item 
+void \hyperlink{classBattleship_a2a729de36df2648305cb68c9779c9c2e}{select\+Strategy} (\hyperlink{classStrategy}{Strategy} $\ast$s)
+\item 
+void \hyperlink{classBattleship_a9167350d564a8f8286841408f0bacdf9}{add\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$s)
+\item 
+double \hyperlink{classBattleship_a91c6d577c5c761b607b204a9fc59c3ad}{get\+Resources} (double a, double b)
+\item 
+\hyperlink{classMemento}{Memento} $\ast$ \hyperlink{classBattleship_a0e039fa419a67ff2fec0e65d93f2fefd}{create\+Memento} (vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$ s)
+\item 
+void \hyperlink{classBattleship_a46f7920029ef4968db3a4429f0fb9372}{reinstate\+Memento} (\hyperlink{classMemento}{Memento} $\ast$mem)
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -35,27 +68,140 @@ virtual void \hyperlink{classBattleship_a975ecf4aaef329705c1e1b3a4584a302}{add\+
 \mbox{\Hypertarget{classBattleship_a57a0db9eadfe53049035b3b0e5ec5367}\label{classBattleship_a57a0db9eadfe53049035b3b0e5ec5367}} 
 \index{Battleship@{Battleship}!Battleship@{Battleship}}
 \index{Battleship@{Battleship}!Battleship@{Battleship}}
-\subsubsection{\texorpdfstring{Battleship()}{Battleship()}}
+\subsubsection{\texorpdfstring{Battleship()}{Battleship()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Battleship\+::\+Battleship (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Default constructor \mbox{\Hypertarget{classBattleship_a89425138ec38aec5ea9da7889445dc27}\label{classBattleship_a89425138ec38aec5ea9da7889445dc27}} 
-\index{Battleship@{Battleship}!````~Battleship@{$\sim$\+Battleship}}
-\index{````~Battleship@{$\sim$\+Battleship}!Battleship@{Battleship}}
-\subsubsection{\texorpdfstring{$\sim$\+Battleship()}{~Battleship()}}
-{\footnotesize\ttfamily Battleship\+::$\sim$\+Battleship (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+Default constructor \mbox{\Hypertarget{classBattleship_afdc3250fb22d1d2dac6f1f71041888c4}\label{classBattleship_afdc3250fb22d1d2dac6f1f71041888c4}} 
+\index{Battleship@{Battleship}!Battleship@{Battleship}}
+\index{Battleship@{Battleship}!Battleship@{Battleship}}
+\subsubsection{\texorpdfstring{Battleship()}{Battleship()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Battleship\+::\+Battleship (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Default desctructor 
+Default desctructor\+Paramaterised constructor 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classBattleship_a975ecf4aaef329705c1e1b3a4584a302}\label{classBattleship_a975ecf4aaef329705c1e1b3a4584a302}} 
+\mbox{\Hypertarget{classBattleship_a698e2d0ef1ffa4e6b5e7b09c0ff7d07c}\label{classBattleship_a698e2d0ef1ffa4e6b5e7b09c0ff7d07c}} 
 \index{Battleship@{Battleship}!add\+Component@{add\+Component}}
 \index{add\+Component@{add\+Component}!Battleship@{Battleship}}
 \subsubsection{\texorpdfstring{add\+Component()}{addComponent()}}
-{\footnotesize\ttfamily virtual void Battleship\+::add\+Component (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual void Battleship\+::add\+Component (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{comp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 Add a component 
 
 Implements \hyperlink{classSpaceship_ac1b4673a691cd100708ddea08cd9f192}{Spaceship}.
+
+\mbox{\Hypertarget{classBattleship_a9167350d564a8f8286841408f0bacdf9}\label{classBattleship_a9167350d564a8f8286841408f0bacdf9}} 
+\index{Battleship@{Battleship}!add\+Ship@{add\+Ship}}
+\index{add\+Ship@{add\+Ship}!Battleship@{Battleship}}
+\subsubsection{\texorpdfstring{add\+Ship()}{addShip()}}
+{\footnotesize\ttfamily void Battleship\+::add\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual add\+Ship 
+
+Reimplemented from \hyperlink{classSpaceship_a90e1321cdbcb459b98b75ab39cef867d}{Spaceship}.
+
+\mbox{\Hypertarget{classBattleship_a0e039fa419a67ff2fec0e65d93f2fefd}\label{classBattleship_a0e039fa419a67ff2fec0e65d93f2fefd}} 
+\index{Battleship@{Battleship}!create\+Memento@{create\+Memento}}
+\index{create\+Memento@{create\+Memento}!Battleship@{Battleship}}
+\subsubsection{\texorpdfstring{create\+Memento()}{createMemento()}}
+{\footnotesize\ttfamily \hyperlink{classMemento}{Memento}$\ast$ Battleship\+::create\+Memento (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+create memento stub 
+
+Reimplemented from \hyperlink{classSpaceship_a6d272f846b019dec8226ddab65648a7b}{Spaceship}.
+
+\mbox{\Hypertarget{classBattleship_a31ab6421ece477f4de7989b31aa8ed02}\label{classBattleship_a31ab6421ece477f4de7989b31aa8ed02}} 
+\index{Battleship@{Battleship}!decrease\+Threat\+Level@{decrease\+Threat\+Level}}
+\index{decrease\+Threat\+Level@{decrease\+Threat\+Level}!Battleship@{Battleship}}
+\subsubsection{\texorpdfstring{decrease\+Threat\+Level()}{decreaseThreatLevel()}}
+{\footnotesize\ttfamily void Battleship\+::decrease\+Threat\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for decrease\+Threat\+Level 
+
+Reimplemented from \hyperlink{classSpaceship_a73a1eefd211e9a2063d924ee85f0c0c7}{Spaceship}.
+
+\mbox{\Hypertarget{classBattleship_acbb94a57bb20013b07686b750985eb9e}\label{classBattleship_acbb94a57bb20013b07686b750985eb9e}} 
+\index{Battleship@{Battleship}!execute\+Strategy@{execute\+Strategy}}
+\index{execute\+Strategy@{execute\+Strategy}!Battleship@{Battleship}}
+\subsubsection{\texorpdfstring{execute\+Strategy()}{executeStrategy()}}
+{\footnotesize\ttfamily void Battleship\+::execute\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+execute strategy 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
+
+\mbox{\Hypertarget{classBattleship_a91c6d577c5c761b607b204a9fc59c3ad}\label{classBattleship_a91c6d577c5c761b607b204a9fc59c3ad}} 
+\index{Battleship@{Battleship}!get\+Resources@{get\+Resources}}
+\index{get\+Resources@{get\+Resources}!Battleship@{Battleship}}
+\subsubsection{\texorpdfstring{get\+Resources()}{getResources()}}
+{\footnotesize\ttfamily double Battleship\+::get\+Resources (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub resource collection 
+
+Reimplemented from \hyperlink{classSpaceship_ad2027533de1d789db5e3efa22055f2d0}{Spaceship}.
+
+\mbox{\Hypertarget{classBattleship_a5fadf030665554b56456467e98c75228}\label{classBattleship_a5fadf030665554b56456467e98c75228}} 
+\index{Battleship@{Battleship}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Battleship@{Battleship}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily int Battleship\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the type of spaceship \hyperlink{classBattleship}{Battleship} = 1 \begin{DoxyReturn}{Returns}
+int -\/ 1 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classSpaceship_a113055e6d793f8fbc55e44efc4d57e07}{Spaceship}.
+
+\mbox{\Hypertarget{classBattleship_a4db634686a840f3348c2a124e5f42d66}\label{classBattleship_a4db634686a840f3348c2a124e5f42d66}} 
+\index{Battleship@{Battleship}!increase\+Threat\+Level@{increase\+Threat\+Level}}
+\index{increase\+Threat\+Level@{increase\+Threat\+Level}!Battleship@{Battleship}}
+\subsubsection{\texorpdfstring{increase\+Threat\+Level()}{increaseThreatLevel()}}
+{\footnotesize\ttfamily void Battleship\+::increase\+Threat\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for increase\+Threat\+Level 
+
+Reimplemented from \hyperlink{classSpaceship_a5ddf702124286d9d3a6b5e64c09515bc}{Spaceship}.
+
+\mbox{\Hypertarget{classBattleship_a41f44a1437e169165b943c3b98316f32}\label{classBattleship_a41f44a1437e169165b943c3b98316f32}} 
+\index{Battleship@{Battleship}!print\+Threat\+Level@{print\+Threat\+Level}}
+\index{print\+Threat\+Level@{print\+Threat\+Level}!Battleship@{Battleship}}
+\subsubsection{\texorpdfstring{print\+Threat\+Level()}{printThreatLevel()}}
+{\footnotesize\ttfamily void Battleship\+::print\+Threat\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for print\+Threat\+Level 
+
+Reimplemented from \hyperlink{classSpaceship_a8f16814f888a5a1423e5a491329cdb97}{Spaceship}.
+
+\mbox{\Hypertarget{classBattleship_a46f7920029ef4968db3a4429f0fb9372}\label{classBattleship_a46f7920029ef4968db3a4429f0fb9372}} 
+\index{Battleship@{Battleship}!reinstate\+Memento@{reinstate\+Memento}}
+\index{reinstate\+Memento@{reinstate\+Memento}!Battleship@{Battleship}}
+\subsubsection{\texorpdfstring{reinstate\+Memento()}{reinstateMemento()}}
+{\footnotesize\ttfamily void Battleship\+::reinstate\+Memento (\begin{DoxyParamCaption}\item[{\hyperlink{classMemento}{Memento} $\ast$}]{mem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+reinstate memento 
+
+Reimplemented from \hyperlink{classSpaceship_ab075c869473344b6471c8e28ca7ea61e}{Spaceship}.
+
+\mbox{\Hypertarget{classBattleship_a2a729de36df2648305cb68c9779c9c2e}\label{classBattleship_a2a729de36df2648305cb68c9779c9c2e}} 
+\index{Battleship@{Battleship}!select\+Strategy@{select\+Strategy}}
+\index{select\+Strategy@{select\+Strategy}!Battleship@{Battleship}}
+\subsubsection{\texorpdfstring{select\+Strategy()}{selectStrategy()}}
+{\footnotesize\ttfamily void Battleship\+::select\+Strategy (\begin{DoxyParamCaption}\item[{\hyperlink{classStrategy}{Strategy} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+select strategy 
+
+Reimplemented from \hyperlink{classSpaceship_a93be2d9d2b675ef978d866d4cd7a6524}{Spaceship}.
+
+\mbox{\Hypertarget{classBattleship_af89b875b0dadcbf79b6d65d97398e7c1}\label{classBattleship_af89b875b0dadcbf79b6d65d97398e7c1}} 
+\index{Battleship@{Battleship}!visit@{visit}}
+\index{visit@{visit}!Battleship@{Battleship}}
+\subsubsection{\texorpdfstring{visit()}{visit()}}
+{\footnotesize\ttfamily void Battleship\+::visit (\begin{DoxyParamCaption}\item[{\hyperlink{classPlanet}{Planet} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for visit 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
 
 
 

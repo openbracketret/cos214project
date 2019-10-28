@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['people',['People',['../classPeople.html',1,'']]],
-  ['peoplefactory',['PeopleFactory',['../classPeopleFactory.html',1,'']]],
-  ['peoplemediatior',['PeopleMediatior',['../classPeopleMediatior.html',1,'']]],
-  ['planet',['Planet',['../classPlanet.html',1,'']]]
+  ['navigator',['Navigator',['../classNavigator.html',1,'']]],
+  ['navigatorfactory',['NavigatorFactory',['../classNavigatorFactory.html',1,'']]],
+  ['node',['Node',['../classNode.html',1,'']]]
 ];

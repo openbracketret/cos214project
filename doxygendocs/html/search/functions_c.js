@@ -1,11 +1,14 @@
 var searchData=
 [
-  ['recievespaceshiperror',['recieveSpaceshipError',['../classCaptain.html#a39ebd40ec094b410f295188bb6262009',1,'Captain::recieveSpaceshipError()'],['../classChiefEngineer.html#a7170ae93d7eadc1a68bc86c25a9be0db',1,'ChiefEngineer::recieveSpaceshipError()'],['../classCommanderOfTheFleet.html#a13e91b9342df067b375f7ef2b929c0d5',1,'CommanderOfTheFleet::recieveSpaceshipError()'],['../classComms.html#a1aed1c01a813afd55309fdc59d2871bf',1,'Comms::recieveSpaceshipError()'],['../classCommsFactory.html#ae0c2cf49336ef7346944970f0a1661d2',1,'CommsFactory::recieveSpaceshipError()'],['../classDoctor.html#a820dca3b9f05d3f69c47bd7318923b88',1,'Doctor::recieveSpaceshipError()'],['../classEngineer.html#acc86ce6b4b1388be8ebacc685f9e6233',1,'Engineer::recieveSpaceshipError()'],['../classFighter.html#aecd2761c68aed8499e210fd0ca11c447',1,'Fighter::recieveSpaceshipError()'],['../classNavigator.html#a7dc06965001f658cff3c5f0dcac39def',1,'Navigator::recieveSpaceshipError()'],['../classPeople.html#a0685df78be631783138865e03cc7c85d',1,'People::recieveSpaceshipError()']]],
-  ['refuelspaceship',['refuelSpaceship',['../classRefuelStation.html#a1b14f9c75c883e3288c52a32b2bbd8a4',1,'RefuelStation']]],
-  ['refuelstation',['RefuelStation',['../classRefuelStation.html#a3ab9b746bd1e7bfaa9eff06567d6a1d4',1,'RefuelStation']]],
-  ['reinstatememento',['reinstateMemento',['../classTransportBay.html#a501256401b6845a16ced9ea65c294f70',1,'TransportBay']]],
-  ['removefighter',['removeFighter',['../classFighterBay.html#ab504d923d2e3837c29c56453bd1f7ba1',1,'FighterBay']]],
-  ['removepassenger',['removePassenger',['../classSpaceship.html#ac816c2990b25a1b7c9f6acbc9ca132ee',1,'Spaceship']]],
-  ['removeship',['removeShip',['../classTransportBay.html#a053ab5bbf5b6cafe1f5b3782176bd214',1,'TransportBay']]],
-  ['retreivememento',['retreiveMemento',['../classCaretaker.html#a1d50fe3b0cbf191f1f260e0bb7f579e6',1,'Caretaker']]]
+  ['people',['People',['../classPeople.html#aae1408eddfd15a5007003ecdf1507941',1,'People']]],
+  ['peoplefactory',['PeopleFactory',['../classPeopleFactory.html#a937ce020364a355d6689c365ba70f0d6',1,'PeopleFactory']]],
+  ['planet',['Planet',['../classPlanet.html#ae98ce54858c1174201987d73228fa29b',1,'Planet::Planet(string n)'],['../classPlanet.html#afd66d974488511c495e6e5aa2e886085',1,'Planet::Planet(string n, double rR, double tL)']]],
+  ['planetiterator',['PlanetIterator',['../classPlanetIterator.html#ac0769a13686b355e55e687de11231d9c',1,'PlanetIterator::PlanetIterator()'],['../classPlanetIterator.html#ab5c84527dd5b82051e9f59c650dbd5bc',1,'PlanetIterator::PlanetIterator(const PlanetQueue &amp;, Node *)']]],
+  ['planetqueue',['PlanetQueue',['../classPlanetQueue.html#aece3bd14bfbffdd61c5413bac9d92abf',1,'PlanetQueue']]],
+  ['popplanet',['popPlanet',['../classFacade.html#a5519cbabe4e10ae5b904f9726133548b',1,'Facade']]],
+  ['print',['print',['../classLevelOneThreat.html#a902492d8341a398b0209fb89e2aca68e',1,'LevelOneThreat::print()'],['../classLevelThreeThreat.html#a3bdd7e61f3938123ce9c705623e0d98a',1,'LevelThreeThreat::print()'],['../classLevelTwoThreat.html#a9e21bc1a55bb25d86346c484f5fd0525',1,'LevelTwoThreat::print()'],['../classThreatLevel.html#a5bdff5eeffed8db616ca06091097c138',1,'ThreatLevel::print()']]],
+  ['printcaptainslog',['printCaptainsLog',['../classFacade.html#a1e5bd61cd66ac14d31c02b2c1eebc015',1,'Facade::printCaptainsLog()'],['../classSpaceship.html#a949e9815b99d5598da2239e307036141',1,'Spaceship::printCaptainsLog()']]],
+  ['printlogs',['printLogs',['../classCaptainsLog.html#a7a534bb9e892210686b76c15b30fab95',1,'CaptainsLog']]],
+  ['printthreat',['printThreat',['../classFacade.html#a26a101d8f1a70a6af2eee1af45ca3ab8',1,'Facade']]],
+  ['printthreatlevel',['printThreatLevel',['../classBattleship.html#a41f44a1437e169165b943c3b98316f32',1,'Battleship::printThreatLevel()'],['../classExplorationVessel.html#af08a3db5b456781106f33a03bfbe7621',1,'ExplorationVessel::printThreatLevel()'],['../classFrigate.html#a97f2fd73f269ee81e6f8185110769cc5',1,'Frigate::printThreatLevel()'],['../classSpaceship.html#a8f16814f888a5a1423e5a491329cdb97',1,'Spaceship::printThreatLevel()'],['../classSpaceshipTransporter.html#ae153196ed515ac051be2ef7aa225c064',1,'SpaceshipTransporter::printThreatLevel()'],['../classSpaceStation.html#a430ee680ac20af8245640e9271095688',1,'SpaceStation::printThreatLevel()']]]
 ];

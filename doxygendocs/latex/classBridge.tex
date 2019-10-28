@@ -11,12 +11,22 @@
 
 
 
-Inheritance diagram for Bridge\+:
-% FIG 0
+Inheritance diagram for Bridge\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{classBridge__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for Bridge\+:
-% FIG 1
+Collaboration diagram for Bridge\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classBridge__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -27,6 +37,20 @@ Collaboration diagram for Bridge\+:
 \hyperlink{classBridge_a812b325fbb4f4b589e68f11f443a7ee4}{$\sim$\+Bridge} ()
 \item 
 double \hyperlink{classBridge_a1508c1c9cfb44850fea31afcb7f1e403}{get\+Resources} (double a, double b)
+\item 
+void \hyperlink{classBridge_aa89e0ced4a914240ab354f11f7b33363}{visit} (\hyperlink{classPlanet}{Planet} $\ast$p)
+\item 
+void \hyperlink{classBridge_a49676496d07502909958e747ef4c3214}{add\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$s)
+\item 
+void \hyperlink{classBridge_aec10bfb9af885933640548b509144a29}{add\+Person} (\hyperlink{classPeople}{People} $\ast$p)
+\item 
+\hyperlink{classMemento}{Memento} $\ast$ \hyperlink{classBridge_ae6e139b786743b19ec4f1762283b6fc1}{create\+Memento} (vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$ s)
+\item 
+void \hyperlink{classBridge_a3d551c6ea3d807c08a32214df2589ecc}{reinstate\+Memento} (\hyperlink{classMemento}{Memento} $\ast$mem)
+\item 
+void \hyperlink{classBridge_a07283d7cf98c500020b1f91594f48678}{select\+Strategy} (\hyperlink{classStrategy}{Strategy} $\ast$s)
+\item 
+void \hyperlink{classBridge_a512402725d1a095497191968edc18555}{execute\+Strategy} ()
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -56,13 +80,87 @@ Paramaterised constructor \mbox{\Hypertarget{classBridge_a812b325fbb4f4b589e68f1
 Default destructor 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBridge_aec10bfb9af885933640548b509144a29}\label{classBridge_aec10bfb9af885933640548b509144a29}} 
+\index{Bridge@{Bridge}!add\+Person@{add\+Person}}
+\index{add\+Person@{add\+Person}!Bridge@{Bridge}}
+\subsubsection{\texorpdfstring{add\+Person()}{addPerson()}}
+{\footnotesize\ttfamily void Bridge\+::add\+Person (\begin{DoxyParamCaption}\item[{\hyperlink{classPeople}{People} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for add\+Person 
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_a6e289d8a65f35b9f223255ae0eaa3b00}{Spaceship\+Decorator}.
+
+\mbox{\Hypertarget{classBridge_a49676496d07502909958e747ef4c3214}\label{classBridge_a49676496d07502909958e747ef4c3214}} 
+\index{Bridge@{Bridge}!add\+Ship@{add\+Ship}}
+\index{add\+Ship@{add\+Ship}!Bridge@{Bridge}}
+\subsubsection{\texorpdfstring{add\+Ship()}{addShip()}}
+{\footnotesize\ttfamily void Bridge\+::add\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual add\+Ship 
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_a5ed39419f5fab65dd4af11bf5136f7a4}{Spaceship\+Decorator}.
+
+\mbox{\Hypertarget{classBridge_ae6e139b786743b19ec4f1762283b6fc1}\label{classBridge_ae6e139b786743b19ec4f1762283b6fc1}} 
+\index{Bridge@{Bridge}!create\+Memento@{create\+Memento}}
+\index{create\+Memento@{create\+Memento}!Bridge@{Bridge}}
+\subsubsection{\texorpdfstring{create\+Memento()}{createMemento()}}
+{\footnotesize\ttfamily \hyperlink{classMemento}{Memento}$\ast$ Bridge\+::create\+Memento (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+create memento stub 
+
+Reimplemented from \hyperlink{classSpaceship_a6d272f846b019dec8226ddab65648a7b}{Spaceship}.
+
+\mbox{\Hypertarget{classBridge_a512402725d1a095497191968edc18555}\label{classBridge_a512402725d1a095497191968edc18555}} 
+\index{Bridge@{Bridge}!execute\+Strategy@{execute\+Strategy}}
+\index{execute\+Strategy@{execute\+Strategy}!Bridge@{Bridge}}
+\subsubsection{\texorpdfstring{execute\+Strategy()}{executeStrategy()}}
+{\footnotesize\ttfamily void Bridge\+::execute\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for execute\+Strategy 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
+
 \mbox{\Hypertarget{classBridge_a1508c1c9cfb44850fea31afcb7f1e403}\label{classBridge_a1508c1c9cfb44850fea31afcb7f1e403}} 
 \index{Bridge@{Bridge}!get\+Resources@{get\+Resources}}
 \index{get\+Resources@{get\+Resources}!Bridge@{Bridge}}
 \subsubsection{\texorpdfstring{get\+Resources()}{getResources()}}
-{\footnotesize\ttfamily double Bridge\+::get\+Resources (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily double Bridge\+::get\+Resources (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 resource collection 
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_a5ee7a9a8c146c85f08591e47d971dce7}{Spaceship\+Decorator}.
+
+\mbox{\Hypertarget{classBridge_a3d551c6ea3d807c08a32214df2589ecc}\label{classBridge_a3d551c6ea3d807c08a32214df2589ecc}} 
+\index{Bridge@{Bridge}!reinstate\+Memento@{reinstate\+Memento}}
+\index{reinstate\+Memento@{reinstate\+Memento}!Bridge@{Bridge}}
+\subsubsection{\texorpdfstring{reinstate\+Memento()}{reinstateMemento()}}
+{\footnotesize\ttfamily void Bridge\+::reinstate\+Memento (\begin{DoxyParamCaption}\item[{\hyperlink{classMemento}{Memento} $\ast$}]{mem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+reinstate memento 
+
+Reimplemented from \hyperlink{classSpaceship_ab075c869473344b6471c8e28ca7ea61e}{Spaceship}.
+
+\mbox{\Hypertarget{classBridge_a07283d7cf98c500020b1f91594f48678}\label{classBridge_a07283d7cf98c500020b1f91594f48678}} 
+\index{Bridge@{Bridge}!select\+Strategy@{select\+Strategy}}
+\index{select\+Strategy@{select\+Strategy}!Bridge@{Bridge}}
+\subsubsection{\texorpdfstring{select\+Strategy()}{selectStrategy()}}
+{\footnotesize\ttfamily void Bridge\+::select\+Strategy (\begin{DoxyParamCaption}\item[{\hyperlink{classStrategy}{Strategy} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+select strategy 
+
+Reimplemented from \hyperlink{classSpaceship_a93be2d9d2b675ef978d866d4cd7a6524}{Spaceship}.
+
+\mbox{\Hypertarget{classBridge_aa89e0ced4a914240ab354f11f7b33363}\label{classBridge_aa89e0ced4a914240ab354f11f7b33363}} 
+\index{Bridge@{Bridge}!visit@{visit}}
+\index{visit@{visit}!Bridge@{Bridge}}
+\subsubsection{\texorpdfstring{visit()}{visit()}}
+{\footnotesize\ttfamily void Bridge\+::visit (\begin{DoxyParamCaption}\item[{\hyperlink{classPlanet}{Planet} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for visit 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
+
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

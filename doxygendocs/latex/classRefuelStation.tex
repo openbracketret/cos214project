@@ -11,12 +11,22 @@ Refuel station class.
 
 
 
-Inheritance diagram for Refuel\+Station\+:
-% FIG 0
+Inheritance diagram for Refuel\+Station\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{classRefuelStation__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for Refuel\+Station\+:
-% FIG 1
+Collaboration diagram for Refuel\+Station\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classRefuelStation__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -25,6 +35,22 @@ Collaboration diagram for Refuel\+Station\+:
 \hyperlink{classRefuelStation_afc0ebc020ef08d8a6a2096bdb2f3e314}{$\sim$\+Refuel\+Station} ()
 \item 
 void \hyperlink{classRefuelStation_a1b14f9c75c883e3288c52a32b2bbd8a4}{refuel\+Spaceship} (\hyperlink{classSpaceship}{Spaceship} $\ast$s)
+\item 
+void \hyperlink{classRefuelStation_a03510ee8365b5095ca80fac0c5a0a780}{add\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$s)
+\item 
+double \hyperlink{classRefuelStation_a69c7e7aca14ba70f4d2c4c11e43b4bb4}{get\+Resources} (double a, double b)
+\item 
+void \hyperlink{classRefuelStation_a6bd40214cf5dc4d46739943f545c6d7a}{add\+Person} (\hyperlink{classPeople}{People} $\ast$p)
+\item 
+void \hyperlink{classRefuelStation_ae87ea232171fbb09e14b2da82ae3af56}{visit} (\hyperlink{classPlanet}{Planet} $\ast$p)
+\item 
+\hyperlink{classMemento}{Memento} $\ast$ \hyperlink{classRefuelStation_abd79d981cc7650d6417b8c8166a3fb85}{create\+Memento} (vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$ s)
+\item 
+void \hyperlink{classRefuelStation_aa984ee5ed5a4cea0b96ba1c3903a1b1c}{reinstate\+Memento} (\hyperlink{classMemento}{Memento} $\ast$mem)
+\item 
+void \hyperlink{classRefuelStation_aa8fccc0887cac98193803762533f9ab1}{execute\+Strategy} ()
+\item 
+void \hyperlink{classRefuelStation_a1dfda37915eca25344aa2fdeaacab4b4}{select\+Strategy} (\hyperlink{classStrategy}{Strategy} $\ast$s)
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -48,6 +74,56 @@ Default constructor \mbox{\Hypertarget{classRefuelStation_afc0ebc020ef08d8a6a209
 Default desctructor 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRefuelStation_a6bd40214cf5dc4d46739943f545c6d7a}\label{classRefuelStation_a6bd40214cf5dc4d46739943f545c6d7a}} 
+\index{Refuel\+Station@{Refuel\+Station}!add\+Person@{add\+Person}}
+\index{add\+Person@{add\+Person}!Refuel\+Station@{Refuel\+Station}}
+\subsubsection{\texorpdfstring{add\+Person()}{addPerson()}}
+{\footnotesize\ttfamily void Refuel\+Station\+::add\+Person (\begin{DoxyParamCaption}\item[{\hyperlink{classPeople}{People} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for add\+Person 
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_a6e289d8a65f35b9f223255ae0eaa3b00}{Spaceship\+Decorator}.
+
+\mbox{\Hypertarget{classRefuelStation_a03510ee8365b5095ca80fac0c5a0a780}\label{classRefuelStation_a03510ee8365b5095ca80fac0c5a0a780}} 
+\index{Refuel\+Station@{Refuel\+Station}!add\+Ship@{add\+Ship}}
+\index{add\+Ship@{add\+Ship}!Refuel\+Station@{Refuel\+Station}}
+\subsubsection{\texorpdfstring{add\+Ship()}{addShip()}}
+{\footnotesize\ttfamily void Refuel\+Station\+::add\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual add\+Ship 
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_a5ed39419f5fab65dd4af11bf5136f7a4}{Spaceship\+Decorator}.
+
+\mbox{\Hypertarget{classRefuelStation_abd79d981cc7650d6417b8c8166a3fb85}\label{classRefuelStation_abd79d981cc7650d6417b8c8166a3fb85}} 
+\index{Refuel\+Station@{Refuel\+Station}!create\+Memento@{create\+Memento}}
+\index{create\+Memento@{create\+Memento}!Refuel\+Station@{Refuel\+Station}}
+\subsubsection{\texorpdfstring{create\+Memento()}{createMemento()}}
+{\footnotesize\ttfamily \hyperlink{classMemento}{Memento}$\ast$ Refuel\+Station\+::create\+Memento (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+create memento stub 
+
+Reimplemented from \hyperlink{classSpaceship_a6d272f846b019dec8226ddab65648a7b}{Spaceship}.
+
+\mbox{\Hypertarget{classRefuelStation_aa8fccc0887cac98193803762533f9ab1}\label{classRefuelStation_aa8fccc0887cac98193803762533f9ab1}} 
+\index{Refuel\+Station@{Refuel\+Station}!execute\+Strategy@{execute\+Strategy}}
+\index{execute\+Strategy@{execute\+Strategy}!Refuel\+Station@{Refuel\+Station}}
+\subsubsection{\texorpdfstring{execute\+Strategy()}{executeStrategy()}}
+{\footnotesize\ttfamily void Refuel\+Station\+::execute\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+execute strategy 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
+
+\mbox{\Hypertarget{classRefuelStation_a69c7e7aca14ba70f4d2c4c11e43b4bb4}\label{classRefuelStation_a69c7e7aca14ba70f4d2c4c11e43b4bb4}} 
+\index{Refuel\+Station@{Refuel\+Station}!get\+Resources@{get\+Resources}}
+\index{get\+Resources@{get\+Resources}!Refuel\+Station@{Refuel\+Station}}
+\subsubsection{\texorpdfstring{get\+Resources()}{getResources()}}
+{\footnotesize\ttfamily double Refuel\+Station\+::get\+Resources (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub resource collection 
+
+Reimplemented from \hyperlink{classSpaceshipDecorator_a5ee7a9a8c146c85f08591e47d971dce7}{Spaceship\+Decorator}.
+
 \mbox{\Hypertarget{classRefuelStation_a1b14f9c75c883e3288c52a32b2bbd8a4}\label{classRefuelStation_a1b14f9c75c883e3288c52a32b2bbd8a4}} 
 \index{Refuel\+Station@{Refuel\+Station}!refuel\+Spaceship@{refuel\+Spaceship}}
 \index{refuel\+Spaceship@{refuel\+Spaceship}!Refuel\+Station@{Refuel\+Station}}
@@ -59,6 +135,36 @@ Refuel spaceships that have used all their resources
 {\em s} & -\/ spaceship to be refueled \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classRefuelStation_aa984ee5ed5a4cea0b96ba1c3903a1b1c}\label{classRefuelStation_aa984ee5ed5a4cea0b96ba1c3903a1b1c}} 
+\index{Refuel\+Station@{Refuel\+Station}!reinstate\+Memento@{reinstate\+Memento}}
+\index{reinstate\+Memento@{reinstate\+Memento}!Refuel\+Station@{Refuel\+Station}}
+\subsubsection{\texorpdfstring{reinstate\+Memento()}{reinstateMemento()}}
+{\footnotesize\ttfamily void Refuel\+Station\+::reinstate\+Memento (\begin{DoxyParamCaption}\item[{\hyperlink{classMemento}{Memento} $\ast$}]{mem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+reinstate memento 
+
+Reimplemented from \hyperlink{classSpaceship_ab075c869473344b6471c8e28ca7ea61e}{Spaceship}.
+
+\mbox{\Hypertarget{classRefuelStation_a1dfda37915eca25344aa2fdeaacab4b4}\label{classRefuelStation_a1dfda37915eca25344aa2fdeaacab4b4}} 
+\index{Refuel\+Station@{Refuel\+Station}!select\+Strategy@{select\+Strategy}}
+\index{select\+Strategy@{select\+Strategy}!Refuel\+Station@{Refuel\+Station}}
+\subsubsection{\texorpdfstring{select\+Strategy()}{selectStrategy()}}
+{\footnotesize\ttfamily void Refuel\+Station\+::select\+Strategy (\begin{DoxyParamCaption}\item[{\hyperlink{classStrategy}{Strategy} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+select strategy 
+
+Reimplemented from \hyperlink{classSpaceship_a93be2d9d2b675ef978d866d4cd7a6524}{Spaceship}.
+
+\mbox{\Hypertarget{classRefuelStation_ae87ea232171fbb09e14b2da82ae3af56}\label{classRefuelStation_ae87ea232171fbb09e14b2da82ae3af56}} 
+\index{Refuel\+Station@{Refuel\+Station}!visit@{visit}}
+\index{visit@{visit}!Refuel\+Station@{Refuel\+Station}}
+\subsubsection{\texorpdfstring{visit()}{visit()}}
+{\footnotesize\ttfamily void Refuel\+Station\+::visit (\begin{DoxyParamCaption}\item[{\hyperlink{classPlanet}{Planet} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for visit 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

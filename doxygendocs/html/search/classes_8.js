@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['navigator',['Navigator',['../classNavigator.html',1,'']]],
-  ['navigatorfactory',['NavigatorFactory',['../classNavigatorFactory.html',1,'']]]
+  ['memento',['Memento',['../classMemento.html',1,'']]],
+  ['mine',['Mine',['../classMine.html',1,'']]],
+  ['miningstrategy',['MiningStrategy',['../classMiningStrategy.html',1,'']]]
 ];

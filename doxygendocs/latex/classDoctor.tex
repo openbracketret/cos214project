@@ -11,12 +11,22 @@
 
 
 
-Inheritance diagram for Doctor\+:
-% FIG 0
+Inheritance diagram for Doctor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=127pt]{classDoctor__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for Doctor\+:
-% FIG 1
+Collaboration diagram for Doctor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classDoctor__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -24,11 +34,11 @@ Collaboration diagram for Doctor\+:
 \item 
 \hyperlink{classDoctor_a1481ccfafebc7a2424d3659a0223ebfe}{$\sim$\+Doctor} ()
 \item 
-\hyperlink{classPeople}{People} $\ast$ \hyperlink{classDoctor_a684a580014991a9193d0021796041ff5}{create\+People} ()
-\item 
 void \hyperlink{classDoctor_a820dca3b9f05d3f69c47bd7318923b88}{recieve\+Spaceship\+Error} (string)
 \item 
 void \hyperlink{classDoctor_a5a524981ce52102f975cf9c569137ce5}{send\+Error\+Message} (string)
+\item 
+string \hyperlink{classDoctor_a6aee07e1096c01e16c11b461150083eb}{get\+Type} ()
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -52,13 +62,17 @@ Default constructor \mbox{\Hypertarget{classDoctor_a1481ccfafebc7a2424d3659a0223
 Default destructor 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classDoctor_a684a580014991a9193d0021796041ff5}\label{classDoctor_a684a580014991a9193d0021796041ff5}} 
-\index{Doctor@{Doctor}!create\+People@{create\+People}}
-\index{create\+People@{create\+People}!Doctor@{Doctor}}
-\subsubsection{\texorpdfstring{create\+People()}{createPeople()}}
-{\footnotesize\ttfamily \hyperlink{classPeople}{People}$\ast$ Doctor\+::create\+People (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classDoctor_a6aee07e1096c01e16c11b461150083eb}\label{classDoctor_a6aee07e1096c01e16c11b461150083eb}} 
+\index{Doctor@{Doctor}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Doctor@{Doctor}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily string Doctor\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
-creates \hyperlink{classDoctor}{Doctor} \mbox{\Hypertarget{classDoctor_a820dca3b9f05d3f69c47bd7318923b88}\label{classDoctor_a820dca3b9f05d3f69c47bd7318923b88}} 
+get type of person 
+
+Implements \hyperlink{classPeople_af60dd882d60cddf63f9b95815ce551a8}{People}.
+
+\mbox{\Hypertarget{classDoctor_a820dca3b9f05d3f69c47bd7318923b88}\label{classDoctor_a820dca3b9f05d3f69c47bd7318923b88}} 
 \index{Doctor@{Doctor}!recieve\+Spaceship\+Error@{recieve\+Spaceship\+Error}}
 \index{recieve\+Spaceship\+Error@{recieve\+Spaceship\+Error}!Doctor@{Doctor}}
 \subsubsection{\texorpdfstring{recieve\+Spaceship\+Error()}{recieveSpaceshipError()}}

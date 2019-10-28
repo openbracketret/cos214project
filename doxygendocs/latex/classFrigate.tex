@@ -11,21 +11,58 @@
 
 
 
-Inheritance diagram for Frigate\+:
-% FIG 0
+Inheritance diagram for Frigate\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{classFrigate__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for Frigate\+:
-% FIG 1
+Collaboration diagram for Frigate\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classFrigate__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classFrigate_ad68c1d421cc3872688a19727055632a2}{Frigate} ()
 \item 
+\hyperlink{classFrigate_a9904824a22b1784d1b5a9e742e8e0485}{Frigate} (string name)
+\item 
 \hyperlink{classFrigate_a86559f40e7725443c89039ee623fab2b}{$\sim$\+Frigate} ()
 \item 
-virtual void \hyperlink{classFrigate_ae06208eed84e006385e4d337e1f04c7d}{add\+Component} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
+virtual void \hyperlink{classFrigate_af1c809e79096219e53da2f577ec8178d}{add\+Component} (\hyperlink{classSpaceship}{Spaceship} $\ast$comp)
+\item 
+int \hyperlink{classFrigate_a9716770249d0a26a114a69e5e3794bd9}{get\+Type} ()
+\item 
+void \hyperlink{classFrigate_ab4dd2319ec0a045e613c85b2c599a3e2}{increase\+Threat\+Level} ()
+\item 
+void \hyperlink{classFrigate_a756cc705b54d5aa48d4529bbfbeee74f}{decrease\+Threat\+Level} ()
+\item 
+void \hyperlink{classFrigate_a97f2fd73f269ee81e6f8185110769cc5}{print\+Threat\+Level} ()
+\item 
+void \hyperlink{classFrigate_a000802431ba3db8b45bfa6e7ae153de4}{add\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$s)
+\item 
+virtual void \hyperlink{classFrigate_a20d3fd7cedff77da127e562bd2e7e015}{visit} (\hyperlink{classPlanet}{Planet} $\ast$p)
+\item 
+\hyperlink{classMemento}{Memento} $\ast$ \hyperlink{classFrigate_a69d6b412c52d49b55135516d3e0b2a64}{create\+Memento} (vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$ s)
+\item 
+void \hyperlink{classFrigate_af6db10cd052dc5382857452dcb4e6d2a}{reinstate\+Memento} (\hyperlink{classMemento}{Memento} $\ast$mem)
+\item 
+void \hyperlink{classFrigate_a53468965646268e73e9cf49c3b013c40}{execute\+Strategy} ()
+\item 
+void \hyperlink{classFrigate_a484e16990cddb79fbc51ff29e815fec5}{select\+Strategy} (\hyperlink{classStrategy}{Strategy} $\ast$s)
+\item 
+void \hyperlink{classFrigate_a5da866e084d1d07363f06ff052005b41}{add\+Person} (\hyperlink{classPeople}{People} $\ast$p)
+\item 
+double \hyperlink{classFrigate_a333512076606313c57fc9957dccf9cb9}{get\+Resources} (double a, double b)
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -35,10 +72,16 @@ virtual void \hyperlink{classFrigate_ae06208eed84e006385e4d337e1f04c7d}{add\+Com
 \mbox{\Hypertarget{classFrigate_ad68c1d421cc3872688a19727055632a2}\label{classFrigate_ad68c1d421cc3872688a19727055632a2}} 
 \index{Frigate@{Frigate}!Frigate@{Frigate}}
 \index{Frigate@{Frigate}!Frigate@{Frigate}}
-\subsubsection{\texorpdfstring{Frigate()}{Frigate()}}
+\subsubsection{\texorpdfstring{Frigate()}{Frigate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Frigate\+::\+Frigate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Default constructor \mbox{\Hypertarget{classFrigate_a86559f40e7725443c89039ee623fab2b}\label{classFrigate_a86559f40e7725443c89039ee623fab2b}} 
+Default constructor \mbox{\Hypertarget{classFrigate_a9904824a22b1784d1b5a9e742e8e0485}\label{classFrigate_a9904824a22b1784d1b5a9e742e8e0485}} 
+\index{Frigate@{Frigate}!Frigate@{Frigate}}
+\index{Frigate@{Frigate}!Frigate@{Frigate}}
+\subsubsection{\texorpdfstring{Frigate()}{Frigate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Frigate\+::\+Frigate (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Paramaterised constructor \mbox{\Hypertarget{classFrigate_a86559f40e7725443c89039ee623fab2b}\label{classFrigate_a86559f40e7725443c89039ee623fab2b}} 
 \index{Frigate@{Frigate}!````~Frigate@{$\sim$\+Frigate}}
 \index{````~Frigate@{$\sim$\+Frigate}!Frigate@{Frigate}}
 \subsubsection{\texorpdfstring{$\sim$\+Frigate()}{~Frigate()}}
@@ -47,11 +90,11 @@ Default constructor \mbox{\Hypertarget{classFrigate_a86559f40e7725443c89039ee623
 Default desctructor 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classFrigate_ae06208eed84e006385e4d337e1f04c7d}\label{classFrigate_ae06208eed84e006385e4d337e1f04c7d}} 
+\mbox{\Hypertarget{classFrigate_af1c809e79096219e53da2f577ec8178d}\label{classFrigate_af1c809e79096219e53da2f577ec8178d}} 
 \index{Frigate@{Frigate}!add\+Component@{add\+Component}}
 \index{add\+Component@{add\+Component}!Frigate@{Frigate}}
 \subsubsection{\texorpdfstring{add\+Component()}{addComponent()}}
-{\footnotesize\ttfamily virtual void Frigate\+::add\+Component (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual void Frigate\+::add\+Component (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{comp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 Add a component to the spaceship 
 \begin{DoxyParams}{Parameters}
@@ -61,6 +104,129 @@ Add a component to the spaceship
 
 
 Implements \hyperlink{classSpaceship_ac1b4673a691cd100708ddea08cd9f192}{Spaceship}.
+
+\mbox{\Hypertarget{classFrigate_a5da866e084d1d07363f06ff052005b41}\label{classFrigate_a5da866e084d1d07363f06ff052005b41}} 
+\index{Frigate@{Frigate}!add\+Person@{add\+Person}}
+\index{add\+Person@{add\+Person}!Frigate@{Frigate}}
+\subsubsection{\texorpdfstring{add\+Person()}{addPerson()}}
+{\footnotesize\ttfamily void Frigate\+::add\+Person (\begin{DoxyParamCaption}\item[{\hyperlink{classPeople}{People} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for add\+Person 
+
+Reimplemented from \hyperlink{classSpaceship_add8d9c6dfd5f6ecb8399e41e71e5b22f}{Spaceship}.
+
+\mbox{\Hypertarget{classFrigate_a000802431ba3db8b45bfa6e7ae153de4}\label{classFrigate_a000802431ba3db8b45bfa6e7ae153de4}} 
+\index{Frigate@{Frigate}!add\+Ship@{add\+Ship}}
+\index{add\+Ship@{add\+Ship}!Frigate@{Frigate}}
+\subsubsection{\texorpdfstring{add\+Ship()}{addShip()}}
+{\footnotesize\ttfamily void Frigate\+::add\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual add\+Ship 
+
+Reimplemented from \hyperlink{classSpaceship_a90e1321cdbcb459b98b75ab39cef867d}{Spaceship}.
+
+\mbox{\Hypertarget{classFrigate_a69d6b412c52d49b55135516d3e0b2a64}\label{classFrigate_a69d6b412c52d49b55135516d3e0b2a64}} 
+\index{Frigate@{Frigate}!create\+Memento@{create\+Memento}}
+\index{create\+Memento@{create\+Memento}!Frigate@{Frigate}}
+\subsubsection{\texorpdfstring{create\+Memento()}{createMemento()}}
+{\footnotesize\ttfamily \hyperlink{classMemento}{Memento}$\ast$ Frigate\+::create\+Memento (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+create memento stub 
+
+Reimplemented from \hyperlink{classSpaceship_a6d272f846b019dec8226ddab65648a7b}{Spaceship}.
+
+\mbox{\Hypertarget{classFrigate_a756cc705b54d5aa48d4529bbfbeee74f}\label{classFrigate_a756cc705b54d5aa48d4529bbfbeee74f}} 
+\index{Frigate@{Frigate}!decrease\+Threat\+Level@{decrease\+Threat\+Level}}
+\index{decrease\+Threat\+Level@{decrease\+Threat\+Level}!Frigate@{Frigate}}
+\subsubsection{\texorpdfstring{decrease\+Threat\+Level()}{decreaseThreatLevel()}}
+{\footnotesize\ttfamily void Frigate\+::decrease\+Threat\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for decrease\+Threat\+Level 
+
+Reimplemented from \hyperlink{classSpaceship_a73a1eefd211e9a2063d924ee85f0c0c7}{Spaceship}.
+
+\mbox{\Hypertarget{classFrigate_a53468965646268e73e9cf49c3b013c40}\label{classFrigate_a53468965646268e73e9cf49c3b013c40}} 
+\index{Frigate@{Frigate}!execute\+Strategy@{execute\+Strategy}}
+\index{execute\+Strategy@{execute\+Strategy}!Frigate@{Frigate}}
+\subsubsection{\texorpdfstring{execute\+Strategy()}{executeStrategy()}}
+{\footnotesize\ttfamily void Frigate\+::execute\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+execute strategy 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
+
+\mbox{\Hypertarget{classFrigate_a333512076606313c57fc9957dccf9cb9}\label{classFrigate_a333512076606313c57fc9957dccf9cb9}} 
+\index{Frigate@{Frigate}!get\+Resources@{get\+Resources}}
+\index{get\+Resources@{get\+Resources}!Frigate@{Frigate}}
+\subsubsection{\texorpdfstring{get\+Resources()}{getResources()}}
+{\footnotesize\ttfamily double Frigate\+::get\+Resources (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub resource collection 
+
+Reimplemented from \hyperlink{classSpaceship_ad2027533de1d789db5e3efa22055f2d0}{Spaceship}.
+
+\mbox{\Hypertarget{classFrigate_a9716770249d0a26a114a69e5e3794bd9}\label{classFrigate_a9716770249d0a26a114a69e5e3794bd9}} 
+\index{Frigate@{Frigate}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Frigate@{Frigate}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily int Frigate\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the type of spaceship -\/ \hyperlink{classFrigate}{Frigate} = 4 \begin{DoxyReturn}{Returns}
+int -\/ 4 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classSpaceship_a113055e6d793f8fbc55e44efc4d57e07}{Spaceship}.
+
+\mbox{\Hypertarget{classFrigate_ab4dd2319ec0a045e613c85b2c599a3e2}\label{classFrigate_ab4dd2319ec0a045e613c85b2c599a3e2}} 
+\index{Frigate@{Frigate}!increase\+Threat\+Level@{increase\+Threat\+Level}}
+\index{increase\+Threat\+Level@{increase\+Threat\+Level}!Frigate@{Frigate}}
+\subsubsection{\texorpdfstring{increase\+Threat\+Level()}{increaseThreatLevel()}}
+{\footnotesize\ttfamily void Frigate\+::increase\+Threat\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for increase\+Threat\+Level 
+
+Reimplemented from \hyperlink{classSpaceship_a5ddf702124286d9d3a6b5e64c09515bc}{Spaceship}.
+
+\mbox{\Hypertarget{classFrigate_a97f2fd73f269ee81e6f8185110769cc5}\label{classFrigate_a97f2fd73f269ee81e6f8185110769cc5}} 
+\index{Frigate@{Frigate}!print\+Threat\+Level@{print\+Threat\+Level}}
+\index{print\+Threat\+Level@{print\+Threat\+Level}!Frigate@{Frigate}}
+\subsubsection{\texorpdfstring{print\+Threat\+Level()}{printThreatLevel()}}
+{\footnotesize\ttfamily void Frigate\+::print\+Threat\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for print\+Threat\+Level 
+
+Reimplemented from \hyperlink{classSpaceship_a8f16814f888a5a1423e5a491329cdb97}{Spaceship}.
+
+\mbox{\Hypertarget{classFrigate_af6db10cd052dc5382857452dcb4e6d2a}\label{classFrigate_af6db10cd052dc5382857452dcb4e6d2a}} 
+\index{Frigate@{Frigate}!reinstate\+Memento@{reinstate\+Memento}}
+\index{reinstate\+Memento@{reinstate\+Memento}!Frigate@{Frigate}}
+\subsubsection{\texorpdfstring{reinstate\+Memento()}{reinstateMemento()}}
+{\footnotesize\ttfamily void Frigate\+::reinstate\+Memento (\begin{DoxyParamCaption}\item[{\hyperlink{classMemento}{Memento} $\ast$}]{mem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+reinstate memento 
+
+Reimplemented from \hyperlink{classSpaceship_ab075c869473344b6471c8e28ca7ea61e}{Spaceship}.
+
+\mbox{\Hypertarget{classFrigate_a484e16990cddb79fbc51ff29e815fec5}\label{classFrigate_a484e16990cddb79fbc51ff29e815fec5}} 
+\index{Frigate@{Frigate}!select\+Strategy@{select\+Strategy}}
+\index{select\+Strategy@{select\+Strategy}!Frigate@{Frigate}}
+\subsubsection{\texorpdfstring{select\+Strategy()}{selectStrategy()}}
+{\footnotesize\ttfamily void Frigate\+::select\+Strategy (\begin{DoxyParamCaption}\item[{\hyperlink{classStrategy}{Strategy} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+select strategy 
+
+Reimplemented from \hyperlink{classSpaceship_a93be2d9d2b675ef978d866d4cd7a6524}{Spaceship}.
+
+\mbox{\Hypertarget{classFrigate_a20d3fd7cedff77da127e562bd2e7e015}\label{classFrigate_a20d3fd7cedff77da127e562bd2e7e015}} 
+\index{Frigate@{Frigate}!visit@{visit}}
+\index{visit@{visit}!Frigate@{Frigate}}
+\subsubsection{\texorpdfstring{visit()}{visit()}}
+{\footnotesize\ttfamily virtual void Frigate\+::visit (\begin{DoxyParamCaption}\item[{\hyperlink{classPlanet}{Planet} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for visit 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
 
 
 

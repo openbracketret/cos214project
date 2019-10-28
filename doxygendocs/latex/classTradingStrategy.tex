@@ -2,15 +2,37 @@
 \label{classTradingStrategy}\index{Trading\+Strategy@{Trading\+Strategy}}
 
 
-\hyperlink{classMiningStrategy}{Mining\+Strategy} class.  
+\hyperlink{classTradingStrategy}{Trading\+Strategy} class.  
 
 
 
 
 {\ttfamily \#include $<$Trading\+Strategy.\+h$>$}
 
+
+
+Inheritance diagram for Trading\+Strategy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classTradingStrategy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Trading\+Strategy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classTradingStrategy__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTradingStrategy_a26f088c714200a67a248591fc2023a20}{Trading\+Strategy} ()
 \item 
 virtual double \hyperlink{classTradingStrategy_a4029029df708f9f0f013603b19f449ff}{execute} (double a, double b)
 \item 
@@ -19,10 +41,16 @@ virtual double \hyperlink{classTradingStrategy_a4029029df708f9f0f013603b19f449ff
 
 
 \subsection{Detailed Description}
-\hyperlink{classMiningStrategy}{Mining\+Strategy} class. 
+\hyperlink{classTradingStrategy}{Trading\+Strategy} class. 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classTradingStrategy_aab4c9c86553ad820ccc52fda3412d32b}\label{classTradingStrategy_aab4c9c86553ad820ccc52fda3412d32b}} 
+\mbox{\Hypertarget{classTradingStrategy_a26f088c714200a67a248591fc2023a20}\label{classTradingStrategy_a26f088c714200a67a248591fc2023a20}} 
+\index{Trading\+Strategy@{Trading\+Strategy}!Trading\+Strategy@{Trading\+Strategy}}
+\index{Trading\+Strategy@{Trading\+Strategy}!Trading\+Strategy@{Trading\+Strategy}}
+\subsubsection{\texorpdfstring{Trading\+Strategy()}{TradingStrategy()}}
+{\footnotesize\ttfamily Trading\+Strategy\+::\+Trading\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+default constructor \mbox{\Hypertarget{classTradingStrategy_aab4c9c86553ad820ccc52fda3412d32b}\label{classTradingStrategy_aab4c9c86553ad820ccc52fda3412d32b}} 
 \index{Trading\+Strategy@{Trading\+Strategy}!````~Trading\+Strategy@{$\sim$\+Trading\+Strategy}}
 \index{````~Trading\+Strategy@{$\sim$\+Trading\+Strategy}!Trading\+Strategy@{Trading\+Strategy}}
 \subsubsection{\texorpdfstring{$\sim$\+Trading\+Strategy()}{~TradingStrategy()}}
@@ -38,6 +66,17 @@ default destructor
 {\footnotesize\ttfamily double Trading\+Strategy\+::execute (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 overloaded execute for trading for resources 
+\begin{DoxyParams}{Parameters}
+{\em a} & is credits for resources. \\
+\hline
+{\em b} & is exchange rate for the resources \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classStrategy_a81b8d4f53494c438b21fc999c7ea59f4}{Strategy}.
+
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

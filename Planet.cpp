@@ -39,5 +39,6 @@ void Planet::setThreatLevel(double tL){
 
 void Planet::accept(Spaceship* s){
 	visited = true;
+	cout << "Planet accepting spaceship" << endl;
 	s->visit(this);
 }

@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classPeople.html" title="People class. " alt="" coords="5,183,68,209"/>
+<area shape="rect" id="node2" href="$classCaptain.html" title="Captain class. " alt="" coords="162,5,229,32"/>
+<area shape="rect" id="node3" href="$classChiefEngineer.html" title="Chief Engineer class. " alt="" coords="143,56,247,83"/>
+<area shape="rect" id="node4" href="$classCommanderOfTheFleet.html" title="Commander of the fleet class. A singleton. " alt="" coords="116,107,275,133"/>
+<area shape="rect" id="node5" href="$classComms.html" title="Comms class. " alt="" coords="161,157,229,184"/>
+<area shape="rect" id="node6" href="$classDoctor.html" title="Doctor class. " alt="" coords="165,208,226,235"/>
+<area shape="rect" id="node7" href="$classEngineer.html" title="Engineer class. " alt="" coords="159,259,232,285"/>
+<area shape="rect" id="node8" href="$classFighter.html" title="Fighter class. " alt="" coords="164,309,227,336"/>
+<area shape="rect" id="node9" href="$classNavigator.html" title="Navigator class. " alt="" coords="156,360,235,387"/>
+</map>

@@ -11,21 +11,59 @@
 
 
 
-Inheritance diagram for Fighter\+Transporter\+:
-% FIG 0
+Inheritance diagram for Fighter\+Transporter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classFighterTransporter__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for Fighter\+Transporter\+:
-% FIG 1
+Collaboration diagram for Fighter\+Transporter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classFighterTransporter__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classFighterTransporter_ad8e296a192f6a5550d15ec2d3a74c4b8}{Fighter\+Transporter} ()
+\end{DoxyCompactItemize}
+\subsection*{holds name of the ship}
+\label{_amgrpa1e51ca1f41febdb863218d3aed20946}%
+ Parameterised constructor \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFighterTransporter_a78524dc8ffee02d22f313c4e4186e252}\label{classFighterTransporter_a78524dc8ffee02d22f313c4e4186e252}} 
+{\bfseries Fighter\+Transporter} (string name)
 \item 
 \hyperlink{classFighterTransporter_a65a48b07df846737c605337f69998eef}{$\sim$\+Fighter\+Transporter} ()
 \item 
-virtual void \hyperlink{classFighterTransporter_a2c001243993307f51abba10636c0fbb9}{add\+Component} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
+virtual void \hyperlink{classFighterTransporter_a962db4e241d764360407380ce1438788}{add\+Component} (\hyperlink{classSpaceship}{Spaceship} $\ast$comp)
+\item 
+int \hyperlink{classFighterTransporter_ad173e903951580bb222eb94896a15407}{get\+Type} ()
+\item 
+void \hyperlink{classFighterTransporter_a79b9099ea2cbdd17d1a0d6c8122e9bfa}{add\+Person} (\hyperlink{classPeople}{People} $\ast$p)
+\item 
+void \hyperlink{classFighterTransporter_a24a22da402edf3ad275ba52b7cbbf738}{remove\+Person} (\hyperlink{classPeople}{People} $\ast$p)
+\item 
+void \hyperlink{classFighterTransporter_ae4191358a54d0f30476beea30aa16317}{add\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$s)
+\item 
+double \hyperlink{classFighterTransporter_ab2b29c07f0e5fd4fa5e35a37abefb26d}{get\+Resources} (double a, double b)
+\item 
+void \hyperlink{classFighterTransporter_a9b7b1f27703841220d86ec142ceda43a}{visit} (\hyperlink{classPlanet}{Planet} $\ast$p)
+\item 
+\hyperlink{classMemento}{Memento} $\ast$ \hyperlink{classFighterTransporter_ac20f71500dbddc40b9c6fcfd0dfd3b46}{create\+Memento} (vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$ s)
+\item 
+void \hyperlink{classFighterTransporter_acad1a7b3d68741c58b632ff49b043414}{reinstate\+Memento} (\hyperlink{classMemento}{Memento} $\ast$mem)
+\item 
+void \hyperlink{classFighterTransporter_a0b0187f9eae58f2b24be8f7c9fc2a180}{execute\+Strategy} ()
+\item 
+void \hyperlink{classFighterTransporter_af7050ee155b38c4ae45d38d66bc5fc2f}{select\+Strategy} (\hyperlink{classStrategy}{Strategy} $\ast$s)
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -36,22 +74,22 @@ virtual void \hyperlink{classFighterTransporter_a2c001243993307f51abba10636c0fbb
 \index{Fighter\+Transporter@{Fighter\+Transporter}!Fighter\+Transporter@{Fighter\+Transporter}}
 \index{Fighter\+Transporter@{Fighter\+Transporter}!Fighter\+Transporter@{Fighter\+Transporter}}
 \subsubsection{\texorpdfstring{Fighter\+Transporter()}{FighterTransporter()}}
-{\footnotesize\ttfamily Fighter\+Transporter\+::\+Fighter\+Transporter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Fighter\+Transporter\+::\+Fighter\+Transporter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Default constructor \mbox{\Hypertarget{classFighterTransporter_a65a48b07df846737c605337f69998eef}\label{classFighterTransporter_a65a48b07df846737c605337f69998eef}} 
 \index{Fighter\+Transporter@{Fighter\+Transporter}!````~Fighter\+Transporter@{$\sim$\+Fighter\+Transporter}}
 \index{````~Fighter\+Transporter@{$\sim$\+Fighter\+Transporter}!Fighter\+Transporter@{Fighter\+Transporter}}
 \subsubsection{\texorpdfstring{$\sim$\+Fighter\+Transporter()}{~FighterTransporter()}}
-{\footnotesize\ttfamily Fighter\+Transporter\+::$\sim$\+Fighter\+Transporter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Fighter\+Transporter\+::$\sim$\+Fighter\+Transporter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Default desctructor 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classFighterTransporter_a2c001243993307f51abba10636c0fbb9}\label{classFighterTransporter_a2c001243993307f51abba10636c0fbb9}} 
+\mbox{\Hypertarget{classFighterTransporter_a962db4e241d764360407380ce1438788}\label{classFighterTransporter_a962db4e241d764360407380ce1438788}} 
 \index{Fighter\+Transporter@{Fighter\+Transporter}!add\+Component@{add\+Component}}
 \index{add\+Component@{add\+Component}!Fighter\+Transporter@{Fighter\+Transporter}}
 \subsubsection{\texorpdfstring{add\+Component()}{addComponent()}}
-{\footnotesize\ttfamily virtual void Fighter\+Transporter\+::add\+Component (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual void Fighter\+Transporter\+::add\+Component (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{comp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 Add a component to the spaceship 
 \begin{DoxyParams}{Parameters}
@@ -62,8 +100,118 @@ Add a component to the spaceship
 
 Implements \hyperlink{classSpaceship_ac1b4673a691cd100708ddea08cd9f192}{Spaceship}.
 
+\mbox{\Hypertarget{classFighterTransporter_a79b9099ea2cbdd17d1a0d6c8122e9bfa}\label{classFighterTransporter_a79b9099ea2cbdd17d1a0d6c8122e9bfa}} 
+\index{Fighter\+Transporter@{Fighter\+Transporter}!add\+Person@{add\+Person}}
+\index{add\+Person@{add\+Person}!Fighter\+Transporter@{Fighter\+Transporter}}
+\subsubsection{\texorpdfstring{add\+Person()}{addPerson()}}
+{\footnotesize\ttfamily void Fighter\+Transporter\+::add\+Person (\begin{DoxyParamCaption}\item[{\hyperlink{classPeople}{People} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+add fighters to added to persons vector 
+\begin{DoxyParams}{Parameters}
+{\em p} & person to be added \\
+\hline
+\end{DoxyParams}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Reimplemented from \hyperlink{classSpaceship_add8d9c6dfd5f6ecb8399e41e71e5b22f}{Spaceship}.
+
+\mbox{\Hypertarget{classFighterTransporter_ae4191358a54d0f30476beea30aa16317}\label{classFighterTransporter_ae4191358a54d0f30476beea30aa16317}} 
+\index{Fighter\+Transporter@{Fighter\+Transporter}!add\+Ship@{add\+Ship}}
+\index{add\+Ship@{add\+Ship}!Fighter\+Transporter@{Fighter\+Transporter}}
+\subsubsection{\texorpdfstring{add\+Ship()}{addShip()}}
+{\footnotesize\ttfamily void Fighter\+Transporter\+::add\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual add\+Ship 
+
+Reimplemented from \hyperlink{classSpaceship_a90e1321cdbcb459b98b75ab39cef867d}{Spaceship}.
+
+\mbox{\Hypertarget{classFighterTransporter_ac20f71500dbddc40b9c6fcfd0dfd3b46}\label{classFighterTransporter_ac20f71500dbddc40b9c6fcfd0dfd3b46}} 
+\index{Fighter\+Transporter@{Fighter\+Transporter}!create\+Memento@{create\+Memento}}
+\index{create\+Memento@{create\+Memento}!Fighter\+Transporter@{Fighter\+Transporter}}
+\subsubsection{\texorpdfstring{create\+Memento()}{createMemento()}}
+{\footnotesize\ttfamily \hyperlink{classMemento}{Memento}$\ast$ Fighter\+Transporter\+::create\+Memento (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+create memento stub 
+
+Reimplemented from \hyperlink{classSpaceship_a6d272f846b019dec8226ddab65648a7b}{Spaceship}.
+
+\mbox{\Hypertarget{classFighterTransporter_a0b0187f9eae58f2b24be8f7c9fc2a180}\label{classFighterTransporter_a0b0187f9eae58f2b24be8f7c9fc2a180}} 
+\index{Fighter\+Transporter@{Fighter\+Transporter}!execute\+Strategy@{execute\+Strategy}}
+\index{execute\+Strategy@{execute\+Strategy}!Fighter\+Transporter@{Fighter\+Transporter}}
+\subsubsection{\texorpdfstring{execute\+Strategy()}{executeStrategy()}}
+{\footnotesize\ttfamily void Fighter\+Transporter\+::execute\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+execute strategy 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
+
+\mbox{\Hypertarget{classFighterTransporter_ab2b29c07f0e5fd4fa5e35a37abefb26d}\label{classFighterTransporter_ab2b29c07f0e5fd4fa5e35a37abefb26d}} 
+\index{Fighter\+Transporter@{Fighter\+Transporter}!get\+Resources@{get\+Resources}}
+\index{get\+Resources@{get\+Resources}!Fighter\+Transporter@{Fighter\+Transporter}}
+\subsubsection{\texorpdfstring{get\+Resources()}{getResources()}}
+{\footnotesize\ttfamily double Fighter\+Transporter\+::get\+Resources (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub resource collection 
+
+Reimplemented from \hyperlink{classSpaceship_ad2027533de1d789db5e3efa22055f2d0}{Spaceship}.
+
+\mbox{\Hypertarget{classFighterTransporter_ad173e903951580bb222eb94896a15407}\label{classFighterTransporter_ad173e903951580bb222eb94896a15407}} 
+\index{Fighter\+Transporter@{Fighter\+Transporter}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Fighter\+Transporter@{Fighter\+Transporter}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily int Fighter\+Transporter\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the type of spaceship -\/ \hyperlink{classFighterTransporter}{Fighter\+Transporter} = 3 \begin{DoxyReturn}{Returns}
+int -\/ 3 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classSpaceship_a113055e6d793f8fbc55e44efc4d57e07}{Spaceship}.
+
+\mbox{\Hypertarget{classFighterTransporter_acad1a7b3d68741c58b632ff49b043414}\label{classFighterTransporter_acad1a7b3d68741c58b632ff49b043414}} 
+\index{Fighter\+Transporter@{Fighter\+Transporter}!reinstate\+Memento@{reinstate\+Memento}}
+\index{reinstate\+Memento@{reinstate\+Memento}!Fighter\+Transporter@{Fighter\+Transporter}}
+\subsubsection{\texorpdfstring{reinstate\+Memento()}{reinstateMemento()}}
+{\footnotesize\ttfamily void Fighter\+Transporter\+::reinstate\+Memento (\begin{DoxyParamCaption}\item[{\hyperlink{classMemento}{Memento} $\ast$}]{mem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+reinstate memento 
+
+Reimplemented from \hyperlink{classSpaceship_ab075c869473344b6471c8e28ca7ea61e}{Spaceship}.
+
+\mbox{\Hypertarget{classFighterTransporter_a24a22da402edf3ad275ba52b7cbbf738}\label{classFighterTransporter_a24a22da402edf3ad275ba52b7cbbf738}} 
+\index{Fighter\+Transporter@{Fighter\+Transporter}!remove\+Person@{remove\+Person}}
+\index{remove\+Person@{remove\+Person}!Fighter\+Transporter@{Fighter\+Transporter}}
+\subsubsection{\texorpdfstring{remove\+Person()}{removePerson()}}
+{\footnotesize\ttfamily void Fighter\+Transporter\+::remove\+Person (\begin{DoxyParamCaption}\item[{\hyperlink{classPeople}{People} $\ast$}]{p }\end{DoxyParamCaption})}
+
+add fighters to be removed persons vector 
+\begin{DoxyParams}{Parameters}
+{\em p} & person to be removed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFighterTransporter_af7050ee155b38c4ae45d38d66bc5fc2f}\label{classFighterTransporter_af7050ee155b38c4ae45d38d66bc5fc2f}} 
+\index{Fighter\+Transporter@{Fighter\+Transporter}!select\+Strategy@{select\+Strategy}}
+\index{select\+Strategy@{select\+Strategy}!Fighter\+Transporter@{Fighter\+Transporter}}
+\subsubsection{\texorpdfstring{select\+Strategy()}{selectStrategy()}}
+{\footnotesize\ttfamily void Fighter\+Transporter\+::select\+Strategy (\begin{DoxyParamCaption}\item[{\hyperlink{classStrategy}{Strategy} $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+select strategy 
+
+Reimplemented from \hyperlink{classSpaceship_a93be2d9d2b675ef978d866d4cd7a6524}{Spaceship}.
+
+\mbox{\Hypertarget{classFighterTransporter_a9b7b1f27703841220d86ec142ceda43a}\label{classFighterTransporter_a9b7b1f27703841220d86ec142ceda43a}} 
+\index{Fighter\+Transporter@{Fighter\+Transporter}!visit@{visit}}
+\index{visit@{visit}!Fighter\+Transporter@{Fighter\+Transporter}}
+\subsubsection{\texorpdfstring{visit()}{visit()}}
+{\footnotesize\ttfamily void Fighter\+Transporter\+::visit (\begin{DoxyParamCaption}\item[{\hyperlink{classPlanet}{Planet} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for visit 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Fighter\+Transporter.\+h\end{DoxyCompactItemize}
+Fighter\+Transporter.\+h\item 
+Fighter\+Transporter.\+cpp\end{DoxyCompactItemize}

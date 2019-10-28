@@ -5,6 +5,6 @@ var searchData=
   ['fighterfactory',['FighterFactory',['../classFighterFactory.html#a3853dc992255a5dbed462a4c14e62b2d',1,'FighterFactory']]],
   ['fightertransporter',['FighterTransporter',['../classFighterTransporter.html#ad8e296a192f6a5550d15ec2d3a74c4b8',1,'FighterTransporter']]],
   ['fightertransporterfactory',['FighterTransporterFactory',['../classFighterTransporterFactory.html#a6491bf6c6026a412f38df451c0ba7899',1,'FighterTransporterFactory']]],
-  ['frigate',['Frigate',['../classFrigate.html#ad68c1d421cc3872688a19727055632a2',1,'Frigate']]],
+  ['frigate',['Frigate',['../classFrigate.html#ad68c1d421cc3872688a19727055632a2',1,'Frigate::Frigate()'],['../classFrigate.html#a9904824a22b1784d1b5a9e742e8e0485',1,'Frigate::Frigate(string name)']]],
   ['frigatefactory',['FrigateFactory',['../classFrigateFactory.html#a1025a996e1e48f03bacac243ec1540b8',1,'FrigateFactory']]]
 ];

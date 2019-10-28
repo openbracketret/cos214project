@@ -404,6 +404,7 @@ void Facade::createPlanets(int number){
         string tempString = "" + lpCount;
         Planet* temp = new Planet(tempString);
         planets->enqueue(temp);
+        lpCount++;
     }
 }
 

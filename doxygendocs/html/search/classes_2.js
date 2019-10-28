@@ -6,6 +6,7 @@ var searchData=
   ['caretaker',['Caretaker',['../classCaretaker.html',1,'']]],
   ['cheifengineerfactory',['CheifEngineerFactory',['../classCheifEngineerFactory.html',1,'']]],
   ['chiefengineer',['ChiefEngineer',['../classChiefEngineer.html',1,'']]],
+  ['command',['Command',['../classCommand.html',1,'']]],
   ['commanderofthefleet',['CommanderOfTheFleet',['../classCommanderOfTheFleet.html',1,'']]],
   ['commanderofthefleetfactory',['CommanderOfTheFleetFactory',['../classCommanderOfTheFleetFactory.html',1,'']]],
   ['comms',['Comms',['../classComms.html',1,'']]],

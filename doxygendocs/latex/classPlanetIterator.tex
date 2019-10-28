@@ -1,0 +1,96 @@
+\hypertarget{classPlanetIterator}{}\section{Planet\+Iterator Class Reference}
+\label{classPlanetIterator}\index{Planet\+Iterator@{Planet\+Iterator}}
+
+
+\hyperlink{classPlanet}{Planet} Iterator class.  
+
+
+
+
+{\ttfamily \#include $<$Planet\+Iterator.\+h$>$}
+
+
+
+Collaboration diagram for Planet\+Iterator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classPlanetIterator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPlanetIterator_ac0769a13686b355e55e687de11231d9c}{Planet\+Iterator} ()
+\item 
+\hyperlink{classPlanet}{Planet} \& \hyperlink{classPlanetIterator_a71bfc8a3a3eec78ab1a1f6cc2a7a1cf8}{operator$\ast$} ()
+\item 
+\hyperlink{classPlanetIterator}{Planet\+Iterator} \hyperlink{classPlanetIterator_a8e057fb430e49f56f756c070e95587b3}{operator++} ()
+\item 
+bool \hyperlink{classPlanetIterator_a8c8b0f27933c69f40efd523815acce3a}{operator==} (const \hyperlink{classPlanetIterator}{Planet\+Iterator} \&) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPlanetIterator_ab5c84527dd5b82051e9f59c650dbd5bc}{Planet\+Iterator} (const \hyperlink{classPlanetQueue}{Planet\+Queue} \&, \hyperlink{classNode}{Node} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPlanetIterator_a8b284f4aa03057d485c42d1962ab9939}\label{classPlanetIterator_a8b284f4aa03057d485c42d1962ab9939}} 
+\hyperlink{classNode}{Node} $\ast$ {\bfseries head}
+\item 
+\mbox{\Hypertarget{classPlanetIterator_a00c46ae901520be5ff52c38eaa08a3b6}\label{classPlanetIterator_a00c46ae901520be5ff52c38eaa08a3b6}} 
+\hyperlink{classNode}{Node} $\ast$ {\bfseries current}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPlanetIterator_af4641bececf1b32ed2e8b02c382d7e77}\label{classPlanetIterator_af4641bececf1b32ed2e8b02c382d7e77}} 
+class {\bfseries Planet\+Queue}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classPlanet}{Planet} Iterator class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPlanetIterator_ac0769a13686b355e55e687de11231d9c}\label{classPlanetIterator_ac0769a13686b355e55e687de11231d9c}} 
+\index{Planet\+Iterator@{Planet\+Iterator}!Planet\+Iterator@{Planet\+Iterator}}
+\index{Planet\+Iterator@{Planet\+Iterator}!Planet\+Iterator@{Planet\+Iterator}}
+\subsubsection{\texorpdfstring{Planet\+Iterator()}{PlanetIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Planet\+Iterator\+::\+Planet\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+default constructor \mbox{\Hypertarget{classPlanetIterator_ab5c84527dd5b82051e9f59c650dbd5bc}\label{classPlanetIterator_ab5c84527dd5b82051e9f59c650dbd5bc}} 
+\index{Planet\+Iterator@{Planet\+Iterator}!Planet\+Iterator@{Planet\+Iterator}}
+\index{Planet\+Iterator@{Planet\+Iterator}!Planet\+Iterator@{Planet\+Iterator}}
+\subsubsection{\texorpdfstring{Planet\+Iterator()}{PlanetIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Planet\+Iterator\+::\+Planet\+Iterator (\begin{DoxyParamCaption}\item[{const \hyperlink{classPlanetQueue}{Planet\+Queue} \&}]{source,  }\item[{\hyperlink{classNode}{Node} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Paramaterised constructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlanetIterator_a71bfc8a3a3eec78ab1a1f6cc2a7a1cf8}\label{classPlanetIterator_a71bfc8a3a3eec78ab1a1f6cc2a7a1cf8}} 
+\index{Planet\+Iterator@{Planet\+Iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Planet\+Iterator@{Planet\+Iterator}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \hyperlink{classPlanet}{Planet}\& Planet\+Iterator\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Overridden $\ast$ operator \mbox{\Hypertarget{classPlanetIterator_a8e057fb430e49f56f756c070e95587b3}\label{classPlanetIterator_a8e057fb430e49f56f756c070e95587b3}} 
+\index{Planet\+Iterator@{Planet\+Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!Planet\+Iterator@{Planet\+Iterator}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily \hyperlink{classPlanetIterator}{Planet\+Iterator} Planet\+Iterator\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Overidden ++ operator \mbox{\Hypertarget{classPlanetIterator_a8c8b0f27933c69f40efd523815acce3a}\label{classPlanetIterator_a8c8b0f27933c69f40efd523815acce3a}} 
+\index{Planet\+Iterator@{Planet\+Iterator}!operator==@{operator==}}
+\index{operator==@{operator==}!Planet\+Iterator@{Planet\+Iterator}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Planet\+Iterator\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classPlanetIterator}{Planet\+Iterator} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+Overidden == operator 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Planet\+Iterator.\+h\item 
+Planet\+Iterator.\+cpp\end{DoxyCompactItemize}

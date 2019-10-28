@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classPeopleFactory.html" title="People Factory class. " alt="" coords="5,183,112,209"/>
+<area shape="rect" id="node2" href="$classCaptainFactory.html" title="Captain Factory class. " alt="" coords="206,5,317,32"/>
+<area shape="rect" id="node3" href="$classCheifEngineerFactory.html" title="Chief Engineer Factory. " alt="" coords="187,56,335,83"/>
+<area shape="rect" id="node4" href="$classCommanderOfTheFleetFactory.html" title="Commander of the fleet factory class. " alt="" coords="160,107,363,133"/>
+<area shape="rect" id="node5" href="$classCommsFactory.html" title="CommsFactory class. " alt="" coords="205,157,317,184"/>
+<area shape="rect" id="node6" href="$classDoctorFactory.html" title="Doctor Factory class. " alt="" coords="209,208,314,235"/>
+<area shape="rect" id="node7" href="$classEngineerFactory.html" title="Engineer Factory class. " alt="" coords="203,259,320,285"/>
+<area shape="rect" id="node8" href="$classFighterFactory.html" title="Fighter Factory class. " alt="" coords="208,309,315,336"/>
+<area shape="rect" id="node9" href="$classNavigatorFactory.html" title="Navigator factory class. " alt="" coords="200,360,323,387"/>
+</map>

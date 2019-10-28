@@ -11,21 +11,54 @@
 
 
 
-Inheritance diagram for Spaceship\+Transporter\+:
-% FIG 0
+Inheritance diagram for Spaceship\+Transporter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classSpaceshipTransporter__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for Spaceship\+Transporter\+:
-% FIG 1
+Collaboration diagram for Spaceship\+Transporter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classSpaceshipTransporter__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classSpaceshipTransporter_a4478bc1ce68fb2306fb31849123b3eae}{Spaceship\+Transporter} ()
 \item 
+\hyperlink{classSpaceshipTransporter_a6c6a1df8547e7ab9988f9a5f26403e0b}{Spaceship\+Transporter} (string name)
+\item 
 \hyperlink{classSpaceshipTransporter_a58a77ccda8effc3cfdb071c8ffa40929}{$\sim$\+Spaceship\+Transporter} ()
 \item 
-virtual void \hyperlink{classSpaceshipTransporter_a3e7646b5937a9967885cd3034a2f5637}{add\+Component} (\hyperlink{classSpaceship}{Spaceship} $\ast$)
+void \hyperlink{classSpaceshipTransporter_ac581cb475c2eeab71c976d708f3fcb87}{increase\+Threat\+Level} ()
+\item 
+void \hyperlink{classSpaceshipTransporter_aab6415c16cb8e3fd511a995846099068}{decrease\+Threat\+Level} ()
+\item 
+void \hyperlink{classSpaceshipTransporter_ae153196ed515ac051be2ef7aa225c064}{print\+Threat\+Level} ()
+\item 
+void \hyperlink{classSpaceshipTransporter_a4106704a6ce41243c93594d7f492f33a}{select\+Strategy} ()
+\item 
+void \hyperlink{classSpaceshipTransporter_a0d8d15f2aba06b89da67a1812d783bfd}{execute\+Strategy} ()
+\item 
+virtual void \hyperlink{classSpaceshipTransporter_acd55c6864eab86db5e0485beeec4e8b9}{add\+Component} (\hyperlink{classSpaceship}{Spaceship} $\ast$comp)
+\item 
+void \hyperlink{classSpaceshipTransporter_a493a4ba44d26a2ae4e85b79e6970fb91}{add\+Ship} (\hyperlink{classSpaceship}{Spaceship} $\ast$s)
+\item 
+void \hyperlink{classSpaceshipTransporter_a03c84b4f53adb249e915158901cfef28}{visit} (\hyperlink{classPlanet}{Planet} $\ast$p)
+\item 
+void \hyperlink{classSpaceshipTransporter_a5c9ee82688e97545baa7a876e69d5dd3}{add\+Person} (\hyperlink{classPeople}{People} $\ast$p)
+\item 
+\hyperlink{classMemento}{Memento} $\ast$ \hyperlink{classSpaceshipTransporter_a40fe0a655d0d2d1fecadff29439b9ddd}{create\+Memento} (vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$ s)
+\item 
+void \hyperlink{classSpaceshipTransporter_a41af86fad998c5fb7a86d03e7a600ab7}{reinstate\+Memento} (\hyperlink{classMemento}{Memento} $\ast$mem)
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -35,10 +68,16 @@ virtual void \hyperlink{classSpaceshipTransporter_a3e7646b5937a9967885cd3034a2f5
 \mbox{\Hypertarget{classSpaceshipTransporter_a4478bc1ce68fb2306fb31849123b3eae}\label{classSpaceshipTransporter_a4478bc1ce68fb2306fb31849123b3eae}} 
 \index{Spaceship\+Transporter@{Spaceship\+Transporter}!Spaceship\+Transporter@{Spaceship\+Transporter}}
 \index{Spaceship\+Transporter@{Spaceship\+Transporter}!Spaceship\+Transporter@{Spaceship\+Transporter}}
-\subsubsection{\texorpdfstring{Spaceship\+Transporter()}{SpaceshipTransporter()}}
+\subsubsection{\texorpdfstring{Spaceship\+Transporter()}{SpaceshipTransporter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Spaceship\+Transporter\+::\+Spaceship\+Transporter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-default constructor \mbox{\Hypertarget{classSpaceshipTransporter_a58a77ccda8effc3cfdb071c8ffa40929}\label{classSpaceshipTransporter_a58a77ccda8effc3cfdb071c8ffa40929}} 
+default constructor \mbox{\Hypertarget{classSpaceshipTransporter_a6c6a1df8547e7ab9988f9a5f26403e0b}\label{classSpaceshipTransporter_a6c6a1df8547e7ab9988f9a5f26403e0b}} 
+\index{Spaceship\+Transporter@{Spaceship\+Transporter}!Spaceship\+Transporter@{Spaceship\+Transporter}}
+\index{Spaceship\+Transporter@{Spaceship\+Transporter}!Spaceship\+Transporter@{Spaceship\+Transporter}}
+\subsubsection{\texorpdfstring{Spaceship\+Transporter()}{SpaceshipTransporter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Spaceship\+Transporter\+::\+Spaceship\+Transporter (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+parameterized constructor \mbox{\Hypertarget{classSpaceshipTransporter_a58a77ccda8effc3cfdb071c8ffa40929}\label{classSpaceshipTransporter_a58a77ccda8effc3cfdb071c8ffa40929}} 
 \index{Spaceship\+Transporter@{Spaceship\+Transporter}!````~Spaceship\+Transporter@{$\sim$\+Spaceship\+Transporter}}
 \index{````~Spaceship\+Transporter@{$\sim$\+Spaceship\+Transporter}!Spaceship\+Transporter@{Spaceship\+Transporter}}
 \subsubsection{\texorpdfstring{$\sim$\+Spaceship\+Transporter()}{~SpaceshipTransporter()}}
@@ -47,11 +86,11 @@ default constructor \mbox{\Hypertarget{classSpaceshipTransporter_a58a77ccda8effc
 default desctructor 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classSpaceshipTransporter_a3e7646b5937a9967885cd3034a2f5637}\label{classSpaceshipTransporter_a3e7646b5937a9967885cd3034a2f5637}} 
+\mbox{\Hypertarget{classSpaceshipTransporter_acd55c6864eab86db5e0485beeec4e8b9}\label{classSpaceshipTransporter_acd55c6864eab86db5e0485beeec4e8b9}} 
 \index{Spaceship\+Transporter@{Spaceship\+Transporter}!add\+Component@{add\+Component}}
 \index{add\+Component@{add\+Component}!Spaceship\+Transporter@{Spaceship\+Transporter}}
 \subsubsection{\texorpdfstring{add\+Component()}{addComponent()}}
-{\footnotesize\ttfamily virtual void Spaceship\+Transporter\+::add\+Component (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual void Spaceship\+Transporter\+::add\+Component (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{comp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 add component to spaceship 
 \begin{DoxyParams}{Parameters}
@@ -61,6 +100,102 @@ add component to spaceship
 
 
 Implements \hyperlink{classSpaceship_ac1b4673a691cd100708ddea08cd9f192}{Spaceship}.
+
+\mbox{\Hypertarget{classSpaceshipTransporter_a5c9ee82688e97545baa7a876e69d5dd3}\label{classSpaceshipTransporter_a5c9ee82688e97545baa7a876e69d5dd3}} 
+\index{Spaceship\+Transporter@{Spaceship\+Transporter}!add\+Person@{add\+Person}}
+\index{add\+Person@{add\+Person}!Spaceship\+Transporter@{Spaceship\+Transporter}}
+\subsubsection{\texorpdfstring{add\+Person()}{addPerson()}}
+{\footnotesize\ttfamily void Spaceship\+Transporter\+::add\+Person (\begin{DoxyParamCaption}\item[{\hyperlink{classPeople}{People} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for add\+Person 
+
+Reimplemented from \hyperlink{classSpaceship_add8d9c6dfd5f6ecb8399e41e71e5b22f}{Spaceship}.
+
+\mbox{\Hypertarget{classSpaceshipTransporter_a493a4ba44d26a2ae4e85b79e6970fb91}\label{classSpaceshipTransporter_a493a4ba44d26a2ae4e85b79e6970fb91}} 
+\index{Spaceship\+Transporter@{Spaceship\+Transporter}!add\+Ship@{add\+Ship}}
+\index{add\+Ship@{add\+Ship}!Spaceship\+Transporter@{Spaceship\+Transporter}}
+\subsubsection{\texorpdfstring{add\+Ship()}{addShip()}}
+{\footnotesize\ttfamily void Spaceship\+Transporter\+::add\+Ship (\begin{DoxyParamCaption}\item[{\hyperlink{classSpaceship}{Spaceship} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual add\+Ship 
+
+Reimplemented from \hyperlink{classSpaceship_a90e1321cdbcb459b98b75ab39cef867d}{Spaceship}.
+
+\mbox{\Hypertarget{classSpaceshipTransporter_a40fe0a655d0d2d1fecadff29439b9ddd}\label{classSpaceshipTransporter_a40fe0a655d0d2d1fecadff29439b9ddd}} 
+\index{Spaceship\+Transporter@{Spaceship\+Transporter}!create\+Memento@{create\+Memento}}
+\index{create\+Memento@{create\+Memento}!Spaceship\+Transporter@{Spaceship\+Transporter}}
+\subsubsection{\texorpdfstring{create\+Memento()}{createMemento()}}
+{\footnotesize\ttfamily \hyperlink{classMemento}{Memento}$\ast$ Spaceship\+Transporter\+::create\+Memento (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classSpaceship}{Spaceship} $\ast$$>$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+create memento stub 
+
+Reimplemented from \hyperlink{classSpaceship_a6d272f846b019dec8226ddab65648a7b}{Spaceship}.
+
+\mbox{\Hypertarget{classSpaceshipTransporter_aab6415c16cb8e3fd511a995846099068}\label{classSpaceshipTransporter_aab6415c16cb8e3fd511a995846099068}} 
+\index{Spaceship\+Transporter@{Spaceship\+Transporter}!decrease\+Threat\+Level@{decrease\+Threat\+Level}}
+\index{decrease\+Threat\+Level@{decrease\+Threat\+Level}!Spaceship\+Transporter@{Spaceship\+Transporter}}
+\subsubsection{\texorpdfstring{decrease\+Threat\+Level()}{decreaseThreatLevel()}}
+{\footnotesize\ttfamily void Spaceship\+Transporter\+::decrease\+Threat\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for decrease\+Threat\+Level 
+
+Reimplemented from \hyperlink{classSpaceship_a73a1eefd211e9a2063d924ee85f0c0c7}{Spaceship}.
+
+\mbox{\Hypertarget{classSpaceshipTransporter_a0d8d15f2aba06b89da67a1812d783bfd}\label{classSpaceshipTransporter_a0d8d15f2aba06b89da67a1812d783bfd}} 
+\index{Spaceship\+Transporter@{Spaceship\+Transporter}!execute\+Strategy@{execute\+Strategy}}
+\index{execute\+Strategy@{execute\+Strategy}!Spaceship\+Transporter@{Spaceship\+Transporter}}
+\subsubsection{\texorpdfstring{execute\+Strategy()}{executeStrategy()}}
+{\footnotesize\ttfamily void Spaceship\+Transporter\+::execute\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for execute\+Strategy 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
+
+\mbox{\Hypertarget{classSpaceshipTransporter_ac581cb475c2eeab71c976d708f3fcb87}\label{classSpaceshipTransporter_ac581cb475c2eeab71c976d708f3fcb87}} 
+\index{Spaceship\+Transporter@{Spaceship\+Transporter}!increase\+Threat\+Level@{increase\+Threat\+Level}}
+\index{increase\+Threat\+Level@{increase\+Threat\+Level}!Spaceship\+Transporter@{Spaceship\+Transporter}}
+\subsubsection{\texorpdfstring{increase\+Threat\+Level()}{increaseThreatLevel()}}
+{\footnotesize\ttfamily void Spaceship\+Transporter\+::increase\+Threat\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for increase\+Threat\+Level 
+
+Reimplemented from \hyperlink{classSpaceship_a5ddf702124286d9d3a6b5e64c09515bc}{Spaceship}.
+
+\mbox{\Hypertarget{classSpaceshipTransporter_ae153196ed515ac051be2ef7aa225c064}\label{classSpaceshipTransporter_ae153196ed515ac051be2ef7aa225c064}} 
+\index{Spaceship\+Transporter@{Spaceship\+Transporter}!print\+Threat\+Level@{print\+Threat\+Level}}
+\index{print\+Threat\+Level@{print\+Threat\+Level}!Spaceship\+Transporter@{Spaceship\+Transporter}}
+\subsubsection{\texorpdfstring{print\+Threat\+Level()}{printThreatLevel()}}
+{\footnotesize\ttfamily void Spaceship\+Transporter\+::print\+Threat\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for print\+Threat\+Level 
+
+Reimplemented from \hyperlink{classSpaceship_a8f16814f888a5a1423e5a491329cdb97}{Spaceship}.
+
+\mbox{\Hypertarget{classSpaceshipTransporter_a41af86fad998c5fb7a86d03e7a600ab7}\label{classSpaceshipTransporter_a41af86fad998c5fb7a86d03e7a600ab7}} 
+\index{Spaceship\+Transporter@{Spaceship\+Transporter}!reinstate\+Memento@{reinstate\+Memento}}
+\index{reinstate\+Memento@{reinstate\+Memento}!Spaceship\+Transporter@{Spaceship\+Transporter}}
+\subsubsection{\texorpdfstring{reinstate\+Memento()}{reinstateMemento()}}
+{\footnotesize\ttfamily void Spaceship\+Transporter\+::reinstate\+Memento (\begin{DoxyParamCaption}\item[{\hyperlink{classMemento}{Memento} $\ast$}]{mem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+reinstate memento 
+
+Reimplemented from \hyperlink{classSpaceship_ab075c869473344b6471c8e28ca7ea61e}{Spaceship}.
+
+\mbox{\Hypertarget{classSpaceshipTransporter_a4106704a6ce41243c93594d7f492f33a}\label{classSpaceshipTransporter_a4106704a6ce41243c93594d7f492f33a}} 
+\index{Spaceship\+Transporter@{Spaceship\+Transporter}!select\+Strategy@{select\+Strategy}}
+\index{select\+Strategy@{select\+Strategy}!Spaceship\+Transporter@{Spaceship\+Transporter}}
+\subsubsection{\texorpdfstring{select\+Strategy()}{selectStrategy()}}
+{\footnotesize\ttfamily void Spaceship\+Transporter\+::select\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+stub for select\+Strategy \mbox{\Hypertarget{classSpaceshipTransporter_a03c84b4f53adb249e915158901cfef28}\label{classSpaceshipTransporter_a03c84b4f53adb249e915158901cfef28}} 
+\index{Spaceship\+Transporter@{Spaceship\+Transporter}!visit@{visit}}
+\index{visit@{visit}!Spaceship\+Transporter@{Spaceship\+Transporter}}
+\subsubsection{\texorpdfstring{visit()}{visit()}}
+{\footnotesize\ttfamily void Spaceship\+Transporter\+::visit (\begin{DoxyParamCaption}\item[{\hyperlink{classPlanet}{Planet} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+stub for visit 
+
+Reimplemented from \hyperlink{classSpaceship}{Spaceship}.
 
 
 

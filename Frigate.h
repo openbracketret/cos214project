@@ -39,10 +39,7 @@ class Frigate : public Spaceship {
         void decreaseThreatLevel() {};
     /** stub for printThreatLevel */
         void printThreatLevel() {};
-    /** stub for selectStrategy */
-        void selectStrategy() {};
-    /** stub for executeStrategy */
-        void executeStrategy() {};
+    
         void addShip(Spaceship* s){
             space->addShip(s);
         };

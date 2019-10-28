@@ -36,6 +36,11 @@ class People
 	/** Getting type of the person */
 		virtual string getType() = 0;
 
+	/** Begin doing a command with the commander of the fleet
+	 * @param type - the command type
+	 */
+		void beginCommand(string, Spaceship*);
+
 	protected:
 		int id; /**<ID variable used for uniquely identifying which person is being registered with the Mediator(Spaceship)*/
 		Spaceship* onboard;/**<Which spaceship this person is onboard*/

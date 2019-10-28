@@ -380,3 +380,7 @@ void Facade::executeStrategy(Spaceship* spaceship){
     spaceship->executeStrategy();
 }
 
+void Facade::doCommand(string type, Spaceship* spaceship){
+    People* t = CommanderOfTheFleet::instance();
+    t->beginCommand(type, spaceship);
+}

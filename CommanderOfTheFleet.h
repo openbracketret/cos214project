@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include "People.h"
+#include "Command.h"
 
 using namespace std;
 /** @brief Commander of the fleet class. A singleton
@@ -45,6 +46,13 @@ public:
 	void sendErrorMessage(string);
 	/**get type of person */
 	string getType() {return "commanderofthefleet";};
+
+	/** Execute a command
+	 * @param type - the command type
+	 */
+	void doCommand(string, Spaceship*);
+
+	
 };
 
 #endif

@@ -1,6 +1,9 @@
 #include "CommanderOfTheFleet.h"
 #include <iostream>
 #include "Spaceship.h"
+#include "Retreat.h"
+#include "Invade.h"
+#include "Mine.h"
 
 CommanderOfTheFleet* CommanderOfTheFleet::commander;
 
@@ -25,4 +28,17 @@ void CommanderOfTheFleet::recieveSpaceshipError(string message){
 
 void CommanderOfTheFleet::sendErrorMessage(string message){
     onboard->broadcast(message);
+}
+
+void CommanderOfTheFleet::doCommand(string type, Spaceship* s){
+    if (type == "retreat"){
+        Retreat* t = new Retreat(s);
+        t->execute();
+    } else if (type == "invade"){
+        Invade* t = new Invade(s);
+        t->execute();
+    } else if (type == "mine"){
+        Mine* t = new Mine(s);
+        t->execute();
+    }
 }

@@ -146,6 +146,13 @@ class Facade {
      */
         void executeStrategy(Spaceship*);
 
+    /** Execute a command from the commander
+     * @param type - the command to execute
+     * @param spaceship - the spaceship that the command executes on
+     */
+
+        void doCommand(string type, Spaceship*);
+
 
 
     private:

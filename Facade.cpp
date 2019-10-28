@@ -21,6 +21,11 @@
 
 Facade::Facade(){
     planets = new PlanetQueue();
+    people = vector<People*>();
+    peopleTracker = vector<People*>();
+    critters = vector<Critter*>();
+    fleet = vector<Spaceship*>();
+
 }
 
 Facade::~Facade(){
@@ -107,7 +112,7 @@ void Facade::createPeople(int number){
         cout << "5: Comms" << endl;
         cout << "6: Doctor" << endl;
         cout << "7: Chief Engineer" << endl;
-
+        cin >> select;
         if (select < 1 || select > 7){
             cout << "Selection incorrect" << endl;
             continue;
@@ -158,10 +163,12 @@ Spaceship* Facade::getSpaceshipWithName(){
     cout << "Enter ship name:"<<endl;
     string name;
     cin >> name;
-    vector<Spaceship*>::iterator it = fleet.begin();
+    vector<Spaceship*>::iterator it; 
 
     for (it = fleet.begin(); it != fleet.end(); ++it){
+        cout << "ITERATING OVER SHIP: " << (*it)->getName() << endl;
         if ((*it)->getName() == name){
+            cout << "here" << endl;
             return *it;
         }
     }

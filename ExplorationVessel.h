@@ -21,7 +21,13 @@ class ExplorationVessel : public Spaceship {
     /** Add a component to the vessel
      * @param s - spaceship component to be added
      */
-        virtual void addComponent(Spaceship*) {};
+        virtual void addComponent(Spaceship* comp) {
+        if (space == 0){
+            space = comp;
+        } else {
+            space->addComponent(comp);
+        }
+        };
     /** Add a visitor to the vessel and planet
      * @param p - planet to be visited
      */

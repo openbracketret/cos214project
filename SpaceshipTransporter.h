@@ -30,7 +30,13 @@ class SpaceshipTransporter : public Spaceship {
     /** add component to spaceship
      * @param s - component to be added
      */
-        virtual void addComponent(Spaceship*) {};
+        virtual void addComponent(Spaceship* comp) {
+        if (space == 0){
+            space = comp;
+        } else {
+            space->addComponent(comp);
+        }
+        };
 };
 
 #endif

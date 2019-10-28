@@ -20,7 +20,13 @@ class Frigate : public Spaceship {
     /** Add a component to the spaceship
      * @param s - component being added
      */
-        virtual void addComponent(Spaceship*) {};
+        virtual void addComponent(Spaceship* comp) {
+        if (space == 0){
+            space = comp;
+        } else {
+            space->addComponent(comp);
+        }
+        };
 
     /** Get the type of spaceship - Frigate = 4
      * @return int - 4

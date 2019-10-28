@@ -47,6 +47,15 @@ class SpaceshipTransporter : public Spaceship {
         /** stub for addPerson */
         void addPerson(People* p)
         {space->addPerson(p);};
+                /** create memento stub */
+        Memento* createMemento(vector<Spaceship*> s)
+        {
+            space->createMemento(s);
+        };
+        /** reinstate memento */
+        void reinstateMemento(Memento* mem){
+            space->reinstateMemento(mem);
+        };
 };
 
 #endif

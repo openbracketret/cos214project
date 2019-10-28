@@ -20,9 +20,9 @@ class SpaceStation : public Spaceship {
     /** Update the spacestation
      * @param s - updated spacestation
      */
-        void updateSpaceStation(SpaceStation*);
+        void updateSpaceStation(SpaceStation* s);
     /** Add component to spaceship
-     * @param s - component to be added
+     * @param comp - component to be added
      */
          virtual void addComponent(Spaceship* comp) {
         if (space == 0){
@@ -44,7 +44,10 @@ class SpaceStation : public Spaceship {
     /** stub for selectStrategy */
         void selectStrategy() {};
     /** stub for executeStrategy */
-        void executeStrategy() {};   
+        void executeStrategy() {};  
+        /** Add Spaceship
+        *@param s Spaceship to be added
+        */ 
         void addShip(Spaceship* s){
             space->addShip(s);
         };     
@@ -60,6 +63,15 @@ class SpaceStation : public Spaceship {
         void visit(Planet* p){
             space->visit(p);
         }; 
+                /** create memento stub */
+        Memento* createMemento(vector<Spaceship*> s)
+        {
+            space->createMemento(s);
+        };
+        /** reinstate memento */
+        void reinstateMemento(Memento* mem){
+            space->reinstateMemento(mem);
+        };
 
     protected:
     /** Paramaterised constructor

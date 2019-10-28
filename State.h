@@ -8,7 +8,8 @@ using namespace std;
  */
 class State {
     public:
-    /** Paramaterised constructor
+    /** Paramaterised constructor 
+    *@param s vector of Spaceships
      */
         State(vector<Spaceship*> s);
     /** Get Spaceships from state

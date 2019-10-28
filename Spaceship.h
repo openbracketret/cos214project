@@ -6,7 +6,8 @@
 #include "People.h"
 #include "CaptainsLog.h"
 #include "Strategy.h"
-
+//#include "Memento.h"
+class Memento;
 class Planet;
 
 using namespace std;
@@ -116,9 +117,9 @@ class Spaceship {
         virtual void addPerson(People* p){};
         virtual void visit(People* p){};
                 /** create memento stub */
-        virtual Memento* createMemento(vector<Spaceship*> s)=0;
+        virtual Memento* createMemento(vector<Spaceship*> s){};
         /** reinstate memento */
-        virtual void reinstateMemento(Memento* mem)=0;
+        virtual void reinstateMemento(Memento* mem){};
         
 
     protected:

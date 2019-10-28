@@ -2,6 +2,7 @@
 #define ARMORY_H
 
 #include "SpaceshipDecorator.h"
+#include "Memento.h"
 
 /** @brief Armory class
  */

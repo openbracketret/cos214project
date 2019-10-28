@@ -2,6 +2,7 @@
 #define SPACESHIPTRANSPORTER_H
 
 #include "Spaceship.h"
+class Memento;
 /** @brief Spaceship Transporter class
  */
 class SpaceshipTransporter : public Spaceship {

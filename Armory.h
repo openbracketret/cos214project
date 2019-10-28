@@ -13,7 +13,6 @@ class Armory : public SpaceshipDecorator {
     /** Default destructor
      */
         ~Armory();
-        void visit(Planet* p){};
 
         void addShip(Spaceship* s){
             space->addShip(s);

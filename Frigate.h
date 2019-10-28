@@ -32,8 +32,7 @@ class Frigate : public Spaceship {
      * @return int - 4
      */
         int getType(){return 4;};
-    /** stub for visit */
-        void visit(Planet* p){};
+
     /** stub for increaseThreatLevel */
         void increaseThreatLevel() {};
     /** stub for decreaseThreatLevel */
@@ -48,7 +47,7 @@ class Frigate : public Spaceship {
             space->addShip(s);
         };
             /** stub for visit */
-        void visit(Planet* p){
+        virtual void visit(Planet* p){
             space->visit(p);
         };
 

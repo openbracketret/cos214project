@@ -357,6 +357,7 @@ void Facade::removeTypeFromShip(string type, Spaceship* spaceship){
 }
 
 void Facade::increaseThreat() {
+    spacestation = SpaceStation::instance();
     spacestation->increaseThreatLevel();
 }
 

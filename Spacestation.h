@@ -40,8 +40,6 @@ class SpaceStation : public Spaceship {
     /** Print the current threat level of the space station
      */
         void printThreatLevel();
-    /** stub for visit */
-        void visit(Planet* p){};
     
     /** stub for selectStrategy */
         void selectStrategy() {};

@@ -42,10 +42,7 @@ class TransportBay : public SpaceshipDecorator {
          * @param mem - Memento to be recalled
          */
         void reinstateMemento(Memento* mem);
-        void visit(Planet* p){};
-        void addShip(Spaceship* s){
-            space->addShip(s);
-        };
+        
             /** stub resource collection */
         double getResources(double a, double b){
             space->getResources(a,b);

@@ -49,10 +49,6 @@ class FighterTransporter : public Spaceship {
             space->getResources(a,b);
         };
 
-        /** stub for addPerson */
-        void addPerson(People* p)
-        {space->addPerson(p);};
-
             /** stub for visit */
         void visit(Planet* p){
             space->visit(p);

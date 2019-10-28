@@ -53,10 +53,7 @@ class ExplorationVessel : public Spaceship {
         double getResources(double a, double b){
             space->getResources(a,b);
         };
-            /** stub for visit */
-        void visit(Planet* p){
-            space->visit(p);
-        };
+      
 
     /** stub for addPerson */
         void addPerson(People* p)

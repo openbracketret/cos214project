@@ -18,7 +18,9 @@ class SleepingQuarters : public SpaceshipDecorator {
             space->addShip(s);
         };
             /** stub resource collection */
-        double getResources(double a, double b);
+        double getResources(double a, double b){
+            space->getResources(a,b);
+        };
 
     /** stub for addPerson */
         void addPerson(People* p)

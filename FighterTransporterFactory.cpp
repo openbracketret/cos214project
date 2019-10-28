@@ -7,13 +7,13 @@ FighterTransporterFactory::FighterTransporterFactory() : SpaceshipFactory(){
 FighterTransporterFactory::~FighterTransporterFactory(){
 
 }
-Spaceship* FighterTransporterFactory::spaceShipFactoryMethod(){
+Spaceship* FighterTransporterFactory::spaceShipFactoryMethod(string n){
 
-	Spaceship* s = new SickBay();
+	Spaceship* s = new FighterTransporter(n);
 	s->addComponent(new Armory());
 	s->addComponent(new SleepingQuarters());
 	s->addComponent(new Bridge());
 	s->addComponent(new FighterBay());
-	s->addComponent(new FighterTransporter()); 
+	s->addComponent(new SickBay()); 
 	return s;
 }

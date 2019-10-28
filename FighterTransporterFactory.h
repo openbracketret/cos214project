@@ -23,7 +23,7 @@ public:
 	/** Method to create FighterTransporter's
 	 * @return newly created spaceship
 	 */
-	Spaceship* spaceShipFactoryMethod();
+	Spaceship* spaceShipFactoryMethod(string);
 	
 };
 

@@ -5,7 +5,7 @@ using namespace std;
 
 SpaceStation* SpaceStation::spaceStation;
 
-SpaceStation::SpaceStation() : Spaceship() {
+SpaceStation::SpaceStation() : Spaceship("Spacestation") {
     threat = new LevelOneThreat();
 }
 

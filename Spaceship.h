@@ -18,10 +18,10 @@ class Spaceship {
     public:
     /** default constructor
      */
-        Spaceship() {};
+        Spaceship() {passengerCapacity = 10;};
     /** Paramaterised constructor
      */
-        Spaceship(string n) {name = n;};
+        Spaceship(string n) {name = n; passengerCapacity = 10; log = new CaptainsLog();};
         /** Pure virtual method for decorator to add components to the spaceship
          */
         virtual void addComponent(Spaceship*) = 0;

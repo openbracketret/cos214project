@@ -1,9 +1,8 @@
 #include "CaptainsLog.h"
-
 #include <iostream>
 
 CaptainsLog::CaptainsLog(){
-
+    log = list<string>();
 }
 
 CaptainsLog::~CaptainsLog(){
@@ -15,7 +14,7 @@ void CaptainsLog::logEvent(string message){
 }
 
 void CaptainsLog::printLogs() {
-    vector<string>::iterator it;
+    list<string>::iterator it;
     int count = 0;
     for (it = log.begin(); it != log.end(); ++it){
         cout << "Log(" << count << "): " << (*it) << endl;

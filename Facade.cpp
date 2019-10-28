@@ -78,7 +78,7 @@ void Facade::createFleet(int number){
                 fleet.push_back(spaceshipFactory[4]->spaceShipFactoryMethod(nameSelect));
                 break;
         }
-
+        //cout << "123: "<<fleet.at(lpCount)->getName() << endl;
         lpCount++;
     }
 
@@ -168,7 +168,7 @@ Spaceship* Facade::getSpaceshipWithName(){
     for (it = fleet.begin(); it != fleet.end(); ++it){
         cout << "ITERATING OVER SHIP: " << (*it)->getName() << endl;
         if ((*it)->getName() == name){
-            cout << "here" << endl;
+            //cout << "here" << endl;
             return *it;
         }
     }
@@ -324,6 +324,7 @@ void Facade::beginBoarding(int number, Spaceship* spaceship){
             if ((*it)->getType() == type){
                 found = true;
                 boardPersonToShip((*it), spaceship);
+                break;
             }
         }
         if (found == false){

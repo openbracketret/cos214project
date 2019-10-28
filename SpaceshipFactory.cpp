@@ -12,7 +12,7 @@ SpaceshipFactory::~SpaceshipFactory()
 
 }
 
-Spaceship* SpaceshipFactory::spaceShipFactoryMethod(string n)
-{
+// Spaceship* SpaceshipFactory::spaceShipFactoryMethod(string n)
+// {
     
-}
+// }

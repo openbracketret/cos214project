@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include <list>
 
 using namespace std;
 /** @brief Captains Log class
@@ -25,7 +26,7 @@ class CaptainsLog {
         void printLogs();
 
     private:
-        vector<string> log;/**<vector to hold all events*/
+        list<string> log;/**<vector to hold all events*/
 
 };
 

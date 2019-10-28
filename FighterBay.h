@@ -35,6 +35,11 @@ class FighterBay : public SpaceshipDecorator {
             space->getResources(a,b);
         };
 
+        /** stub for addPerson */
+        void addPerson(People* p)
+        {space->addPerson(p);};
+        
+
     private:
         vector<Fighter*> fighters;/**<Fighters currently in the fighterbay*/
 

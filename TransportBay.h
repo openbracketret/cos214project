@@ -51,6 +51,10 @@ class TransportBay : public SpaceshipDecorator {
             space->getResources(a,b);
         };
 
+        /** stub for addPerson */
+        void addPerson(People* p)
+        {space->addPerson(p);};
+
     private:
         friend class Memento;
         vector<Spaceship*> ships;/**<Vector of spaceships that the transport bay is currently holding*/

@@ -54,6 +54,10 @@ class ExplorationVessel : public Spaceship {
             space->getResources(a,b);
         };
 
+    /** stub for addPerson */
+        void addPerson(People* p)
+        {space->addPerson(p);};
+
 };
 
 #endif

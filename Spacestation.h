@@ -55,6 +55,10 @@ class SpaceStation : public Spaceship {
             space->getResources(a,b);
         };
 
+        /** stub for addPerson */
+        void addPerson(People* p)
+        {space->addPerson(p);};   
+
     protected:
     /** Paramaterised constructor
      */

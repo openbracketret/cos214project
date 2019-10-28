@@ -112,6 +112,10 @@ class Spaceship {
             /** stub resource collection */
         virtual double getResources(double a, double b)=0;
 
+        /** virtual addPerson */
+        virtual void addPerson(People* p)=0;
+        
+
     protected:
         Spaceship* space;/**<The added decorator component*/
 

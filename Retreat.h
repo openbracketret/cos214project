@@ -21,11 +21,16 @@ class Retreat : public Command{
       /**Default Destructor 
       */
        ~Retreat();
+
+      /** Paramaterised constructor
+       * @param ship
+       */
+      Retreat(Spaceship* ship) : receiver(ship){};
        
      
 
     private:
-      ExplorationVessel* receiver; 
+      Spaceship* receiver; 
       
 };
 #endif

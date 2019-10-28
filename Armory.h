@@ -15,8 +15,6 @@ class Armory : public SpaceshipDecorator {
         ~Armory();
         void visit(Planet* p){};
 
-
-        void addShip(Spaceship*);
         void addShip(Spaceship* s){
             space->addShip(s);
         };

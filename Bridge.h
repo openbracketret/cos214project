@@ -17,7 +17,7 @@ class Bridge : public SpaceshipDecorator {
     /** Default destructor
      */
         ~Bridge();
-    /**resource collection*/
+    /** resource collection */
         double getResources(double a, double b);
         void visit(Planet* p){};
         void addShip(Spaceship* s){

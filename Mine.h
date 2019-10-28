@@ -21,11 +21,17 @@ class Mine : public Command{
       /**Default Destructor 
       */
        ~Mine();
+
+      /** Paramaterised constructor
+       * @param ship
+       */
+
+      Mine(Spaceship* ship) : receiver(ship){};
        
      
 
     private:
-      ExplorationVessel* receiver; 
+      Spaceship* receiver; 
       
 };
 #endif

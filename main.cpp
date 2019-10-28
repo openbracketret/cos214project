@@ -59,6 +59,7 @@ int main () {
     f->increaseThreat();
     f->printThreat();
     f->createPeople(3);
+    f->beginBoarding(3,f->getSpaceshipWithName())
     f->getCaptainOnShip(f->getSpaceshipWithName());
     f->getDoctorOnShip(f->getSpaceshipWithName());
 

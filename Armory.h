@@ -20,6 +20,10 @@ class Armory : public SpaceshipDecorator {
         void addShip(Spaceship* s){
             space->addShip(s);
         };
+
+        /** stub for addPerson */
+        void addPerson(People* p)
+        {space->addPerson(p);};
 };
 
 #endif

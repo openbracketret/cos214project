@@ -18,6 +18,9 @@ class SpaceshipDecorator : public Spaceship {
      */
         virtual void addShip(Spaceship*);
 
+        /** virtual addPerson */
+        virtual void addPerson(People* p)=0;
+
     protected:
     /** default desctructor
      */

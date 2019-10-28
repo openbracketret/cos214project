@@ -45,10 +45,18 @@ class FighterTransporter : public Spaceship {
         void addShip(Spaceship* s){
             space->addShip(s);
         };
+        double getResources(double a, double b){
+            space->getResources(a,b);
+        };
 
         /** stub for addPerson */
         void addPerson(People* p)
         {space->addPerson(p);};
+
+            /** stub for visit */
+        void visit(Planet* p){
+            space->visit(p);
+        };
 
     private:
         vector<People*> persons;/**<Vector of people that the transporter is currently holding*/

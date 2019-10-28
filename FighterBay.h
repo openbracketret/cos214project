@@ -26,9 +26,17 @@ class FighterBay : public SpaceshipDecorator {
          * @param f - Fighter being removed
          */
         void removeFighter(Fighter*);
-        void visit(Planet* p){};
+            /** stub for visit */
+        void visit(Planet* p){
+            space->visit(p);
+        };
         void addShip(Spaceship* s){
-            space->addShip(s);};
+            space->addShip(s);
+        };
+            /** stub resource collection */
+        double getResources(double a, double b){
+            space->getResources(a,b);
+        };
 
         /** stub for addPerson */
         void addPerson(People* p)

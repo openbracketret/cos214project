@@ -110,10 +110,11 @@ class Spaceship {
          */
         virtual void addShip(Spaceship*) = 0;
             /** stub resource collection */
-        double getResources(double a, double b);
+        virtual double getResources(double a, double b)=0;
 
         /** virtual addPerson */
         virtual void addPerson(People* p)=0;
+        virtual void visit(People* p) = 0;
         
 
     protected:

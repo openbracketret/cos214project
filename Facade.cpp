@@ -154,7 +154,10 @@ void Facade::createPeople(int number){
     }
 }
 
-Spaceship* Facade::getSpaceshipWithName(string name){
+Spaceship* Facade::getSpaceshipWithName(){
+    cout << "Enter ship name:"<<endl;
+    string name;
+    cin >> name;
     vector<Spaceship*>::iterator it = fleet.begin();
 
     for (it = fleet.begin(); it != fleet.end(); ++it){

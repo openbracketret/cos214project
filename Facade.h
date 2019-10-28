@@ -40,7 +40,7 @@ class Facade {
      * @param name - the name of the spaceship
      * @return Spaceship*
      */
-        Spaceship* getSpaceshipWithName(string);
+        Spaceship* getSpaceshipWithName();
 
     /** Begin creation of people
      * @param number - int the number of people to create

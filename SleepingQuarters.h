@@ -18,11 +18,22 @@ class SleepingQuarters : public SpaceshipDecorator {
             space->addShip(s);
         };
             /** stub resource collection */
-        double getResources(double a, double b);
+        double getResources(double a, double b){
+            space->getResources(a,b);
+        };
 
     /** stub for addPerson */
         void addPerson(People* p)
         {space->addPerson(p);};
+                /** create memento stub */
+        Memento* createMemento(vector<Spaceship*> s)
+        {
+            space->createMemento(s);
+        };
+        /** reinstate memento */
+        void reinstateMemento(Memento* mem){
+            space->reinstateMemento(mem);
+        };
 
 };
 

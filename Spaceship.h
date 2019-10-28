@@ -115,6 +115,10 @@ class Spaceship {
         /** virtual addPerson */
         virtual void addPerson(People* p)=0;
         virtual void visit(People* p) = 0;
+                /** create memento stub */
+        virtual Memento* createMemento(vector<Spaceship*> s)=0;
+        /** reinstate memento */
+        virtual void reinstateMemento(Memento* mem)=0;
         
 
     protected:

@@ -51,6 +51,15 @@ class Frigate : public Spaceship {
         void visit(Planet* p){
             space->visit(p);
         };
+                /** create memento stub */
+        Memento* createMemento(vector<Spaceship*> s)
+        {
+            space->createMemento(s);
+        };
+        /** reinstate memento */
+        void reinstateMemento(Memento* mem){
+            space->reinstateMemento(mem);
+        };
 
 /** stub for addPerson */
         void addPerson(People* p)

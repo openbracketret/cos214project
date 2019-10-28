@@ -20,7 +20,7 @@
 #include <algorithm>
 
 Facade::Facade(){
-
+    planets = new PlanetQueue();
 }
 
 Facade::~Facade(){
@@ -383,4 +383,22 @@ void Facade::executeStrategy(Spaceship* spaceship){
 void Facade::doCommand(string type, Spaceship* spaceship){
     People* t = CommanderOfTheFleet::instance();
     t->beginCommand(type, spaceship);
+}
+
+void Facade::createPlanets(int number){
+    int lpCount = 0;
+
+    while (lpCount < number){
+        string tempString = "" + lpCount;
+        Planet* temp = new Planet(tempString);
+        planets->enqueue(temp);
+    }
+}
+
+Planet* Facade::popPlanet() {
+    return planets->dequeue();
+}
+
+void Facade::visitPlanetWithSpaceship(Spaceship* spaceship, Planet* plan){
+    plan->accept(spaceship);
 }

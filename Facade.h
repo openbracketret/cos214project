@@ -150,8 +150,18 @@ class Facade {
      * @param type - the command to execute
      * @param spaceship - the spaceship that the command executes on
      */
-
         void doCommand(string type, Spaceship*);
+
+    /** pop off a planet from the queue
+     * @return Planet*
+     */
+        Planet* popPlanet();
+
+    /** Visit a planet
+     * @param spaceship - the spaceship to visit the planet with
+     * @param plan - the planet to be visited
+     */
+        void visitPlanetWithSpaceship(Spaceship*, Planet*);
 
 
 

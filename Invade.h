@@ -4,6 +4,7 @@
 #include "ExplorationVessel.h"
 #include <string>
 #include <vector>
+#include <iostream>
 
 using namespace std;
 /** @brief Planet class
@@ -25,7 +26,9 @@ class Invade : public Command{
       /** Paramaterised constructor
        * @param ship
        */
-      Invade(Spaceship* ship) : receiver(ship){};
+      Invade(Spaceship* ship) : receiver(ship){
+          cout<<"Threat level high, but resources higher. Invading planet."<<endl;
+      };
        
      
 

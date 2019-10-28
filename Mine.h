@@ -4,6 +4,7 @@
 #include "ExplorationVessel.h"
 #include <string>
 #include <vector>
+#include <iostream>
 
 using namespace std;
 /** @brief Planet class
@@ -26,7 +27,9 @@ class Mine : public Command{
        * @param ship
        */
 
-      Mine(Spaceship* ship) : receiver(ship){};
+      Mine(Spaceship* ship) : receiver(ship){
+          cout<<"Threat level low. Mining for resources on planet."<<endl;
+      };
        
      
 

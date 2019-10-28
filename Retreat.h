@@ -4,6 +4,7 @@
 #include "ExplorationVessel.h"
 #include <string>
 #include <vector>
+#include <iostream>
 
 using namespace std;
 /** @brief Planet class
@@ -25,7 +26,9 @@ class Retreat : public Command{
       /** Paramaterised constructor
        * @param ship
        */
-      Retreat(Spaceship* ship) : receiver(ship){};
+      Retreat(Spaceship* ship) : receiver(ship){
+        cout<<"Threat to high. Retreating from the planet"<<endl;
+      };
        
      
 

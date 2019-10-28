@@ -21,11 +21,16 @@ class Invade : public Command{
       /**Default Destructor 
       */
        ~Invade();
+
+      /** Paramaterised constructor
+       * @param ship
+       */
+      Invade(Spaceship* ship) : receiver(ship){};
        
      
 
     private:
-      ExplorationVessel* receiver; 
+      Spaceship* receiver; 
       
 };
 #endif

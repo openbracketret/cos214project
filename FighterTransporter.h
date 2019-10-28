@@ -62,6 +62,14 @@ class FighterTransporter : public Spaceship {
         void reinstateMemento(Memento* mem){
             space->reinstateMemento(mem);
         };
+                /** execute strategy */
+        void executeStrategy(){
+            space->executeStrategy();
+        };
+        /** select strategy */
+        void selectStrategy(Strategy* s){
+            space->selectStrategy(s);
+        }
 
     private:
         vector<People*> persons;/**<Vector of people that the transporter is currently holding*/

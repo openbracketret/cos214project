@@ -2,12 +2,14 @@
 #define TRADINGSTRATEGY_H
 
 #include "TradingStrategy.h"
+#include "Strategy.h"
+
 
 using namespace std;
 
 /** @brief TradingStrategy class
  */
-class TradingStrategy {
+class TradingStrategy : public Strategy{
     public:
         /** default constructor */
         TradingStrategy();

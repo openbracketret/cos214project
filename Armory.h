@@ -35,6 +35,14 @@ class Armory : public SpaceshipDecorator {
         void reinstateMemento(Memento* mem){
             space->reinstateMemento(mem);
         };
+        /** execute strategy */
+        void executeStrategy(){
+            space->executeStrategy();
+        };
+        /** select strategy */
+        void selectStrategy(Strategy* s){
+            space->selectStrategy(s);
+        }
 };
 
 #endif

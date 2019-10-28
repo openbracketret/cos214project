@@ -47,6 +47,14 @@ class TransportBay : public SpaceshipDecorator {
         double getResources(double a, double b){
             space->getResources(a,b);
         };
+                /** execute strategy */
+        void executeStrategy(){
+            space->executeStrategy();
+        };
+        /** select strategy */
+        void selectStrategy(Strategy* s){
+            space->selectStrategy(s);
+        }
 
         /** stub for addPerson */
         void addPerson(People* p)

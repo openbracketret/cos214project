@@ -59,6 +59,14 @@ class Frigate : public Spaceship {
         void reinstateMemento(Memento* mem){
             space->reinstateMemento(mem);
         };
+                /** execute strategy */
+        void executeStrategy(){
+            space->executeStrategy();
+        };
+        /** select strategy */
+        void selectStrategy(Strategy* s){
+            space->selectStrategy(s);
+        }
 
 /** stub for addPerson */
         void addPerson(People* p)

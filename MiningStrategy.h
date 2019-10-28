@@ -7,7 +7,7 @@ using namespace std;
 
 /** @brief MiningStrategy class
  */
-class MiningStrategy {
+class MiningStrategy : public Strategy{
     public:
         /** overloaded execute for mining resources 
          * @param a mining rate of the planet

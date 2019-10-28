@@ -43,10 +43,14 @@ class ExplorationVessel : public Spaceship {
         void decreaseThreatLevel() {};
     /** stub for printThreatLevel */
         void printThreatLevel() {};
-    /** stub for selectStrategy */
-        void selectStrategy() {};
-    /** stub for executeStrategy */
-        void executeStrategy() {};
+         /** execute strategy */
+        void executeStrategy(){
+            space->executeStrategy();
+        };
+        /** select strategy */
+        void selectStrategy(Strategy* s){
+            space->selectStrategy(s);
+        }
         void addShip(Spaceship* s){
             space->addShip(s);
         };

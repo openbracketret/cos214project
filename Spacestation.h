@@ -41,10 +41,14 @@ class SpaceStation : public Spaceship {
      */
         void printThreatLevel();
     
-    /** stub for selectStrategy */
-        void selectStrategy() {};
-    /** stub for executeStrategy */
-        void executeStrategy() {};  
+        /** execute strategy */
+        void executeStrategy(){
+            space->executeStrategy();
+        };
+        /** select strategy */
+        void selectStrategy(Strategy* s){
+            space->selectStrategy(s);
+        } 
         /** Add Spaceship
         *@param s Spaceship to be added
         */ 

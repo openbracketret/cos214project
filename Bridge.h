@@ -3,6 +3,7 @@
 
 #include "SpaceshipDecorator.h"
 #include "Strategy.h"
+#include <ctime>
 /** @brief Bridge class
  */
 class Bridge : public SpaceshipDecorator {
@@ -38,6 +39,16 @@ class Bridge : public SpaceshipDecorator {
         /** reinstate memento */
         void reinstateMemento(Memento* mem){
             space->reinstateMemento(mem);
+        };
+        void selectStrategy(Strategy* s) {
+            strategy = s;
+        };
+    /** stub for executeStrategy */
+        void executeStrategy() {
+            srand(time(NULL));
+            double a = rand() % 500 + 500;
+            double b = rand() % 10 + 1;
+            strategy->execute(a,b);
         };
     private:
         Strategy* strategy;

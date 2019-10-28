@@ -22,7 +22,13 @@ class FighterTransporter : public Spaceship {
     /** Add a component to the spaceship
      * @param s - the component being added
      */
-        virtual void addComponent(Spaceship*) {};
+        virtual void addComponent(Spaceship* comp) {
+        if (space == 0){
+            space = comp;
+        } else {
+            space->addComponent(comp);
+        }
+        };
 
     /** Get the type of spaceship - FighterTransporter = 3
      * @return int - 3
@@ -36,6 +42,9 @@ class FighterTransporter : public Spaceship {
      * @param p person to be removed
     */
         void removePerson(People* p);
+        void addShip(Spaceship* s){
+            space->addShip(s);
+        };
 
     private:
         vector<People*> persons;/**<Vector of people that the transporter is currently holding*/

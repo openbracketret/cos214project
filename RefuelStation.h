@@ -22,6 +22,9 @@ public:
     */
     void refuelSpaceship(Spaceship* s);
     void visit(Planet* p){};
+    void addShip(Spaceship* s){
+            space->addShip(s);
+        };
 };
 
 #endif

@@ -17,6 +17,9 @@ class Armory : public SpaceshipDecorator {
 
 
         void addShip(Spaceship*);
+        void addShip(Spaceship* s){
+            space->addShip(s);
+        };
 };
 
 #endif

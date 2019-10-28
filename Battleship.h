@@ -20,7 +20,13 @@ class Battleship : public Spaceship{
         ~Battleship() {};
     /** Add a component
      */
-        virtual void addComponent(Spaceship*) {};
+        virtual void addComponent(Spaceship* comp) {
+        if (space == 0){
+            space = comp;
+        } else {
+            space->addComponent(comp);
+        }
+        };
 
     /** Get the type of spaceship Battleship = 1
      * @return int - 1
@@ -38,6 +44,9 @@ class Battleship : public Spaceship{
         void selectStrategy() {};
     /** stub for executeStrategy */
         void executeStrategy() {};
+        void addShip(Spaceship* s){
+            space->addShip(s);
+        };
     
 };
 

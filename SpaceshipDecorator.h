@@ -22,6 +22,9 @@ class SpaceshipDecorator : public Spaceship {
     /** default desctructor
      */
         ~SpaceshipDecorator() {};
+        void addShip(Spaceship* s){
+            space->addShip(s);
+        };
         
 
     private:

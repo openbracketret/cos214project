@@ -24,7 +24,13 @@ class SpaceStation : public Spaceship {
     /** Add component to spaceship
      * @param s - component to be added
      */
-        void addComponent(Spaceship*) {};
+         virtual void addComponent(Spaceship* comp) {
+        if (space == 0){
+            space = comp;
+        } else {
+            space->addComponent(comp);
+        }
+        };
     /** Increase threat level of spacestation
      */
         void increaseThreatLevel();
@@ -40,7 +46,10 @@ class SpaceStation : public Spaceship {
     /** stub for selectStrategy */
         void selectStrategy() {};
     /** stub for executeStrategy */
-        void executeStrategy() {};        
+        void executeStrategy() {};   
+        void addShip(Spaceship* s){
+            space->addShip(s);
+        };     
 
     protected:
     /** Paramaterised constructor

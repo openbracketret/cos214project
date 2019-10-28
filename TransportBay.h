@@ -43,6 +43,9 @@ class TransportBay : public SpaceshipDecorator {
          */
         void reinstateMemento(Memento* mem);
         void visit(Planet* p){};
+        void addShip(Spaceship* s){
+            space->addShip(s);
+        };
 
     private:
         friend class Memento;

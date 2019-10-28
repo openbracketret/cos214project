@@ -7,6 +7,7 @@
 #include "CommanderOfTheFleet.h"
 #include "PlanetQueue.h"
 #include "Spacestation.h"
+#include "Critter.h"
 #include "Strategy.h"
 
 using namespace std;
@@ -163,6 +164,20 @@ class Facade {
      */
         void visitPlanetWithSpaceship(Spaceship*, Planet*);
 
+    /** Create some critters
+     * @param number - the number of critters to create
+     */
+        void createCritters(int);
+
+    /** Get a random critter from the list
+     * @return Critter*
+     */
+        Critter* getSomeCritter();
+
+    /** Remove specific critter from list
+     * @param crit - the critter to be removed
+     */
+        void removeCritter(Critter*);
 
 
     private:
@@ -172,6 +187,7 @@ class Facade {
         PlanetQueue* planets;
         vector<People*> people;
         vector<People*> peopleTracker;
+        vector<Critter*> critters;
         
 
 

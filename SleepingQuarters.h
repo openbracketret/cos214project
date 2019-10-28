@@ -14,6 +14,9 @@ class SleepingQuarters : public SpaceshipDecorator {
      */
         ~SleepingQuarters();
         void visit(Planet* p){};
+        void addShip(Spaceship* s){
+            space->addShip(s);
+        };
 
 };
 

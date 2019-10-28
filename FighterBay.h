@@ -27,7 +27,9 @@ class FighterBay : public SpaceshipDecorator {
          */
         void removeFighter(Fighter*);
         void visit(Planet* p){};
-
+        void addShip(Spaceship* s){
+            space->addShip(s);
+        };
 
     private:
         vector<Fighter*> fighters;/**<Fighters currently in the fighterbay*/

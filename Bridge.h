@@ -20,6 +20,9 @@ class Bridge : public SpaceshipDecorator {
     /**resource collection*/
         double getResources(double a, double b);
         void visit(Planet* p){};
+        void addShip(Spaceship* s){
+            space->addShip(s);
+        };
     private:
         Strategy* strategy;
 

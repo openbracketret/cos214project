@@ -42,6 +42,9 @@ class FighterTransporter : public Spaceship {
      * @param p person to be removed
     */
         void removePerson(People* p);
+        void addShip(Spaceship* s){
+            space->addShip(s);
+        };
 
     private:
         vector<People*> persons;/**<Vector of people that the transporter is currently holding*/

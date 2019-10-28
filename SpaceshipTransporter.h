@@ -37,6 +37,9 @@ class SpaceshipTransporter : public Spaceship {
             space->addComponent(comp);
         }
         };
+        void addShip(Spaceship* s){
+            space->addShip(s);
+        };
 };
 
 #endif

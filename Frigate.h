@@ -44,6 +44,9 @@ class Frigate : public Spaceship {
         void selectStrategy() {};
     /** stub for executeStrategy */
         void executeStrategy() {};
+        void addShip(Spaceship* s){
+            space->addShip(s);
+        };
 };
 
 #endif

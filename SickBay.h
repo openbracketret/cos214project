@@ -14,6 +14,9 @@ class SickBay : public SpaceshipDecorator{
      */
         ~SickBay();
         void visit(Planet* p){};
+        void addShip(Spaceship* s){
+            space->addShip(s);
+        };
 };
 
 #endif
